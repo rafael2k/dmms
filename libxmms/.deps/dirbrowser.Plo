@@ -4,7 +4,7 @@ dirbrowser.lo: dirbrowser.c /usr/include/stdc-predef.h config.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h \
+ /usr/lib/gcc/x86_64-linux-gnu/6/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/xlocale.h \
  /usr/include/libintl.h /usr/include/x86_64-linux-gnu/sys/types.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
@@ -27,14 +27,16 @@ dirbrowser.lo: dirbrowser.c /usr/include/stdc-predef.h config.h \
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
- /usr/include/string.h /usr/include/gtk-1.2/gtk/gtk.h \
- /usr/include/gtk-1.2/gdk/gdk.h /usr/include/gtk-1.2/gdk/gdktypes.h \
- /usr/include/glib-1.2/glib.h /usr/lib/glib/include/glibconfig.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h \
+ /usr/include/string.h /usr/include/x86_64-linux-gnu/bits/string.h \
+ /usr/include/x86_64-linux-gnu/bits/string2.h /usr/include/stdlib.h \
+ /usr/include/gtk-1.2/gtk/gtk.h /usr/include/gtk-1.2/gdk/gdk.h \
+ /usr/include/gtk-1.2/gdk/gdktypes.h /usr/include/glib-1.2/glib.h \
+ /usr/lib/glib/include/glibconfig.h \
+ /usr/lib/gcc/x86_64-linux-gnu/6/include-fixed/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/6/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include/float.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h \
+ /usr/lib/gcc/x86_64-linux-gnu/6/include/float.h \
+ /usr/lib/gcc/x86_64-linux-gnu/6/include/stdarg.h \
  /usr/include/gtk-1.2/gdk/gdkcursors.h /usr/include/gtk-1.2/gdk/gdkrgb.h \
  /usr/include/gtk-1.2/gtk/gtkaccelgroup.h \
  /usr/include/gtk-1.2/gtk/gtkobject.h /usr/include/gtk-1.2/gtk/gtkarg.h \
@@ -126,7 +128,8 @@ dirbrowser.lo: dirbrowser.c /usr/include/stdc-predef.h config.h \
  /usr/include/gtk-1.2/gtk/gtkvseparator.h /usr/include/stdio.h \
  /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/x86_64-linux-gnu/bits/sys_errlist.h
+ /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
 
 /usr/include/stdc-predef.h:
 
@@ -146,7 +149,7 @@ config.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h:
+/usr/lib/gcc/x86_64-linux-gnu/6/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
@@ -208,6 +211,12 @@ config.h:
 
 /usr/include/string.h:
 
+/usr/include/x86_64-linux-gnu/bits/string.h:
+
+/usr/include/x86_64-linux-gnu/bits/string2.h:
+
+/usr/include/stdlib.h:
+
 /usr/include/gtk-1.2/gtk/gtk.h:
 
 /usr/include/gtk-1.2/gdk/gdk.h:
@@ -218,17 +227,17 @@ config.h:
 
 /usr/lib/glib/include/glibconfig.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h:
+/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed/limits.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h:
+/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed/syslimits.h:
 
 /usr/include/limits.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include/float.h:
+/usr/lib/gcc/x86_64-linux-gnu/6/include/float.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h:
+/usr/lib/gcc/x86_64-linux-gnu/6/include/stdarg.h:
 
 /usr/include/gtk-1.2/gdk/gdkcursors.h:
 
@@ -463,3 +472,5 @@ config.h:
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:

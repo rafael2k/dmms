@@ -10,7 +10,7 @@
 /* Define to 1 if you have the <dlfcn.h> header file. */
 #define HAVE_DLFCN_H 1
 
-/* Define if you have the iconv() function. */
+/* Define if you have the iconv() function and it works. */
 #define HAVE_ICONV 1
 
 /* Define to 1 if you have the <inttypes.h> header file. */
@@ -51,6 +51,9 @@
 
 /* Define as const if the declaration of iconv() needs const. */
 #define ICONV_CONST 
+
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
+#define LT_OBJDIR ".libs/"
 
 /* Name of package */
 #define PACKAGE "libxmms"

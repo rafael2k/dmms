@@ -2,8 +2,8 @@ util.lo: util.c /usr/include/stdc-predef.h config.h \
  /usr/include/gtk-1.2/gtk/gtk.h /usr/include/gtk-1.2/gdk/gdk.h \
  /usr/include/gtk-1.2/gdk/gdktypes.h /usr/include/glib-1.2/glib.h \
  /usr/lib/glib/include/glibconfig.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/6/include-fixed/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/6/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -13,8 +13,8 @@ util.lo: util.c /usr/include/stdc-predef.h config.h \
  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
  /usr/include/linux/limits.h \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include/float.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h \
+ /usr/lib/gcc/x86_64-linux-gnu/6/include/float.h \
+ /usr/lib/gcc/x86_64-linux-gnu/6/include/stdarg.h \
  /usr/include/gtk-1.2/gdk/gdkcursors.h /usr/include/gtk-1.2/gdk/gdkrgb.h \
  /usr/include/gtk-1.2/gtk/gtkaccelgroup.h \
  /usr/include/gtk-1.2/gtk/gtkobject.h /usr/include/gtk-1.2/gtk/gtkarg.h \
@@ -106,7 +106,7 @@ util.lo: util.c /usr/include/stdc-predef.h config.h \
  /usr/include/gtk-1.2/gtk/gtkvseparator.h /usr/include/sched.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h /usr/include/time.h \
+ /usr/lib/gcc/x86_64-linux-gnu/6/include/stddef.h /usr/include/time.h \
  /usr/include/x86_64-linux-gnu/bits/sched.h \
  /usr/include/x86_64-linux-gnu/sys/time.h \
  /usr/include/x86_64-linux-gnu/bits/time.h \
@@ -137,9 +137,9 @@ config.h:
 
 /usr/lib/glib/include/glibconfig.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h:
+/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed/limits.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h:
+/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed/syslimits.h:
 
 /usr/include/limits.h:
 
@@ -161,9 +161,9 @@ config.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include/float.h:
+/usr/lib/gcc/x86_64-linux-gnu/6/include/float.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h:
+/usr/lib/gcc/x86_64-linux-gnu/6/include/stdarg.h:
 
 /usr/include/gtk-1.2/gdk/gdkcursors.h:
 
@@ -393,7 +393,7 @@ config.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h:
+/usr/lib/gcc/x86_64-linux-gnu/6/include/stddef.h:
 
 /usr/include/time.h:
 

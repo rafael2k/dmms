@@ -30,20 +30,20 @@ gettextsrcdir = $(datadir)/gettext/po
 
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
-mkinstalldirs = $(SHELL) /home/rafael2k/programs/audio/dmms/trunk/install-sh -d
-mkdir_p = mkdir -p --
+mkinstalldirs = $(SHELL) ${SHELL} /home/rafael2k/programs/devel/dmms/install-sh -d
+mkdir_p = $(MKDIR_P)
 
 GMSGFMT_ = /usr/bin/msgfmt
 GMSGFMT_no = /usr/bin/msgfmt
-GMSGFMT_yes = @GMSGFMT_015@
+GMSGFMT_yes = /usr/bin/msgfmt
 GMSGFMT = $(GMSGFMT_$(USE_MSGCTXT))
 MSGFMT_ = /usr/bin/msgfmt
 MSGFMT_no = /usr/bin/msgfmt
-MSGFMT_yes = @MSGFMT_015@
+MSGFMT_yes = /usr/bin/msgfmt
 MSGFMT = $(MSGFMT_$(USE_MSGCTXT))
 XGETTEXT_ = /usr/bin/xgettext
 XGETTEXT_no = /usr/bin/xgettext
-XGETTEXT_yes = @XGETTEXT_015@
+XGETTEXT_yes = /usr/bin/xgettext
 XGETTEXT = $(XGETTEXT_$(USE_MSGCTXT))
 MSGMERGE = msgmerge
 MSGMERGE_UPDATE = /usr/bin/msgmerge --update

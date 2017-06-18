@@ -39,7 +39,7 @@ subdir = intl
 
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
-MKINSTALLDIRS = $(top_builddir)/./mkinstalldirs
+MKINSTALLDIRS = @MKINSTALLDIRS@
 mkinstalldirs = $(SHELL) $(MKINSTALLDIRS)
 
 l = 
@@ -58,7 +58,7 @@ DEFS = -DLOCALEDIR=\"$(localedir)\" -DLOCALE_ALIAS_PATH=\"$(aliaspath)\" \
 -Drelocate=libintl_relocate \
 -DDEPENDS_ON_LIBICONV=1 -DHAVE_CONFIG_H
 CPPFLAGS = 
-CFLAGS =  -Wall -Wpointer-arith -finline-functions -fomit-frame-pointer -ffast-math -funroll-all-loops
+CFLAGS = -g -O2 -Wall -Wpointer-arith -finline-functions -ffast-math -funroll-all-loops
 LDFLAGS = 
 LIBS = 
 
