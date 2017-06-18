@@ -1,0 +1,29 @@
+Developers TODO list: [#bugzilla id]
+====================================
+
+* Move all the streaming code out of the mpg123 plugin and into libxmms,
+  pave the way to having more input plugins supporting streaming media
+  (preferably without needing to know about the transport medium- ftp/http
+  etc).
+
+* Add a dir browser to the skins dialog so users don't have to add
+  SKINSDIR variable. Instead use a file dialog and save the skin
+  dirs in the ~/.xmms/config file.
+
+* Ability to load playlists without the .m3u extension at startup
+  eg. xmms -pl playlistname
+
+* Add a new enqueue function to XMMS from the command line, -ep, which 
+  enqueues the file and plays it.
+
+* Shortkey/menu item to open currently used input plugin preferences.
+  Maybe one key for each type of plugin?
+
+* Parse dirs in m3u files to load all files in that dir (recursive?) when
+  XMMS loads the playlist. [#82]
+  
+* Parse m3u files in m3u files (protect against endless recursion?) [#262]  
+
+* Read playlists from http [#125]
+
+* Seeking in streams [#296/#311]

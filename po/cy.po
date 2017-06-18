@@ -1,0 +1,4839 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# Rhoslyn Prys <rhoslyn.prys@meddal.org.uk>, 2003
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xmms-cy\n"
+"Report-Msgid-Bugs-To: http://bugs.xmms.org\n"
+"POT-Creation-Date: 2007-11-16 23:53+0100\n"
+"PO-Revision-Date: 2004-01-17 09:20-0000\n"
+"Last-Translator: Rhoslyn Prys <rhoslyn.prys@meddal.org.uk>\n"
+"Language-Team: Cymraeg/Welsh <rhoslyn.prys@meddal.org.uk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: Effect/echo_plugin/echo.c:43
+#, c-format
+msgid "Echo Plugin %s"
+msgstr "Ategyn Echo %s"
+
+#: Effect/echo_plugin/gui.c:8
+msgid ""
+"Echo Plugin\n"
+"By Johan Levin 1999.\n"
+"\n"
+"Surround echo by Carl van Schaik 1999"
+msgstr ""
+"Echo Plugin\n"
+"Gan Johan Levin 1999.\n"
+"\n"
+"Surround echo gan Carl van Schaik 1999"
+
+#: Effect/echo_plugin/gui.c:22
+msgid "About Echo Plugin"
+msgstr "Ynghylch Ategyn Echo"
+
+#: Effect/echo_plugin/gui.c:23 Effect/echo_plugin/gui.c:135
+#: Effect/stereo_plugin/stereo.c:56 Effect/stereo_plugin/stereo.c:120
+#: Effect/voice/about.c:35 General/ir/about.c:51 General/ir/configure.c:205
+#: General/ir/configure.c:376 General/joystick/about.c:35
+#: General/joystick/configure.c:272 General/song_change/song_change.c:340
+#: Input/cdaudio/cddb.c:734 Input/cdaudio/cddb.c:742 Input/cdaudio/cddb.c:750
+#: Input/cdaudio/cddb.c:774 Input/cdaudio/configure.c:673
+#: Input/mikmod/plugin.c:125 Input/mikmod/plugin.c:616
+#: Input/mpg123/configure.c:586 Input/mpg123/fileinfo.c:138
+#: Input/mpg123/fileinfo.c:193 Input/mpg123/http.c:208
+#: Input/mpg123/mpg123.c:1151 Input/tonegen/tonegen.c:55
+#: Input/vorbis/configure.c:449 Input/vorbis/fileinfo.c:210
+#: Input/vorbis/http.c:208 Input/vorbis/vorbis.c:778 Output/OSS/about.c:45
+#: Output/OSS/configure.c:308 Output/disk_writer/disk_writer.c:145
+#: Output/disk_writer/disk_writer.c:438 Output/esd/about.c:44
+#: Output/esd/configure.c:208 Output/solaris/about.c:24
+#: Output/solaris/configure.c:266 Output/sun/about.c:36
+#: Output/sun/configure.c:557 Output/alsa/about.c:46
+#: Output/alsa/configure.c:437 Visualization/blur_scope/config.c:101
+#: Visualization/opengl_spectrum/configure.c:73 libxmms/dirbrowser.c:342
+#: xmms/equalizer.c:1371 xmms/equalizer.c:1377 xmms/equalizer.c:1441
+#: xmms/equalizer.c:1450 xmms/equalizer.c:1701 xmms/input.c:254
+#: xmms/main.c:3529 xmms/playlistwin.c:733 xmms/playlistwin.c:844
+#: xmms/playlistwin.c:1428 xmms/playlistwin.c:1481 xmms/prefswin.c:310
+#: xmms/prefswin.c:1158 xmms/util.c:582
+msgid "OK"
+msgstr ""
+
+#: Effect/echo_plugin/gui.c:74
+msgid "Configure Echo"
+msgstr "Ffurfweddu Echo"
+
+#: Effect/echo_plugin/gui.c:87
+msgid "Delay: (ms)"
+msgstr "Oediad: (ms)"
+
+#: Effect/echo_plugin/gui.c:92
+msgid "Feedback: (%)"
+msgstr "Adborth: (%)"
+
+#: Effect/echo_plugin/gui.c:97
+msgid "Volume: (%)"
+msgstr "Sain:(%)"
+
+#: Effect/echo_plugin/gui.c:120
+msgid "Surround echo"
+msgstr "Adlais o amgylch"
+
+#: Effect/echo_plugin/gui.c:143 Effect/stereo_plugin/stereo.c:129
+#: General/ir/configure.c:212 General/ir/configure.c:383
+#: General/joystick/configure.c:279 General/song_change/song_change.c:346
+#: Input/cdaudio/cddb.c:778 Input/cdaudio/configure.c:682
+#: Input/mikmod/plugin.c:623 Input/mpg123/configure.c:592
+#: Input/mpg123/fileinfo.c:442 Input/vorbis/configure.c:455
+#: Input/vorbis/fileinfo.c:714 Output/OSS/configure.c:314
+#: Output/disk_writer/disk_writer.c:445 Output/esd/configure.c:215
+#: Output/solaris/configure.c:278 Output/sun/configure.c:565
+#: Output/alsa/configure.c:443 Visualization/blur_scope/config.c:109
+#: Visualization/opengl_spectrum/configure.c:80 libxmms/dirbrowser.c:351
+#: xmms/equalizer.c:1371 xmms/equalizer.c:1377 xmms/equalizer.c:1441
+#: xmms/equalizer.c:1450 xmms/equalizer.c:1705 xmms/main.c:1519
+#: xmms/playlistwin.c:791 xmms/playlistwin.c:1482 xmms/prefswin.c:1162
+#: xmms/util.c:602
+msgid "Cancel"
+msgstr "Dileu"
+
+#: Effect/echo_plugin/gui.c:150 Effect/stereo_plugin/stereo.c:136
+#: General/joystick/configure.c:285 Output/solaris/configure.c:273
+#: xmms/equalizer.c:1711 xmms/prefswin.c:1166
+msgid "Apply"
+msgstr "Gosod"
+
+#: Effect/stereo_plugin/stereo.c:26
+msgid ""
+"Extra Stereo Plugin\n"
+"\n"
+"By Johan Levin 1999."
+msgstr ""
+"Extra Stereo Plugin\n"
+"\n"
+"Gan Johan Levin 1999."
+
+#: Effect/stereo_plugin/stereo.c:35
+#, c-format
+msgid "Extra Stereo Plugin %s"
+msgstr "Ategyn Extra Stereo %s"
+
+#: Effect/stereo_plugin/stereo.c:55
+msgid "About Extra Stereo Plugin"
+msgstr "Ynghylch Ategyn Extra Stereo"
+
+#: Effect/stereo_plugin/stereo.c:97
+msgid "Configure Extra Stereo"
+msgstr "Ffurfweddu Extra Stereo"
+
+#: Effect/stereo_plugin/stereo.c:99
+msgid "Effect intensity:"
+msgstr "Dwyster yr effaith:"
+
+#: Effect/voice/about.c:31
+msgid "About Voice Removal Plugin"
+msgstr "Ynghylch Ategyn Voice Removal"
+
+#: Effect/voice/about.c:32
+msgid ""
+"XMMS Voice Removal Plugin\n"
+"\n"
+"A simple voice removal plugin by Anders Carlsson <andersca@gnu.org>"
+msgstr ""
+"Ategyn XMMS Voice Removal\n"
+"\n"
+"Ategyn tynnu Llais syml gan Anders Carlssin <andersca@gnu.org>"
+
+#: Effect/voice/voice.c:23
+#, c-format
+msgid "Voice removal plugin %s"
+msgstr "Ategyn tynnu'r llais %s"
+
+#: General/ir/about.c:27 xmms/prefswin.c:775 xmms/prefswin.c:808
+#: xmms/prefswin.c:850 xmms/prefswin.c:895 xmms/prefswin.c:945
+msgid "About"
+msgstr "Ynghylch"
+
+#: General/ir/about.c:35
+msgid "XMMS IRman Plugin:"
+msgstr "Ategyn XMMS IRman:"
+
+#: General/ir/about.c:41
+msgid ""
+"Created by Charles Sielski <stray@teklabs.net>\n"
+"Control XMMS with your TV / VCR / Stereo remote \n"
+"IRman page - http://www.evation.com/irman/"
+msgstr ""
+"Crewyd gan  Charles Sielski <stray@teklabs.net>\n"
+"Rheoli  XMMS gyda eich rheolydd pell ar gyfer teledu, peiriant fideo a sain\n"
+"IRman page - http://www.evation.com/irman/"
+
+#: General/ir/configure.c:27 xmms/util.c:885
+msgid "Play"
+msgstr "Chwarae"
+
+#: General/ir/configure.c:27 General/joystick/configure.c:26
+msgid "Stop"
+msgstr "Atal"
+
+#: General/ir/configure.c:27
+msgid "Pause"
+msgstr "Oedi"
+
+#: General/ir/configure.c:28
+msgid "Prev"
+msgstr "Cynt"
+
+#: General/ir/configure.c:28
+msgid "Next"
+msgstr "Nesaf"
+
+#: General/ir/configure.c:28
+msgid "Vol +"
+msgstr "Sain +"
+
+#: General/ir/configure.c:29
+msgid "Seek -5s"
+msgstr "Chwilio -5s"
+
+#: General/ir/configure.c:29
+msgid "Seek +5s"
+msgstr "Chwilio +5s"
+
+#: General/ir/configure.c:29
+msgid "Vol -"
+msgstr "Sain -"
+
+#: General/ir/configure.c:30 General/joystick/configure.c:28
+msgid "Shuffle"
+msgstr "Cymysgu"
+
+#: General/ir/configure.c:30 General/joystick/configure.c:29
+msgid "Repeat"
+msgstr "Ailadrodd"
+
+#: General/ir/configure.c:30 xmms/prefswin.c:1070
+msgid "Playlist"
+msgstr "Rhestr chwarae"
+
+#: General/ir/configure.c:31
+msgid "+100"
+msgstr "+100"
+
+#: General/ir/configure.c:35
+msgid "0"
+msgstr "0"
+
+#: General/ir/configure.c:35
+msgid "1"
+msgstr "1"
+
+#: General/ir/configure.c:35
+msgid "2"
+msgstr "2"
+
+#: General/ir/configure.c:35
+msgid "3"
+msgstr "3"
+
+#: General/ir/configure.c:35
+msgid "4"
+msgstr "4"
+
+#: General/ir/configure.c:36
+msgid "5"
+msgstr "5"
+
+#: General/ir/configure.c:36
+msgid "6"
+msgstr "6"
+
+#: General/ir/configure.c:36
+msgid "7"
+msgstr "7"
+
+#: General/ir/configure.c:36
+msgid "8"
+msgstr "8"
+
+#: General/ir/configure.c:36
+msgid "9"
+msgstr "9"
+
+#: General/ir/configure.c:146
+#, c-format
+msgid "`%s' Button Setup"
+msgstr "Botwm Gosod '%s'"
+
+#: General/ir/configure.c:156
+msgid "Enter code or use remote"
+msgstr "Rhowch y cod neu ddefnyddio'r pell"
+
+#: General/ir/configure.c:255
+msgid "XMMS IRman Configuration"
+msgstr "Ffurfweddiad XMMS IRman"
+
+#: General/ir/configure.c:269 Input/cdaudio/configure.c:377
+#: Input/cdaudio/configure.c:385
+msgid "Device:"
+msgstr "Dyfais:"
+
+#: General/ir/configure.c:278
+msgid "Device: "
+msgstr "Dyfais: "
+
+#: General/ir/configure.c:288
+msgid "IR code length: "
+msgstr "Hyd cod IR:"
+
+#: General/ir/configure.c:301
+msgid "Controls:"
+msgstr "Rheolyddion:"
+
+#: General/ir/configure.c:339
+msgid "Playlists:"
+msgstr "Rhestrau chwarae:"
+
+#: General/ir/configure.c:368
+msgid "General"
+msgstr "Cyffredinol"
+
+#: General/ir/ir.c:50
+#, c-format
+msgid "IRman Control %s"
+msgstr "Rheolydd IRman %s"
+
+#: General/ir/ir.c:189
+#, c-format
+msgid "unable to open port `%s' (%s)\n"
+msgstr "methu agor porth '%s (%s)\n"
+
+#: General/joystick/about.c:28
+msgid "About Joystick Driver"
+msgstr "Ynghylch Gyrrwr Ffon Rheoli"
+
+#: General/joystick/about.c:29
+msgid ""
+"Joystick Control Plugin\n"
+"\n"
+"Created by Tim Ferguson <timf@dgs.monash.edu.au>.\n"
+"http://www.dgs.monash.edu.au/~timf/\n"
+"\n"
+"5+ button support by Justin Wake <justin@globalsoft.com.au>\n"
+"\n"
+"Control XMMS with one or two joysticks.\n"
+msgstr ""
+"Ategyn Ffon Rheoli\n"
+"\n"
+"Crewyd gan Tim Ferguson<timf@dgs.monash.edu.au>\n"
+"http://www.dgs.monash.edu.au/~timf/\n"
+"\n"
+"Cynhaliaeth 5+botwm gan Justin Wake<justin@globalsoft.com.au>\n"
+"\n"
+"Rheoli XMMS gyda un neu ddau ffon hud.\n"
+
+#: General/joystick/configure.c:26
+msgid "Play/Pause"
+msgstr "Chwarae/Oedi"
+
+#: General/joystick/configure.c:26
+msgid "Next Track"
+msgstr "Trac Nesaf"
+
+#: General/joystick/configure.c:26
+msgid "Prev Track"
+msgstr "Trac Cynt"
+
+#: General/joystick/configure.c:27
+msgid "Fwd 5 tracks"
+msgstr "Ymlaen 5 trac"
+
+#: General/joystick/configure.c:27
+msgid "Back 5 tracks"
+msgstr "Nôl 5 trac"
+
+#: General/joystick/configure.c:27
+msgid "Volume Up"
+msgstr "Codi'r Sain"
+
+#: General/joystick/configure.c:28
+msgid "Volume Down"
+msgstr "Gostwng y Sain"
+
+#: General/joystick/configure.c:28
+msgid "Forward 5s"
+msgstr "Ymlaen 5e"
+
+#: General/joystick/configure.c:28
+msgid "Rewind 5s"
+msgstr "Nôl 5s"
+
+#: General/joystick/configure.c:29
+msgid "Alternate"
+msgstr "Bob yn ail"
+
+#: General/joystick/configure.c:29
+msgid "Nothing"
+msgstr "Dim"
+
+#: General/joystick/configure.c:94
+msgid "XMMS Joystick Configuration"
+msgstr "Ffurfweddiad Ffon Rheoli  XMMS"
+
+#: General/joystick/configure.c:118
+msgid "Devices:"
+msgstr "Dyfeisiau:"
+
+#: General/joystick/configure.c:128
+msgid "Joystick 1:"
+msgstr "Ffon Rheoli 1:"
+
+#: General/joystick/configure.c:140
+msgid "Joystick 2:"
+msgstr "Ffon Rheoli 2:"
+
+#: General/joystick/configure.c:152
+msgid "Sensitivity (10-32767):"
+msgstr "Sensitifrwydd (10-32767):"
+
+#: General/joystick/configure.c:183
+msgid "Directionals:"
+msgstr "Cyfeiriadon:"
+
+#: General/joystick/configure.c:208
+msgid "Directionals (alternate):"
+msgstr "Cyfeiriadon: (bob yn ail):"
+
+#: General/joystick/configure.c:233
+msgid "Buttons:"
+msgstr "Botymau:"
+
+#: General/joystick/configure.c:244
+#, c-format
+msgid "Button %d:"
+msgstr "Botwm %d:"
+
+#: General/joystick/joy.c:60
+#, c-format
+msgid "Joystick Control %s"
+msgstr "Rheoli Ffon Rheoli %s"
+
+#: General/joystick/joy.c:159
+msgid "Joystick Control"
+msgstr "Rheoli Ffon Rheoli"
+
+#: General/joystick/joy.c:220 General/joystick/joy.c:270
+msgid ""
+"\n"
+"Joystick Control: error reading"
+msgstr ""
+"\n"
+"Ffon Rheoli: gwall wrth ddarllen"
+
+#: General/song_change/song_change.c:48
+#, c-format
+msgid "Song Change %s"
+msgstr "Newid Cân %s"
+
+#: General/song_change/song_change.c:134 xmms/prefswin.c:301
+msgid "Warning"
+msgstr "Rhybudd"
+
+#: General/song_change/song_change.c:145
+msgid ""
+"Filename and song title tags should be inside double quotes (\").  Not doing "
+"so might be a security risk.  Continue anyway?"
+msgstr ""
+"Dylai enw ffeil a thagiau teitl cân fod o fewn dyfynodau dwb (\"). Gall "
+"peidio gwneud achosi risg diogelwch. Parhau?"
+
+#: General/song_change/song_change.c:158 Input/mpg123/fileinfo.c:283
+msgid "Yes"
+msgstr "Iawn"
+
+#: General/song_change/song_change.c:168 Input/mpg123/fileinfo.c:282
+msgid "No"
+msgstr "Na"
+
+#: General/song_change/song_change.c:231
+msgid "Song Change Configuration"
+msgstr "Ffurfweddu'r Newid Cân"
+
+#: General/song_change/song_change.c:238
+#, fuzzy
+msgid "Commands"
+msgstr "Gorchymyn:"
+
+#: General/song_change/song_change.c:245
+#, fuzzy
+msgid "Shell-command to run when xmms starts a new song."
+msgstr ""
+"Gorchymyn cragen.i'w redeg pan fo xmms wedi cyrraedd diwedd rhestr chwarae."
+
+#: General/song_change/song_change.c:254 General/song_change/song_change.c:277
+#: General/song_change/song_change.c:300
+msgid "Command:"
+msgstr "Gorchymyn:"
+
+#: General/song_change/song_change.c:268
+#, fuzzy
+msgid "Shell-command to run toward the end of a song."
+msgstr ""
+"Gorchymyn cragen.i'w redeg pan fo xmms wedi cyrraedd diwedd rhestr chwarae."
+
+#: General/song_change/song_change.c:290
+msgid "Shell-command to run when xmms reaches the end of the playlist."
+msgstr ""
+"Gorchymyn cragen.i'w redeg pan fo xmms wedi cyrraedd diwedd rhestr chwarae."
+
+#: General/song_change/song_change.c:313
+#, c-format
+msgid ""
+"You can use the following format strings which will be substituted before "
+"calling the command (not all are useful for the end-of-playlist command).\n"
+"\n"
+"%%F: Frequency (in hertz)\n"
+"%%c: Number of channels\n"
+"%%f: filename (full path)\n"
+"%%l: length (in milliseconds)\n"
+"%%n or %%s: Song name\n"
+"%%r: Rate (in bits per second)\n"
+"%%t: Playlist position (%%02d)\n"
+"%%p: Currently playing (1 or 0)"
+msgstr ""
+
+#: Input/cdaudio/cdaudio.c:162
+#, c-format
+msgid "CD Audio Player %s"
+msgstr "Chwaraeydd CD Sain %s"
+
+#: Input/cdaudio/cdaudio.c:567 Input/cdaudio/cdaudio.c:576
+#, c-format
+msgid "CD Audio Track %02u"
+msgstr "Trac CD Sain %02u"
+
+#: Input/cdaudio/cddb.c:722 Output/esd/configure.c:161
+msgid "Server"
+msgstr "Gwasanaethwr"
+
+#: Input/cdaudio/cddb.c:723
+msgid "Latitude"
+msgstr "Lledred"
+
+#: Input/cdaudio/cddb.c:724
+msgid "Longitude"
+msgstr "Hydred"
+
+#: Input/cdaudio/cddb.c:725
+msgid "Description"
+msgstr "Disgrifiad"
+
+#: Input/cdaudio/cddb.c:732 Input/cdaudio/cddb.c:738 Input/cdaudio/cddb.c:748
+msgid "CDDB"
+msgstr "CDDB"
+
+#: Input/cdaudio/cddb.c:733
+msgid "Unable to connect to CDDB-server"
+msgstr "Methu cysylltu â gwasanaethwr CDDB"
+
+#: Input/cdaudio/cddb.c:739
+msgid ""
+"Can't get server list from the current CDDB-server\n"
+"Unsupported CDDB protocol level"
+msgstr ""
+"Methu derbyn rhestr gan y gwasanaethwr CDDB presennol\n"
+"Lefel protocol CBBD heb ei gynnal"
+
+#: Input/cdaudio/cddb.c:749
+msgid "No site information available"
+msgstr "Dim gwybodaeth safle ar gael"
+
+#: Input/cdaudio/cddb.c:757
+msgid "CDDB servers"
+msgstr "Gwasanaethwyr CDDB"
+
+#: Input/cdaudio/cddb.c:877 xmms/about.c:348 xmms/equalizer.c:1504
+#: xmms/equalizer.c:1508 xmms/input.c:431 xmms/main.c:1963 xmms/main.c:2346
+#: xmms/skinwin.c:86 xmms/util.c:873
+msgid "Close"
+msgstr "Cau"
+
+#: Input/cdaudio/cdinfo.c:146 Input/cdaudio/cdinfo.c:147
+#: Input/cdaudio/cdinfo.c:148
+msgid "(unknown)"
+msgstr "(anhysbys)"
+
+#: Input/cdaudio/configure.c:187 Input/cdaudio/configure.c:202
+#: Input/cdaudio/configure.c:536
+#, c-format
+msgid "Drive %d"
+msgstr "Gyrrwr %d"
+
+#: Input/cdaudio/configure.c:249
+#, c-format
+msgid ""
+"Failed to open device %s\n"
+"Error: %s\n"
+"\n"
+msgstr ""
+"Meth agor dyfais %s\n"
+"Gwall: %s\n"
+"\n"
+
+#: Input/cdaudio/configure.c:257
+msgid ""
+"Failed to read \"Table of Contents\"\n"
+"Maybe no disc in the drive?\n"
+"\n"
+msgstr ""
+"Methu darllen \"Tabl Cynnwys\"\n"
+"Efallai bod dim disg yn y gyrrwr?\n"
+"\n"
+
+#: Input/cdaudio/configure.c:262
+#, c-format
+msgid ""
+"Device %s OK.\n"
+"Disc has %d tracks"
+msgstr ""
+"Dyfais %s Iawn.\n"
+"%d trac ar y ddisg"
+
+#: Input/cdaudio/configure.c:271
+#, c-format
+msgid " (%d data tracks)"
+msgstr " (%d trac data)"
+
+#: Input/cdaudio/configure.c:273
+#, c-format
+msgid ""
+"\n"
+"Total length: %d:%.2d\n"
+msgstr ""
+"\n"
+"Cyfanswm hyd: %d:%.2d\n"
+
+#: Input/cdaudio/configure.c:279
+msgid "Digital audio extraction not tested as the disc has no audio tracks\n"
+msgstr "Heb brofi tynnu sain ddigidol - does gan y ddisg ddim traciau sain\n"
+
+#: Input/cdaudio/configure.c:296
+msgid ""
+"Digital audio extraction test: OK\n"
+"\n"
+msgstr ""
+"Prawf tynnu sain digidol: Iawn\n"
+"\n"
+
+#: Input/cdaudio/configure.c:300
+#, c-format
+msgid ""
+"Digital audio extraction test failed: %s\n"
+"\n"
+msgstr ""
+"Methodd prawf tynnu sain digidol: %s\n"
+"\n"
+
+#: Input/cdaudio/configure.c:313
+#, c-format
+msgid ""
+"Failed to check directory %s\n"
+"Error: %s"
+msgstr ""
+"Methu gwirio'r cyfeiradur %s\n"
+"Gwall: %s"
+
+#: Input/cdaudio/configure.c:321
+#, c-format
+msgid "Error: %s exists, but is not a directory"
+msgstr "Gwall: %s yn bodoli ond nid yw'n gyfeiriadur"
+
+#: Input/cdaudio/configure.c:326
+#, c-format
+msgid "Directory %s OK."
+msgstr "Cyfeiriadur. %s Iawn"
+
+#: Input/cdaudio/configure.c:330
+#, c-format
+msgid "Directory %s exists, but you do not have permission to access it."
+msgstr ""
+
+#: Input/cdaudio/configure.c:394
+msgid "Directory:"
+msgstr "Cyfeiriadur:"
+
+#: Input/cdaudio/configure.c:403
+msgid "Play mode:"
+msgstr "Modd chwarae:"
+
+#: Input/cdaudio/configure.c:409
+msgid "Analog"
+msgstr "Analog"
+
+#: Input/cdaudio/configure.c:412
+msgid "Digital audio extraction"
+msgstr "Tynnu awdio digidôl"
+
+#: Input/cdaudio/configure.c:422
+msgid "Volume control:"
+msgstr "Rheolwr sain"
+
+#: Input/cdaudio/configure.c:428
+msgid "No mixer"
+msgstr "Dim cymysgwr"
+
+#: Input/cdaudio/configure.c:431
+msgid "CD-ROM drive"
+msgstr "Gyrrwr CD-ROM"
+
+#: Input/cdaudio/configure.c:434
+msgid "OSS mixer"
+msgstr "Cymysgwr OSS"
+
+#: Input/cdaudio/configure.c:458
+msgid "Check drive..."
+msgstr "Gwirio'r gyrrwr..."
+
+#: Input/cdaudio/configure.c:464
+msgid "Remove drive"
+msgstr "Tynnu gyrrwr"
+
+#: Input/cdaudio/configure.c:512
+msgid "CD Audio Player Configuration"
+msgstr "Ffurfweddiad Chwaraeydd CD Sain"
+
+#: Input/cdaudio/configure.c:548
+msgid "Add drive"
+msgstr "Ychwaneg gyrrwr"
+
+#: Input/cdaudio/configure.c:556
+msgid "Device"
+msgstr "Dyfais"
+
+#: Input/cdaudio/configure.c:566
+msgid "CDDB:"
+msgstr "CDDB:"
+
+#: Input/cdaudio/configure.c:577
+msgid "Use CDDB"
+msgstr "Defnyddiwch CDDB"
+
+#: Input/cdaudio/configure.c:581
+msgid "Get server list"
+msgstr "Estyn rhestr gwasanaethwr"
+
+#: Input/cdaudio/configure.c:583
+msgid "Show network window"
+msgstr "Dangos ffenestr rhwydwaith"
+
+#: Input/cdaudio/configure.c:593
+msgid "CDDB server:"
+msgstr "Gwasanaethwr CDDB:"
+
+#: Input/cdaudio/configure.c:608
+msgid "CD Index:"
+msgstr "Mynegai CD:"
+
+#: Input/cdaudio/configure.c:615
+msgid "Use CD Index"
+msgstr "Defnyddiwch Fynegai'r CD"
+
+#: Input/cdaudio/configure.c:622
+msgid "CD Index server:"
+msgstr "Gwasanaethwr Mynegai CD:"
+
+#: Input/cdaudio/configure.c:637
+msgid "Track names:"
+msgstr "Enwau'r Traciau:"
+
+#: Input/cdaudio/configure.c:643 Input/mpg123/configure.c:560
+#: Input/vorbis/configure.c:371
+msgid "Override generic titles"
+msgstr "Diystyru'r teitlau cyffredinol"
+
+#: Input/cdaudio/configure.c:656
+msgid "Name format:"
+msgstr "Fformat enw:"
+
+#: Input/cdaudio/configure.c:666
+msgid "CD Info"
+msgstr "Gwybodaeth am y CD"
+
+#: Input/mikmod/plugin.c:91
+msgid "About mikmod plugin"
+msgstr "Ynghylch ategyn mikmod"
+
+#: Input/mikmod/plugin.c:115
+msgid ""
+"Mikmod Plugin\n"
+"http://www.multimania.com/miodrag/mikmod/\n"
+"Ported to xmms by J. Nick Koston"
+msgstr ""
+"Mikmod Plugin\n"
+"http://www.multimania.com/miodrag/mikmod/\n"
+"Troswyd i xmms gan J. Nick Koston"
+
+#: Input/mikmod/plugin.c:184
+#, c-format
+msgid "MikMod Player %s"
+msgstr "Chwaraewr MikMod %s"
+
+#: Input/mikmod/plugin.c:373
+msgid "Couldn't load mod"
+msgstr "Methu llwytho mod"
+
+#: Input/mikmod/plugin.c:436
+msgid "MikMod Configuration"
+msgstr "Ffurfweddiad Mik Mod"
+
+#: Input/mikmod/plugin.c:460 Input/mpg123/configure.c:262
+msgid "Resolution:"
+msgstr "Cydraniad:"
+
+#: Input/mikmod/plugin.c:471 Input/mpg123/configure.c:269
+msgid "16 bit"
+msgstr "16 did"
+
+#: Input/mikmod/plugin.c:479 Input/mpg123/configure.c:274
+msgid "8 bit"
+msgstr "8 did"
+
+#: Input/mikmod/plugin.c:487 Input/mpg123/configure.c:280
+msgid "Channels:"
+msgstr "Sianeli:"
+
+#: Input/mikmod/plugin.c:498 Input/mpg123/fileinfo.c:213
+msgid "Stereo"
+msgstr "Stereo"
+
+#: Input/mikmod/plugin.c:506 Input/mpg123/configure.c:293
+msgid "Mono"
+msgstr "Mono"
+
+#: Input/mikmod/plugin.c:514
+msgid "Downsample:"
+msgstr "Sampl i lawr:"
+
+#: Input/mikmod/plugin.c:525 Input/mpg123/configure.c:306
+msgid "1:1 (44 kHz)"
+msgstr "1:1 (44 kHz)"
+
+#: Input/mikmod/plugin.c:534 Input/mpg123/configure.c:311
+msgid "1:2 (22 kHz)"
+msgstr "1:2 (22 kHz)"
+
+#: Input/mikmod/plugin.c:542 Input/mpg123/configure.c:316
+msgid "1:4 (11 kHz)"
+msgstr "1:4 (11 kHz)"
+
+#: Input/mikmod/plugin.c:554
+msgid "Look for hidden patterns in modules "
+msgstr "Edrych am batrymau wedi eu cuddio yn y modiwlau"
+
+#: Input/mikmod/plugin.c:561
+msgid "Use surround mixing"
+msgstr "Defnyddio cymysgu amgylchynu"
+
+#: Input/mikmod/plugin.c:568
+msgid "Force volume fade at the end of the module"
+msgstr "Gorfodi distewi sain ar ddiwedd y modiwl"
+
+#: Input/mikmod/plugin.c:575
+msgid "Use interpolation"
+msgstr "Defnyddiwch ryngosodiad"
+
+#: Input/mikmod/plugin.c:582
+msgid "Always use filename as title"
+msgstr ""
+
+#: Input/mikmod/plugin.c:589
+msgid "Default panning separation"
+msgstr "Gwahanu panio rhagosodedig:"
+
+#: Input/mikmod/plugin.c:601
+msgid "Quality"
+msgstr "Ansawdd"
+
+#: Input/mikmod/plugin.c:606 Input/mpg123/configure.c:367
+#: xmms/equalizer.c:1653 xmms/equalizer.c:1689 xmms/prefswin.c:960
+#: xmms/prefswin.c:1055 xmms/prefswin.c:1062
+msgid "Options"
+msgstr "Dewisiadau"
+
+#: Input/mpg123/configure.c:190
+msgid "Select the directory where you want to store the MPEG streams:"
+msgstr "Dewis y cyfeiriadur lle rydych am gadw llif MPEG:"
+
+#: Input/mpg123/configure.c:245
+msgid "MPG123 Configuration"
+msgstr "Ffurfweddiad MPG123"
+
+#: Input/mpg123/configure.c:287
+msgid "Stereo (if available)"
+msgstr "Stereo (os ar gael)"
+
+#: Input/mpg123/configure.c:299
+msgid "Down sample:"
+msgstr "Sampl i lawr:"
+
+#: Input/mpg123/configure.c:327
+msgid "Decoder:"
+msgstr "Datgodiwr"
+
+#: Input/mpg123/configure.c:334
+msgid "Automatic detection"
+msgstr "Canfod  Awtomatig"
+
+#: Input/mpg123/configure.c:338
+msgid "3DNow! optimized decoder"
+msgstr "Datgodiwr optimeiddiedig 3DNow!"
+
+#: Input/mpg123/configure.c:342
+msgid "MMX optimized decoder"
+msgstr "Datgodiwr optimeiddiedig 3DNow!"
+
+#: Input/mpg123/configure.c:346
+msgid "FPU decoder"
+msgstr "Datgodiwr FPU"
+
+#: Input/mpg123/configure.c:375
+msgid "Content"
+msgstr "Cynnwys"
+
+#: Input/mpg123/configure.c:379
+msgid "Extension"
+msgstr "Estyniad"
+
+#: Input/mpg123/configure.c:383
+msgid "Extension and content"
+msgstr "Estyniad a chynnwys"
+
+#: Input/mpg123/configure.c:403
+msgid "Decoder"
+msgstr "Datgodiwr"
+
+#: Input/mpg123/configure.c:407 Input/vorbis/configure.c:238
+#: Output/OSS/configure.c:264 Output/esd/configure.c:163
+#: Output/solaris/configure.c:231 Output/sun/configure.c:255
+msgid "Buffering:"
+msgstr "Byffyru:"
+
+#: Input/mpg123/configure.c:418 Input/vorbis/configure.c:248
+msgid "Buffer size (kb):"
+msgstr "Maint y byffer (kb):"
+
+#: Input/mpg123/configure.c:428 Input/vorbis/configure.c:257
+#: Output/OSS/configure.c:285 Output/esd/configure.c:190
+#: Output/solaris/configure.c:252 Output/sun/configure.c:286
+msgid "Pre-buffer (percent):"
+msgstr "Cyn fyffer (y cant):"
+
+#: Input/mpg123/configure.c:438 Input/vorbis/configure.c:267
+msgid "Proxy:"
+msgstr "Dirprwy:"
+
+#: Input/mpg123/configure.c:446 Input/vorbis/configure.c:275
+msgid "Use proxy"
+msgstr "Defnyddiwch ddirprwy"
+
+#: Input/mpg123/configure.c:455 Input/vorbis/configure.c:284
+#: Output/esd/configure.c:105 Output/esd/configure.c:136
+msgid "Host:"
+msgstr "Gwesteiwr:"
+
+#: Input/mpg123/configure.c:462 Input/vorbis/configure.c:291
+#: Output/esd/configure.c:145
+msgid "Port:"
+msgstr "Porth:"
+
+#: Input/mpg123/configure.c:472 Input/vorbis/configure.c:301
+msgid "Use authentication"
+msgstr "Defnyddiwch ddilysu"
+
+#: Input/mpg123/configure.c:482 Input/vorbis/configure.c:311
+msgid "Username:"
+msgstr "Enw Defnyddiwr:"
+
+#: Input/mpg123/configure.c:490 Input/vorbis/configure.c:319
+msgid "Password:"
+msgstr "Cyfrinair:"
+
+#: Input/mpg123/configure.c:503 Input/vorbis/configure.c:332
+msgid "Save stream to disk:"
+msgstr "Cadw'r llif i ddisg:"
+
+#: Input/mpg123/configure.c:511 Input/vorbis/configure.c:340
+msgid "Save stream to disk"
+msgstr "Cadw'r llif i ddisg"
+
+#: Input/mpg123/configure.c:520 Input/vorbis/configure.c:349
+#: Output/disk_writer/disk_writer.c:403
+msgid "Path:"
+msgstr "Llwybr:"
+
+#: Input/mpg123/configure.c:527 Input/vorbis/configure.c:356
+#: Output/disk_writer/disk_writer.c:414 xmms/prefswin.c:1080
+#: xmms/prefswin.c:1100
+msgid "Browse"
+msgstr "Pori"
+
+#: Input/mpg123/configure.c:531
+msgid "SHOUT/Icecast:"
+msgstr "SHOUT/Icecast:"
+
+#: Input/mpg123/configure.c:538
+msgid "Enable SHOUT/Icecast title streaming"
+msgstr "Galluogi llifo teitl SSHOUT/Icecast"
+
+#: Input/mpg123/configure.c:542
+msgid "Enable Icecast Metadata UDP Channel"
+msgstr "Galluogi Sianel Icecast Metadata UDP"
+
+#: Input/mpg123/configure.c:546 Input/vorbis/configure.c:360
+msgid "Streaming"
+msgstr "Llifo"
+
+#: Input/mpg123/configure.c:548
+msgid "ID3 Tags:"
+msgstr "Tagiau ID3:"
+
+#: Input/mpg123/configure.c:555
+msgid "Disable ID3V2 tags"
+msgstr "Analluogi tagiau ID3V2"
+
+#: Input/mpg123/configure.c:569
+msgid "ID3 format:"
+msgstr "Fformat ID3:"
+
+#: Input/mpg123/configure.c:579 Input/vorbis/configure.c:391
+#: xmms/prefswin.c:1111 xmms/prefswin.c:1146
+msgid "Title"
+msgstr "Teitl"
+
+#: Input/mpg123/fileinfo.c:126
+#, c-format
+msgid ""
+"%s\n"
+"Unable to write to file: %s"
+msgstr ""
+"%s\n"
+"Methu ysgrifennu i ffeil: %s"
+
+#: Input/mpg123/fileinfo.c:127 Input/mpg123/fileinfo.c:133
+msgid "Couldn't write tag!"
+msgstr "Methu ysgrifennu'r tag!"
+
+#: Input/mpg123/fileinfo.c:132 Input/mpg123/fileinfo.c:187
+#, c-format
+msgid ""
+"%s\n"
+"Unable to open file: %s"
+msgstr ""
+"%s\n"
+"Methu agor ffeil '%s"
+
+#: Input/mpg123/fileinfo.c:137 Input/mpg123/fileinfo.c:192
+msgid "File Info"
+msgstr "Gwybodaeth Ffeil"
+
+#: Input/mpg123/fileinfo.c:177
+#, c-format
+msgid ""
+"%s\n"
+"Unable to truncate file: %s"
+msgstr ""
+"%s\n"
+"Meu tocio ffeil: %s"
+
+#: Input/mpg123/fileinfo.c:179 Input/mpg123/fileinfo.c:188
+msgid "Couldn't remove tag!"
+msgstr "Methu tynnu'r tag!"
+
+#: Input/mpg123/fileinfo.c:183
+msgid "No tag to remove!"
+msgstr "Dim tagiau i'w tynnu!"
+
+#: Input/mpg123/fileinfo.c:213
+msgid "Joint stereo"
+msgstr "Stereo ar y cyd"
+
+#: Input/mpg123/fileinfo.c:214
+msgid "Dual channel"
+msgstr "Sianel ddeuol"
+
+#: Input/mpg123/fileinfo.c:214
+msgid "Single channel"
+msgstr "Sianel sengl"
+
+#: Input/mpg123/fileinfo.c:227 Input/mpg123/fileinfo.c:596
+#, c-format
+msgid "Bitrate: %d kb/s"
+msgstr "Didradd: %d kb/s"
+
+#: Input/mpg123/fileinfo.c:229 Input/mpg123/fileinfo.c:599
+#: Input/vorbis/fileinfo.c:853
+#, c-format
+msgid "Samplerate: %d Hz"
+msgstr "Graddfa samplo: %d Hz"
+
+#: Input/mpg123/fileinfo.c:278
+msgid "None"
+msgstr "Dim"
+
+#: Input/mpg123/fileinfo.c:279
+msgid "50/15 ms"
+msgstr "50/15 ms"
+
+#: Input/mpg123/fileinfo.c:281
+#, fuzzy
+msgid "CCITT J.17"
+msgstr "CCIT J.17"
+
+#: Input/mpg123/fileinfo.c:307 Input/vorbis/fileinfo.c:479 xmms/input.c:404
+msgid "Filename:"
+msgstr "Enw ffeil:"
+
+#: Input/mpg123/fileinfo.c:321
+msgid "ID3 Tag:"
+msgstr "Tag ID3"
+
+#: Input/mpg123/fileinfo.c:329 Input/vorbis/fileinfo.c:501
+msgid "Title:"
+msgstr "Teitl:"
+
+#: Input/mpg123/fileinfo.c:339 Input/vorbis/fileinfo.c:511
+msgid "Artist:"
+msgstr "Artist:"
+
+#: Input/mpg123/fileinfo.c:349 Input/vorbis/fileinfo.c:521
+msgid "Album:"
+msgstr "Albwm:"
+
+#: Input/mpg123/fileinfo.c:359 Input/vorbis/fileinfo.c:531
+msgid "Comment:"
+msgstr "Sylw:"
+
+#: Input/mpg123/fileinfo.c:369
+msgid "Year:"
+msgstr "Blwyddyn:"
+
+#: Input/mpg123/fileinfo.c:380 Input/vorbis/fileinfo.c:552
+msgid "Track number:"
+msgstr "Rhif y Trac:"
+
+#: Input/mpg123/fileinfo.c:391 Input/vorbis/fileinfo.c:563
+msgid "Genre:"
+msgstr "Math:"
+
+#: Input/mpg123/fileinfo.c:430 Input/vorbis/fileinfo.c:700
+msgid "Save"
+msgstr "Cadw"
+
+#: Input/mpg123/fileinfo.c:436
+msgid "Remove ID3"
+msgstr "Tynnu ID3"
+
+#: Input/mpg123/fileinfo.c:448
+msgid "MPEG Info:"
+msgstr "Gwybodaeth MPEG:"
+
+#: Input/mpg123/fileinfo.c:493 Input/vorbis/fileinfo.c:937 xmms/input.c:393
+#, c-format
+msgid "File Info - %s"
+msgstr "Gwybodaeth Ffeil - %s"
+
+#: Input/mpg123/fileinfo.c:586
+#, c-format
+msgid ""
+"Bitrate: Variable,\n"
+"avg. bitrate: %d kb/s"
+msgstr ""
+"Anrywiad Bitrate,\n"
+"avg. bitrate: %d kb/s"
+
+#: Input/mpg123/fileinfo.c:601
+#, c-format
+msgid ""
+"%s\n"
+"Error protection: %s\n"
+"Copyright: %s\n"
+"Original: %s\n"
+"Emphasis: %s"
+msgstr ""
+"%s\n"
+"Amddiffyniad gwall: %s\n"
+"Hawlfraint: %s\n"
+"Gwreiddiol: %s\n"
+"Pwyslais: %s"
+
+#: Input/mpg123/fileinfo.c:608
+#, c-format
+msgid ""
+"%d frames\n"
+"Filesize: %lu B"
+msgstr ""
+"%d ffrâm\n"
+"Maint Ffeil: %lu B"
+
+#: Input/mpg123/http.c:208 Input/vorbis/http.c:208
+#: Output/disk_writer/disk_writer.c:142
+msgid "Error"
+msgstr "Gwall"
+
+#: Input/mpg123/http.c:374 Input/mpg123/http.c:428 Input/vorbis/http.c:329
+#: Input/vorbis/http.c:382
+#, c-format
+msgid "CONNECTING TO %s:%d"
+msgstr "CYSYLLTU A %s:%d"
+
+#: Input/mpg123/http.c:389 Input/vorbis/http.c:344
+#, c-format
+msgid "Couldn't connect to host %s:%d"
+msgstr "Methu cysylltu â gwesteiwr %s:%d"
+
+#: Input/mpg123/http.c:395 Input/mpg123/http.c:413 Input/vorbis/http.c:351
+#: Input/vorbis/http.c:367
+#, c-format
+msgid "Couldn't look up host %s"
+msgstr "Methu chwilio am westeiwr %s"
+
+#: Input/mpg123/http.c:407 Input/vorbis/http.c:361
+#, c-format
+msgid "LOOKING UP %s"
+msgstr "CHWILIO %s"
+
+#: Input/mpg123/http.c:435 Input/mpg123/http.c:456 Input/vorbis/http.c:389
+#: Input/vorbis/http.c:410
+#, c-format
+msgid "Couldn't connect to host %s"
+msgstr "Methu cysylltu â gwesteiwr %s"
+
+#: Input/mpg123/http.c:514 Input/vorbis/http.c:454
+msgid "CONNECTED: WAITING FOR REPLY"
+msgstr "WEDI CYSYLLTU: AROS AM ATEB"
+
+#: Input/mpg123/http.c:555 Input/vorbis/http.c:495
+#, c-format
+msgid ""
+"Couldn't connect to host %s\n"
+"Server reported: %s"
+msgstr ""
+"Methu cysylltu â'r gwesteiwr %s\n"
+"Adroddod y gwasanaethwr: %s"
+
+#: Input/mpg123/http.c:686 Input/vorbis/http.c:616
+#, c-format
+msgid "PRE-BUFFERING: %dKB/%dKB"
+msgstr "RHAG-BYFFYRIO: %dKB/%dKB"
+
+#: Input/mpg123/mpg123.c:27 Input/vorbis/fileinfo.c:79
+msgid "Blues"
+msgstr "Y Felan"
+
+#: Input/mpg123/mpg123.c:27 Input/vorbis/fileinfo.c:79
+msgid "Classic Rock"
+msgstr "Roc Clasurol"
+
+#: Input/mpg123/mpg123.c:27 Input/vorbis/fileinfo.c:79
+msgid "Country"
+msgstr "Gwlad"
+
+#: Input/mpg123/mpg123.c:27 Input/vorbis/fileinfo.c:79
+msgid "Dance"
+msgstr "Dance"
+
+#: Input/mpg123/mpg123.c:28 Input/vorbis/fileinfo.c:80
+msgid "Disco"
+msgstr "Disgo"
+
+#: Input/mpg123/mpg123.c:28 Input/vorbis/fileinfo.c:80
+msgid "Funk"
+msgstr "Ffync"
+
+#: Input/mpg123/mpg123.c:28 Input/vorbis/fileinfo.c:80
+msgid "Grunge"
+msgstr "Grynge"
+
+#: Input/mpg123/mpg123.c:28 Input/vorbis/fileinfo.c:80
+msgid "Hip-Hop"
+msgstr "Hip-Hop"
+
+#: Input/mpg123/mpg123.c:29 Input/vorbis/fileinfo.c:81
+msgid "Jazz"
+msgstr "Jazz"
+
+#: Input/mpg123/mpg123.c:29 Input/vorbis/fileinfo.c:81
+msgid "Metal"
+msgstr "Metal"
+
+#: Input/mpg123/mpg123.c:29 Input/vorbis/fileinfo.c:81
+msgid "New Age"
+msgstr "New Age"
+
+#: Input/mpg123/mpg123.c:29 Input/vorbis/fileinfo.c:81
+msgid "Oldies"
+msgstr "Hen"
+
+#: Input/mpg123/mpg123.c:30 Input/vorbis/fileinfo.c:82
+msgid "Other"
+msgstr "Arall"
+
+#: Input/mpg123/mpg123.c:30 Input/vorbis/fileinfo.c:82
+msgid "Pop"
+msgstr "Pop"
+
+#: Input/mpg123/mpg123.c:30 Input/vorbis/fileinfo.c:82
+msgid "R&B"
+msgstr "R&B"
+
+#: Input/mpg123/mpg123.c:30 Input/vorbis/fileinfo.c:82
+msgid "Rap"
+msgstr "Rap"
+
+#: Input/mpg123/mpg123.c:30 Input/vorbis/fileinfo.c:82
+msgid "Reggae"
+msgstr "Reggae"
+
+#: Input/mpg123/mpg123.c:31 Input/vorbis/fileinfo.c:83
+msgid "Rock"
+msgstr "Roc"
+
+#: Input/mpg123/mpg123.c:31 Input/vorbis/fileinfo.c:83
+msgid "Techno"
+msgstr "Tecno"
+
+#: Input/mpg123/mpg123.c:31 Input/vorbis/fileinfo.c:83
+msgid "Industrial"
+msgstr "Industrial"
+
+#: Input/mpg123/mpg123.c:31 Input/vorbis/fileinfo.c:83
+msgid "Alternative"
+msgstr "Alternative"
+
+#: Input/mpg123/mpg123.c:32 Input/vorbis/fileinfo.c:84
+msgid "Ska"
+msgstr "Ska"
+
+#: Input/mpg123/mpg123.c:32 Input/vorbis/fileinfo.c:84
+msgid "Death Metal"
+msgstr "Death Metal"
+
+#: Input/mpg123/mpg123.c:32 Input/vorbis/fileinfo.c:84
+msgid "Pranks"
+msgstr "Pranks"
+
+#: Input/mpg123/mpg123.c:32 Input/vorbis/fileinfo.c:84
+msgid "Soundtrack"
+msgstr "Trac Sain"
+
+#: Input/mpg123/mpg123.c:33 Input/vorbis/fileinfo.c:85
+msgid "Euro-Techno"
+msgstr "Euro-Techno"
+
+#: Input/mpg123/mpg123.c:33 Input/vorbis/fileinfo.c:85
+msgid "Ambient"
+msgstr "Amgylchynol"
+
+#: Input/mpg123/mpg123.c:33 Input/vorbis/fileinfo.c:85
+msgid "Trip-Hop"
+msgstr "Trip-Hop"
+
+#: Input/mpg123/mpg123.c:33 Input/vorbis/fileinfo.c:85
+msgid "Vocal"
+msgstr "Lleisiol"
+
+#: Input/mpg123/mpg123.c:34 Input/vorbis/fileinfo.c:86
+msgid "Jazz+Funk"
+msgstr "Jazz+Funk"
+
+#: Input/mpg123/mpg123.c:34 Input/vorbis/fileinfo.c:86
+msgid "Fusion"
+msgstr "Fusion"
+
+#: Input/mpg123/mpg123.c:34 Input/vorbis/fileinfo.c:86
+msgid "Trance"
+msgstr "Trance"
+
+#: Input/mpg123/mpg123.c:34 Input/vorbis/fileinfo.c:86
+msgid "Classical"
+msgstr "Clasurôl"
+
+#: Input/mpg123/mpg123.c:35 Input/vorbis/fileinfo.c:87
+msgid "Instrumental"
+msgstr "Offerynnol"
+
+#: Input/mpg123/mpg123.c:35 Input/vorbis/fileinfo.c:87
+msgid "Acid"
+msgstr "Acid"
+
+#: Input/mpg123/mpg123.c:35 Input/vorbis/fileinfo.c:87
+msgid "House"
+msgstr "House"
+
+#: Input/mpg123/mpg123.c:35 Input/vorbis/fileinfo.c:87
+msgid "Game"
+msgstr "Gem"
+
+#: Input/mpg123/mpg123.c:36 Input/vorbis/fileinfo.c:88
+msgid "Sound Clip"
+msgstr "Clip Sain"
+
+#: Input/mpg123/mpg123.c:36 Input/vorbis/fileinfo.c:88
+msgid "Gospel"
+msgstr "Gospel"
+
+#: Input/mpg123/mpg123.c:36 Input/vorbis/fileinfo.c:88
+msgid "Noise"
+msgstr "Swn"
+
+#: Input/mpg123/mpg123.c:36 Input/vorbis/fileinfo.c:88
+msgid "AlternRock"
+msgstr "AlternRock"
+
+#: Input/mpg123/mpg123.c:37 Input/vorbis/fileinfo.c:89
+msgid "Bass"
+msgstr "Bas"
+
+#: Input/mpg123/mpg123.c:37 Input/vorbis/fileinfo.c:89
+msgid "Soul"
+msgstr "Soul"
+
+#: Input/mpg123/mpg123.c:37 Input/vorbis/fileinfo.c:89
+msgid "Punk"
+msgstr "Punk"
+
+#: Input/mpg123/mpg123.c:37 Input/vorbis/fileinfo.c:89
+msgid "Space"
+msgstr "Gofod"
+
+#: Input/mpg123/mpg123.c:38 Input/vorbis/fileinfo.c:90
+msgid "Meditative"
+msgstr "Meditative"
+
+#: Input/mpg123/mpg123.c:38 Input/vorbis/fileinfo.c:90
+msgid "Instrumental Pop"
+msgstr "Pop Offerynnol"
+
+#: Input/mpg123/mpg123.c:39 Input/vorbis/fileinfo.c:91
+msgid "Instrumental Rock"
+msgstr "Rock offerynnol"
+
+#: Input/mpg123/mpg123.c:39 Input/vorbis/fileinfo.c:91
+msgid "Ethnic"
+msgstr "Ethnig"
+
+#: Input/mpg123/mpg123.c:39 Input/vorbis/fileinfo.c:91
+msgid "Gothic"
+msgstr "Gothig"
+
+#: Input/mpg123/mpg123.c:40 Input/vorbis/fileinfo.c:92
+msgid "Darkwave"
+msgstr "Darkwave"
+
+#: Input/mpg123/mpg123.c:40 Input/vorbis/fileinfo.c:92
+msgid "Techno-Industrial"
+msgstr "Techno-Industrial"
+
+#: Input/mpg123/mpg123.c:40 Input/vorbis/fileinfo.c:92
+msgid "Electronic"
+msgstr "Electronig"
+
+#: Input/mpg123/mpg123.c:41 Input/vorbis/fileinfo.c:93
+msgid "Pop-Folk"
+msgstr "Pop-Folk"
+
+#: Input/mpg123/mpg123.c:41 Input/vorbis/fileinfo.c:93
+msgid "Eurodance"
+msgstr "Eurodance"
+
+#: Input/mpg123/mpg123.c:41 Input/vorbis/fileinfo.c:93
+msgid "Dream"
+msgstr "Dream"
+
+#: Input/mpg123/mpg123.c:42 Input/vorbis/fileinfo.c:94
+msgid "Southern Rock"
+msgstr "Southern Rock"
+
+#: Input/mpg123/mpg123.c:42 Input/vorbis/fileinfo.c:94
+msgid "Comedy"
+msgstr "Comedi"
+
+#: Input/mpg123/mpg123.c:42 Input/vorbis/fileinfo.c:94
+msgid "Cult"
+msgstr "Cult"
+
+#: Input/mpg123/mpg123.c:43 Input/vorbis/fileinfo.c:95
+msgid "Gangsta Rap"
+msgstr "Gangsta Rap"
+
+#: Input/mpg123/mpg123.c:43 Input/vorbis/fileinfo.c:95
+msgid "Top 40"
+msgstr "40 Uchaf"
+
+#: Input/mpg123/mpg123.c:43 Input/vorbis/fileinfo.c:95
+msgid "Christian Rap"
+msgstr "Rap Cristnogol"
+
+#: Input/mpg123/mpg123.c:44 Input/vorbis/fileinfo.c:96
+msgid "Pop/Funk"
+msgstr "Pop/Ffync"
+
+#: Input/mpg123/mpg123.c:44 Input/vorbis/fileinfo.c:96
+msgid "Jungle"
+msgstr "Jungle"
+
+#: Input/mpg123/mpg123.c:44 Input/vorbis/fileinfo.c:96
+msgid "Native American"
+msgstr "Native American"
+
+#: Input/mpg123/mpg123.c:45 Input/vorbis/fileinfo.c:97
+msgid "Cabaret"
+msgstr "Cabaret"
+
+#: Input/mpg123/mpg123.c:45 Input/vorbis/fileinfo.c:97
+msgid "New Wave"
+msgstr "New Wave"
+
+#: Input/mpg123/mpg123.c:45 Input/vorbis/fileinfo.c:97
+msgid "Psychedelic"
+msgstr "Psychedelic"
+
+#: Input/mpg123/mpg123.c:45 Input/vorbis/fileinfo.c:97
+msgid "Rave"
+msgstr "Rave"
+
+#: Input/mpg123/mpg123.c:46 Input/vorbis/fileinfo.c:98
+msgid "Showtunes"
+msgstr "Showtunes"
+
+#: Input/mpg123/mpg123.c:46 Input/vorbis/fileinfo.c:98
+msgid "Trailer"
+msgstr "Trailer"
+
+#: Input/mpg123/mpg123.c:46 Input/vorbis/fileinfo.c:98
+msgid "Lo-Fi"
+msgstr "Lo-Fi"
+
+#: Input/mpg123/mpg123.c:46 Input/vorbis/fileinfo.c:98
+msgid "Tribal"
+msgstr "Tribal"
+
+#: Input/mpg123/mpg123.c:47 Input/vorbis/fileinfo.c:99
+msgid "Acid Punk"
+msgstr "Acid Punk"
+
+#: Input/mpg123/mpg123.c:47 Input/vorbis/fileinfo.c:99
+msgid "Acid Jazz"
+msgstr "Acid Jazz"
+
+#: Input/mpg123/mpg123.c:47 Input/vorbis/fileinfo.c:99
+msgid "Polka"
+msgstr "Polka"
+
+#: Input/mpg123/mpg123.c:47 Input/vorbis/fileinfo.c:99
+msgid "Retro"
+msgstr "Retro"
+
+#: Input/mpg123/mpg123.c:48 Input/vorbis/fileinfo.c:100
+msgid "Musical"
+msgstr "Musical"
+
+#: Input/mpg123/mpg123.c:48 Input/vorbis/fileinfo.c:100
+msgid "Rock & Roll"
+msgstr "Roc a Rol"
+
+#: Input/mpg123/mpg123.c:48 Input/vorbis/fileinfo.c:100
+msgid "Hard Rock"
+msgstr "Roc Caled"
+
+#: Input/mpg123/mpg123.c:48 Input/vorbis/fileinfo.c:100
+msgid "Folk"
+msgstr "Gwerin"
+
+#: Input/mpg123/mpg123.c:49 Input/vorbis/fileinfo.c:101
+msgid "Folk/Rock"
+msgstr "Gwerin/Roc"
+
+#: Input/mpg123/mpg123.c:49 Input/vorbis/fileinfo.c:101
+msgid "National Folk"
+msgstr "Gwerin Cenedlaethol"
+
+#: Input/mpg123/mpg123.c:49 Input/vorbis/fileinfo.c:101
+msgid "Swing"
+msgstr "Swing"
+
+#: Input/mpg123/mpg123.c:50 Input/vorbis/fileinfo.c:102
+msgid "Fast-Fusion"
+msgstr "Fast-Fusion"
+
+#: Input/mpg123/mpg123.c:50 Input/vorbis/fileinfo.c:102
+msgid "Bebob"
+msgstr "Bebob"
+
+#: Input/mpg123/mpg123.c:50 Input/vorbis/fileinfo.c:102
+msgid "Latin"
+msgstr "Lladin"
+
+#: Input/mpg123/mpg123.c:50 Input/vorbis/fileinfo.c:102
+msgid "Revival"
+msgstr "Revival"
+
+#: Input/mpg123/mpg123.c:51 Input/vorbis/fileinfo.c:103
+msgid "Celtic"
+msgstr "Celtaidd"
+
+#: Input/mpg123/mpg123.c:51 Input/vorbis/fileinfo.c:103
+msgid "Bluegrass"
+msgstr "Bluegrass"
+
+#: Input/mpg123/mpg123.c:51 Input/vorbis/fileinfo.c:103
+msgid "Avantgarde"
+msgstr "Avantgarde"
+
+#: Input/mpg123/mpg123.c:52 Input/vorbis/fileinfo.c:104
+msgid "Gothic Rock"
+msgstr "Gothic Rock"
+
+#: Input/mpg123/mpg123.c:52 Input/vorbis/fileinfo.c:104
+msgid "Progressive Rock"
+msgstr "Progressive Rock"
+
+#: Input/mpg123/mpg123.c:53 Input/vorbis/fileinfo.c:105
+msgid "Psychedelic Rock"
+msgstr "Psychedelic Rock"
+
+#: Input/mpg123/mpg123.c:53 Input/vorbis/fileinfo.c:105
+msgid "Symphonic Rock"
+msgstr "Symphonic Rock"
+
+#: Input/mpg123/mpg123.c:53 Input/vorbis/fileinfo.c:105
+msgid "Slow Rock"
+msgstr "Slow Rock"
+
+#: Input/mpg123/mpg123.c:54 Input/vorbis/fileinfo.c:106
+msgid "Big Band"
+msgstr "Big Band"
+
+#: Input/mpg123/mpg123.c:54 Input/vorbis/fileinfo.c:106
+msgid "Chorus"
+msgstr "Chorus"
+
+#: Input/mpg123/mpg123.c:54 Input/vorbis/fileinfo.c:106
+msgid "Easy Listening"
+msgstr "Easy Listening"
+
+#: Input/mpg123/mpg123.c:55 Input/vorbis/fileinfo.c:107
+msgid "Acoustic"
+msgstr "Acoustig"
+
+#: Input/mpg123/mpg123.c:55 Input/vorbis/fileinfo.c:107
+msgid "Humour"
+msgstr "Hiwmor"
+
+#: Input/mpg123/mpg123.c:55 Input/vorbis/fileinfo.c:107
+msgid "Speech"
+msgstr "Llais"
+
+#: Input/mpg123/mpg123.c:55 Input/vorbis/fileinfo.c:107
+msgid "Chanson"
+msgstr "Chanson"
+
+#: Input/mpg123/mpg123.c:56 Input/vorbis/fileinfo.c:108
+msgid "Opera"
+msgstr "Opera"
+
+#: Input/mpg123/mpg123.c:56 Input/vorbis/fileinfo.c:108
+msgid "Chamber Music"
+msgstr "Cerddoriaeth Siambr"
+
+#: Input/mpg123/mpg123.c:56 Input/vorbis/fileinfo.c:108
+msgid "Sonata"
+msgstr "Sonata"
+
+#: Input/mpg123/mpg123.c:56 Input/vorbis/fileinfo.c:108
+msgid "Symphony"
+msgstr "Symffoni"
+
+#: Input/mpg123/mpg123.c:57 Input/vorbis/fileinfo.c:109
+msgid "Booty Bass"
+msgstr "Booty Bass"
+
+#: Input/mpg123/mpg123.c:57 Input/vorbis/fileinfo.c:109
+msgid "Primus"
+msgstr "Primus"
+
+#: Input/mpg123/mpg123.c:57 Input/vorbis/fileinfo.c:109
+msgid "Porn Groove"
+msgstr "Porn Groove"
+
+#: Input/mpg123/mpg123.c:58 Input/vorbis/fileinfo.c:110
+msgid "Satire"
+msgstr "Satire"
+
+#: Input/mpg123/mpg123.c:58 Input/vorbis/fileinfo.c:110
+msgid "Slow Jam"
+msgstr "Slow Jam"
+
+#: Input/mpg123/mpg123.c:58 Input/vorbis/fileinfo.c:110
+msgid "Club"
+msgstr "Club"
+
+#: Input/mpg123/mpg123.c:58 Input/vorbis/fileinfo.c:110
+msgid "Tango"
+msgstr "Tango"
+
+#: Input/mpg123/mpg123.c:59 Input/vorbis/fileinfo.c:111
+msgid "Samba"
+msgstr "Samba"
+
+#: Input/mpg123/mpg123.c:59 Input/vorbis/fileinfo.c:111
+msgid "Folklore"
+msgstr "Folklore"
+
+#: Input/mpg123/mpg123.c:59 Input/vorbis/fileinfo.c:111
+msgid "Ballad"
+msgstr "Baled"
+
+#: Input/mpg123/mpg123.c:59 Input/vorbis/fileinfo.c:111
+msgid "Power Ballad"
+msgstr "Power Ballad"
+
+#: Input/mpg123/mpg123.c:60 Input/vorbis/fileinfo.c:112
+msgid "Rhythmic Soul"
+msgstr "Rhythmic Soul"
+
+#: Input/mpg123/mpg123.c:60 Input/vorbis/fileinfo.c:112
+msgid "Freestyle"
+msgstr "Freestyle"
+
+#: Input/mpg123/mpg123.c:60 Input/vorbis/fileinfo.c:112
+msgid "Duet"
+msgstr "Duet"
+
+#: Input/mpg123/mpg123.c:61 Input/vorbis/fileinfo.c:113
+msgid "Punk Rock"
+msgstr "Punk Rock"
+
+#: Input/mpg123/mpg123.c:61 Input/vorbis/fileinfo.c:113
+msgid "Drum Solo"
+msgstr "Drum Solo"
+
+#: Input/mpg123/mpg123.c:61 Input/vorbis/fileinfo.c:113
+msgid "A Cappella"
+msgstr "A Cappella"
+
+#: Input/mpg123/mpg123.c:62 Input/vorbis/fileinfo.c:114
+msgid "Euro-House"
+msgstr "Euro-House"
+
+#: Input/mpg123/mpg123.c:62 Input/vorbis/fileinfo.c:114
+msgid "Dance Hall"
+msgstr "Dance Hall"
+
+#: Input/mpg123/mpg123.c:62 Input/vorbis/fileinfo.c:114
+msgid "Goa"
+msgstr "Goa"
+
+#: Input/mpg123/mpg123.c:63 Input/vorbis/fileinfo.c:115
+msgid "Drum & Bass"
+msgstr "Drwm a Bas"
+
+#: Input/mpg123/mpg123.c:63 Input/vorbis/fileinfo.c:115
+msgid "Club-House"
+msgstr "Club-House"
+
+#: Input/mpg123/mpg123.c:63 Input/vorbis/fileinfo.c:115
+msgid "Hardcore"
+msgstr "Hardcore"
+
+#: Input/mpg123/mpg123.c:64 Input/vorbis/fileinfo.c:116
+msgid "Terror"
+msgstr "Terror"
+
+#: Input/mpg123/mpg123.c:64 Input/vorbis/fileinfo.c:116
+msgid "Indie"
+msgstr "Indie"
+
+#: Input/mpg123/mpg123.c:64 Input/vorbis/fileinfo.c:116
+msgid "BritPop"
+msgstr "BritPop"
+
+#: Input/mpg123/mpg123.c:64 Input/vorbis/fileinfo.c:116
+msgid "Negerpunk"
+msgstr "Negerpunk"
+
+#: Input/mpg123/mpg123.c:65 Input/vorbis/fileinfo.c:117
+msgid "Polsk Punk"
+msgstr "Polsk Punk"
+
+#: Input/mpg123/mpg123.c:65 Input/vorbis/fileinfo.c:117
+msgid "Beat"
+msgstr "Beat"
+
+#: Input/mpg123/mpg123.c:65 Input/vorbis/fileinfo.c:117
+msgid "Christian Gangsta Rap"
+msgstr "Gangsta Rap Cristnogol"
+
+#: Input/mpg123/mpg123.c:66 Input/vorbis/fileinfo.c:118
+msgid "Heavy Metal"
+msgstr "Heavy Metal"
+
+#: Input/mpg123/mpg123.c:66 Input/vorbis/fileinfo.c:118
+msgid "Black Metal"
+msgstr "Black Metal"
+
+#: Input/mpg123/mpg123.c:66 Input/vorbis/fileinfo.c:118
+msgid "Crossover"
+msgstr "Crossover"
+
+#: Input/mpg123/mpg123.c:67 Input/vorbis/fileinfo.c:119
+msgid "Contemporary Christian"
+msgstr "Cristnogol Diweddar"
+
+#: Input/mpg123/mpg123.c:67 Input/vorbis/fileinfo.c:119
+msgid "Christian Rock"
+msgstr "Roc Cristnogol"
+
+#: Input/mpg123/mpg123.c:68 Input/vorbis/fileinfo.c:120
+msgid "Merengue"
+msgstr "Merengue"
+
+#: Input/mpg123/mpg123.c:68 Input/vorbis/fileinfo.c:120
+msgid "Salsa"
+msgstr "Salsa"
+
+#: Input/mpg123/mpg123.c:68 Input/vorbis/fileinfo.c:120
+msgid "Thrash Metal"
+msgstr "Thrash Metal"
+
+#: Input/mpg123/mpg123.c:69 Input/vorbis/fileinfo.c:121
+msgid "Anime"
+msgstr "Anime"
+
+#: Input/mpg123/mpg123.c:69 Input/vorbis/fileinfo.c:121
+msgid "JPop"
+msgstr "JPop"
+
+#: Input/mpg123/mpg123.c:69 Input/vorbis/fileinfo.c:121
+msgid "Synthpop"
+msgstr "Synthpop"
+
+#: Input/mpg123/mpg123.c:1148
+msgid "About MPEG Layer 1/2/3 plugin"
+msgstr "Ynghylch ategyn MPEG Layer 1/2/3"
+
+#: Input/mpg123/mpg123.c:1149
+msgid ""
+"mpg123 decoding engine by Michael Hipp <mh@mpg123.de>\n"
+"Plugin by The XMMS team"
+msgstr ""
+"injan dadgodio mpg123 gan Michael Hipp <mh@mpg123.de>\n"
+"Ategyn gan The XMMS team"
+
+#: Input/mpg123/mpg123.c:1183
+#, c-format
+msgid "MPEG Layer 1/2/3 Player %s"
+msgstr "MPEG Layer 1/2/3 Chwaraewr %s"
+
+#: Input/tonegen/tonegen.c:49
+msgid "About Tone Generator"
+msgstr "Ynghylch Cynhyrchydd Tôn"
+
+#: Input/tonegen/tonegen.c:51
+msgid ""
+"Sinus tone generator by Haavard Kvaalen <havardk@xmms.org>\n"
+"Modified by Daniel J. Peng <danielpeng@bigfoot.com>\n"
+"\n"
+"To use it, add a URL: tone://frequency1;frequency2;frequency3;...\n"
+"e.g. tone://2000;2005 to play a 2000Hz tone and a 2005Hz tone"
+msgstr ""
+"Cynhyrchwyd tôn sinus gan Håvard Kvålen <havardk@xmms.org>\n"
+"Addaswyd gan Daniel J. Peng <danielpeng@bigfoot.com>\n"
+"\n"
+"I'w ddefnyddio, ychwanegwch URL: tone://frequency1;frequency2;"
+"frequency3;...\n"
+"e.e. tôn://2000;2005 i chwarae tôn 2000Hz a thôn 2005Hz"
+
+#: Input/tonegen/tonegen.c:164
+msgid "Tone Generator: "
+msgstr "Cynhyrchydd Tôn:"
+
+#: Input/tonegen/tonegen.c:264
+#, c-format
+msgid "Tone Generator %s"
+msgstr "Cynhyrchydd Tôn %s"
+
+#: Input/vorbis/configure.c:158
+msgid "Select the directory where you want to store the Ogg Vorbis streams:"
+msgstr "Dewiswch y cyfeiriadur lle rydych am gadw'r llif Ogg Vorbis:"
+
+#: Input/vorbis/configure.c:226
+msgid "Ogg Vorbis Configuration"
+msgstr "Ffurfweddiad Ogg Vorbis"
+
+#: Input/vorbis/configure.c:364
+msgid "Ogg Vorbis Tags:"
+msgstr "Tagiau Ogg Vorbis:"
+
+#: Input/vorbis/configure.c:380 xmms/prefswin.c:1120
+msgid "Title format:"
+msgstr "Fformat y teitl:"
+
+#: Input/vorbis/configure.c:395 Input/vorbis/fileinfo.c:645
+msgid "ReplayGain Settings:"
+msgstr "Gosodiadau'r ReplayGain:"
+
+#: Input/vorbis/configure.c:402
+msgid "Enable Clipping Prevention"
+msgstr "Galluogi Atal Clipio"
+
+#: Input/vorbis/configure.c:406
+msgid "Enable ReplayGain"
+msgstr "Galluogi ReplayGain"
+
+#: Input/vorbis/configure.c:410
+msgid "ReplayGain Type:"
+msgstr "Math ReplayGain:"
+
+#: Input/vorbis/configure.c:419
+msgid "use Track Gain/Peak"
+msgstr "defnyddiwch Cynnydd/Brig Trac"
+
+#: Input/vorbis/configure.c:426
+msgid "use Album Gain/Peak"
+msgstr "defnyddio Cynnydd/Brig Albwm"
+
+#: Input/vorbis/configure.c:436
+msgid "Enable 6dB Boost + Hard Limiting"
+msgstr "Galluogi Chwydd 6dB a Hard Limiting"
+
+#: Input/vorbis/configure.c:440
+msgid "ReplayGain"
+msgstr "ReplayGain"
+
+#: Input/vorbis/fileinfo.c:208
+#, c-format
+msgid ""
+"An error occurred:\n"
+"%s"
+msgstr ""
+"Digwyddodd gwall:\n"
+"%s"
+
+#: Input/vorbis/fileinfo.c:210
+msgid "Error!"
+msgstr "Gwall!"
+
+#: Input/vorbis/fileinfo.c:238 Input/vorbis/fileinfo.c:293
+#: Input/vorbis/fileinfo.c:314 Input/vorbis/fileinfo.c:323
+msgid "Failed to modify tag"
+msgstr "Methu newid tag"
+
+#: Input/vorbis/fileinfo.c:493
+msgid "Ogg Vorbis Tag:"
+msgstr "Tag Ogg Vorbis:"
+
+#: Input/vorbis/fileinfo.c:541
+msgid "Date:"
+msgstr "Dyddiad!"
+
+#: Input/vorbis/fileinfo.c:582
+msgid "Description:"
+msgstr "Disgrifiad:"
+
+#: Input/vorbis/fileinfo.c:592
+msgid "Location:"
+msgstr "Lleoliad:"
+
+#: Input/vorbis/fileinfo.c:602
+msgid "Version:"
+msgstr "Fersiwn:"
+
+#: Input/vorbis/fileinfo.c:613
+msgid "ISRC number:"
+msgstr "Rhif ISRC:"
+
+#: Input/vorbis/fileinfo.c:624
+msgid "Organization:"
+msgstr "Corff:"
+
+#: Input/vorbis/fileinfo.c:634
+msgid "Copyright:"
+msgstr "Hawlfraint:"
+
+#: Input/vorbis/fileinfo.c:652
+msgid "Track gain:"
+msgstr "Cynnydd trac:"
+
+#: Input/vorbis/fileinfo.c:662
+msgid "Track peak:"
+msgstr "Brig trac:"
+
+#: Input/vorbis/fileinfo.c:673
+msgid "Album gain:"
+msgstr "Cynydd albwm:"
+
+#: Input/vorbis/fileinfo.c:683
+msgid "Album peak:"
+msgstr "Brig albwm:"
+
+#: Input/vorbis/fileinfo.c:707
+msgid "Remove Tag"
+msgstr "Tynnu'r tag!"
+
+#: Input/vorbis/fileinfo.c:722
+msgid "Ogg Vorbis Info:"
+msgstr "Gwybodaeth am Ogg Vorbis"
+
+#: Input/vorbis/fileinfo.c:851
+#, c-format
+msgid "Nominal bitrate: %d kbps"
+msgstr "Didradd enwol:  %d kbps"
+
+#: Input/vorbis/fileinfo.c:852
+#, fuzzy, c-format
+msgid "Average bitrate: %.1f kbps"
+msgstr "Didradd enwol:  %d kbps"
+
+#: Input/vorbis/fileinfo.c:854
+#, c-format
+msgid "Channels: %d"
+msgstr "Sianeli: %d"
+
+#: Input/vorbis/fileinfo.c:855
+#, c-format
+msgid "Length: %d:%.2d"
+msgstr "Hyd: %d:%.2d"
+
+#: Input/vorbis/fileinfo.c:856
+#, c-format
+msgid "File size: %d B"
+msgstr "Maint ffeil: %d B"
+
+#: Input/vorbis/fileinfo.c:857
+#, c-format
+msgid "Vendor: %s"
+msgstr ""
+
+#: Input/vorbis/vorbis.c:130
+#, c-format
+msgid "Ogg Vorbis Player %s"
+msgstr "Chwaraewr Ogg Vorbis %s"
+
+#: Input/vorbis/vorbis.c:761
+msgid "About Ogg Vorbis Plugin"
+msgstr "Ynghylch Ategyn Ogg Vorbis"
+
+#: Input/vorbis/vorbis.c:766
+msgid ""
+"Ogg Vorbis Plugin by the Xiph.org Foundation\n"
+"\n"
+"Original code by\n"
+"Tony Arcieri <bascule@inferno.tusculum.edu>\n"
+"Contributions from\n"
+"Chris Montgomery <monty@xiph.org>\n"
+"Peter Alm <peter@xmms.org>\n"
+"Michael Smith <msmith@labyrinth.edu.au>\n"
+"Jack Moffitt <jack@icecast.org>\n"
+"Jorn Baayen <jorn@nl.linux.org>\n"
+"Haavard Kvaalen <havardk@xmms.org>\n"
+"Gian-Carlo Pascutto <gcp@sjeng.org>\n"
+"\n"
+"Visit the Xiph.org Foundation at http://www.xiph.org/\n"
+msgstr ""
+"Ogg Vorbis Plugin gan Xiphophorus\n"
+"\n"
+"Cod gwreiddiol gan\n"
+"Tony Arcieri <bascule@inferno.tusculum.edu>\n"
+"Cyfraniadau gan\n"
+"Chris Montgomery <monty@xiph.org>\n"
+"Peter Alm <peter@xmms.org>\n"
+"Michael Smith <msmith@labyrinth.edu.au>\n"
+"Jack Moffitt <jack@icecast.org>\n"
+"Jorn Baayen <jorn@nl.linux.org>\n"
+"Håvard Kvålen <havardk@xmms.org>\n"
+"Gian-Carlo Pascutto <gcp@sjeng.org>\n"
+"\n"
+"Ewch i  Xiph.org Founfation yn http://www.xiph.org/\n"
+
+#: Input/wav/wav.c:82
+#, c-format
+msgid "Wave Player %s"
+msgstr "Chwaraewr Ton %s"
+
+#: Output/OSS/OSS.c:44
+#, c-format
+msgid "OSS Driver %s"
+msgstr "Gyrrwr OSS %s"
+
+#: Output/OSS/about.c:30
+msgid "About OSS Driver"
+msgstr "Ynghylch Gyrrwr OSS"
+
+#: Output/OSS/about.c:31
+msgid ""
+"XMMS OSS Driver\n"
+"\n"
+" This program is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program; if not, write to the Free Software\n"
+"Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,\n"
+"USA."
+msgstr ""
+"Gyrrwr OSS XMMS\n"
+"\n"
+" Mae'r rhaglen hwn yn feddalwedd rhydd; cewch ei ailddosbarthu a/neu\n"
+"ei newid o dan amodau'r Drwydded Gyhoeddus Gyffredinol GNU fel y'i\n"
+"cyhoeddwyd gan y Free Software Foundation; un ai fersiwn 2 o'r\n"
+"drwydded neu yn ôl eich dewis) unrhyw fersiwn arall.\n"
+"\n"
+"Mae'r rhaglen yn cael ei ddosbarthu yn y gobaith y byddwch yn ei gael\n"
+"yn ddefnyddiol, on HEB UNRHYW WARANT; heb hyd yn oed awgrym\n"
+"o warant MASNACHOL neu ADDASRWYDD AR GYFER UNRHYW\n"
+"BWRPAS. Gw. y drwydded Gyhoeddus Gyffredin am ragor o wybodaeth.\n"
+"\n"
+"Dylech fod wedi derbyn copi o'r Drwydded gyda'r rhaglen; os nad cysylltwch\n"
+"â 'r Free Software Foundation, Inc.,  59 Temple Place - Suite 330, Boston,\n"
+" MA 02111-1307,\n"
+"USA."
+
+#: Output/OSS/configure.c:133
+#, c-format
+msgid "Default (%s)"
+msgstr "Rhagosodedig (%s)"
+
+#: Output/OSS/configure.c:151
+msgid "Default"
+msgstr "Rhagosodedig"
+
+#: Output/OSS/configure.c:180
+msgid "OSS Driver configuration"
+msgstr "Ffurfweddu'r Gyrrwr OSS"
+
+#: Output/OSS/configure.c:194 Output/sun/configure.c:179
+#: Output/alsa/configure.c:289
+msgid "Audio device:"
+msgstr "Dyfais sain:"
+
+#: Output/OSS/configure.c:212 Output/OSS/configure.c:246
+msgid "Use alternate device:"
+msgstr "Defnyddiwr ddyfais arall:"
+
+#: Output/OSS/configure.c:228 Output/sun/configure.c:216
+#: Output/alsa/configure.c:334
+msgid "Mixer device:"
+msgstr "Dyfais cymysgu"
+
+#: Output/OSS/configure.c:262 Output/solaris/configure.c:229
+#: Output/sun/configure.c:244
+msgid "Devices"
+msgstr "Dyfeisiau"
+
+#: Output/OSS/configure.c:276 Output/esd/configure.c:176
+#: Output/solaris/configure.c:243 Output/sun/configure.c:268
+msgid "Buffer size (ms):"
+msgstr "Maint y byffer (ms):"
+
+#: Output/OSS/configure.c:292 Output/esd/configure.c:201
+#: Output/solaris/configure.c:259 Output/sun/configure.c:300
+msgid "Buffering"
+msgstr "Byffyru:"
+
+#: Output/OSS/configure.c:293
+msgid "Mixer Settings:"
+msgstr "Gosodiadau Cymysgu"
+
+#: Output/OSS/configure.c:298
+msgid "Volume controls Master not PCM"
+msgstr "Nid yw'r Prif reolwr sain yn PCM"
+
+#: Output/OSS/configure.c:301 Output/sun/configure.c:390
+msgid "Mixer"
+msgstr "Cymysgwr"
+
+#: Output/disk_writer/disk_writer.c:112
+#, c-format
+msgid "Disk Writer Plugin %s"
+msgstr "Ategyn Disk Writer %s"
+
+#: Output/disk_writer/disk_writer.c:143
+msgid ""
+"You cannot use the Disk Writer plugin\n"
+"when you're running in realtime mode."
+msgstr ""
+"Nid oes modd defnyddio ategyn Disk Writer\n"
+"\n"
+"pan fyddwch yn rhedeg ym modd realtime."
+
+#: Output/disk_writer/disk_writer.c:344
+msgid "Select the directory where you want to store the output files:"
+msgstr "Dewiswch y cyfeiriadur lle rydych am gadw'r ffeiliau allbwn:"
+
+#: Output/disk_writer/disk_writer.c:392
+msgid "Disk Writer Configuration"
+msgstr "Ffurfweddiad Disk Writer"
+
+#: Output/disk_writer/disk_writer.c:421
+msgid "Don't strip file name extension"
+msgstr ""
+
+#: Output/esd/about.c:29
+msgid "About ESounD Plugin"
+msgstr "Ynghylch Ategyn ESounD"
+
+#: Output/esd/about.c:30
+msgid ""
+"XMMS ESounD Plugin\n"
+"\n"
+" This program is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program; if not, write to the Free Software\n"
+"Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,\n"
+"USA."
+msgstr ""
+"Ategyn ESounD XMMS\n"
+"\n"
+" rhydd\n"
+" Cyffredinol\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+" Cyffredinol\n"
+"\n"
+" Cyffredinol\n"
+"\n"
+"\n"
+"."
+
+#: Output/esd/configure.c:95
+msgid "ESD Plugin configuration"
+msgstr "Ffurfweddu Ategyn ESD"
+
+#: Output/esd/configure.c:117
+msgid "Use remote host"
+msgstr "Defnyddio gwesteiwr pell"
+
+#: Output/esd/configure.c:124
+msgid "Volume controls OSS mixer"
+msgstr "Rheolwr sain cymysgydd OSS"
+
+#: Output/esd/esd.c:45
+#, c-format
+msgid "eSound Output Plugin %s"
+msgstr "Ategyn Allbwn eSound %s"
+
+#: Output/solaris/Sun.c:32
+#, c-format
+msgid "Solaris audio plugin %s"
+msgstr "Ategyn sain Solaris %s"
+
+#: Output/solaris/about.c:20
+msgid "About Solaris Audio Driver"
+msgstr "Ynghylch Solaris Audio Driver"
+
+#: Output/solaris/about.c:21
+msgid ""
+"XMMS Solaris Audio Driver\n"
+"\n"
+"Written by John Riddoch (jr@scms.rgu.ac.uk)\n"
+"with help from many contributors."
+msgstr ""
+"XMMS Solaris Audio Driver\n"
+"\n"
+"Ysgrifennwyd gan John Riddoch (jr@scms.rgu.ac.uk)\n"
+"gyda help gan lawer."
+
+#: Output/solaris/configure.c:101
+#, c-format
+msgid "Default - %s"
+msgstr "Rhagosodedig - %s"
+
+#: Output/solaris/configure.c:121
+#, c-format
+msgid "Soundcard #%d - %s"
+msgstr "Cerdyn sain #%d - %s"
+
+#: Output/solaris/configure.c:154
+msgid "Configure Solaris driver"
+msgstr "Ffurfweddu gyrrwr Solaris"
+
+#: Output/solaris/configure.c:190
+msgid "Always use AUDIODEV environment variable"
+msgstr "Defnyddiwch amrywiad amgylchedd AUDIODEV bob tro"
+
+#: Output/solaris/configure.c:196
+msgid "Output ports:"
+msgstr "Pyrth allbwn:"
+
+#: Output/solaris/configure.c:206
+msgid "Line out"
+msgstr "Llinell allan"
+
+#: Output/solaris/configure.c:207
+msgid "Headphones"
+msgstr "Clust ffoniau"
+
+#: Output/solaris/configure.c:208
+msgid "Internal speaker"
+msgstr "Seinydd mewnol"
+
+#: Output/sun/about.c:32
+msgid "About the Sun Driver"
+msgstr "Ynghylch Gyrrwr Sun"
+
+#: Output/sun/about.c:33
+msgid ""
+"XMMS BSD Sun Driver\n"
+"\n"
+"Copyright (c) 2001 CubeSoft Communications, Inc.\n"
+"Maintainer: <vedge at csoft.org>.\n"
+msgstr ""
+"XMMS BSD Sun Driver\n"
+"\n"
+" Hawlfraint (c) 2001 CubeSoft Communications, Inc.\n"
+"Cynhaliwr: <vedge at csoft.org>.\n"
+
+#: Output/sun/configure.c:197
+msgid "Audio control device:"
+msgstr "Dyfais rheoli sain:"
+
+#: Output/sun/configure.c:346
+msgid "Volume controls device:"
+msgstr "Dyfais rheoli sain:"
+
+#: Output/sun/configure.c:359
+msgid "XMMS uses mixer exclusively."
+msgstr " XMMS yn defnyddio'r cymysgydd yn unig"
+
+#: Output/sun/configure.c:486
+msgid "Status"
+msgstr "Statws"
+
+#: Output/sun/configure.c:536
+msgid "Sun driver configuration"
+msgstr "Ffurfweddu'r Gyrrwr Sun"
+
+#: Output/sun/sun.c:52
+#, c-format
+msgid "BSD Sun Driver %s"
+msgstr "Gyrrwr BSD Sun %s"
+
+#: Output/alsa/about.c:30
+msgid "About ALSA Driver"
+msgstr "Ynghylch Gyrrwr ALSA"
+
+#: Output/alsa/about.c:31
+msgid ""
+"XMMS ALSA Driver\n"
+"\n"
+" This program is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program; if not, write to the Free Software\n"
+"Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,\n"
+"USA.\n"
+"Author: Matthieu Sozeau (mattam@altern.org)"
+msgstr ""
+"Gyrrwr XMMS ALSA\n"
+"\n"
+" Mae'r rhaglen hwn yn feddalwedd rhydd; cewch ei ailddosbarthu a/neu\n"
+"ei newid o dan amodau'r Drwydded Gyhoeddus Gyffredinol GNU fel y'i\n"
+"cyhoeddwyd gan y Free Software Foundation; un ai fersiwn 2 o'r\n"
+"drwydded neu yn ôl eich dewis) unrhyw fersiwn arall.\n"
+"\n"
+"Mae'r rhaglen yn cael ei ddosbarthu yn y gobaith y byddwch yn ei gael\n"
+"yn ddefnyddiol, on HEB UNRHYW WARANT; heb hyd yn oed awgrym\n"
+"o warant MASNACHOL neu ADDASRWYDD AR GYFER UNRHYW\n"
+"BWRPAS. Gw. y drwydded Gyhoeddus Gyffredin am ragor o wybodaeth.\n"
+"\n"
+"Dylech fod wedi derbyn copi o'r Drwydded gyda'r rhaglen; os nad cysylltwch\n"
+"â 'r Free Software Foundation, Inc.,  59 Temple Place - Suite 330, Boston,\n"
+" MA 02111-1307,\n"
+"USA."
+
+#: Output/alsa/alsa.c:44
+#, c-format
+msgid "ALSA %s output plugin"
+msgstr "Ategyn allbwn ALSA %s"
+
+#: Output/alsa/configure.c:153
+msgid "Unknown soundcard"
+msgstr "Cerdyn sain anhysbys"
+
+#: Output/alsa/configure.c:208
+#, c-format
+msgid "Default PCM device (%s)"
+msgstr "Dyfais PCM rhagosodedig (%s)"
+
+#: Output/alsa/configure.c:275
+msgid "ALSA Driver configuration"
+msgstr "Ffurfweddu'r Gyrrwr ALSA"
+
+#: Output/alsa/configure.c:303
+msgid "Mixer:"
+msgstr "Cymysgydd"
+
+#: Output/alsa/configure.c:311
+msgid "Use software volume control"
+msgstr "Defnyddio rheolwr sain meddalwedd"
+
+#: Output/alsa/configure.c:321
+msgid "Mixer card:"
+msgstr "Cerdyn cymysgu"
+
+#: Output/alsa/configure.c:354
+msgid "Device settings"
+msgstr "Gosodiadau dyfais"
+
+#: Output/alsa/configure.c:360
+#, fuzzy
+msgid "Soundcard:"
+msgstr "Cerdyn sain #%d - %s"
+
+#: Output/alsa/configure.c:373 Output/alsa/configure.c:415
+msgid "Buffer time (ms):"
+msgstr "Amser byffer (ms):"
+
+#: Output/alsa/configure.c:387
+msgid "Period time (ms):"
+msgstr "Cyfnod amser (ms):"
+
+#: Output/alsa/configure.c:402
+msgid "XMMS:"
+msgstr ""
+
+#: Output/alsa/configure.c:430
+msgid "Advanced settings"
+msgstr "Gosodiadau uwch"
+
+#: Visualization/blur_scope/blur_scope.c:62
+#, c-format
+msgid "Blur Scope %s"
+msgstr "Blur Scope %s"
+
+#: Visualization/blur_scope/blur_scope.c:157
+msgid "Blur scope"
+msgstr "Blur scope"
+
+#: Visualization/blur_scope/config.c:68
+msgid "Color Entry"
+msgstr "Cofnod Lliw"
+
+#: Visualization/blur_scope/config.c:76
+#: Visualization/opengl_spectrum/configure.c:51
+msgid "Options:"
+msgstr "Dewisiadau:"
+
+#: Visualization/opengl_spectrum/configure.c:43
+msgid "OpenGL Spectrum configuration"
+msgstr "Ffurfweddu OpenGL Spectrum "
+
+#: Visualization/opengl_spectrum/configure.c:57
+msgid "3DFX Fullscreen mode"
+msgstr "Modd sgrîn llawn £DFX"
+
+#: Visualization/opengl_spectrum/opengl_spectrum.c:123
+#: Visualization/opengl_spectrum/opengl_spectrum.c:124
+msgid "OpenGL Spectrum analyzer"
+msgstr "Dadansoddydd  OpenGL Spectrum"
+
+#: Visualization/opengl_spectrum/opengl_spectrum.c:142
+#, c-format
+msgid "OpenGL Spectrum analyzer %s"
+msgstr "Dadansoddydd  OpenGL Spectrum %s"
+
+#: Visualization/sanalyzer/spectrum.c:66
+#, c-format
+msgid "Simple spectrum analyzer %s"
+msgstr "Dadansoddydd  sbectrwm syml %s"
+
+#: Visualization/sanalyzer/spectrum.c:86
+msgid "Spectrum analyzer"
+msgstr "Dadansoddwr sbectrwm"
+
+#: libxmms/titlestring.c:283
+msgid "Performer/Artist"
+msgstr "Perfformiwr/Artist"
+
+#: libxmms/titlestring.c:284
+msgid "Album"
+msgstr "Albwm"
+
+#: libxmms/titlestring.c:285
+msgid "Genre"
+msgstr "Math"
+
+#: libxmms/titlestring.c:286
+msgid "File name"
+msgstr "Enw ffeil"
+
+#: libxmms/titlestring.c:287
+msgid "File path"
+msgstr "Llwybr ffeil"
+
+#: libxmms/titlestring.c:288
+msgid "File extension"
+msgstr "Estyniad ffeil"
+
+#: libxmms/titlestring.c:289
+msgid "Track name"
+msgstr "Enw trac"
+
+#: libxmms/titlestring.c:290
+msgid "Track number"
+msgstr "Rhif y trac:"
+
+#: libxmms/titlestring.c:291
+msgid "Date"
+msgstr "Dyddiad"
+
+#: libxmms/titlestring.c:292
+msgid "Year"
+msgstr "Blwyddyn"
+
+#: libxmms/titlestring.c:293
+msgid "Comment"
+msgstr "Sylw"
+
+#: wmxmms/getopt.c:632 xmms/getopt.c:632
+#, c-format
+msgid "%s: option `%s' is ambiguous\n"
+msgstr "%s: dewis `%s' yn aneglur\n"
+
+#: wmxmms/getopt.c:656 xmms/getopt.c:656
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument\n"
+msgstr "%s: dewis `- nid yw -%s'  yn caniatáu ymresymiad\n"
+
+#: wmxmms/getopt.c:661 xmms/getopt.c:661
+#, c-format
+msgid "%s: option `%c%s' doesn't allow an argument\n"
+msgstr "%s: dewis `- nid yw -%c%s'  yn caniatáu ymresymiad\n"
+
+#: wmxmms/getopt.c:678 wmxmms/getopt.c:851 xmms/getopt.c:678 xmms/getopt.c:851
+#, c-format
+msgid "%s: option `%s' requires an argument\n"
+msgstr "%s: dewis `%s' angen ymresymiad\n"
+
+#: wmxmms/getopt.c:707 xmms/getopt.c:707
+#, c-format
+msgid "%s: unrecognized option `--%s'\n"
+msgstr "%s: dewis heb ei adnabod `--%s'\n"
+
+#: wmxmms/getopt.c:711 xmms/getopt.c:711
+#, c-format
+msgid "%s: unrecognized option `%c%s'\n"
+msgstr "%s: dewis heb ei adnabod `%c%s'\n"
+
+#: wmxmms/getopt.c:737 xmms/getopt.c:737
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr "%s: dewis anghyfreithlon -- %c\n"
+
+#: wmxmms/getopt.c:740 xmms/getopt.c:740
+#, c-format
+msgid "%s: invalid option -- %c\n"
+msgstr "%s: dewis annilys-- %c\n"
+
+#: wmxmms/getopt.c:770 wmxmms/getopt.c:900 xmms/getopt.c:770 xmms/getopt.c:900
+#, c-format
+msgid "%s: option requires an argument -- %c\n"
+msgstr "%s: dewis angen ymresymiad -- %c\n"
+
+#: wmxmms/getopt.c:817 xmms/getopt.c:817
+#, c-format
+msgid "%s: option `-W %s' is ambiguous\n"
+msgstr "%s: dewis `-W %s' yn aneglur\n"
+
+#: wmxmms/getopt.c:835 xmms/getopt.c:835
+#, c-format
+msgid "%s: option `-W %s' doesn't allow an argument\n"
+msgstr "%s: dewis `- nid yw -W %s'  yn caniatáu ymresymiad\n"
+
+#: wmxmms/wmxmms.c:667
+#, c-format
+msgid "ERROR: Couldn't find %s\n"
+msgstr "GWALL: Methu canfod %s\n"
+
+#: wmxmms/wmxmms.c:705
+#, c-format
+msgid ""
+"Usage: %s [options]\n"
+"\n"
+"Options:\n"
+"--------\n"
+"\n"
+"-h, --help\t\tDisplay this text and exit.\n"
+"-g, --geometry\t\tSet the geometry (for example +20+20)\n"
+"-s, --session\t\tSet the xmms session to use (Default: 0)\n"
+"-c, --command\t\tCommand to launch xmms (Default: xmms)\n"
+"-i, --icon\t\tSet the icon to use when xmms is not running\n"
+"-n, --single\t\tOnly a single click is needed to start xmms\n"
+"-t, --title\t\tDisplay song title when mouse is in window\n"
+"-v, --version\t\tDisplay version information and exit\n"
+"\n"
+msgstr ""
+"Defnydd: %s [dewisiadau]\n"
+"\n"
+" Dewisiadau\n"
+"---------\n"
+"\n"
+"-h, --help\t\tDangos y testun a gadael.\n"
+"-g, --geometry\t\tGosod y geometreg [e.e. +20+20]\n"
+"-s, --session\t\tGosod xmms ar gyfer ei ddefnyddio [ Rhagosodedig: 0]\n"
+"-c, --command\t\tY gorchymyn i gychwyn xmms [Rhagosodedig: xmms]\n"
+"-i, --icon\t\tGosod yr eicon i'w ddefnyddio pan nad yw xmms yn rhedeg\n"
+"-n, --single\t\tDim ond clic unigol sydd angen i gychwyn xmms\n"
+"-t, --title\t\tDangos teitl cân pan yw'r llygoden yn y ffenestr\n"
+"-v, --version\t\tDangos gwybodaeth am y fersiwn a gadael\n"
+"\n"
+
+#: xmms/about.c:28
+msgid "Main Programming:"
+msgstr "Prif Raglennu:"
+
+#: xmms/about.c:29
+msgid "Peter Alm"
+msgstr "Peter Alm"
+
+#: xmms/about.c:31
+msgid "Additional Programming:"
+msgstr "Rhaglenni Ychwanegol:"
+
+#: xmms/about.c:33 xmms/about.c:181
+msgid "Haavard Kvaalen"
+msgstr "Håvard Kvålen"
+
+#: xmms/about.c:34
+msgid "Derrik Pates"
+msgstr "Derrik Pates"
+
+#: xmms/about.c:36
+msgid "With Additional Help:"
+msgstr "Gyda Chymorth Ychwanegol:"
+
+#: xmms/about.c:37
+msgid "Tony Arcieri"
+msgstr "Tony Arcieri"
+
+#: xmms/about.c:38
+msgid "Sean Atkinson"
+msgstr "Sean Atkinson"
+
+#: xmms/about.c:39 xmms/about.c:136
+msgid "Jorn Baayen"
+msgstr "Jorn Baayen"
+
+#: xmms/about.c:40
+msgid "James M. Cape"
+msgstr "James M. Cape"
+
+#: xmms/about.c:41
+msgid "Anders Carlsson (effect plugins)"
+msgstr "Anders Carlsson (ategynnau effeithiau)"
+
+#: xmms/about.c:42
+msgid "Chun-Chung Chen (xfont patch)"
+msgstr "Chun-Chung Chen (clwt xfont)"
+
+#: xmms/about.c:43
+msgid "Tim Ferguson (joystick plugin)"
+msgstr "Tim Ferguson (ategyn ffon rheoli)"
+
+#: xmms/about.c:44
+msgid "Ben Gertzfield"
+msgstr "Ben Gertzfield"
+
+#: xmms/about.c:45
+msgid "Vesa Halttunen"
+msgstr "Vesa Halttunen"
+
+#: xmms/about.c:46
+msgid "Logan Hanks"
+msgstr "Logan Hanks"
+
+#: xmms/about.c:47
+msgid "Eric L. Hernes (FreeBSD patches)"
+msgstr "Eric L. Hernes (ategynnau FreeBSD)"
+
+#: xmms/about.c:48
+msgid "Ville Herva"
+msgstr "Ville Herva"
+
+#: xmms/about.c:49
+msgid "Ian 'Hixie' Hickson"
+msgstr ""
+
+#: xmms/about.c:50
+msgid "higway (MMX)"
+msgstr "higway (MMX)"
+
+#: xmms/about.c:51
+msgid "Michael Hipp and others (MPG123 engine)"
+msgstr "Michael Hipp ac eraill (injan MPG123)"
+
+#: xmms/about.c:53
+msgid "Olle Hallnas (compiling fixes)"
+msgstr "Olle Hällnäs (trwsio wrth grynhoi)"
+
+#: xmms/about.c:55
+msgid "Matti Hamalainen"
+msgstr ""
+
+#: xmms/about.c:56
+msgid "David Jacoby"
+msgstr "David Jacoby"
+
+#: xmms/about.c:57
+msgid "Osamu Kayasono (3DNow!/MMX)"
+msgstr "Osamu Kayasono (3DNow!/MMX)"
+
+#: xmms/about.c:58
+msgid "Lyle B Kempler"
+msgstr "Lyle B Kempler"
+
+#: xmms/about.c:59
+msgid "J. Nick Koston (MikMod plugin)"
+msgstr "J. Nick Koston (ategyn MikMod)"
+
+#: xmms/about.c:60
+msgid "Aaron Lehmann"
+msgstr "Aaron Lehmann"
+
+#: xmms/about.c:61
+msgid "Johan Levin (echo + stereo plugin)"
+msgstr "Johan Levin (ategyn atsain a stereo)"
+
+#: xmms/about.c:62
+msgid "Eric Lindvall"
+msgstr "Eric Lindvall"
+
+#: xmms/about.c:63 xmms/about.c:154
+msgid "Colin Marquardt"
+msgstr "Colin Marquardt"
+
+#: xmms/about.c:64
+msgid "Willem Monsuwe"
+msgstr "Willem Monsuwe"
+
+#: xmms/about.c:65
+msgid "Heikki Orsila"
+msgstr ""
+
+#: xmms/about.c:66
+msgid "Gian-Carlo Pascutto"
+msgstr "Gian-Carlo Pascutto"
+
+#: xmms/about.c:67
+msgid "John Riddoch (Solaris plugin)"
+msgstr "John Riddoch (ategyn Solaris)"
+
+#: xmms/about.c:68
+msgid "Josip Rodin"
+msgstr "Josip Rodin"
+
+#: xmms/about.c:69
+msgid "Pablo Saratxaga (i18n)"
+msgstr "Pablo Saratxaga (i18n)"
+
+#: xmms/about.c:70
+msgid "Carl van Schaik (pro logic plugin)"
+msgstr "Carl van Schaik (ategyn pro logic)"
+
+#: xmms/about.c:72
+msgid "Joerg Schuler"
+msgstr "Jörg Schuler"
+
+#: xmms/about.c:73
+msgid "Charles Sielski (irman plugin)"
+msgstr "Charles Sielski (ategyn irman)"
+
+#: xmms/about.c:74 xmms/about.c:182
+msgid "Espen Skoglund"
+msgstr "Espen Skoglund"
+
+#: xmms/about.c:75
+msgid "Matthieu Sozeau (ALSA plugin)"
+msgstr "Matthieu Sozeau (ategyn ALSA)"
+
+#: xmms/about.c:76
+msgid "Kimura Takuhiro (3DNow!)"
+msgstr "Kimura Takuhiro (3DNow!)"
+
+#: xmms/about.c:77
+msgid "Zinx Verituse"
+msgstr "Zinx Verituse"
+
+#: xmms/about.c:78
+msgid "Ryan Weaver (RPMs among other things)"
+msgstr "Ryan Weaver (RPMs ymysg pethau eraill)"
+
+#: xmms/about.c:79
+msgid "Chris Wilson"
+msgstr "Chris Wilson"
+
+#: xmms/about.c:80
+msgid "Dave Yearke"
+msgstr "Dave Yearke"
+
+#: xmms/about.c:81
+msgid "Stephan K. Zitz"
+msgstr "Stephan K. Zitz"
+
+#: xmms/about.c:83
+msgid "Default skin:"
+msgstr "Croen rhagosodedig:"
+
+#: xmms/about.c:84
+msgid "Leonard \"Blayde\" Tan"
+msgstr "Leonard \"Blayde\" Tan"
+
+#: xmms/about.c:85
+msgid "Robin Sylvestre (Equalizer and Playlist)"
+msgstr "Robin Sylvestre (Cydraddolydd a Rhestr Chwarae)"
+
+#: xmms/about.c:86
+msgid "Thomas Nilsson (New titles and cleanups)"
+msgstr "Thomas Nilsson (Teitlau newydd a glanhau)"
+
+#: xmms/about.c:88
+msgid "Homepage and Graphics:"
+msgstr "Tudalen gartref a Graffigau"
+
+#: xmms/about.c:89 xmms/about.c:206
+msgid "Thomas Nilsson"
+msgstr "Thomas Nilsson"
+
+#: xmms/about.c:91
+msgid "Support and Docs:"
+msgstr "Cefnogaeth a Dogfennau:"
+
+#: xmms/about.c:93 xmms/about.c:205
+msgid "Olle Hallnas"
+msgstr "Olle Hällnäs"
+
+#: xmms/about.c:98
+msgid "Afrikaans:"
+msgstr "Afrikaans:"
+
+#: xmms/about.c:100
+msgid "Schalk W. Cronje"
+msgstr "Schalk W. Cronjé "
+
+#: xmms/about.c:101
+msgid "Albanian:"
+msgstr "Albaneg:"
+
+#: xmms/about.c:102
+msgid "Naim Daka"
+msgstr "Naim Daka"
+
+#: xmms/about.c:103
+msgid "Azerbaijani:"
+msgstr "Azerbaijani:"
+
+#: xmms/about.c:105
+msgid "Metin Amiroff"
+msgstr "Metin Amiroff"
+
+#: xmms/about.c:107
+msgid "Vasif Ismailoglu"
+msgstr "Vasif Ismailoglu"
+
+#: xmms/about.c:108
+msgid "Basque:"
+msgstr "Basg:"
+
+#: xmms/about.c:110
+msgid "Inigo Salvador Azurmendi"
+msgstr "Iñigo Salvador Azurmendi"
+
+#: xmms/about.c:111
+msgid "Belarusian:"
+msgstr "Belaswseg:"
+
+#: xmms/about.c:112
+msgid "Smaliakou Zmicer"
+msgstr "Smaliakou Zmicer"
+
+#: xmms/about.c:113
+msgid "Bosnian:"
+msgstr "Bosnieg:"
+
+#: xmms/about.c:115
+msgid "Amila Akagic"
+msgstr "Amila Akagic"
+
+#: xmms/about.c:116
+msgid "Grabovica Eldin"
+msgstr "Grabovica Eldin"
+
+#: xmms/about.c:116
+msgid "Vedran Ljubovic"
+msgstr "Vedran Ljubovic"
+
+#: xmms/about.c:117
+msgid "Brazilian Portuguese:"
+msgstr "Portiwgaleg Brasilaidd"
+
+#: xmms/about.c:118
+msgid "Juan Carlos Castro y Castro"
+msgstr "Juan Carlos Castro y Castro"
+
+#: xmms/about.c:119
+msgid "Bulgarian:"
+msgstr "Bwlgareg:"
+
+#: xmms/about.c:120
+msgid "Boyan Ivanov"
+msgstr "Boyan Ivanov"
+
+#: xmms/about.c:120
+msgid "Yovko D. Lambrev"
+msgstr "Yovko D. Lambrev"
+
+#: xmms/about.c:121
+msgid "Catalan:"
+msgstr "Catalaneg:"
+
+#: xmms/about.c:122
+msgid "Albert Astals Cid"
+msgstr "Albert Astals Cid"
+
+#: xmms/about.c:122
+msgid "Quico Llach"
+msgstr "Quico Llach"
+
+#: xmms/about.c:122 xmms/about.c:201
+msgid "Jordi Mallach"
+msgstr "Jordi Mallach"
+
+#: xmms/about.c:123
+msgid "Chinese:"
+msgstr "Tsieineaidd:"
+
+#: xmms/about.c:124
+msgid "Chun-Chung Chen"
+msgstr "Chun-Chung Chen"
+
+#: xmms/about.c:124
+msgid "Jouston Huang"
+msgstr "Jouston Huang"
+
+#: xmms/about.c:124
+msgid "Andrew Lee"
+msgstr "Andrew Lee"
+
+#: xmms/about.c:125
+msgid "Chih-Wei Huang"
+msgstr "Chih-Wei Huang"
+
+#: xmms/about.c:125
+msgid "Shiyu Tang"
+msgstr "Shiyu Tang"
+
+#: xmms/about.c:125
+msgid "Danny Zeng"
+msgstr "Danny Zeng"
+
+#: xmms/about.c:126
+msgid "Croatian:"
+msgstr "Croataidd:"
+
+#: xmms/about.c:127
+msgid "Vlatko Kosturjak"
+msgstr "Vlatko Kosturjak"
+
+#: xmms/about.c:127
+msgid "Vladimir Vuksan"
+msgstr "Vladimir Vuksan"
+
+#: xmms/about.c:128
+msgid "Czech:"
+msgstr "Tsiec:"
+
+#: xmms/about.c:130
+msgid "Vladimir Marek"
+msgstr "Vladimír Marek"
+
+#: xmms/about.c:131
+msgid "Radek Vybiral"
+msgstr "Radek Vybiral"
+
+#: xmms/about.c:132
+msgid "Danish:"
+msgstr "Daneg:"
+
+#: xmms/about.c:133
+msgid "Nikolaj Berg Amondsen"
+msgstr "Nikolaj Berg Amondsen"
+
+#: xmms/about.c:133
+msgid "Troels Liebe Bentsen"
+msgstr "Troels Liebe Bentsen"
+
+#: xmms/about.c:134
+msgid "Kenneth Christiansen"
+msgstr "Kenneth Christiansen"
+
+#: xmms/about.c:134
+msgid "Keld Simonsen"
+msgstr "Keld Simonsen"
+
+#: xmms/about.c:135
+msgid "Dutch:"
+msgstr "Isalmaeneg:"
+
+#: xmms/about.c:136
+msgid "Bart Coppens"
+msgstr "Bart Coppens"
+
+#: xmms/about.c:136
+msgid "Wilmer van der Gaast"
+msgstr "Wilmer van der Gaast"
+
+#: xmms/about.c:137
+msgid "Tom Laermans"
+msgstr "Tom Laermans"
+
+#: xmms/about.c:138
+msgid "Esperanto:"
+msgstr "Esperanto:"
+
+#: xmms/about.c:139
+msgid "D. Dale Gulledge"
+msgstr "D. Dale Gulledge"
+
+#: xmms/about.c:140
+msgid "Estonian:"
+msgstr "Estoneg:"
+
+#: xmms/about.c:141
+msgid "Marek Laane"
+msgstr "Marek Laane"
+
+#: xmms/about.c:142
+msgid "Finnish:"
+msgstr "Ffineg:"
+
+#: xmms/about.c:143
+msgid "Thomas Backlund"
+msgstr "Thomas Backlund"
+
+#: xmms/about.c:143
+msgid "Matias Griese"
+msgstr "Matias Griese"
+
+#: xmms/about.c:144
+msgid "French:"
+msgstr "Ffrangeg:"
+
+#: xmms/about.c:145
+msgid "Arnaud Boissinot"
+msgstr "Arnaud Boissinot"
+
+#: xmms/about.c:145
+msgid "Eric Fernandez-Bellot"
+msgstr "Eric Fernandez-Bellot"
+
+#: xmms/about.c:146
+msgid "Galician:"
+msgstr "Galesieg:"
+
+#: xmms/about.c:148
+msgid "Alberto Garcia"
+msgstr "Alberto García"
+
+#: xmms/about.c:150
+msgid "David Fernandez Vaamonde"
+msgstr "David Fernández Vaamonde"
+
+#: xmms/about.c:151
+msgid "Georgian:"
+msgstr "Georgieg:"
+
+#: xmms/about.c:152
+msgid "Aiet Kolkhi"
+msgstr "Aiet Kolkhi"
+
+#: xmms/about.c:153
+msgid "German:"
+msgstr "Almaeneg:"
+
+#: xmms/about.c:154
+msgid "Stefan Siegel"
+msgstr "Stefan Siegel"
+
+#: xmms/about.c:155
+msgid "Greek:"
+msgstr "Groeg:"
+
+#: xmms/about.c:156
+msgid "Kyritsis Athanasios"
+msgstr "Kyritsis Athanasios"
+
+#: xmms/about.c:157
+msgid "Hungarian:"
+msgstr "Hwngareg:"
+
+#: xmms/about.c:158
+msgid "Arpad Biro"
+msgstr "Arpad Biro"
+
+#: xmms/about.c:159
+msgid "Indonesian:"
+msgstr "Indonesieg:"
+
+#: xmms/about.c:160
+msgid "Budi Rachmanto"
+msgstr "Budi Rachmanto"
+
+#: xmms/about.c:161
+msgid "Irish:"
+msgstr "Gwyddelig:"
+
+#: xmms/about.c:162
+msgid "Alastair McKinstry"
+msgstr "Alastair McKinstry"
+
+#: xmms/about.c:163
+msgid "Italian:"
+msgstr "Eidaleg"
+
+#: xmms/about.c:164
+msgid "Paolo Lorenzin"
+msgstr "Paolo Lorenzin"
+
+#: xmms/about.c:164
+msgid "Daniele Pighin"
+msgstr "Daniele Pighin"
+
+#: xmms/about.c:165
+msgid "Japanese:"
+msgstr "Siapanëeg:"
+
+#: xmms/about.c:166
+msgid "Hiroshi Takekawa"
+msgstr "Hiroshi Takekawa"
+
+#: xmms/about.c:167
+msgid "Korean:"
+msgstr "Corëeg:"
+
+#: xmms/about.c:168
+msgid "Jaegeum Choe"
+msgstr "Jaegeum Choe"
+
+#: xmms/about.c:168
+msgid "Sang-Jin Hwang"
+msgstr "Sang-Jin Hwang"
+
+#: xmms/about.c:168
+msgid "Byeong-Chan Kim"
+msgstr "Byeong-Chan Kim"
+
+#: xmms/about.c:169
+msgid "Man-Yong Lee"
+msgstr "Man-Yong Lee"
+
+#: xmms/about.c:170
+msgid "Lithuanian:"
+msgstr "Lithueneg"
+
+#: xmms/about.c:171
+msgid "Gediminas Paulauskas"
+msgstr "Gediminas Paulauskas"
+
+#: xmms/about.c:172
+msgid "Latvian:"
+msgstr "Latfieg:"
+
+#: xmms/about.c:174
+msgid "Juris Kudins"
+msgstr "Juris Kudins"
+
+#: xmms/about.c:175
+msgid "Vitauts Stochka"
+msgstr "Vitauts Stochka"
+
+#: xmms/about.c:176
+msgid "Malay:"
+msgstr "Malay:"
+
+#: xmms/about.c:177
+msgid "Muhammad Najmi Ahmad Zabidi"
+msgstr "Muhammad Najmi Ahmad Zabidi"
+
+#: xmms/about.c:178
+msgid "Norwegian:"
+msgstr "Norwyeg"
+
+#: xmms/about.c:180
+msgid "Andreas Bergstrom"
+msgstr "Andreas Bergstrøm"
+
+#: xmms/about.c:181
+msgid "Terje Bjerkelia"
+msgstr "Terje Bjerkelia"
+
+#: xmms/about.c:181
+msgid "Roy-Magne Mo"
+msgstr "Roy-Magne Mo"
+
+#: xmms/about.c:183
+msgid "Polish:"
+msgstr "Pwyleg:"
+
+#: xmms/about.c:184
+msgid "Grzegorz Kowal"
+msgstr "Grzegorz Kowal"
+
+#: xmms/about.c:185
+msgid "Portuguese:"
+msgstr "Portiwgaleg:"
+
+#: xmms/about.c:186
+msgid "Jorge Costa"
+msgstr "Jorge Costa"
+
+#: xmms/about.c:187
+msgid "Romanian:"
+msgstr "Romaneg:"
+
+#: xmms/about.c:188
+msgid "Florin Grad"
+msgstr "Florin Grad"
+
+#: xmms/about.c:190
+msgid "Misu Moldovan"
+msgstr "Mişu Moldovan"
+
+#: xmms/about.c:191
+msgid "Russian:"
+msgstr "Rwsieg:"
+
+#: xmms/about.c:192
+msgid "Valek Filippov"
+msgstr "Valek Filippov"
+
+#: xmms/about.c:192
+msgid "Alexandr P. Kovalenko"
+msgstr "Alexandr P. Kovalenko"
+
+#: xmms/about.c:193
+msgid "Maxim Koshelev"
+msgstr "Maxim Koshelev"
+
+#: xmms/about.c:193
+msgid "Aleksey Smirnov"
+msgstr "Aleksey Smirnov"
+
+#: xmms/about.c:194
+msgid "Serbian:"
+msgstr "Serbeg:"
+
+#: xmms/about.c:195
+msgid "Tomislav Jankovic"
+msgstr "Tomislav Jankovic"
+
+#: xmms/about.c:196
+msgid "Slovak:"
+msgstr "Slofaceg:"
+
+#: xmms/about.c:197
+msgid "Pavol Cvengros"
+msgstr "Pavol Cvengros"
+
+#: xmms/about.c:198
+msgid "Slovenian:"
+msgstr "Slofeneg:"
+
+#: xmms/about.c:199
+msgid "Tadej Panjtar"
+msgstr "Tadej Panjtar"
+
+#: xmms/about.c:199
+msgid "Tomas Hornocek"
+msgstr "Tomas Hornocek"
+
+#: xmms/about.c:199
+msgid "Jan Matis"
+msgstr "Jan Matis"
+
+#: xmms/about.c:200
+msgid "Spanish:"
+msgstr "Spaeneg:"
+
+#: xmms/about.c:201
+msgid "Fabian Mandelbaum"
+msgstr "Fabian Mandelbaum"
+
+#: xmms/about.c:203
+msgid "Juan Manuel Garcia Molina"
+msgstr "Juan Manuel García Molina"
+
+#: xmms/about.c:204
+msgid "Swedish:"
+msgstr "Swedeg:"
+
+#: xmms/about.c:205
+msgid "David Hedbor"
+msgstr "David Hedbor"
+
+#: xmms/about.c:206
+msgid "Christian Rose"
+msgstr "Christian Rose"
+
+#: xmms/about.c:206
+msgid "Fuad Sabanovic"
+msgstr "Fuad Sabanovic"
+
+#: xmms/about.c:207
+msgid "Tajik:"
+msgstr "Tajig:"
+
+#: xmms/about.c:208
+msgid "Roger Kovacs"
+msgstr "Roger Kovacs"
+
+#: xmms/about.c:208
+msgid "Dilshod Marupov"
+msgstr "Dilshod Marupov"
+
+#: xmms/about.c:209
+msgid "Thai:"
+msgstr "Thai:"
+
+#: xmms/about.c:210
+msgid "Pramote Khuwijitjaru"
+msgstr "Pramote Khuwijitjaru"
+
+#: xmms/about.c:210
+msgid "Supphachoke Suntiwichaya"
+msgstr "Supphachoke Suntiwichaya"
+
+#: xmms/about.c:211
+msgid "Turkish:"
+msgstr "Twrceg:"
+
+#: xmms/about.c:212
+msgid "Nazmi Savga"
+msgstr "Nazmi Savga"
+
+#: xmms/about.c:214
+msgid "Omer Fadil Usta"
+msgstr "Ömer Fadıl Usta"
+
+#: xmms/about.c:215
+msgid "Ukrainian:"
+msgstr "Wcraneg:"
+
+#: xmms/about.c:216
+msgid "Dmytro Koval'ov"
+msgstr "Dmytro Koval'ov"
+
+#: xmms/about.c:217
+msgid "Uzbek:"
+msgstr "Uzbek:"
+
+#: xmms/about.c:218
+msgid "Mashrab Kuvatov"
+msgstr "Mashrab Kuvatov"
+
+#: xmms/about.c:219
+msgid "Vietnamese:"
+msgstr "Fietnameg:"
+
+#: xmms/about.c:220
+msgid "Trinh Minh Thanh"
+msgstr "Trinh Minh Thanh"
+
+#: xmms/about.c:221
+msgid "Walloon:"
+msgstr "Walloon:"
+
+#: xmms/about.c:222
+msgid "Lucyin Mahin"
+msgstr "Lucyin Mahin"
+
+#: xmms/about.c:222
+msgid "Pablo Saratxaga"
+msgstr "Pablo Saratxaga"
+
+#: xmms/about.c:223
+msgid "Welsh:"
+msgstr "Cymraeg:"
+
+#: xmms/about.c:224
+msgid "Rhoslyn Prys"
+msgstr "Rhoslyn Prys"
+
+#: xmms/about.c:288
+msgid "About XMMS"
+msgstr "Ynghylch  XMMS"
+
+#: xmms/about.c:320
+#, c-format
+msgid "XMMS %s - Cross platform multimedia player"
+msgstr "XMMS %s - Chwaraewr aml-gyfrwng traws blatfforn"
+
+#: xmms/about.c:327
+msgid "Copyright (C) 1997-2004 4Front Technologies and The XMMS Team"
+msgstr "Hawlfraint (C) 1997-2004 4Front Technologies a Thîm XMMS"
+
+#: xmms/about.c:337
+msgid "Credits"
+msgstr "Diolchiadau"
+
+#: xmms/about.c:342
+msgid "Translators"
+msgstr "Cyfieithwyr"
+
+#: xmms/eq_slider.c:61
+msgid "PREAMP"
+msgstr "CYNAMP"
+
+#: xmms/eq_slider.c:61
+msgid "60HZ"
+msgstr "60HZ"
+
+#: xmms/eq_slider.c:61
+msgid "170HZ"
+msgstr "170HZ"
+
+#: xmms/eq_slider.c:62
+msgid "310HZ"
+msgstr "310HZ"
+
+#: xmms/eq_slider.c:62
+msgid "600HZ"
+msgstr "600HZ"
+
+#: xmms/eq_slider.c:62
+msgid "1KHZ"
+msgstr "1KHZ"
+
+#: xmms/eq_slider.c:63
+msgid "3KHZ"
+msgstr "3KHZ"
+
+#: xmms/eq_slider.c:63
+msgid "6KHZ"
+msgstr "6KHZ"
+
+#: xmms/eq_slider.c:63
+msgid "12KHZ"
+msgstr "12KHZ"
+
+#: xmms/eq_slider.c:64
+msgid "14KHZ"
+msgstr "14KHZ"
+
+#: xmms/eq_slider.c:64
+msgid "16KHZ"
+msgstr "16KHZ"
+
+#: xmms/equalizer.c:80
+msgid "/Load"
+msgstr "/Llwytho"
+
+#: xmms/equalizer.c:81
+msgid "/Load/Preset"
+msgstr "/Llwytho/Rhagosod"
+
+#: xmms/equalizer.c:82
+msgid "/Load/Auto-load preset"
+msgstr "/Llwytho/Awtolwytho rhagosod"
+
+#: xmms/equalizer.c:83
+msgid "/Load/Default"
+msgstr "/Llwytho/Rhagosodedig"
+
+#: xmms/equalizer.c:84 xmms/equalizer.c:86
+msgid "/Load/-"
+msgstr "/Llwytho/-"
+
+#: xmms/equalizer.c:85
+msgid "/Load/Zero"
+msgstr "/Llwytho/Sero"
+
+#: xmms/equalizer.c:87
+msgid "/Load/From file"
+msgstr "/Llwytho/O'r ffeil"
+
+#: xmms/equalizer.c:88
+msgid "/Load/From WinAMP EQF file"
+msgstr "/Llwytho/O'r ffeil WinAMP EQF"
+
+#: xmms/equalizer.c:89
+msgid "/Import"
+msgstr "/Mewnforio"
+
+#: xmms/equalizer.c:90
+msgid "/Import/WinAMP Presets"
+msgstr "/Mewnforio/Rhagosodiadau WinAMP"
+
+#: xmms/equalizer.c:91
+msgid "/Save"
+msgstr "/Cadw"
+
+#: xmms/equalizer.c:92
+msgid "/Save/Preset"
+msgstr "/Cadw/Rhagosodiadau"
+
+#: xmms/equalizer.c:93
+msgid "/Save/Auto-load preset"
+msgstr "/Cadw/Awtolwytho rhagosodiadau"
+
+#: xmms/equalizer.c:94
+msgid "/Save/Default"
+msgstr "/Cadw/Rhagosodedig"
+
+#: xmms/equalizer.c:95
+msgid "/Save/-"
+msgstr "/Cadw/-"
+
+#: xmms/equalizer.c:96
+msgid "/Save/To file"
+msgstr "/Cadw/I ffeil"
+
+#: xmms/equalizer.c:97
+msgid "/Save/To WinAMP EQF file"
+msgstr "/Cadw/I ffeil WinAMP EQF"
+
+#: xmms/equalizer.c:98
+msgid "/Delete"
+msgstr "/Dileu"
+
+#: xmms/equalizer.c:99
+msgid "/Delete/Preset"
+msgstr "/Dileu/Rhagosodiadau"
+
+#: xmms/equalizer.c:100
+msgid "/Delete/Auto-load preset"
+msgstr "/Dileu/Awtolwytho Rhagosodiadau"
+
+#: xmms/equalizer.c:101
+msgid "/Configure Equalizer"
+msgstr "/Ffurfweddu'r  Hafalydd"
+
+#: xmms/equalizer.c:747
+msgid "XMMS Equalizer"
+msgstr "Hafalydd  XMMS"
+
+#: xmms/equalizer.c:1304
+msgid "Presets"
+msgstr "Rhagosodau"
+
+#: xmms/equalizer.c:1371
+msgid "Load preset"
+msgstr "Llwytho'r rhagosodiadau"
+
+#: xmms/equalizer.c:1377
+msgid "Load auto-preset"
+msgstr "Llwytho'r awto-rhagosodiadau"
+
+#: xmms/equalizer.c:1400 xmms/equalizer.c:1415
+msgid "Load equalizer preset"
+msgstr "Llwytho rhagosodiadau'r hafalydd"
+
+#: xmms/equalizer.c:1430
+msgid "Import equalizer presets"
+msgstr "Mewnforio rhagosodiadau'r hafalydd"
+
+#: xmms/equalizer.c:1441
+msgid "Save preset"
+msgstr "Cadw'r rhagosodiadau"
+
+#: xmms/equalizer.c:1450
+msgid "Save auto-preset"
+msgstr "Cadw'r awto-ragosodiadau"
+
+#: xmms/equalizer.c:1471 xmms/equalizer.c:1494
+msgid "Save equalizer preset"
+msgstr "Cadw rhagosodiadau'r hafalydd"
+
+#: xmms/equalizer.c:1504
+msgid "Delete preset"
+msgstr "Dileu'r rhagosodiadau"
+
+#: xmms/equalizer.c:1504 xmms/equalizer.c:1508
+msgid "Delete"
+msgstr "Dileu"
+
+#: xmms/equalizer.c:1508
+msgid "Delete auto-preset"
+msgstr "Dileu'r awto-ragosodiadau"
+
+#: xmms/equalizer.c:1641
+msgid "Configure Equalizer"
+msgstr "Ffurfweddu'r Hafalydd"
+
+#: xmms/equalizer.c:1662
+msgid "Directory preset file:"
+msgstr "Ffeil rhagosodiadau'r cyfeiriadur"
+
+#: xmms/equalizer.c:1670
+msgid "File preset extension:"
+msgstr "Estyniad rhagosodiadau'r ffeil:"
+
+#: xmms/equalizer.c:1677
+msgid ""
+"If \"Auto\" is enabled on the equalizer, xmms will try to load equalizer "
+"presets like this:\n"
+"1: Look for a preset file in the directory of the file we are about to "
+"play.\n"
+"2: Look for a directory preset file in the same directory.\n"
+"3: Look for a preset saved with the \"auto-load\" feature\n"
+"4: Finally, try to load the \"default\" preset"
+msgstr ""
+"Os yw \"Awto\" wedi ei alluogi ar y \n"
+"\n"
+"\n"
+"\n"
+" rhagosodedig"
+
+#: xmms/input.c:252
+msgid "No output plugin"
+msgstr "Dim ategyn allbwn"
+
+#: xmms/input.c:253
+msgid "No output plugin has been selected"
+msgstr "Allbwn o ategyn heb ei ddewis"
+
+#: xmms/input.c:417
+msgid "No input plugin recognized this file"
+msgstr "Ategyn mewnbwn heb adnabod y ffeil"
+
+#: xmms/input.c:419
+#, c-format
+msgid "Input plugin: %s"
+msgstr "Ategyn mewnbwn: %s"
+
+#: xmms/main.c:128
+msgid "/Preferences"
+msgstr "/Dewisiadau"
+
+#: xmms/main.c:129
+msgid "/Skin Browser"
+msgstr "/Porwr Croen"
+
+#: xmms/main.c:130
+msgid "/Reload skin"
+msgstr "/Ail-lwytho'r croen"
+
+#: xmms/main.c:131 xmms/main.c:135 xmms/main.c:139 xmms/main.c:273
+#: xmms/main.c:278 xmms/main.c:282 xmms/main.c:302 xmms/playlistwin.c:161
+msgid "/-"
+msgstr "/-"
+
+#: xmms/main.c:132
+msgid "/Repeat"
+msgstr "/Ailadrodd"
+
+#: xmms/main.c:133
+msgid "/Shuffle"
+msgstr "/Cymysgu"
+
+#: xmms/main.c:134
+msgid "/No Playlist Advance"
+msgstr "/Dim Symud Ymlaen Trwy'r Rhestr Chwarae"
+
+#: xmms/main.c:136
+msgid "/Time Elapsed"
+msgstr "/Amser aeth Heibio"
+
+#: xmms/main.c:137
+msgid "/Time Remaining"
+msgstr "/Amser yn Weddill"
+
+#: xmms/main.c:138
+msgid "/Time Display (MMM:SS)"
+msgstr ""
+
+#: xmms/main.c:140
+msgid "/Always On Top"
+msgstr "/Bob Tro ar yr Wyneb"
+
+#: xmms/main.c:141
+msgid "/Show on all desktops"
+msgstr "/Dangos ar bob bwrdd gwaith"
+
+#: xmms/main.c:142
+msgid "/WindowShade Mode"
+msgstr "/Modd WindowShade"
+
+#: xmms/main.c:143
+msgid "/Playlist WindowShade Mode"
+msgstr "/Rhestr Chwarae Modd WindowShade"
+
+#: xmms/main.c:144
+msgid "/Equalizer WindowShade Mode"
+msgstr "/Modd WindowShade yr Hafalydd"
+
+#: xmms/main.c:145
+msgid "/DoubleSize"
+msgstr "/Maint Dwbl"
+
+#: xmms/main.c:146
+msgid "/Easy Move"
+msgstr "/Easy Move"
+
+#: xmms/main.c:162
+msgid "/File Info"
+msgstr "/Ffeil Gwybodaeth"
+
+#: xmms/main.c:163
+msgid "/Jump To File"
+msgstr "/Neidio i Ffeil"
+
+#: xmms/main.c:164
+msgid "/Jump To Time"
+msgstr "/Neidio i Amser"
+
+#: xmms/main.c:165
+msgid "/Autoscroll Song Name"
+msgstr "/Awtosgrolio Enw Cân"
+
+#: xmms/main.c:189
+msgid "/Visualization Mode"
+msgstr "/Modd Delweddu"
+
+#: xmms/main.c:190
+msgid "/Visualization Mode/Analyzer"
+msgstr "/Modd Delweddu/Dadansoddwr"
+
+#: xmms/main.c:191
+msgid "/Visualization Mode/Scope"
+msgstr "/Modd Delweddu/Cwmpas"
+
+#: xmms/main.c:192
+msgid "/Visualization Mode/Off"
+msgstr "/Modd Delweddu/Diffodd"
+
+#: xmms/main.c:193
+msgid "/Analyzer Mode"
+msgstr "/Modd Dadansoddwr"
+
+#: xmms/main.c:194
+msgid "/Analyzer Mode/Normal"
+msgstr "/Modd Dadansoddwr/Normal"
+
+#: xmms/main.c:195
+msgid "/Analyzer Mode/Fire"
+msgstr "/Modd Dadansoddwr/Tân"
+
+#: xmms/main.c:196
+msgid "/Analyzer Mode/Vertical Lines"
+msgstr "/Modd Dadansoddwr/Llinellau Fertigol"
+
+#: xmms/main.c:197 xmms/main.c:200
+msgid "/Analyzer Mode/-"
+msgstr "/Modd Dadansoddwr/-"
+
+#: xmms/main.c:198
+msgid "/Analyzer Mode/Lines"
+msgstr "/Modd Dadansoddwr/Llinellau"
+
+#: xmms/main.c:199
+msgid "/Analyzer Mode/Bars"
+msgstr "/Modd Dadansoddwr/Barau"
+
+#: xmms/main.c:201
+msgid "/Analyzer Mode/Peaks"
+msgstr "/Modd Dadansoddwr/Brigau"
+
+#: xmms/main.c:202
+msgid "/Scope Mode"
+msgstr "/Modd Cwmpas"
+
+#: xmms/main.c:203
+msgid "/Scope Mode/Dot Scope"
+msgstr "/Modd Cwmpas/Cwmpas Dot"
+
+#: xmms/main.c:204
+msgid "/Scope Mode/Line Scope"
+msgstr "/Modd Cwmpas/Cwmpas Llinell"
+
+#: xmms/main.c:205
+msgid "/Scope Mode/Solid Scope"
+msgstr "/Modd Cwmpas/Cwmpas Solet"
+
+#: xmms/main.c:206
+msgid "/WindowShade VU Mode"
+msgstr "/Modd WindowShade VU"
+
+#: xmms/main.c:207
+msgid "/WindowShade VU Mode/Normal"
+msgstr "/Modd WindowShade VU/Normal"
+
+#: xmms/main.c:208
+msgid "/WindowShade VU Mode/Smooth"
+msgstr "/Modd WindowShade VU/Llyfn"
+
+#: xmms/main.c:209
+msgid "/Refresh Rate"
+msgstr "/Graddfa Adnewyddu"
+
+#: xmms/main.c:210
+msgid "/Refresh Rate/Full (~50 fps)"
+msgstr "/Graddfa Adnewyddu/Llawn (~50fps)"
+
+#: xmms/main.c:211
+msgid "/Refresh Rate/Half (~25 fps)"
+msgstr "/Graddfa Adnewyddu/Hanner (~25 fps)"
+
+#: xmms/main.c:212
+msgid "/Refresh Rate/Quarter (~13 fps)"
+msgstr "/Graddfa Adnewyddu/Chwarter (~13 fps)"
+
+#: xmms/main.c:213
+msgid "/Refresh Rate/Eighth (~6 fps)"
+msgstr "/Graddfa Adnewyddu/Wythfed (~6 fps)"
+
+#: xmms/main.c:214
+msgid "/Analyzer Falloff"
+msgstr "/Cwymp Dadansoddwr"
+
+#: xmms/main.c:215
+msgid "/Analyzer Falloff/Slowest"
+msgstr "/Cwymp Dadansoddwr/Arafaf"
+
+#: xmms/main.c:216
+msgid "/Analyzer Falloff/Slow"
+msgstr "/Cwymp Dadansoddwr/Araf"
+
+#: xmms/main.c:217
+msgid "/Analyzer Falloff/Medium"
+msgstr "/Cwymp Dadansoddwr/Canolig"
+
+#: xmms/main.c:218
+msgid "/Analyzer Falloff/Fast"
+msgstr "/Cwymp Dadansoddwr/Cyflym"
+
+#: xmms/main.c:219
+msgid "/Analyzer Falloff/Fastest"
+msgstr "/Cwymp Dadansoddwr/Cyflymaf"
+
+#: xmms/main.c:220
+msgid "/Peaks Falloff"
+msgstr "/Cwymp Brigau"
+
+#: xmms/main.c:221
+msgid "/Peaks Falloff/Slowest"
+msgstr "/Cwymp Brigau/Arafaf"
+
+#: xmms/main.c:222
+msgid "/Peaks Falloff/Slow"
+msgstr "/Cwymp Brigau/Araf"
+
+#: xmms/main.c:223
+msgid "/Peaks Falloff/Medium"
+msgstr "/Cwymp Brigau/Canolig"
+
+#: xmms/main.c:224
+msgid "/Peaks Falloff/Fast"
+msgstr "/Cwymp Brigau/Cyflym"
+
+#: xmms/main.c:225
+msgid "/Peaks Falloff/Fastest"
+msgstr "/Cwymp Brigau/Cyflymaf"
+
+#: xmms/main.c:226
+msgid "/Visualization plugins"
+msgstr "/Ategynnau Delweddu"
+
+#: xmms/main.c:272
+msgid "/About XMMS"
+msgstr "/Ynghylch XMMS"
+
+#: xmms/main.c:274
+msgid "/Play File"
+msgstr "/Chwarae Ffeil"
+
+#: xmms/main.c:275
+msgid "/Play Directory"
+msgstr "/Cyfeiriadur Chwarae"
+
+#: xmms/main.c:276
+msgid "/Play Location"
+msgstr "/Lleoliad Chwarae"
+
+#: xmms/main.c:277 xmms/playlistwin.c:158
+msgid "/View File Info"
+msgstr "/Edrych ar Wybodaeth Ffeil"
+
+#: xmms/main.c:279
+msgid "/Main Window"
+msgstr "/Prif Ffenestr"
+
+#: xmms/main.c:280
+msgid "/Playlist Editor"
+msgstr "/Golygydd Rhestr Chwarae"
+
+#: xmms/main.c:281
+msgid "/Graphical EQ"
+msgstr "/EQ Graffigol"
+
+#: xmms/main.c:283
+msgid "/Options"
+msgstr "/Dewisiadau"
+
+#: xmms/main.c:284
+msgid "/Playback"
+msgstr "/Chwarae Nôl"
+
+#: xmms/main.c:285
+msgid "/Playback/Previous"
+msgstr "/Chwarae Nôl/Blaenorol"
+
+#: xmms/main.c:286
+msgid "/Playback/Play"
+msgstr "/Chwarae Nôl/Chwarae"
+
+#: xmms/main.c:287
+msgid "/Playback/Pause"
+msgstr "/Chwarae Nôl/Oedi"
+
+#: xmms/main.c:288
+msgid "/Playback/Stop"
+msgstr "/Chwarae Nôl/Atal"
+
+#: xmms/main.c:289
+msgid "/Playback/Next"
+msgstr "/Chwarae Nôl/Nesaf"
+
+#: xmms/main.c:290 xmms/main.c:297
+msgid "/Playback/-"
+msgstr "/Chwarae Nôl/-"
+
+#: xmms/main.c:292
+msgid "/Playback/Back 5 Seconds"
+msgstr "/Chwarae Nôl/Nôl 5 eiliad"
+
+#: xmms/main.c:293
+msgid "/Playback/Fwd 5 Seconds"
+msgstr "/Chwarae Nôl/Ymlaen 5 Eiliad"
+
+#: xmms/main.c:294
+msgid "/Playback/Start of List"
+msgstr "/Chwarae Nôl/Dechrau'r Rhestr"
+
+#: xmms/main.c:295
+msgid "/Playback/10 Tracks Back"
+msgstr "/Chwarae Nôl/10 Trac Nôl"
+
+#: xmms/main.c:296
+msgid "/Playback/10 Tracks Fwd"
+msgstr "/Chwarae Nôl/10 trac Ymlaen"
+
+#: xmms/main.c:298
+msgid "/Playback/Jump to Time"
+msgstr "/Chwarae Nôl/Neidio i'r Amser"
+
+#: xmms/main.c:299
+msgid "/Playback/Jump to File"
+msgstr "/Chwarae Nôl/Neidio i Ffeil"
+
+#: xmms/main.c:300
+msgid "/Playback/Clear Queue"
+msgstr "/Chwarae Nôl/Clirio'r Rhes"
+
+#: xmms/main.c:301
+msgid "/Visualization"
+msgstr "/Delweddu"
+
+#: xmms/main.c:303
+msgid "/Exit"
+msgstr "/Gadael"
+
+#: xmms/main.c:1466
+msgid "Jump to time"
+msgstr "Neidio i amser"
+
+#: xmms/main.c:1477
+msgid "Jump to:"
+msgstr "Neidio i:"
+
+#: xmms/main.c:1493
+msgid "minutes:seconds"
+msgstr "munudau:eiliadau"
+
+#: xmms/main.c:1500
+msgid "Track length:"
+msgstr "Hyd trac:"
+
+#: xmms/main.c:1514 xmms/main.c:1949
+msgid "Jump"
+msgstr "Neidio"
+
+#  I18N note: "Enqueue" here means "Add to playlist"
+#: xmms/main.c:1553 xmms/main.c:1892 xmms/main.c:2226
+msgid "Queue"
+msgstr "Ciw"
+
+#: xmms/main.c:1562
+msgid "Unqueue"
+msgstr "Dad-rhesu"
+
+#: xmms/main.c:1880 xmms/main.c:2202
+msgid "Jump to file"
+msgstr "Neidio i ffeil"
+
+#: xmms/main.c:1894 xmms/main.c:2228
+msgid "Q"
+msgstr ""
+
+#: xmms/main.c:1895 xmms/main.c:2229
+msgid "Files"
+msgstr "Ffeiliau"
+
+#: xmms/main.c:1911 xmms/main.c:2297
+msgid "Search: "
+msgstr "Chwilio:"
+
+#: xmms/main.c:2232
+msgid "Queued files: "
+msgstr ""
+
+#: xmms/main.c:2260
+msgid "Move up"
+msgstr ""
+
+#: xmms/main.c:2267
+#, fuzzy
+msgid "Move down"
+msgstr "Gostwng y Sain"
+
+#: xmms/main.c:2274
+#, fuzzy
+msgid "Remove"
+msgstr "/Tynnu"
+
+#: xmms/main.c:2445 xmms/playlistwin.c:640
+msgid "Select directory to add:"
+msgstr "Chwilio am gyfeiriadur i'w ychwanegu:"
+
+#: xmms/main.c:2494
+msgid "Enter location to play:"
+msgstr "Rhowch leoliad i chwarae:"
+
+#: xmms/main.c:2622
+#, c-format
+msgid "SEEK TO: %d:%-2.2d/%d:%-2.2d (%d%%)"
+msgstr "CHWILIO HYD: %d:%-2.2d/%d:%-2.2d (%d%%)"
+
+#: xmms/main.c:2647 xmms/main.c:3207
+#, c-format
+msgid "VOLUME: %d%%"
+msgstr "SAIN: %d%%"
+
+#: xmms/main.c:2676 xmms/main.c:3212
+#, c-format
+msgid "BALANCE: %d%% LEFT"
+msgstr "CYDBWYSEDD: %d%% CHWITH"
+
+#: xmms/main.c:2681 xmms/main.c:3215
+msgid "BALANCE: CENTER"
+msgstr "CYDBWYSEDD: CANOL"
+
+#: xmms/main.c:2686 xmms/main.c:3218
+#, c-format
+msgid "BALANCE: %d%% RIGHT"
+msgstr "CYDBWYSEDD: %d%% DE"
+
+#: xmms/main.c:3079
+msgid "OPTIONS MENU"
+msgstr "DEWISLEN DEWIS"
+
+#: xmms/main.c:3085
+msgid "DISABLE ALWAYS ON TOP (N/A)"
+msgstr "ANALLUOGI AR YR WYNEB BOB TRO"
+
+#: xmms/main.c:3087
+msgid "ENABLE ALWAYS ON TOP (N/A)"
+msgstr "GALLUOGI AR YR WYNEB BOB TRO "
+
+#: xmms/main.c:3090
+msgid "DISABLE ALWAYS ON TOP"
+msgstr "ANALLUOGI AR YR WYNEB"
+
+#: xmms/main.c:3092
+msgid "ENABLE ALWAYS ON TOP"
+msgstr "GALLUOGI AR YR WYNEB"
+
+#: xmms/main.c:3095
+msgid "FILE INFO BOX"
+msgstr "BLWCH GWYBODAETH FFEIL"
+
+#: xmms/main.c:3099
+msgid "DISABLE DOUBLESIZE"
+msgstr "ANALLUOGI DOUBLESIZE"
+
+#: xmms/main.c:3101
+msgid "ENABLE DOUBLESIZE"
+msgstr "GALLUOGI DWBL MAINT"
+
+#: xmms/main.c:3104
+msgid "VISUALIZATION MENU"
+msgstr "DEWISLEN DELWEDDU"
+
+#: xmms/main.c:3524
+msgid "Couldn't open audio"
+msgstr "Methu agor y sain"
+
+#: xmms/main.c:3525
+msgid ""
+"Please check that:\n"
+"\n"
+"Your soundcard is configured properly\n"
+"You have the correct output plugin selected\n"
+"No other program is blocking the soundcard"
+msgstr ""
+"Gwiriwch:\n"
+"\n"
+"Fod eich cerdyn sain wedi ei ffurfweddu'n gywir\n"
+"Nad oes rhaglen arall yn rhwystro'r cerdyn sain\n"
+"Nad oes rhaglen arall yn rhwystro'r cerdyn sain"
+
+#: xmms/main.c:3760
+#, c-format
+msgid ""
+"Usage: xmms [options] [files] ...\n"
+"\n"
+"Options:\n"
+"--------\n"
+msgstr ""
+"Defnydd: xmms [dewisiadau][ffeiliau]...\n"
+"\n"
+"Dewisiadau:\n"
+"---------\n"
+
+#: xmms/main.c:3765
+#, c-format
+msgid "Display this text and exit."
+msgstr "Dangos y testun hwn a gadael"
+
+#: xmms/main.c:3768
+#, c-format
+msgid "Select XMMS session (Default: 0)"
+msgstr "Dewis sesiwn XMMS (Rhagosodedig: 0)"
+
+#: xmms/main.c:3771
+#, c-format
+msgid "Skip backwards in playlist"
+msgstr "Sgipio nôl yn y rhestr chwarae"
+
+#: xmms/main.c:3774
+#, c-format
+msgid "Start playing current playlist"
+msgstr "Cychwyn chwarae'r rhestr chwarae"
+
+#: xmms/main.c:3777
+#, c-format
+msgid "Pause current song"
+msgstr "Oedi'r gân"
+
+#: xmms/main.c:3780
+#, c-format
+msgid "Stop current song"
+msgstr "Atal y gân"
+
+#: xmms/main.c:3783
+#, c-format
+msgid "Pause if playing, play otherwise"
+msgstr "Oedi os yn chwarae, chwarae fel arall"
+
+#: xmms/main.c:3786
+#, c-format
+msgid "Skip forward in playlist"
+msgstr "Sgipio mlaen yn y rhestr chwarae"
+
+#: xmms/main.c:3789
+#, c-format
+msgid "Don't clear the playlist"
+msgstr "Peidio clirio'r rhestr chwarae"
+
+#: xmms/main.c:3792
+#, c-format
+msgid "Add file(s) to playlist and queue"
+msgstr ""
+
+#: xmms/main.c:3793 xmms/main.c:3797 xmms/main.c:3801
+msgid "[=SWITCH]"
+msgstr ""
+
+#: xmms/main.c:3795
+#, c-format
+msgid "Toggle the 'shuffle' flag."
+msgstr ""
+
+#: xmms/main.c:3799
+#, c-format
+msgid "Toggle the 'repeat' flag."
+msgstr ""
+
+#: xmms/main.c:3803
+#, c-format
+msgid "Toggle the 'no playlist advance' flag."
+msgstr ""
+
+#: xmms/main.c:3806
+#, c-format
+msgid "SWITCH may be either 'on' or 'off'\n"
+msgstr ""
+
+#: xmms/main.c:3809
+#, c-format
+msgid "Show the main window."
+msgstr "Dangos y brif ffenestr."
+
+#: xmms/main.c:3812
+#, c-format
+msgid "Previous session ID"
+msgstr "Enw'r sesiwn blaenorol"
+
+#: xmms/main.c:3815
+#, c-format
+msgid "Print version number and exit."
+msgstr "Argraffu rhif y fersiwn a gadael"
+
+#: xmms/main.c:3818
+#, fuzzy, c-format
+msgid "Close remote session."
+msgstr "Defnyddio gwesteiwr pell"
+
+#: xmms/main.c:3994 xmms/main.c:4018 xmms/main.c:4042
+#, c-format
+msgid "Value '%s' not understood, must be either 'on' or 'off'.\n"
+msgstr ""
+
+#: xmms/main.c:4057
+#, c-format
+msgid ""
+"\n"
+"Segmentation fault\n"
+"\n"
+"You've probably found a bug in XMMS, please visit\n"
+"http://bugs.xmms.org and fill out a bug report.\n"
+"\n"
+msgstr ""
+"\n"
+"Gwall segmentu\n"
+"\n"
+"Rydych wedi canfod gwall yn XMMs, ewch i\n"
+"http://bugs.xmms.org a llanw adroddiad gwall.\n"
+"\n"
+
+#: xmms/main.c:4198
+msgid "GLib does not support threads."
+msgstr "Nid yw GLib yn cynnal trywyddion."
+
+#: xmms/main.c:4255
+#, c-format
+msgid ""
+"Sorry, your GTK+ version (%d.%d.%d) doesn't work with XMMS.\n"
+"Please use GTK+ %s or newer.\n"
+msgstr ""
+"Yn anffodus ni fydd eich fersiwn o GTK+  (%d.%d.%d) yn gweithio gyda XMMS\n"
+"Defnyddiwch GTK+ %s neu ddiweddarach.\n"
+
+#: xmms/main.c:4325
+msgid "X Multimedia System"
+msgstr "System Aml-gyfrwng X"
+
+#: xmms/playlistwin.c:95
+msgid "/Sort List"
+msgstr "/Rhestr Didoli"
+
+#: xmms/playlistwin.c:96
+msgid "/Sort List/By Title"
+msgstr "/Rhestr Didoli/Yn ôl Teitl"
+
+#: xmms/playlistwin.c:98
+msgid "/Sort List/By Filename"
+msgstr "/Rhestr Didoli/Yn ôl Enw Ffeil"
+
+#: xmms/playlistwin.c:100
+msgid "/Sort List/By Path + Filename"
+msgstr "/Rhestr Didoli/Yn ôl Llwybr + Enw ffeil"
+
+#: xmms/playlistwin.c:102
+msgid "/Sort List/By Date"
+msgstr "/Rhestr Didoli/Yn ôl Dyddiad"
+
+#: xmms/playlistwin.c:104 xmms/playlistwin.c:173
+msgid "/Selection"
+msgstr "/Dewis"
+
+#: xmms/playlistwin.c:105
+#, fuzzy
+msgid "/Selection/Sort By Title"
+msgstr "/Dewis Didoli/Yn ôl Teitl"
+
+#: xmms/playlistwin.c:107
+#, fuzzy
+msgid "/Selection/Sort By Filename"
+msgstr "/Dewis Didoli/Yn ôl Enw Ffeil"
+
+#: xmms/playlistwin.c:109
+#, fuzzy
+msgid "/Selection/Sort By Path + Filename"
+msgstr "/Dewis Didoli/Yn ôl LLwybr + Enw Ffeil"
+
+#: xmms/playlistwin.c:111
+#, fuzzy
+msgid "/Selection/Sort By Date"
+msgstr "/Dewis Didoli/Yn ôl Dyddiad"
+
+#: xmms/playlistwin.c:113
+#, fuzzy
+msgid "/Selection/Randomize"
+msgstr "/Dewis/-"
+
+#: xmms/playlistwin.c:116
+msgid "/Randomize List"
+msgstr "/Hapio'r Rhestr"
+
+#: xmms/playlistwin.c:118
+msgid "/Reverse List"
+msgstr "/Cildroi'r Rhestr"
+
+#: xmms/playlistwin.c:131
+msgid "/By extension"
+msgstr "/Yn ôl estyniad"
+
+#: xmms/playlistwin.c:148
+msgid "/Remove Dead Files"
+msgstr "/Tynnu Ffeiliau Marw"
+
+#: xmms/playlistwin.c:149
+msgid "/Physically Delete Files"
+msgstr "/Dileu Ffeiliau'n Gorfforol"
+
+#: xmms/playlistwin.c:159
+msgid "/Queue - Unqueue"
+msgstr "/Rhesu - Dad-rhesu"
+
+#: xmms/playlistwin.c:160
+#, fuzzy
+msgid "/Queue manager"
+msgstr "/Rhesu - Dad-rhesu"
+
+#: xmms/playlistwin.c:162
+msgid "/Add"
+msgstr "/Ychwanegu"
+
+#: xmms/playlistwin.c:163
+msgid "/Add/File"
+msgstr "/Ychwanegu/Ffeil"
+
+#: xmms/playlistwin.c:164
+msgid "/Add/Directory"
+msgstr "/Ychwanegu/Cyfeiriadur"
+
+#: xmms/playlistwin.c:165
+msgid "/Add/Url"
+msgstr "/Ychwanegu/Url"
+
+#: xmms/playlistwin.c:167
+msgid "/Remove"
+msgstr "/Tynnu"
+
+#: xmms/playlistwin.c:168
+msgid "/Remove/Selected"
+msgstr "/Tynnu/Dewis"
+
+#: xmms/playlistwin.c:169
+msgid "/Remove/Crop"
+msgstr "/Tynnu/Torri"
+
+#: xmms/playlistwin.c:170
+msgid "/Remove/All"
+msgstr "/Tynnu/Popeth"
+
+#: xmms/playlistwin.c:171
+msgid "/Remove/Misc"
+msgstr "/Tynnu/Amrywioll"
+
+#: xmms/playlistwin.c:174
+msgid "/Selection/Select All"
+msgstr "/Dewis/Dewis Popeth"
+
+#: xmms/playlistwin.c:175
+msgid "/Selection/Select None"
+msgstr "/Dewis/Dewis Dim"
+
+#: xmms/playlistwin.c:176
+msgid "/Selection/Invert Selection"
+msgstr "/Dewis/Troi'r Dewis"
+
+#: xmms/playlistwin.c:177
+msgid "/Selection/-"
+msgstr "/Dewis/-"
+
+#: xmms/playlistwin.c:178
+msgid "/Selection/Read Extended Info"
+msgstr "/Dewis/Darllen Gwybodaeth Estynedig"
+
+#: xmms/playlistwin.c:180
+msgid "/Sort"
+msgstr "/Trefnu yn ôl"
+
+#: xmms/playlistwin.c:182
+msgid "/Playlist"
+msgstr "/Rhestr Chwarae"
+
+#: xmms/playlistwin.c:183
+msgid "/Playlist/Load List"
+msgstr "/Rhestr Chwarae/Llwytho'r Rhestr"
+
+#: xmms/playlistwin.c:184
+msgid "/Playlist/Save List"
+msgstr "/Rhestr Chwarae/Cadw'r Rhestr"
+
+#: xmms/playlistwin.c:185
+msgid "/Playlist/New List"
+msgstr "/Rhestr Chwarae/Rhestr Newydd"
+
+#: xmms/playlistwin.c:618
+msgid "Enter URL to add:"
+msgstr "Rhoi URL i ychwanegu:"
+
+#: xmms/playlistwin.c:718
+msgid "Unable to write playlist!"
+msgstr "Methu ysgrifennu i'r rhestr chwarae!"
+
+#: xmms/playlistwin.c:721
+#, c-format
+msgid "Error writing playlist \"%s\": %s"
+msgstr "Gwall ysgrifennu'r rhestr chwarae \"%s\": %s"
+
+#: xmms/playlistwin.c:768
+msgid "File exists!"
+msgstr "Ffeil yn bod!"
+
+#: xmms/playlistwin.c:771
+#, c-format
+msgid "%s already exists."
+msgstr "%s yn bodoli'n barod"
+
+#: xmms/playlistwin.c:782
+msgid "Overwrite"
+msgstr "Ysgrifennu dros"
+
+#: xmms/playlistwin.c:839
+#, c-format
+msgid ""
+"Unknown file type for %s.\n"
+"The filename of the playlist should end in either \".m3u\" or \".pls\"."
+msgstr ""
+
+#: xmms/playlistwin.c:843
+msgid "Unable to save playlist"
+msgstr "Methu cadw'r rhestr chwarae"
+
+#: xmms/playlistwin.c:916
+msgid "Load playlist"
+msgstr "Llwytho'r rhestr chwarae"
+
+#: xmms/playlistwin.c:953
+msgid "Save playlist"
+msgstr "Cadw'r Rhestr Chwarae"
+
+#: xmms/playlistwin.c:971
+msgid "Save options"
+msgstr "Dewisiadau cadw"
+
+#: xmms/playlistwin.c:975
+msgid "Determine file type:"
+msgstr "Penderfynu'r math o ffeil:"
+
+#: xmms/playlistwin.c:1408
+#, c-format
+msgid "Failed to delete \"%s\": %s."
+msgstr "Methu dileu \"%s\": %s."
+
+#: xmms/playlistwin.c:1424
+#, c-format
+msgid "%d of %d files successfully deleted."
+msgstr "%d o %d ffeiliau wedi eu dileu'n llwyddiannus"
+
+#: xmms/playlistwin.c:1428
+msgid "XMMS: Files deleted"
+msgstr "XMMS: Ffeiliau wedi eu dileu"
+
+#: xmms/playlistwin.c:1459
+msgid "XMMS: Delete files?"
+msgstr "XMMS: Dileu ffeiliau?"
+
+#: xmms/playlistwin.c:1468
+#, c-format
+msgid "Really delete %d files?"
+msgstr "Dileu ffeiliau %d go iawn?"
+
+#: xmms/playlistwin.c:1470
+#, c-format
+msgid "Really delete: \"%s\"?"
+msgstr "Dileu \"%s\"?"
+
+#: xmms/playlistwin.c:1930
+msgid "XMMS Playlist"
+msgstr "Rhestr Chwarae XMMS"
+
+#: xmms/prefswin.c:302
+msgid ""
+"Realtime priority is a way for XMMS to get a higher\n"
+"priority  for CPU time.  This might give less \"skips\".\n"
+"\n"
+"This requires that XMMS is run with root privileges and\n"
+"may, although it's very unusual, lock up your computer.\n"
+"Running XMMS with root privileges might also have other\n"
+"security implications.\n"
+"\n"
+"Using this feature is not recommended.\n"
+"To activate this you need to restart XMMS."
+msgstr ""
+"Mae blaenoriaeth Realtime yn ffordd i XMMS gael\n"
+"blaenoriaeth uwch o amser y CPU. Efallai bydd hyn yn\n"
+"rhoi llai o \"sgipio\"\n"
+"\n"
+"Mae hyn yn gofyn i XMMS gael ei redeg heb freintiau gwraidd\n"
+"a gall gloi eich cyfrifiadur, er bod hynny'n anarferol.\n"
+"Mae i redeg XMMS gyda breintiau gwraidd yn codi peryglon\n"
+"diogelwch\n"
+"\n"
+"Nid ydym yn argymell hyn\n"
+"I'w gychwyn rhaid ail gychwyn XMMS.."
+
+#: xmms/prefswin.c:439
+msgid "Select playlist font:"
+msgstr "Dewis ffont y rhestr chwarae:"
+
+#: xmms/prefswin.c:466
+msgid "Select main window font:"
+msgstr "Dewis ffont"
+
+#: xmms/prefswin.c:719
+msgid "Preferences"
+msgstr "Dewisiadau"
+
+#: xmms/prefswin.c:742
+msgid "Input Plugins"
+msgstr "Ategynnau Mewnbwn"
+
+#: xmms/prefswin.c:750
+msgid "Input plugins"
+msgstr "Ategynnau mewnbwn"
+
+#: xmms/prefswin.c:772 xmms/prefswin.c:804 xmms/prefswin.c:846
+#: xmms/prefswin.c:891 xmms/prefswin.c:941
+msgid "Configure"
+msgstr "Ffurfweddu"
+
+#: xmms/prefswin.c:779 xmms/prefswin.c:854 xmms/prefswin.c:899
+#: xmms/prefswin.c:949
+msgid "Enable plugin"
+msgstr "Galluogi ategyn"
+
+#: xmms/prefswin.c:787
+msgid "Output Plugin"
+msgstr "Ategyn Allbwn"
+
+#: xmms/prefswin.c:812
+msgid "Audio I/O Plugins"
+msgstr "Ategynnau Sain I/O"
+
+#: xmms/prefswin.c:818 xmms/prefswin.c:858
+msgid "Effects Plugins"
+msgstr "Ategynnau Effeithiau"
+
+#: xmms/prefswin.c:825
+msgid "Effects plugins"
+msgstr "Ategynnau Effeithiau"
+
+#: xmms/prefswin.c:864 xmms/prefswin.c:903
+msgid "General Plugins"
+msgstr "Ategynnau Cyffredinol"
+
+#: xmms/prefswin.c:870
+msgid "General plugins"
+msgstr "Ategynnau cyffredinol"
+
+#: xmms/prefswin.c:911 xmms/prefswin.c:953
+msgid "Visualization Plugins"
+msgstr "Ategynnau Delweddu"
+
+#: xmms/prefswin.c:919
+msgid "Visualization plugins"
+msgstr "Ategynnau delweddu"
+
+#: xmms/prefswin.c:968
+msgid "Read info on"
+msgstr "Darllen gwybodaeth ar"
+
+#: xmms/prefswin.c:970
+msgid "play"
+msgstr "chwarae"
+
+#: xmms/prefswin.c:971
+msgid "Read song title and length only when starting to play"
+msgstr "Darllen teitl a hyd cân wrth gychwyn canu yn unig "
+
+#: xmms/prefswin.c:973
+msgid "demand"
+msgstr "gofyn"
+
+#: xmms/prefswin.c:974
+msgid "Read song title and length when the song is visible in the playlist"
+msgstr "Darllen teitl a hyd cân pan yw'r gân i'w gweld ar y rhestr chwarae"
+
+#: xmms/prefswin.c:976
+msgid "load"
+msgstr "llwytho"
+
+#: xmms/prefswin.c:977
+msgid ""
+"Read song title and length as soon as the song is loaded to the playlist"
+msgstr ""
+"Darllen teitl a hyd cân gynted a'i bod yn cael ei llwytho i'r rhestr chwarae"
+
+#: xmms/prefswin.c:980
+msgid "Allow multiple instances"
+msgstr "Caniatáu enghreifftiau aml"
+
+#: xmms/prefswin.c:982
+msgid "Convert %20 to space"
+msgstr "Trosi %20 yn ofod"
+
+#: xmms/prefswin.c:983
+msgid "Always show clutterbar"
+msgstr "Dangoswch y bar deunydd"
+
+#: xmms/prefswin.c:984
+msgid ""
+"The \"clutterbar\" is the row of buttons at the left side of the main window"
+msgstr "Y \"bar clwstwr\" yw'r rhes o fotymau ar ochr chwith y brif ffenestr"
+
+#: xmms/prefswin.c:986
+msgid "Convert underscore to space"
+msgstr "Trosi tan linell yn ofod"
+
+#: xmms/prefswin.c:987
+msgid "Save window positions"
+msgstr "Cadw safleoedd ffenestri"
+
+#: xmms/prefswin.c:989
+msgid "Dim titlebar when inactive"
+msgstr "Tywyllu'r bar teitl pan yn segur"
+
+#: xmms/prefswin.c:990
+msgid "Show numbers in playlist"
+msgstr "Dangos rhifau ar y rhestr chwarae"
+
+#: xmms/prefswin.c:992
+msgid "Sort \"Jump to file\" alphabetically"
+msgstr "Trefnu \"Neidio i ffeil\" yn ôl trefn yr wyddor"
+
+#: xmms/prefswin.c:993
+msgid "Equalizer doublesize linked"
+msgstr "Cysylltwyd cydrannydd maint dwbl"
+
+#: xmms/prefswin.c:995
+msgid "Use realtime priority when available"
+msgstr "Defnyddio blaenoriaeth realtime pan yw ar gael"
+
+#: xmms/prefswin.c:996
+msgid "Run XMMS with higher priority (not recommended)"
+msgstr "Rhedeg XMMS gyda blaenoriaeth uwch (anghymeradwy)"
+
+#: xmms/prefswin.c:998
+msgid "Smooth title scroll"
+msgstr "Sgrolio teitl yn llyfn"
+
+#: xmms/prefswin.c:1002
+msgid "Pause between songs for"
+msgstr "Oedi rhwng caneuon am"
+
+#: xmms/prefswin.c:1007
+msgid "seconds"
+msgstr "eiliad"
+
+#: xmms/prefswin.c:1013
+msgid ""
+"When moving windows around, snap them together, and towards screen edges at "
+"this distance"
+msgstr ""
+
+#: xmms/prefswin.c:1017
+msgid "Snap windows at"
+msgstr "Taro ffenestr yn"
+
+#: xmms/prefswin.c:1022
+msgid "pixels"
+msgstr "picseli"
+
+#: xmms/prefswin.c:1028
+msgid "Show window manager decorations"
+msgstr "Dangos addurniadau rheolwr ffenestri"
+
+#: xmms/prefswin.c:1032
+msgid "Use '\\' as a directory delimiter"
+msgstr "Defnyddiwch '\\' fel amffinydd cyfeiriadur"
+
+#: xmms/prefswin.c:1035
+#, fuzzy
+msgid ""
+"Recommended if you want to load playlists that were created in MS Windows"
+msgstr "Argymhellwyd os hoffech lwytho rhestrau chwarae grëwyd yn MS Windows"
+
+#: xmms/prefswin.c:1039
+msgid "Mouse Wheel adjusts Volume by (%)"
+msgstr "Olwyn y llygoden yn newid Sain yn ôl (%)"
+
+#: xmms/prefswin.c:1048
+msgid "Use meta-data in playlists"
+msgstr "Defnyddio meta-data mewn rhestrau chwarae"
+
+#: xmms/prefswin.c:1051
+msgid "Store information such as song title and length to playlists"
+msgstr ""
+
+#: xmms/prefswin.c:1067
+msgid "Use fontsets (Enable for multi-byte charset support)"
+msgstr "Defnyddiwch setiau ffont (Galluogi ar gyfer cynnal set nodau aml beit)"
+
+#: xmms/prefswin.c:1086
+msgid "Main Window"
+msgstr "Prif Ffenestr"
+
+#: xmms/prefswin.c:1093
+msgid "Use X font"
+msgstr "Defnyddiwch ffontiau X"
+
+#: xmms/prefswin.c:1105
+msgid "Fonts"
+msgstr "Ffontiau"
+
+#: xmms/prefswin.c:1129
+#, fuzzy
+msgid "Advanced Title Options"
+msgstr "Gosodiadau uwch"
+
+#: xmms/prefswin.c:1137
+#, c-format
+msgid ""
+"%0.2n - Display a 0 padded 2 char long tracknumber\n"
+"\n"
+"For more details, please read the included README or http://www.xmms.org/"
+"docs/readme.php"
+msgstr ""
+
+#: xmms/prefswin.c:1269 xmms/prefswin.c:1299 xmms/prefswin.c:1329
+msgid " (enabled)"
+msgstr "[galluogwyd]"
+
+#: xmms/prefswin.c:1358
+msgid " (disabled)"
+msgstr "(analluogwyd)"
+
+#: xmms/skinwin.c:50
+msgid "Skin selector"
+msgstr "Dewiswr croen"
+
+#: xmms/skinwin.c:58
+msgid "Skins"
+msgstr "Crwyn"
+
+#: xmms/skinwin.c:77
+msgid "Select random skin on play"
+msgstr "Dewis croen ar hap wrth chwarae"
+
+#: xmms/skinwin.c:195
+msgid "(none)"
+msgstr "(dim)"
+
+#: xmms/util.c:594
+msgid "Enqueue"
+msgstr "Ychwanegu"
+
+#: xmms/util.c:830
+msgid "Play files"
+msgstr "Ffeiliau chwarae"
+
+#: xmms/util.c:832
+msgid "Load files"
+msgstr "Llwytho ffeiliau"
+
+#: xmms/util.c:859
+msgid "Add selected files"
+msgstr "Ychwanegu'r dewis ffeiliau"
+
+#: xmms/util.c:863
+msgid "Add all files in directory"
+msgstr "Ychwanegu pob ffeil yn y cyfeiriadur"
+
+#: xmms/util.c:887 xmms/util.c:905
+msgid "Add"
+msgstr "Ychwanegu"
+
+#~ msgid "Ok"
+#~ msgstr "Iawn"
+
+#~ msgid "Song change"
+#~ msgstr "Newid cân"
+
+#~ msgid "Playlist end"
+#~ msgstr "Diwedd Rhestr Chwarae"
+
+#~ msgid ""
+#~ "Shell-command to run when xmms changes song.  It can optionally include "
+#~ "the string %%s which will be replaced by the new song title."
+#~ msgstr ""
+#~ "Gorchymyn cragen i'w redeg pan fo xmms yn newid cân. Yn ddewisol, gall "
+#~ "gynnwys llinell %%s fydd yn cael ei amnewid gyn deitl cân newydd."
+
+#~ msgid "Advanced settings:"
+#~ msgstr "Gosodiadau uwch:"
+
+#~ msgid "Mmap mode"
+#~ msgstr "Modd mmap"
+
+#~ msgid "/Sort Selection"
+#~ msgstr "/Dewis Didoli"
+
+#~ msgid "Unknown file type for %s"
+#~ msgstr "Math anhysbys o ffeil i %s"

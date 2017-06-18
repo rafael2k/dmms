@@ -1,0 +1,702 @@
+dnl Process this file with autoconf to produce a configure script.
+AC_INIT([xmms/main.c])
+AC_CANONICAL_HOST
+
+cflags_set=${CFLAGS+set}
+AM_CONFIG_HEADER([config.h xmms/i18n.h])
+
+AM_INIT_AUTOMAKE([xmms], [1.2.11])
+
+AC_ARG_ENABLE([one-plugin-dir],
+[  --enable-one-plugin-dir  use a single plugin dir [default=no]],,
+		enable_one_plugin_dir="no")
+
+AC_ARG_ENABLE([user-plugin-dir],
+[  --disable-user-plugin-dir disable per-user plugin dir],,
+		enable_user_plugin_dir="yes")
+
+AC_ARG_WITH([dev-dsp], 
+  [  --with-dev-dsp=path     Path to OSS DSP data pipe, default is /dev/dsp.],
+	dev_dsp="$withval", dev_dsp="/dev/dsp")
+AC_DEFINE_UNQUOTED([DEV_DSP],["$dev_dsp"], [Path to OSS DSP, really just a data pipe, default is /dev/dsp.])
+
+AC_ARG_WITH([dev-mixer], 
+  [  --with-dev-mixer=path   Path to OSS sound mixer, default is /dev/mixer.],
+	dev_mixer="$withval", dev_mixer="/dev/mixer")
+AC_DEFINE_UNQUOTED([DEV_MIXER],["$dev_mixer"], [Path to OSS mixer, default is /dev/mixer.])
+
+AC_ARG_WITH([cdda-device], 
+  [  --with-cdda-device=path Path to default cdaudio device.],
+  AC_DEFINE_UNQUOTED([CDDA_DEVICE],["$withval"], [Path to default cdaudio device.]))
+
+AC_ARG_WITH([cdda-dir], 
+  [  --with-cdda-dir=path    Path to default cdaudio directory.],
+  AC_DEFINE_UNQUOTED([CDDA_DIRECTORY],["$withval"], [Path to default cdaudio directory.]))
+
+prefix_save=$prefix
+AC_PREFIX_PROGRAM([xmms])
+
+
+dnl work around a bug in AC_PREFIX_PROGRAM in autoconf 2.53-2.57
+prefix_new=`echo $prefix | sed 's/^\(.\).*$/\1/'`
+if test "x$prefix_new" != "x/"; then
+	prefix=$prefix_save
+fi
+
+
+dnl ***
+dnl *** Various compiler setup.
+dnl ***
+AC_PROG_CC
+AC_GNU_SOURCE
+AC_ISC_POSIX
+dnl AC_PROG_CXX
+AC_C_BIGENDIAN
+AC_C_INLINE
+AC_C_CONST
+
+dnl Set assembler and assembler flags for automake > 1.4
+ifdef([AM_PROG_AS], [AM_PROG_AS])
+
+XMMS_AS_NOEXECSTACK
+
+
+dnl ***
+dnl *** Checks for programs.
+dnl ***
+AC_PROG_INSTALL
+AC_PROG_LN_S
+AC_PROG_MAKE_SET
+
+AM_DISABLE_STATIC
+AM_PROG_LIBTOOL
+
+AC_CHECK_HEADER([pthread.h],,[AC_MSG_ERROR([*** POSIX threads support not installed - please install first ***])])
+
+AM_PATH_GLIB([1.2.2],,[AC_MSG_ERROR([*** GLIB >= 1.2.2 not installed - please install first ***])])
+AM_PATH_GTK([1.2.2],,[AC_MSG_ERROR([*** GTK+ >= 1.2.2 not installed - please install first ***])],[gthread])
+AC_PATH_PROG([XMMS_PATH],[xmms],[no])
+
+
+dnl ***
+dnl *** X11 features
+dnl ***
+LIBS_save=$LIBS
+LIBS="$LIBS $GTK_LIBS"
+SM_LIBS=""
+AC_CHECK_LIB([SM], [SmcOpenConnection],[
+	AC_DEFINE([WITH_SM],, [Define if building with support for X11R6 session management])
+	SM_LIBS="-lSM -lICE"
+])
+AC_SUBST([SM_LIBS])
+LIBS=$LIBS_save
+
+AC_PATH_X
+AM_ICONV
+
+
+dnl ***
+dnl *** Check for XF86VidMode extension
+dnl ***
+CFLAGS_save=$CFLAGS
+LIBS_save=$LIBS
+CFLAGS="$CFLAGS $GTK_CFLAGS"
+LIBS="$LIBS $GTK_LIBS"
+AC_CHECK_LIB([Xxf86vm],[XF86VidModeQueryExtension],[
+    AC_DEFINE([XF86VIDMODE],1,[XF86VidMode extension is present])
+        VM_LIBS="-lXxf86vm"],,
+    [-L$x_libraries -lXext])
+
+CFLAGS=$CFLAGS_save
+LIBS=$LIBS_save
+AC_SUBST([VM_LIBS])
+
+
+dnl ***
+dnl *** Check pthread linking
+dnl ***
+PTHREAD_LIBS=error
+AC_MSG_CHECKING([for old style FreeBSD -pthread flag])
+AC_EGREP_CPP([yes],
+	[#if (defined(__FreeBSD_cc_version) && __FreeBSD_cc_version <= 500001) || defined(__OpenBSD__)
+	  yes
+	#endif
+	], AC_MSG_RESULT([yes])
+	CFLAGS="$CFLAGS -D_THREAD_SAFE" PTHREAD_LIBS="-pthread",
+	AC_MSG_RESULT([no]))
+if test "x$PTHREAD_LIBS" = "xerror"; then
+	AC_CHECK_LIB([pthread], [pthread_attr_init],
+		PTHREAD_LIBS="-lpthread")
+fi
+if test "x$PTHREAD_LIBS" = "xerror"; then
+        AC_CHECK_LIB([pthreads], [pthread_attr_init],
+		PTHREAD_LIBS="-lpthreads")
+fi
+if test "x$PTHREAD_LIBS" = "xerror"; then
+        AC_CHECK_LIB([c_r], [pthread_attr_init],
+		PTHREAD_LIBS="-lc_r")
+fi
+if test "x$PTHREAD_LIBS" = "xerror"; then
+	AC_CHECK_FUNC([pthread_attr_init], [PTHREAD_LIBS=""])
+fi
+if test "x$PTHREAD_LIBS" = "xerror"; then
+	AC_MSG_ERROR([*** Unable to locate working posix thread library ***])
+fi
+AC_SUBST([PTHREAD_LIBS])
+
+
+dnl ***
+dnl *** OpenGL
+dnl ***
+AC_ARG_ENABLE([opengl],
+[  --disable-opengl        Disable OpenGL plugin(s) [default=enabled]],,
+	[enable_opengl="yes"])
+
+if test "x$enable_opengl" = "xyes"; then
+	LIBS_save=$LIBS
+	LIBS="$LIBS $GTK_LIBS"
+	OPENGL_LIBS=error
+	AC_CHECK_LIB([GL],[glBegin],[OPENGL_LIBS="-lGL"])
+
+	if test "x$OPENGL_LIBS" = "xerror"; then
+		AC_CHECK_LIB([MesaGL],[glBegin],[OPENGL_LIBS="-lMesaGL"])
+	fi
+
+	CPPFLAGS_save=$CPPFLAGS
+	CPPFLAGS="$GTK_CFLAGS $CPPFLAGS"
+	have_opengl_headers=yes
+	AC_CHECK_HEADERS([GL/gl.h GL/glx.h],,[have_opengl_headers=no])
+
+	if test "x$OPENGL_LIBS" = "xerror" || test "x$have_opengl_headers" = "xno"; then
+		have_opengl=no
+	else
+		have_opengl=yes
+	fi
+
+	CPPFLAGS=$CPPFLAGS_save
+	LIBS=$LIBS_save
+else
+	AC_MSG_RESULT([*** Disabling OpenGL plugins per user request ***])
+	have_opengl=no
+fi
+AC_SUBST([OPENGL_LIBS])
+AM_CONDITIONAL([HAVE_OPENGL], [test "x$have_opengl" = "xyes"])
+
+
+dnl ***
+dnl *** zlib
+dnl ***
+LIBS_save=$LIBS
+Z_LIBS=""
+AC_CHECK_LIB([z], [inflate], [Z_LIBS="-lz"
+	AC_DEFINE(HAVE_LIBZ,,[Define if zlib is available])])
+AC_SUBST([Z_LIBS])
+LIBS=$LIBS_save
+
+
+dnl ***
+dnl *** esound
+dnl ***
+AC_ARG_ENABLE([esd],
+[  --disable-esd           Disable esound output plugin [default=enabled]],,
+	[enable_esd="yes"])
+
+if test "x$enable_esd" = "xyes"; then
+	AM_PATH_ESD([0.2.8], 
+	   [have_esd=yes 
+	    AC_CHECK_LIB([esd], [esd_get_latency], 
+	       AC_DEFINE([HAVE_ESD_GET_LATENCY],,
+		  [Define if libesd has the esd_get_latency function]))], 
+	   [have_esd=no])
+else
+	AC_MSG_RESULT([*** esound plugin disabled per user request ***])
+	have_esd=no
+fi
+AM_CONDITIONAL([HAVE_ESD], [test "x$have_esd" = "xyes"])
+
+
+dnl ***
+dnl *** mikmod
+dnl ***
+AC_ARG_ENABLE([mikmod],
+[  --disable-mikmod        Disable mikmod input plugin [default=enabled]],,
+	[enable_mikmod="yes"])
+
+if test "x$enable_mikmod" = "xyes"; then
+	AM_PATH_LIBMIKMOD([3.1.5],[have_mikmod=yes],[have_mikmod=no])
+else
+	AC_MSG_RESULT([*** mikmod plugin disabled per user request ***])
+	have_mikmod=no
+fi
+AM_CONDITIONAL([HAVE_MIKMOD], [test "x$have_mikmod" = "xyes"])
+
+
+dnl ***
+dnl *** Ogg Vorbis
+dnl ***
+AC_ARG_ENABLE([vorbis],
+[  --disable-vorbis        Disable Ogg Vorbis input plugin [default=enabled]],,
+	[enable_vorbis="yes"])
+
+if test "x$enable_vorbis" = "xyes"; then
+	XIPH_PATH_OGG([have_ogg=yes],[have_ogg=no])
+	XIPH_PATH_VORBIS([have_vorbis=yes],[have_vorbis=no])
+	if test "x$have_vorbis" = "xyes"; then
+	  AC_MSG_CHECKING([if Vorbis is sufficiently new])
+	  CFLAGS_save=$CFLAGS
+	  LIBS_save=$LIBS
+	  CFLAGS="$CFLAGS $VORBIS_CFLAGS $OGG_CFLAGS"
+	  LIBS="$LIBS $VORBIS_LIBS $OGG_LIBS"
+	  AC_TRY_COMPILE(
+		[#include <vorbis/vorbisfile.h>],
+		[OggVorbis_File vf;
+		 float **pcm;
+		 ov_read_float(&vf, &pcm, 1024, 0);],
+		[AC_MSG_RESULT([yes])],
+		[AC_MSG_RESULT([no (need atleast 1.0)])
+		 have_vorbis=no])
+	  CFLAGS=$CFLAGS_save
+	  LIBS=$LIBS_save
+	fi
+	have_oggvorbis=no
+	if test "x$have_ogg" = "xyes"; then
+		if test "x$have_vorbis" = "xyes"; then
+			have_oggvorbis=yes
+		fi
+	fi
+else
+	AC_MSG_RESULT([*** Ogg Vorbis plugin disabled per user request ***])
+	have_oggvorbis=no
+fi
+AM_CONDITIONAL([HAVE_OGGVORBIS], [test "x$have_oggvorbis" = "xyes"])
+
+
+dnl ***
+dnl *** Thread-safe xlib check
+dnl ***
+CFLAGS_save=$CFLAGS
+LIBS_save=$LIBS
+CFLAGS="$CFLAGS $GTK_CFLAGS"
+LIBS="$LIBS $GTK_LIBS"
+AC_CACHE_CHECK([for thread-safe Xlib],[xmms_cv_lib_xlibs_threadsafe],
+[AC_TRY_RUN([
+#include <X11/Xlib.h>
+int main()
+{
+   exit(!(XInitThreads()));
+}],
+[xmms_cv_lib_xlibs_threadsafe=yes],
+[xmms_cv_lib_xlibs_threadsafe=no],
+[xmms_cv_lib_xlibs_threadsafe=yes])])
+CFLAGS=$CFLAGS_save
+LIBS=$LIBS_save
+
+
+dnl ***
+dnl *** This is just a copy of po/LINGUAS and is here to avoid breaking
+dnl *** compatibility with automake 1.4
+dnl ***
+ALL_LINGUAS="af az be bg bs ca cs cy da de el en en_GB eo es et eu fi fr ga gl hr hu id it ja ka ko lt lv mk ms nn nl no pl pt pt_BR ro ru sk sl sq sr sr@Latn sv tg th tr uk uz vi wa zh_CN zh_TW"
+
+AM_GNU_GETTEXT
+
+localedir=${datadir}/locale
+AC_SUBST([localedir])
+
+
+dnl ***
+dnl *** If {type}_PLUGINS is defined, it should be a comma or space separated
+dnl *** list of plugins that should be built, e.g.,
+dnl *** INPUT_PLUGINS="mpg123,cdaudio cdin".  If variable is not defined, all
+dnl *** buildable plugins are compiled.  This stuff makes life easier for
+dnl *** automated builds that want to disable certain plugins.
+dnl ***
+for class in EFFECT GENERAL INPUT OUTPUT VISUALIZATION; do
+    value=`eval echo "\\$${class}_PLUGINS"`
+    if test "x${value}" = "x"; then
+       eval ${class}_PLUGINS="\$\(ALL_PLUGINS\)"
+    else
+       value=`echo ${value} | sed -e 's/,/ /g'`
+       eval ${class}_PLUGINS="\${value}"
+    fi
+done
+
+AC_SUBST([EFFECT_PLUGINS])
+AC_SUBST([GENERAL_PLUGINS])
+AC_SUBST([INPUT_PLUGINS])
+AC_SUBST([OUTPUT_PLUGINS])
+AC_SUBST([VISUALIZATION_PLUGINS])
+
+
+dnl ***
+dnl *** x86 SIMD(3DNow!/MMX) instructions support
+dnl ***
+AC_ARG_ENABLE([simd],
+	[  --enable-simd           build with x86 SIMD(3DNow!/MMX) instructions support (default=no)],
+	[USE_SIMD=$enableval],[USE_SIMD=no])
+if test "x$USE_SIMD" = "xyes"; then
+	AC_DEFINE([USE_SIMD],,[Define if building with ia32 SIMD support])
+fi
+AM_CONDITIONAL([USE_SIMD],[test "x$USE_SIMD" = "xyes"])
+AC_SUBST([USE_SIMD_TRUE])
+
+
+dnl ***
+dnl *** IPv6 support
+dnl ***
+AC_ARG_ENABLE([ipv6],
+	[  --enable-ipv6           enable IPv6 support (default=no)],
+	[enable_ipv6=$enableval], [enable_ipv6=no])
+if test "x$enable_ipv6" = "xyes"; then
+	AC_DEFINE([USE_IPV6],, [Define if building with IPv6 support])
+fi
+AM_CONDITIONAL([USE_IPV6],[test "x$enable_ipv6" = "xyes"])
+AC_SUBST([USE_IPV6])
+
+
+dnl ***
+dnl *** Check if we have socklen_t type
+dnl ***
+AC_CACHE_CHECK([for socklen_t], [xmms_cv_type_socklen_t],[
+	AC_TRY_COMPILE([
+	#include <sys/types.h>
+	#include <sys/socket.h>],
+	[socklen_t s;],[xmms_cv_type_socklen_t=yes],[xmms_cv_type_socklen_t=no])
+])
+if test "x$xmms_cv_type_socklen_t" = "xno"; then
+	AC_DEFINE([socklen_t], [int], [Define to int if the socklen_t type is missing])
+fi
+
+
+dnl ***
+dnl *** Check for OSS
+dnl ***
+AC_ARG_ENABLE([oss],
+	[  --disable-oss           disable the OSS output plugin],
+	[have_oss=$enableval], [have_oss=yes])
+
+if test "x$have_oss" = "xauto"; then
+    AC_MSG_CHECKING([for OSS include dir])
+    OSS_CFLAGS=""
+    if test -f "/etc/oss.conf"
+    then
+        for i in `cat /etc/oss.conf`; 
+        do
+            t=`echo $i | sed -e 's/OSSLIBDIR=//'`
+            if test "x$i" != "x$t"
+            then
+                if test -f "$t/include/sys/soundcard.h"
+                then
+                    OSS_CFLAGS="-I$t/include"
+                fi
+            fi
+        done
+    fi
+    if test -n "$OSS_CFLAGS"
+    then
+        AC_MSG_RESULT([$OSS_CFLAGS])
+    else
+        AC_MSG_RESULT([not found])
+    fi
+    CPPFLAGS_save=$CPPFLAGS
+    CPPFLAGS="$CPPFLAGS $OSS_CFLAGS"
+    AC_CHECK_HEADERS([sys/soundcard.h])
+    AC_CHECK_HEADERS([machine/soundcard.h])
+    CPPFLAGS=$CPPFLAGS_save
+
+    if test "x${ac_cv_header_sys_soundcard_h}" = "xyes" || test "x${ac_cv_header_machine_soundcard_h}" = "xyes"; then
+        have_oss=yes
+    fi
+fi
+
+if test "x$have_oss" = "xyes"; then
+    AC_DEFINE([HAVE_OSS], [1], [Define if the OSS output plugin should be built])
+else
+    have_oss=no
+fi
+AM_CONDITIONAL([HAVE_OSS], [test "x$have_oss" = "xyes"])
+    
+
+dnl ***
+dnl *** Check for ALSA (Advanced Linux Sound Architecture)
+dnl ***
+LIBS_save=$LIBS
+CFLAGS_save=$CFLAGS
+LDFLAGS_save=$LDFLAGS
+AM_PATH_ALSA([0.9.0], [have_alsa=yes], [have_alsa=no])
+AM_CONDITIONAL([HAVE_ALSA], [test "x${have_alsa}" = "xyes"])
+LIBS=$LIBS_save
+CFLAGS=$CFLAGS_save
+LDFLAGS=$LDFLAGS_save
+
+
+dnl ***
+dnl *** FreeBSD newpcm driver detection
+dnl ***
+AC_CACHE_CHECK([for FreeBSD newpcm driver], [xmms_cv_newpcm_driver],[
+  if test -r "/dev/sndstat"; then
+    grep 'newpcm' /dev/sndstat 2>/dev/null 1>/dev/null
+    if test "x$?" = "x0"; then
+      xmms_cv_newpcm_driver="yes"
+    else
+      xmms_cv_newpcm_driver="no"
+    fi
+  else
+    xmms_cv_newpcm_driver="no"
+  fi
+])
+if test "x$xmms_cv_newpcm_driver" = "xyes"; then
+	AC_DEFINE([HAVE_NEWPCM], [1], [Define if you have the FreeBSD newpcm driver])
+fi
+
+
+AC_CHECK_HEADERS([linux/cdrom.h])
+AC_CHECK_HEADERS([sys/cdrio.h])
+AC_CHECK_HEADERS([sys/cdio.h])
+AC_CHECK_HEADERS([linux/joystick.h])
+AC_CHECK_HEADERS([unistd.h])
+AC_CHECK_HEADERS([fcntl.h])
+AC_CHECK_HEADERS([sys/ioctl.h])
+AC_CHECK_HEADERS([fnmatch.h])
+AC_CHECK_HEADERS([limits.h])
+AC_CHECK_HEADERS([sched.h])
+AC_CHECK_HEADERS([sys/sched.h])
+AC_CHECK_HEADERS([wchar.h])
+AC_CHECK_HEADERS([fts.h])
+
+XMMS_FUNC_POSIX([sched_setscheduler])
+
+AC_CHECK_FUNCS([mkdtemp])
+AC_CHECK_FUNCS([getmntinfo])
+AC_CHECK_FUNCS([sched_get_priority_max])
+AC_CHECK_FUNCS([srandomdev])
+
+AC_CACHE_CHECK([for nl_langinfo(CODESET)], [xmms_cv_func_langinfo], [
+AC_TRY_COMPILE([#include <langinfo.h>],
+        [char *codeset = nl_langinfo (CODESET);],
+   [xmms_cv_func_langinfo=yes],
+   [xmms_cv_func_langinfo=no])])
+if test "x$xmms_cv_func_langinfo" = "xyes"; then
+  AC_DEFINE([HAVE_CODESET],,[Define if nl_langinfo(CODESET) is available.])
+fi
+
+if test "x${ac_cv_header_linux_cdrom_h}" = "xyes" || test "x${ac_cv_header_sys_cdio_h}" = "xyes"
+then
+    case "$host" in 
+	*-*-sunos* | *-*-solaris* | *-*-linux*)
+	    AC_DEFINE([XMMS_CDROM_SOLARIS],, [Define if cdrom access is in Solaris style])
+	;;
+	*-*-freebsd*)
+	    AC_DEFINE([XMMS_CDROM_BSD],, [Define if cdrom access is in BSD style])
+	;;
+	*-*-netbsd* | *-*-openbsd*)
+	    AC_DEFINE([XMMS_CDROM_BSD],, [Define if cdrom access is in BSD style])
+	    AC_DEFINE([XMMS_CDROM_BSD_NETBSD],, [Define if cdrom access uses NetBSD variant])
+	;;
+	*-*darwin*)
+	    AC_DEFINE([XMMS_CDROM_BSD],, [Define if cdrom access is in BSD style])
+	    AC_DEFINE([XMMS_CDROM_BSD_DARWIN],, [Define if cdrom access uses Darwin variant])
+	;;
+    esac
+fi
+
+
+AM_CONDITIONAL([HAVE_CDROM],
+[test "x${ac_cv_header_linux_cdrom_h}" = "xyes" || test "x${ac_cv_header_sys_cdio_h}" = "xyes"])
+AM_CONDITIONAL([HAVE_LINUX_JOYSTICK],[test "x${ac_cv_header_linux_joystick_h}" = "xyes"])
+
+AC_CHECK_SIZEOF([long])
+
+if test -n "$GCC"
+then
+  CFLAGS="$CFLAGS -Wall -Wpointer-arith -finline-functions"
+  case "$CFLAGS" in
+    -g*) ;;
+    *\ -g*) ;;
+    *) CFLAGS="$CFLAGS -fomit-frame-pointer" ;;
+  esac
+  case "$host" in
+    alpha*-*-freebsd*)
+	;;
+    *-*-freebsd*)
+	CFLAGS="$CFLAGS -ffast-math"
+	;;
+    *)
+	CFLAGS="$CFLAGS -ffast-math -funroll-all-loops"
+	;;
+  esac
+fi
+
+AC_MSG_CHECKING([if __ELF__ is defined])
+AC_EGREP_CPP([yes],
+[#ifdef __ELF__
+  yes
+#endif
+], [is_elf=yes], [is_elf=no])
+AC_MSG_RESULT([${is_elf}])
+
+
+have_solaris=no
+have_sun=no
+ARCH_DEFINES=""
+case "$host" in 
+	*-*-openbsd* | *-*-netbsd*)
+		have_sun=yes
+		if test "x${is_elf}" = "xno" 
+		then
+			AC_DEFINE([SYMBOL_PREFIX], "_", [Define to symbol prefix, if any])
+		fi
+	;;
+	*-*-darwin*)
+		AC_DEFINE([SYMBOL_PREFIX], "_", [Define to symbol prefix, if any])
+	;;
+	*-hpux-*)
+		ARCH_DEFINES="-DHPUX"
+	;;
+	*-*-solaris* | *-*-sunos*)
+		have_solaris=yes
+	;;
+esac
+
+arch_type=other
+x86_asm=no
+case "$host" in 
+	i386-*-* | i486-*-* | i586-*-* | i686-*-* | i86pc-*-*)
+		arch_type=ix86
+		case "$host" in
+		        *-*-netbsd* | *-*openbsd*)
+			;;
+			*)
+				ARCH_DEFINES="-DI386_ASSEM"
+				x86_asm=yes
+			;;
+		esac
+	;;
+esac
+
+
+AC_SUBST([ARCH_DEFINES])
+AM_CONDITIONAL([ARCH_X86], [test "x$arch_type" = "xix86"])
+AM_CONDITIONAL([USE_X86ASM], [test "x$x86_asm" = "xyes"])
+AM_CONDITIONAL([HAVE_SOLARIS], [test "x$have_solaris" = "xyes"])
+AM_CONDITIONAL([HAVE_SUN], [test "x$have_sun" = "xyes"])
+
+plugindir=$libdir/xmms
+AC_SUBST([plugindir])
+
+if test "x$enable_one_plugin_dir" = "xyes"; then
+  pluginsubs="\\\"Plugins\\\""
+  INPUT_PLUGIN_DIR=Plugins
+  OUTPUT_PLUGIN_DIR=Plugins
+  EFFECT_PLUGIN_DIR=Plugins
+  GENERAL_PLUGIN_DIR=Plugins
+  VISUALIZATION_PLUGIN_DIR=Plugins
+else
+  pluginsubs="\\\"Output\\\",\\\"Input\\\",\\\"Effect\\\",\\\"General\\\",\\\"Visualization\\\""
+  INPUT_PLUGIN_DIR=Input
+  OUTPUT_PLUGIN_DIR=Output
+  EFFECT_PLUGIN_DIR=Effect
+  GENERAL_PLUGIN_DIR=General
+  VISUALIZATION_PLUGIN_DIR=Visualization
+fi
+
+AC_SUBST([INPUT_PLUGIN_DIR])
+AC_SUBST([OUTPUT_PLUGIN_DIR])
+AC_SUBST([EFFECT_PLUGIN_DIR])
+AC_SUBST([GENERAL_PLUGIN_DIR])
+AC_SUBST([VISUALIZATION_PLUGIN_DIR])
+AC_SUBST([pluginsubs])
+
+XMMS_DEFINES="$CFLAGS -DDATA_DIR=\\\"$datadir/xmms\\\" -DPLUGIN_DIR=\\\"$plugindir\\\" -DPLUGINSUBS=$pluginsubs -DLOCALEDIR=\\\"$localedir\\\""
+
+if test "x$enable_user_plugin_dir" = "xno"; then
+	AC_DEFINE(DISABLE_USER_PLUGIN_DIR,, [Define to disable per user plugin directory])
+fi
+
+AC_SUBST([XMMS_DEFINES])
+
+PLUGIN_LDFLAGS='-module -avoid-version -export-symbols-regex "get_.plugin_info"'
+AC_SUBST([PLUGIN_LDFLAGS])
+
+AC_CONFIG_SUBDIRS([libxmms])
+
+AC_SUBST([xmmsdir])
+AC_SUBST([plugindir])
+
+AC_OUTPUT([
+Makefile
+xmms.1
+wmxmms.1
+xmms.spec
+xmms-config
+xmms/Makefile
+xmms/defskin/Makefile
+Output/Makefile
+Output/OSS/Makefile
+Output/esd/Makefile
+Output/disk_writer/Makefile
+Output/solaris/Makefile
+Output/sun/Makefile
+Output/alsa/Makefile
+Input/Makefile
+Input/wav/Makefile
+Input/mpg123/Makefile
+Input/mikmod/Makefile
+Input/cdaudio/Makefile
+Input/tonegen/Makefile
+Input/vorbis/Makefile
+Effect/Makefile
+Effect/voice/Makefile
+Effect/echo_plugin/Makefile
+Effect/stereo_plugin/Makefile
+General/Makefile
+General/ir/Makefile
+General/joystick/Makefile
+General/song_change/Makefile
+Visualization/Makefile
+Visualization/blur_scope/Makefile
+Visualization/sanalyzer/Makefile
+Visualization/opengl_spectrum/Makefile
+wmxmms/Makefile
+po/Makefile.in
+intl/Makefile],
+[chmod +x xmms-config])
+
+echo ""
+echo "Configuration:"
+echo "  Install path:               ${prefix}"
+if test "x$XMMS_PATH" != "xno"; then
+echo "  Current xmms                $XMMS_PATH"
+fi
+
+echo "  Build OSS plugin:           $have_oss"
+echo "  Build esd plugin:           $have_esd"
+echo "  Build Solaris plugin:       $have_solaris"
+echo "  Build BSD Sun plugin:       $have_sun"
+echo "  Build ALSA plugin:          $have_alsa"
+echo "  Build mikmod plugin:        $have_mikmod"
+echo "  Build Ogg Vorbis plugin:    $have_oggvorbis"
+echo "  Build OpenGL plugins:       $have_opengl"
+echo "  Pthread flag:               $PTHREAD_LIBS"
+echo "  Use one plugin dir:         $enable_one_plugin_dir"
+echo "  Allow user plugin dir:      $enable_user_plugin_dir"
+echo ""
+
+echo ""
+if test "x$xmms_cv_lib_xlibs_threadsafe" = "xno"; then
+  echo "Note: You need to have thread-safe xlibs to use xmms."
+  echo "If you are using libc5 thread aware Xlibs just skip this." 
+  echo ""
+  echo "If you don't have those libs and you are on a libc5 system get them at:"
+  echo "ftp://ftp.dent.med.uni-muenchen.de/pub/wmglo/"
+fi
+
+if test "x$XMMS_PATH" != "xno" && test "x$prefix/bin/xmms" != "x$XMMS_PATH"; then
+  echo ""
+  echo "Note: Configure has discovered that you already have xmms installed"
+  echo "and it do not match with the given --prefix. You have xmms installed "
+  echo "in $XMMS_PATH and you chose $prefix/bin/xmms."
+  echo "If you don't want two copies of XMMS installed, rerun configure with"
+  echo "the --prefix option set to the location of the old xmms, or uninstall"
+  echo "the old xmms."
+fi

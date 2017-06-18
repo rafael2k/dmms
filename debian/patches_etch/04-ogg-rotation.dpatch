@@ -1,0 +1,46 @@
+#!/bin/sh /usr/share/dpatch/dpatch-run
+## 04-ogg-rotation.dpatch by Andras Lipoth <andras.lipoth@gmail.com>
+##
+## DP: Fixes wrong ogg save file rotation (Closes: #396665).
+
+@DPATCH@
+
+diff -Naur xmms-1.2.10+20061101.orig/Input/vorbis/http.c xmms-1.2.10+20061101/Input/vorbis/http.c
+--- xmms-1.2.10+20061101.orig/Input/vorbis/http.c	2005-05-14 23:33:40.000000000 +0000
++++ xmms-1.2.10+20061101/Input/vorbis/http.c	2006-11-02 20:59:50.000000000 +0000
+@@ -546,18 +546,28 @@
+ 	
+ 	if (vorbis_cfg.save_http_stream)
+ 	{
+-		gchar *output_name;
++		gchar *output_name, *fname, *temp;
++        int i = 1;
++
+ 		file = vorbis_http_get_title(url);
+-		output_name = file;
+-		if (!strncasecmp(output_name, "http://", 7))
+-			output_name += 7;
+-		temp = strrchr(output_name, '.');
++		fname = file;
++		if (!strncasecmp(fname, "http://", 7))
++			fname += 7;
++		temp = strrchr(fname, '.');
+ 		if (temp && !strcasecmp(temp, ".ogg"))
+ 			*temp = '\0';
+ 
+-		while ((temp = strchr(output_name, '/')))
++		while ((temp = strchr(fname, '/')))
+ 			*temp = '_';
+-		output_name = g_strdup_printf("%s/%s.ogg", vorbis_cfg.save_http_path, output_name);
++		output_name = g_strdup_printf("%s/%s.ogg",
++                                      vorbis_cfg.save_http_path, fname);
++		while (!access(output_name, F_OK) && i < 100000)
++		{
++			g_free(output_name);
++			output_name = g_strdup_printf("%s/%s-%d.ogg",
++						      vorbis_cfg.save_http_path,
++						      fname, i++);
++		}
+ 
+ 		g_free(file);
+ 

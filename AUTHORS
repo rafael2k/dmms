@@ -1,0 +1,54 @@
+XMMS - X Multimedia System (C) 1997-2004
+
+       Main Programming: Peter Alm
+
+ Additional Programming: Håvard Kvålen
+                         Derrik Pates
+
+   With Additional Help: Sean Atkinson
+                         Jorn Baayen
+                         James M. Cape
+                         Anders Carlsson (effect plugins)
+                         Chun-Chung Chen (xfont patch)
+                         Tim Ferguson (joystick plugin)
+                         Ben Gertzfield
+                         Vesa Halttunen
+                         Logan Hanks
+                         Eric L. Hernes (FreeBSD patches)
+                         Ville Herva
+			 Ian 'Hixie' Hickson
+                         higway (MMX)
+                         Michael Hipp and others (MPG123 engine)
+                         Olle Hällnäs (compiling fixes)
+                         David Jacoby
+                         Osamu Kayasono (3DNow!)
+                         Lyle B Kempler
+                         J. Nick Koston (MikMod plugin)
+                         Aaron Lehmann
+                         Johan Levin (echo + stereo plugin)
+                         Eric Lindvall
+                         Colin Marquardt
+                         Willem Monsuwe
+                         John Riddoch (Solaris plugin)
+                         Josip Rodin
+                         Pablo Saratxaga (i18n)
+                         Carl van Schaik (pro logic plugin)
+                         Jörg Schuler
+                         Charles Sielski (irman plugin)
+                         Espen Skoglund
+			 Matthieu Sozeau (ALSA plugin)
+                         Kimura Takuhiro (3DNow!)
+                         Zinx Verituse
+                         Ryan Weaver (RPMs among other things)
+                         Chris Wilson
+                         Dave Yearke
+                         Stephan K. Zitz
+
+           Default skin: Leonard "Blayde" Tan
+                         Robin Sylvestre (Equalizer and Playlist)
+                         Thomas Nilsson (New titles, and cleanups)
+
+  Homepage and Graphics: Thomas Nilsson
+
+       Support and Docs: Olle Hällnäs
+

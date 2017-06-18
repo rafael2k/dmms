@@ -1,0 +1,162 @@
+
+                              Solaris XMMS plugin
+                                       
+   NEW: Version 0.6.4 is out. This version is compatible with XMMS 1.2.0.
+   
+   WARNING! This version changes the installation method. You no longer
+   have to patch the XMMS source tree. Check the install guide below.
+     _________________________________________________________________
+   
+Current status
+
+   The code has developed such that few problems are now reported; the
+   main problems are due to systematic problems related to shared memory
+   and Glib/GTK. A few features are still to be added (as per TODO
+   list). Development is done under SPARC Solaris 7, but has been
+   reported to work succesfully on both x86 Solaris and older versions.
+     _________________________________________________________________
+   
+Download
+
+   Current version is 0.6.4; Download via http at 
+   http://www.scms.rgu.ac.uk/staff/jr/comp/unix/xmms/xmms-solaris-0.6.4.tar.gz
+   or via FTP at ftp://ftp.scms.rgu.ac.uk/pub/staff/jr/xmms-solaris-0.6.4.tar.gz
+   
+   Binary packages still have to be made. Ideally, these will be set up
+   so that you can install the bare XMMS installation and then add
+   plugins, eg, esd, openGL as you want.
+     _________________________________________________________________
+   
+Installation
+
+   To install, perform the following steps:
+    1. Download XMMS.
+    2. Extract the archive using eg gzip -dc xmms-1.2.0.tar.gz | tar xvf
+       -
+    3. Compile using ./configure as normal (full instructions in the XMMS
+       README file) (note: you may want to add "-O2" to CFLAGS; this
+       halfs CPU usage)
+    4. Download the plugin (see above).
+    5. Extract the archive using eg gzip -dc xmms-solaris-0.6.4.tar.gz |
+       tar xvf -
+    6. Compile using ./configure. This will grab the path from
+       xmms-config so you shouldn't need to pass any parameters unless it
+       can't find xmms.
+    7. run make;make install
+    8. start xmms; it should find the plugin automatically, although you
+       may have to set the output plugin under preferences as it defaults
+       to the disk writer plugin.
+     _________________________________________________________________
+   
+Known problems
+
+  Running errors
+  
+     * GTK/GLIB require a lot of shared memory, more than the 1MB default
+       under Solaris. A symptom of this is a 'shmat' error on starting
+       XMMS. This causes the player to not work. To fix this, add the
+       following to /etc/system:
+        set shmsys:shminfo_shmmax = 8388608
+        set shmsys:shminfo_shmmni = 0x1000
+        set shmsys:shminfo_shmseg = 0x100
+
+       You will have to reboot for this to take effect. Note that while
+       the kernel will now allocate up to 8MB of shared memory, this is a
+       maximum and it will only allocate this much if it needs to. In
+       short, it's better to overestimate the amount of shared memory
+       required as you will have to reboot to increase it.
+       An alternative option (courtesy of Mark Weel) is to configure gtk+
+       using --enable-shm=no. This allows installation of XMMS without
+       superuser privelages.
+     * setuid execution (for realtime priority) doesn't work as well as
+       it might; Solaris won't load dynamically linked libraries for suid
+       scripts (sensible, really) so you might have to ln -s the libs in
+       /usr/lib. It may be possible to hard code the library paths, but I
+       haven't tried this. ldd xmms will show which libraries are
+       required. Remember to check plugins! esd plugin also requires
+       libesd.
+     * I've had reports of XMMS crashing under some machines with the
+       following error (or similar):
+    Gdk-ERROR **: BadMatch (invalid parameter attributes)
+      serial 108 error_code 8 request_code 2 minor_code 0
+       This seems to happen on machines with Creator 3D (or other
+       high-end) graphics cards. Dan Szkola provided the following
+       information:
+     ...this was a problem with the default depth of the display.
+     Changing the default depth to 24 fixed this problem.
+
+     This can be accomplished by putting the following line in
+     /etc/dt/config/Xservers
+        :0   Local local@console /usr/openwin/bin/Xsun :0 -nobanner -dev /dev/f
+bs/ffb0 defdepth 24
+       For those using xinit, this solucion courtesy of Roman Shterenzon:
+    I just forgot that when I turned away from CDE, the
+    /etc/dt/config/Xservers wasn't used anymore.
+    I created file .xserverrc :
+    #!/bin/sh
+    exec /usr/openwin/bin/Xsun :0 -nobanner -dev /dev/fbs/ffb0 defdepth 24
+
+    and voila, everything works.
+     * Once XMMS has started, playing a song will result in no output. In
+       all probability, this is because you are using the Disk Writer
+       plugin; select the preferences and change output plugin to the
+       Solaris one.
+     * CD audio might be a bit cruddy to begin with after a reboot; this
+       can be fixed by starting /usr/openwin/bin/audiocontrol and setting
+       the record settings.
+     * Some people have been getting errors like this:
+     $ xmms
+     ld.so.1: xmms: fatal: relocation error: file /usr/local/lib/xmms/Output/li
+bdisk_writer.so: symbol __udivdi3: referenced symbol not found
+     ld.so.1: xmms: fatal: relocation error: file /usr/local/lib/xmms/Input/lib
+mpg123.so: symbol __umoddi3: referenced symbol not found
+       There are two fixes for this; the first is from the XMMS forum:
+    This problem went away when I ran ./configure as follows:
+    LIBS="-L/usr/local/lib/gcc-lib/i386-pc-solaris2.7/2.95.2 -lgcc" ./configure
+       The other is from Todd Goodman; basically, the problem is that
+       your setup is picking up the Solaris ld instead of the bintools
+       version. Install bintools and make sure that /usr/local/bin is
+       before /usr/ccs/bin in your path.
+     * CD playing doesn't work 'out of the box'. Here is a fix I found on
+       usenet:
+  This took me a while to figure out when I was using xmms; it seems to be
+  very counterintuitive.  In my .xmms/config file I have:
+
+  [CDDA]
+  device=/vol/dev/aliases/cdrom0
+  directory=/cdrom/
+  use_oss_mixer=FALSE
+
+  Later in the file, in the [xmms] section:
+
+  [xmms]
+  ...
+  filesel_path=/cdrom/
+
+  For some reason, you also seem to need to have the volume management daemon
+  running (vold).
+     * You can force xmms to only use the AUDIODEV variable. This is
+       useful for where you are using multiple machines with different
+       configurations or, more notably, you are working with SunRay
+       devices (which rely on AUDIODEV). Simply go to Preferences,
+       configure the Solaris plugin and select the check box marked
+       "Always use AUDIODEV environment variable".
+       
+   If you have any problems, please mail me at jr@scms.rgu.ac.uk and I'll do
+   my best to help. I'm also interested to get any input files which don't work
+   under xmms-solaris but work ok under linux/FreeBSD. This will help me
+   find any bugs in the code. Do not mail me the files without giving me
+   simple mail first to see if I am working on the problem or not.
+     _________________________________________________________________
+   
+TODO
+
+     * Try to optimise code
+     * Make the behaviour on a busy audio device configurable (ie, wait
+       until free or simply bomb out).
+     * Possibly add audioamd(7d) support; this card only uses 8KHz, mono
+       8 bit a-law or mu-law samples, so it may use prohibitively large
+       amounts of CPU time to perform the translations.
+     * I've had reports of weirdness in Solaris 8, possibly due to the
+       new mixer stuff; this will be worked on once I have Solaris 8 (or
+       patches gratefully received!).

@@ -1,0 +1,158 @@
+Compilation:
+
+  c1: The CVS version won't compile, but the tarball does
+  c2: Why do I keep getting "undefined reference to `gtk_widget_show'" and
+      similar?
+  c3: I've installed gtk/glib 1.2.2 but it still says I an older version?
+
+Running:
+
+  r1: Why do I keep getting "Gdk-ERROR **: an x io error occurred" when I try
+      to use xmms?
+  r2: My Xserver crashes when I try to change skin, what can I do?
+  r3: When using Gnome / Enlightenment the playlist window got lost somewhere
+      in my virtual desktops what should I do? I'm all out of breadcrumbs.
+  r4: Why do I keep getting "Gdk-WARNING **: shmat failed!" in Solaris?
+  r5: When I use the OpenGL plugin it only works one time and the next time it
+      crashes xmms.
+  r6: If I use the OpenGL plugin with my Voodoo card. it appers to use alot of
+      memory.
+  r7: Why does XMMS windows behave diffrently than my other windows?
+  r8: Why does XMMS have 5-6 running instances which each takes x% of my mem,
+      isn't 5-6*x% memory A REAL WASTE?
+
+General:
+
+  g1: Is there a mailing list for xmms?
+  g2: How do I unsubscribe from the mailing list?
+  g3: Why doesn't XMMS support VQF? 
+  g4: Can I use Winamp plugins with XMMS?
+______________________________________________________________________________
+
+Compilation:
+
+  c1: The CVS version won't compile, but the tarball does
+
+   You are probably missing some .m4 files made by the gtk/glib installation.
+   For RH5.2 systems (others?) copy the files located in
+   /usr/local/share/aclocal to /usr/share/aclocal and try again. (You also
+   need libtool installed.)
+______________________________________________________________________________
+
+  c2: Why do I keep getting "undefined reference to `gtk_widget_show'" and
+      simmilar?
+
+  c3: I've installed gtk/glib 1.2.2 but it still says I an older version?
+
+   You probably have an old version installed of gtk and glib that came with
+   your linux distribution which is confusing the system. You will need to
+   remove the old versions include files and the gtk-config file before it
+   will work.
+
+   for slackware:
+
+    rm -f /usr/X11R6/bin/gtk-config
+    rm -f /usr/X11R6/include/glib.h
+    rm -rf /usr/X11R6/include/glib
+    rm -rf /usr/X11R6/include/gtk
+    rm -rf /usr/X11R6/include/gdk
+
+   If configure failed once, don't forget to remove config.cache and then
+   rerun configure
+______________________________________________________________________________
+
+Running:
+
+  r1: Why do I keep getting "Gdk-ERROR **: an x io error occurred" when I
+      try to use xmms?
+
+   This is because you're running an older system with libc5 and you don't
+   have Thread Safe X libs. You might want to download theese thread aware
+   xlibs and install them, just untar them into /usr/X11R6/lib (or appropiate
+   path) NOTE: do NOT do this while X is running.
+______________________________________________________________________________
+
+  r2: My Xserver crashes when I try to change skin, what can I do?
+
+   This is becausee of your window manager, if you browse the configure file
+   for your window manager you'll find an option called SaveUnder somewhere.
+   In Window Maker change UseSaveUnders = YES; to UseSaveUnders = NO;
+   This will fix it for you.. (don't forget to restart your windowmanager)
+______________________________________________________________________________
+
+  r3: When using Gnome / Enlightenment the playlist window got lost somewhere
+      in my virtual desktops what
+      should I do? I'm all out of breadcrumbs.
+
+   Edit the ~/.xmms/config file and change the playlist_x= and playlist_y=
+   to sane values.
+______________________________________________________________________________
+
+  r4: Why do I keep getting "Gdk-WARNING **: shmat failed!" in Solaris?
+
+   Solaris (2.5, 2.6, 2.7) has unsufficient IPC settings by default for some
+   products that use shared memory.
+   You need to place this in /etc/system:
+   set shmsys:shminfo_shmmax = 8388608
+   set shmsys:shminfo_shmmni = 0x1000
+   set shmsys:shminfo_shmseg = 0x100
+   Thanks to Yuri Kulaghin and Jeff Johnson
+______________________________________________________________________________
+
+  r5: When I use the OpenGL plugin it only works one time and the next time
+      it crases xmms.
+   
+   This is a glide bug on voodoo3 cards. You nneed to get the latest glide
+   version at http://www.3dfxgamers.com/view.asp?PAGE=drivers
+______________________________________________________________________________
+      
+  r6: If I use the OpenGL plugin with my Voodoo card. it appers to use alot
+      of memory.
+
+   This is the Voodoo card memory that is beeing added to the xmms processes.
+   Looks funny but ain't important.
+______________________________________________________________________________
+
+  r7: Why does XMMS windows behave diffrently than my other windows?
+
+   Since XMMS disables the window managers titlebars, the window manager is
+   unable to raise/lower/move XMMS as it's configured to do.
+______________________________________________________________________________
+
+  r8: Why does XMMS have 5-6 running instances which each takes x% of my mem,
+      isn't 5-6*x% memory A REAL WASTE?
+
+   XMMS is not using that memory for each instance, it shares the memory
+   between the instances, so if you have 6 entries in your "ps aux" output
+   which takes 5mb, XMMS is using 5 mb, and not 6x5mb.
+______________________________________________________________________________
+
+General:
+
+  g1: Is there a mailing list for xmms?
+
+   Yes there is, just send a mail to majordomo@erf.net and put
+   "subscribe xmms-devel" in the message body.
+   Please keep any messages sent to this list STRICLTY about xmms. Or we will
+   have to moderate it.
+______________________________________________________________________________
+
+  g2: How do I unsubscribe from the mailing list?
+
+   Send a mail to majordomo@erf.net and put "unsubscribe xmms-devel" in the
+   body. If you want to unsubscribe from another account put
+   "unsubscribe xmms-devel you@email.adress.com" in the body of the message
+   instead.
+______________________________________________________________________________
+
+  g3: Why doesn't XMMS support VQF?
+
+   It does now. After NTT released their SDK, Mel updated his plugin to be a
+   native plugin instead of one, which uses wine and Windows DLL's. 
+   Visit http://www.csn.ul.ie/~mel/projects/linux/vqfplugin/ for details.
+______________________________________________________________________________
+
+  g4:  Can I use Winamp plugins with XMMS?
+
+   No. It's windows software, not linux compatible in anyway.
+______________________________________________________________________________

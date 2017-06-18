@@ -1,0 +1,41 @@
+.TH WMXMMS 1 "9 June 2001" "Version @VERSION@" "XMMS Manual Pages"
+.SH NAME
+WMXMMS \- a dockable XMMS control applet.
+.SH SYNOPSIS
+.B wmxmms
+[\-h] [\-\-help] [\-s \fI<session>\fP] [\-\-session=\fI<session>\fP]
+[\-c \fI<command>\fP] [\-\-command=\fI<command>\fP] [\-i \fI<icon>\fP]
+[\-\-icon=\fI<icon>\fP] [\-n] [\-\-single] [\-t] [\-\-title]
+[\-\-version]
+.SH DESCRIPTION
+\fIWMXMMS\fP is a dock applet for the Window Maker window manager.
+From the applet you can start and control xmms.
+
+.SH OPTIONS
+wmxmms accepts the following options:
+.TP
+.B \-h, \-\-help
+Show summary of options.
+.TP
+.B \-s, \-\-session
+Select XMMS session (Default: 0).
+.TP
+.B \-c, \-\-command
+Command to start xmms (Default: xmms).
+.TP
+.B \-i, \-\-icon 
+Icon to show instead of the default one when xmms is not running.  The
+icon must be in XPM format.
+.TP
+.B \-n, \-\-single
+Start xmms with only a single click (Default: Double click).
+.TP
+.B \-t, \-\-title
+Show the song title when the mouse is in the wmxmms window.
+.TP
+.B \-v, \-\-version
+Print version number and exit.
+.SH SEE ALSO
+.BR xmms (1),
+.BR wmaker (1),
+.BR gnomexmms (1)

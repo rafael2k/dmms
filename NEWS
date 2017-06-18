@@ -1,0 +1,328 @@
+xmms 1.2.11
+
+	The '1211 days since last release' release.  XMMS was 10 years
+	old on 2007-11-15.  
+
+	* Make the --toggle switches take an optional value to either
+	enable or disable the function.
+
+	* New command line switches: --quit, --toggle-shuffle, 
+	--toggle-repeat, --toggle-advance, --queue
+
+	* New remote commands: xmms_remote_playqueue_clear, 
+	xmms_remote_get_playqueue_pos_from_playlist_pos,
+	xmms_remote_get_playlist_pos_from_playqueue_pos,
+	xmms_remote_playqueue_add, xmms_remote_get_playqueue_length,
+	xmms_remote_playqueue_remove.
+
+	* Playqueue manager. Adds queue control enabling you to reorder
+	the queue and a search like the jump to file dialog.
+
+	OGG/Vorbis:
+	* Save stream to disk adds -N if the file already exist
+	* Don't apply the +6dB boost if replaygain information is missing
+
+	Alsa:
+	* Soft volume works without mixer
+
+	Songchange:
+	* Optional command to run at end of song.
+
+	Diskwriter:
+	* Effect plugins are applied on the saved file
+
+	MPG123:
+	* Enable shoutcast title streaming by default
+
+	* CTRL-Q as default keybind to quit
+	* Close dialogs with escape key
+
+	Solaris:
+	* Support OSS and AMD8111
+
+
+xmms 1.2.10
+
+	Bugfixes only.
+
+xmms 1.2.9
+
+	OGG/Vorbis:
+	* Read YEAR vorbis tag.
+
+	Solaris:
+	* Support for Ensoniq 1371/1373 and Creative Labs 5880 audio controllers.
+
+	ALSA:
+	* Support mmap for cards with more than 8 channels.
+	* Software volume.
+	* Many improvements.
+
+	MPG123:
+	* Icecast UDP title streaming is now disabled as default.
+
+	gnomexmms:
+	* Dropped from the distribution.
+
+xmms 1.2.8
+
+	Translation/Internationalization:
+	* New translations: Belarusiani (be), Welch (cy), Macedoniani (mk),
+	Slovenian (sl), Bosnian (bs), Estonian (et), Finnish (fi),
+	Georgian (ka), Albanian (sq) and Uzbek (uz)
+
+	General:
+	* Ability to queue the next song in the playlist. (use 'q' on the
+	keyboard over the song title)
+	* IPv6 support added (disabled by default)
+
+	CD Audio:
+	* Digital Audio Extraction, enables the use of visualization
+	  for CD Audio.
+	* Support for more than one drive.
+	* Dropped support for CDIndex (service no longer active)
+
+	OGG/Vorbis:
+	* Replaygain support.
+
+	ALSA:
+	* New output plugin.
+
+	NetBSD/OpenBSD:
+	* New output plugin.
+
+	Effects:
+	* Support for multiple effect plugins.
+
+	IDCin:
+	* Plugin was dropped from distribution.
+
+xmms 1.2.7
+
+	General:
+	* Replaced folder icons. New ones by Jakub Steiner.
+	* Don't display playlist numbers elsewhere when turned off.
+	* Support 32-bit and 16-bit "bitfield" bmps in skins.
+
+	CD Audio:
+	* Supply a dummy user and hostname to the cddb server.
+	* Picked up support for Darwin (from FINK cvs) and NetBSD (from
+	  NetBSD cvs)
+
+	MPG123:
+	* Handle UTF-16 encoded tags.
+	* Major stability fixes
+
+	gnomexmms:
+	* Optionally use a user supplied icon instead of the default one
+	  when XMMS is not running.
+
+xmms 1.2.6
+
+	Translation/Internationalization:
+	* New translations: Basque (eu), Tajik (tg), Vietnamese (vi),
+	  Nynorsk (nn), Thai (th).
+
+	General:
+	* --play-pause command to toggle playback.
+	* Updated README/man pages.
+	* Added xmms_remote_play_pause(), xmms_remote_playlist_ins_url_string()
+	* Realtime priority works again, it was broken in 1.2.5.
+	* bzip2 skins should now work regardless of Tar version.
+	* Key bindings are now saved when you exit XMMS.
+	* NetWM support updated to the latest specs.
+	* Handles @ in URL's properly if username:password@host is not used.
+
+	Playlist:
+	* Added 'Sort by date'
+	* Page Up/Down keys scrolls one page, instead of the 3 line inheritance
+	  from Winamp.
+	* Extended M3U lists now supported.
+	* Added reading of playlist info for selection.
+
+	Equalizer:
+	* Added Import/WinAMP Presets to the preset menu to import an entire
+	  set of WinAMP presets (WINAMP.q1) into the preset list.
+
+	Vorbis:
+	* Fixed an endianess problem on smallendian boxes
+	* 1.0rc1 or higher required.
+
+	MPG123:
+	* Handle more broken mp3s.
+	* No more "-" for mp3s with ID3v2 tags that contain no usable
+	  information.
+	* VBR files without XING header are now handled more gracefully.
+
+	Mikmod:
+	* Mikmod plugin now recognizes mod.* files.
+
+	CD Audio:
+	* Setting the environmental variable XMMS_CDDB_CLIENT_NAME, will make
+	  XMMS use that instead when identifying to CDDB servers.
+	* Better handling of CDDB requests.
+	* Don't poll current time when paused, can cause weird things on
+	  some drives.
+
+	OSS Output:
+	* Do endian/sign conversion if necessary.
+
+	ESD Output:
+	* Will use ESD stream volume instead of the OSS mixer as default.
+
+	* Assorted bugfixes/memleaks plugged.
+
+xmms 1.2.5
+
+	Translation/Internationalization:
+	* New translations (gl, pt, id, sr)
+	* Translations work in libxmms.
+	* Handles broken translations better.
+
+	Plugins:
+	* Joystick plugin suppports more than 4 buttons.
+	* Vorbis plugin handles streams.
+	* File info dialog for Vorbis plugin.
+	* A lot of bugfixes to the Vorbis plugin.
+	* Tonegen input plugin supports more frequencys at the same time.
+	* Solaris output plugin included.
+	* IR plugin can now configure IR code length.
+	* OSS Output can now configure the mixer device manually.
+	* ID3v1.1 support.
+
+	Portability:
+	* CDAudio ported to OpenBSD.
+
+	Playlist:
+	* Physically delete file from playlist.
+	* Right-click menu in the playlist.
+	* Playlist counter wraps at ~136 years instead of ~600 hours.
+	* Pressing middle mouse button in the playlist will try to add
+	  the content of the clipboard. Double click will clear the
+          playlist.
+
+	Misc:
+	* MiniIcon now shows up in KDE2 taskbar.
+	* Gnomexmms shows the title in the tooltip.
+	* Fullscreen code should be more sane now.
+	* Man pages for xmms, gnomexmms and wmxmms.
+
+	Core:
+	* Set realtime mode and drop root privilieges before
+          initalizing GTK. (XMMS would not work with GTK 1.2.10)
+	* Possible to show WM decorations.
+	* Generic titles instead of Input plugin specific (mpg123,
+          vorbis, cdaudio). %F - File path, for titlestrings.
+
+	* Smaller fixes, memory leaks and stability issues.
+
+xmms 1.2.4
+
+	* Vorbis plugin included.  This plugin depends on the vorbis
+          libraries which are not included.
+	* Support for using a regular font in the main window.
+	* Fixed some serious bugs in the UDP metadata streaming.
+	* Fixed a bug that could make xmms crash on mpeg files with
+          certain id3v2 tags.
+	* 3DNow! Support in the MPG123 engine.
+	* Use Solaris plugin as default on Solaris.
+	* New translations (az, it, tr)
+
+xmms 1.2.3
+
+	* Bugfixes.
+	* Support for the "netwm" window manager hints.
+	* README much updated.
+	* Support for icecast UDP title streaming.
+	* Added "Play directory".
+	* Skin drawing changed.  Skins with incomplete pixmaps look
+	  like they should now.
+	* Try to load plugins from ~/.xmms/Plugins
+	* Loading of equalizer presets from disk.
+	* New translations (lv, ga)
+
+xmms 1.2.2
+
+	* Bugfixes.
+	* Updates to the song change plugin.
+
+xmms 1.2.1
+
+	* Added xmms_remote_quit.
+	* Workarounds for some compilation problems.
+	* Bugfixes.
+
+xmms 1.2.0
+
+	* MiniIcon for gnome panel/KDE panel.
+	* I18N support. (different languages)
+	* Echo/Extra Stereo now save their settings. :)
+	* Merged Surround Echo with Echo plugin.
+	* Tone Generator plugin
+	* URL history for the playlist
+	* Control socket now supports deleting playlist entries.
+	* No more resetting of the cdrom while changing cd tracks.
+	* nVidia compatible OpenGl Spectrum analyzer.
+	* Support for local CDDB databases.
+	* Added support for per-user plugin dir(s) (~/.xmms/Plugins/*)
+	* New option to disable ID3v2 tags.
+	* Added xmms_remote_playlist_delete, xmms_remote_get_eq,
+	  xmms_remote_get_eq_preamp, xmms_remote_get_eq_band,
+	  xmms_remote_set_eq, xmms_remote_set_eq_preamp,
+	  xmms_remote_is_shuffle, xmms_remote_is_repeat and
+	  xmms_remote_set_eq_band functions to the API.
+	* Added incremental match jump to file.
+	* Added support for HTTP redirects.
+	* Added Enqueue button to mainwin fileselector.
+	* Made it possible to set the audio device by hand in OSS output.
+	* Added support for X11R5 session management.
+	* DnD now supports Netscape, Motif filemanagers and KDE2 (when it's
+	  released)
+
+xmms 1.0.1
+
+	* We now probe if select works. (Workaround for aureal driver which
+	  doesn't support select).
+	* Sticky was a bit broken, fixed.
+	* XMMS should now handle skins with too small images correctly.
+	* .wsz skins really work now. (oups)
+	* New about logo.
+
+xmms 1.0.0:
+
+	Playlist:
+	* Added function: remove dead files
+
+	Input:
+	* CD Plugin now supports CDDB, and CD Index.
+	* mpg123 plugin now handles compressed id3 frames.
+
+	Output:
+	* OSS plugin got a much better and faster resampling routine.
+	* Setting for adjusting master volume instead of pcm volume.
+
+	Gui:
+	* New shortkey, ctrl-n for "No Playlist Advance"
+	* XMMS can now be made "sticky"
+	* The Equalizer and Playlist don't show up in GNOME/KDE's task list
+	  anymore.
+	* Reload skin shortkey (F5)
+
+	Misc:
+	* wmxmms can now hide/show main and playlist window by pressing right
+	  or middle mousebutton. Wheelmouse changes volume.
+	* New plugin.h file which allows closed source plugins.
+	* Option to set the speed of the mousewheel.
+	* Playlist files are now tried to be recognized by content in addition
+	  to suffix.
+	* Added Fullscreen support for visualization plugins. (in libxmms)
+	* Added DGA support to fullscreen.
+	* Added xmms-config command.
+	* XMMS now handles winamp's .wsz skin files.
+
+xmms 0.9.5.1:
+
+	* Added color change ability to blur_scope plugin.
+	* Fixed looping messages when a streaming server adress was wrong.
+	* CD now works under Solaris.
+	* Lots of buxfixes, read the Changelog for more info.

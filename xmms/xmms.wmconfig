@@ -1,0 +1,5 @@
+xmms name "XMMS"
+xmms description "X MultiMedia System"
+xmms exec "xmms &"
+xmms group "Application"
+xmms icon "mini/xmms_mini.xpm"

@@ -1,0 +1,133 @@
+#!/bin/sh /usr/share/dpatch/dpatch-run
+## 03-window-position.dpatch by Alexey Potehin <voidbox@ultrastar.ru>
+##
+## DP: Fixes incorrect behavior option 'save_window_positions' in config file.
+
+@DPATCH@
+
+diff -Naur xmms-1.2.10+20061001.orig/xmms/equalizer.c xmms-1.2.10+20061001/xmms/equalizer.c
+--- xmms-1.2.10+20061001.orig/xmms/equalizer.c	2005-05-14 23:33:40.000000000 +0000
++++ xmms-1.2.10+20061001/xmms/equalizer.c	2006-10-12 11:38:22.000000000 +0000
+@@ -747,7 +747,7 @@
+ 	gtk_window_set_title(GTK_WINDOW(equalizerwin), _("XMMS Equalizer"));
+ 	gtk_window_set_wmclass(GTK_WINDOW(equalizerwin), "XMMS_Equalizer", "xmms");
+ 	gtk_window_set_transient_for(GTK_WINDOW(equalizerwin), GTK_WINDOW(mainwin));
+-	if (cfg.equalizer_x != -1 && cfg.save_window_position)
++	if (cfg.equalizer_x != -1)
+ 		dock_set_uposition(equalizerwin, cfg.equalizer_x, cfg.equalizer_y);
+ 	if (cfg.doublesize && cfg.eq_doublesize_linked)
+ 		gtk_widget_set_usize(equalizerwin, 550, (cfg.equalizer_shaded ? 28 : 232));
+@@ -829,10 +829,10 @@
+ 	 * main menu signal handler
+ 	 */
+ 	if (!pposition_broken && cfg.equalizer_x != -1 &&
+-	    cfg.save_window_position && cfg.show_wm_decorations)
++	    cfg.show_wm_decorations)
+ 		dock_set_uposition(equalizerwin, cfg.equalizer_x, cfg.equalizer_y);
+ 	gtk_widget_show(equalizerwin);
+-	if (pposition_broken && cfg.equalizer_x != -1 && cfg.save_window_position)
++	if (pposition_broken && cfg.equalizer_x != -1)
+ 		dock_set_uposition(equalizerwin, cfg.equalizer_x, cfg.equalizer_y);
+ 	if (cfg.doublesize && cfg.eq_doublesize_linked)
+ 		gtk_widget_set_usize(equalizerwin, 550, (cfg.equalizer_shaded ? 28 : 232));
+diff -Naur xmms-1.2.10+20061001.orig/xmms/main.c xmms-1.2.10+20061001/xmms/main.c
+--- xmms-1.2.10+20061001.orig/xmms/main.c	2005-12-26 15:02:15.000000000 +0000
++++ xmms-1.2.10+20061001/xmms/main.c	2006-10-12 11:38:22.000000000 +0000
+@@ -568,8 +568,11 @@
+ 	xmms_cfg_write_boolean(cfgfile, "xmms", "smooth_title_scroll", cfg.smooth_title_scroll);
+ 	xmms_cfg_write_boolean(cfgfile, "xmms", "use_backslash_as_dir_delimiter", cfg.use_backslash_as_dir_delimiter);
+ 	/*  dock_get_widget_pos(mainwin, &cfg.player_x, &cfg.player_y); */
+-	xmms_cfg_write_int(cfgfile, "xmms", "player_x", cfg.player_x);
+-	xmms_cfg_write_int(cfgfile, "xmms", "player_y", cfg.player_y);
++	if (cfg.save_window_position)
++	{
++		xmms_cfg_write_int(cfgfile, "xmms", "player_x", cfg.player_x);
++		xmms_cfg_write_int(cfgfile, "xmms", "player_y", cfg.player_y);
++	}
+ 	xmms_cfg_write_boolean(cfgfile, "xmms", "player_shaded", cfg.player_shaded);
+ 	xmms_cfg_write_boolean(cfgfile, "xmms", "player_visible", cfg.player_visible);
+ 	xmms_cfg_write_boolean(cfgfile, "xmms", "shuffle", mainwin_shuffle->tb_selected);
+@@ -588,8 +591,11 @@
+ 	xmms_cfg_write_int(cfgfile, "xmms", "analyzer_falloff", cfg.analyzer_falloff);
+ 	xmms_cfg_write_int(cfgfile, "xmms", "peaks_falloff", cfg.peaks_falloff);
+ 	/*  dock_get_widget_pos(playlistwin, &cfg.playlist_x, &cfg.playlist_y); */
+-	xmms_cfg_write_int(cfgfile, "xmms", "playlist_x", cfg.playlist_x);
+-	xmms_cfg_write_int(cfgfile, "xmms", "playlist_y", cfg.playlist_y);
++	if (cfg.save_window_position)
++	{
++		xmms_cfg_write_int(cfgfile, "xmms", "playlist_x", cfg.playlist_x);
++		xmms_cfg_write_int(cfgfile, "xmms", "playlist_y", cfg.playlist_y);
++	}
+ 	xmms_cfg_write_int(cfgfile, "xmms", "playlist_width", cfg.playlist_width);
+ 	xmms_cfg_write_int(cfgfile, "xmms", "playlist_height", cfg.playlist_height);
+ 	xmms_cfg_write_boolean(cfgfile, "xmms", "playlist_shaded", cfg.playlist_shaded);
+@@ -601,8 +607,11 @@
+ 	xmms_cfg_write_string(cfgfile, "xmms", "mainwin_font", cfg.mainwin_font);
+ 	xmms_cfg_write_int(cfgfile, "xmms", "playlist_position", get_playlist_position());
+ 	/*  dock_get_widget_pos(equalizerwin, &cfg.equalizer_x, &cfg.equalizer_y); */
+-	xmms_cfg_write_int(cfgfile, "xmms", "equalizer_x", cfg.equalizer_x);
+-	xmms_cfg_write_int(cfgfile, "xmms", "equalizer_y", cfg.equalizer_y);
++	if (cfg.save_window_position)
++	{
++		xmms_cfg_write_int(cfgfile, "xmms", "equalizer_x", cfg.equalizer_x);
++		xmms_cfg_write_int(cfgfile, "xmms", "equalizer_y", cfg.equalizer_y);
++	}
+ 	xmms_cfg_write_int(cfgfile, "xmms", "snap_distance", cfg.snap_distance);
+ 	xmms_cfg_write_boolean(cfgfile, "xmms", "equalizer_visible", cfg.equalizer_visible);
+ 	xmms_cfg_write_boolean(cfgfile, "xmms", "equalizer_shaded", cfg.equalizer_shaded);
+@@ -2777,10 +2786,10 @@
+ 	mainwin_set_shape_mask();
+ 	if (cfg.show_wm_decorations)
+ 	{
+-		if (!pposition_broken && cfg.player_x != -1 && cfg.save_window_position)
++		if (!pposition_broken && cfg.player_x != -1)
+ 			dock_set_uposition(mainwin, cfg.player_x, cfg.player_y);
+ 		gtk_widget_show(mainwin);
+-		if (pposition_broken && cfg.player_x != -1 && cfg.save_window_position)
++		if (pposition_broken && cfg.player_x != -1)
+ 			dock_set_uposition(mainwin, cfg.player_x, cfg.player_y);
+ 		return;
+ 	}
+@@ -3437,7 +3446,7 @@
+ 	gtk_window_set_wmclass(GTK_WINDOW(mainwin), "XMMS_Player", "xmms");
+ 
+ 	gtk_widget_set_events(mainwin, GDK_FOCUS_CHANGE_MASK | GDK_BUTTON_MOTION_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK | GDK_STRUCTURE_MASK);
+-	if (cfg.player_x != -1 && cfg.save_window_position)
++	if (cfg.player_x != -1)
+ 		dock_set_uposition(mainwin, cfg.player_x, cfg.player_y);
+ 	gtk_widget_realize(mainwin);
+ 
+@@ -4296,7 +4305,7 @@
+ 	mainwin_set_info_text();
+ 
+ 	gtk_widget_show(mainwin);
+-	if (pposition_broken && cfg.player_x != -1 && cfg.save_window_position)
++	if (pposition_broken && cfg.player_x != -1)
+ 		dock_set_uposition(mainwin, cfg.player_x, cfg.player_y);
+ 	
+ 	if (!cfg.player_visible && (cfg.playlist_visible || cfg.equalizer_visible))
+diff -Naur xmms-1.2.10+20061001.orig/xmms/playlistwin.c xmms-1.2.10+20061001/xmms/playlistwin.c
+--- xmms-1.2.10+20061001.orig/xmms/playlistwin.c	2006-08-15 22:54:34.000000000 +0000
++++ xmms-1.2.10+20061001/xmms/playlistwin.c	2006-10-12 11:38:22.000000000 +0000
+@@ -1930,7 +1930,7 @@
+ 	gtk_window_set_title(GTK_WINDOW(playlistwin), _("XMMS Playlist"));
+ 	gtk_window_set_wmclass(GTK_WINDOW(playlistwin), "XMMS_Playlist", "xmms");
+ 	gtk_window_set_transient_for(GTK_WINDOW(playlistwin), GTK_WINDOW(mainwin));
+-	if (cfg.playlist_x != -1 && cfg.save_window_position)
++	if (cfg.playlist_x != -1)
+ 		dock_set_uposition(playlistwin, cfg.playlist_x, cfg.playlist_y);
+ 	gtk_widget_set_usize(playlistwin, cfg.playlist_width, cfg.playlist_shaded ? 14 : cfg.playlist_height);
+ 	gtk_widget_set_events(playlistwin, GDK_FOCUS_CHANGE_MASK | GDK_BUTTON_MOTION_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK);
+@@ -2035,10 +2035,10 @@
+ void playlistwin_real_show(void)
+ {
+ 	if (!pposition_broken && cfg.playlist_x != -1 &&
+-	    cfg.save_window_position && cfg.show_wm_decorations)
++	    cfg.show_wm_decorations)
+ 		dock_set_uposition(playlistwin, cfg.playlist_x, cfg.playlist_y);
+ 	gtk_widget_show(playlistwin);
+-	if (pposition_broken && cfg.playlist_x != -1 && cfg.save_window_position)
++	if (pposition_broken && cfg.playlist_x != -1)
+ 		dock_set_uposition(playlistwin, cfg.playlist_x, cfg.playlist_y);
+ 	gtk_widget_set_usize(playlistwin, cfg.playlist_width, PLAYLIST_HEIGHT);
+ 	gdk_flush();

@@ -1,0 +1,13 @@
+Source: xmms
+Section: sound
+Priority: extra
+Maintainer: Knut Auvor Grythe <xmms@auvor.no>
+Build-Depends: debhelper (>= 6), autotools-dev, autotools-dev, automake, libtool, gettext, libasound2-dev, libaudiofile-dev, libgl1-mesa-dev, libglib1.2-dev, libgtk1.2-dev, libesd0-dev, libice-dev, libmikmod2-dev, libogg-dev, libsm-dev, libvorbis-dev, libxxf86vm-dev, libssl-dev, build-essential, make
+Standards-Version: 3.7.3
+Homepage: http://xmms.org/
+
+Package: xmms
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: The X Multimedia System
+ XMMS, built from unmodified source.

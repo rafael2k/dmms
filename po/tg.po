@@ -1,0 +1,5117 @@
+# Copyright (C) 1999 Free Software Foundation, Inc.
+# Roger Kovacs <rkovacs@khujandcomptech.dyn.tj>, 2001
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xmms 1.2.4\n"
+"Report-Msgid-Bugs-To: http://bugs.xmms.org\n"
+"POT-Creation-Date: 2007-11-16 23:53+0100\n"
+"PO-Revision-Date: 2003-02-22 20:15+0500\n"
+"Last-Translator: Dilshod Marupov <dma165@hotmail.com>\n"
+"Language-Team: Tajik\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.6\n"
+
+#: Effect/echo_plugin/echo.c:43
+#, c-format
+msgid "Echo Plugin %s"
+msgstr "Даровардани Акси Садои %s"
+
+#: Effect/echo_plugin/gui.c:8
+msgid ""
+"Echo Plugin\n"
+"By Johan Levin 1999.\n"
+"\n"
+"Surround echo by Carl van Schaik 1999"
+msgstr ""
+"Даровардани Акси Садо\n"
+"Бо Johan Levin 1999.\n"
+"\n"
+"Акси Садои атроф бо Carl van Schaik 1999"
+
+#: Effect/echo_plugin/gui.c:22
+msgid "About Echo Plugin"
+msgstr "Дар бораи Даровардани Акси Садо"
+
+#: Effect/echo_plugin/gui.c:23 Effect/echo_plugin/gui.c:135
+#: Effect/stereo_plugin/stereo.c:56 Effect/stereo_plugin/stereo.c:120
+#: Effect/voice/about.c:35 General/ir/about.c:51 General/ir/configure.c:205
+#: General/ir/configure.c:376 General/joystick/about.c:35
+#: General/joystick/configure.c:272 General/song_change/song_change.c:340
+#: Input/cdaudio/cddb.c:734 Input/cdaudio/cddb.c:742 Input/cdaudio/cddb.c:750
+#: Input/cdaudio/cddb.c:774 Input/cdaudio/configure.c:673
+#: Input/mikmod/plugin.c:125 Input/mikmod/plugin.c:616
+#: Input/mpg123/configure.c:586 Input/mpg123/fileinfo.c:138
+#: Input/mpg123/fileinfo.c:193 Input/mpg123/http.c:208
+#: Input/mpg123/mpg123.c:1151 Input/tonegen/tonegen.c:55
+#: Input/vorbis/configure.c:449 Input/vorbis/fileinfo.c:210
+#: Input/vorbis/http.c:208 Input/vorbis/vorbis.c:778 Output/OSS/about.c:45
+#: Output/OSS/configure.c:308 Output/disk_writer/disk_writer.c:145
+#: Output/disk_writer/disk_writer.c:438 Output/esd/about.c:44
+#: Output/esd/configure.c:208 Output/solaris/about.c:24
+#: Output/solaris/configure.c:266 Output/sun/about.c:36
+#: Output/sun/configure.c:557 Output/alsa/about.c:46
+#: Output/alsa/configure.c:437 Visualization/blur_scope/config.c:101
+#: Visualization/opengl_spectrum/configure.c:73 libxmms/dirbrowser.c:342
+#: xmms/equalizer.c:1371 xmms/equalizer.c:1377 xmms/equalizer.c:1441
+#: xmms/equalizer.c:1450 xmms/equalizer.c:1701 xmms/input.c:254
+#: xmms/main.c:3529 xmms/playlistwin.c:733 xmms/playlistwin.c:844
+#: xmms/playlistwin.c:1428 xmms/playlistwin.c:1481 xmms/prefswin.c:310
+#: xmms/prefswin.c:1158 xmms/util.c:582
+msgid "OK"
+msgstr ""
+
+#: Effect/echo_plugin/gui.c:74
+msgid "Configure Echo"
+msgstr "Танзимдарории Акси Садо"
+
+#: Effect/echo_plugin/gui.c:87
+msgid "Delay: (ms)"
+msgstr "Андармонӣ: (мс)"
+
+#: Effect/echo_plugin/gui.c:92
+msgid "Feedback: (%)"
+msgstr "Бозгашт: (%)"
+
+#: Effect/echo_plugin/gui.c:97
+msgid "Volume: (%)"
+msgstr "Баландӣ: (%)"
+
+#: Effect/echo_plugin/gui.c:120
+msgid "Surround echo"
+msgstr "Акси Садои атроф"
+
+#: Effect/echo_plugin/gui.c:143 Effect/stereo_plugin/stereo.c:129
+#: General/ir/configure.c:212 General/ir/configure.c:383
+#: General/joystick/configure.c:279 General/song_change/song_change.c:346
+#: Input/cdaudio/cddb.c:778 Input/cdaudio/configure.c:682
+#: Input/mikmod/plugin.c:623 Input/mpg123/configure.c:592
+#: Input/mpg123/fileinfo.c:442 Input/vorbis/configure.c:455
+#: Input/vorbis/fileinfo.c:714 Output/OSS/configure.c:314
+#: Output/disk_writer/disk_writer.c:445 Output/esd/configure.c:215
+#: Output/solaris/configure.c:278 Output/sun/configure.c:565
+#: Output/alsa/configure.c:443 Visualization/blur_scope/config.c:109
+#: Visualization/opengl_spectrum/configure.c:80 libxmms/dirbrowser.c:351
+#: xmms/equalizer.c:1371 xmms/equalizer.c:1377 xmms/equalizer.c:1441
+#: xmms/equalizer.c:1450 xmms/equalizer.c:1705 xmms/main.c:1519
+#: xmms/playlistwin.c:791 xmms/playlistwin.c:1482 xmms/prefswin.c:1162
+#: xmms/util.c:602
+msgid "Cancel"
+msgstr "Бекор кардан"
+
+#: Effect/echo_plugin/gui.c:150 Effect/stereo_plugin/stereo.c:136
+#: General/joystick/configure.c:285 Output/solaris/configure.c:273
+#: xmms/equalizer.c:1711 xmms/prefswin.c:1166
+msgid "Apply"
+msgstr "Татбиқ кардан"
+
+#: Effect/stereo_plugin/stereo.c:26
+msgid ""
+"Extra Stereo Plugin\n"
+"\n"
+"By Johan Levin 1999."
+msgstr ""
+"Даровардани Экстра Стерео\n"
+"\n"
+"Бо Johan Levin 1999."
+
+#: Effect/stereo_plugin/stereo.c:35
+#, c-format
+msgid "Extra Stereo Plugin %s"
+msgstr "Даровардани Экстра Стерео %s"
+
+#: Effect/stereo_plugin/stereo.c:55
+msgid "About Extra Stereo Plugin"
+msgstr "Дар бораи Даровардани Экстра Стерео"
+
+#: Effect/stereo_plugin/stereo.c:97
+msgid "Configure Extra Stereo"
+msgstr "Танзимдарории Экстра Стерео"
+
+#: Effect/stereo_plugin/stereo.c:99
+msgid "Effect intensity:"
+msgstr "Шиддатнокии натиҷа:"
+
+#: Effect/voice/about.c:31
+msgid "About Voice Removal Plugin"
+msgstr "Дар бораи Даровардани Хориҷи Овоз"
+
+#: Effect/voice/about.c:32
+msgid ""
+"XMMS Voice Removal Plugin\n"
+"\n"
+"A simple voice removal plugin by Anders Carlsson <andersca@gnu.org>"
+msgstr ""
+"Даровардани Хориҷи Овози XMMS\n"
+"\n"
+"Оддӣ даровардани хориҷи овоз, бо Anders Carlsson <andersca@gnu.org>"
+
+#: Effect/voice/voice.c:23
+#, c-format
+msgid "Voice removal plugin %s"
+msgstr "Даровардани хориҷи овози %s"
+
+#: General/ir/about.c:27 xmms/prefswin.c:775 xmms/prefswin.c:808
+#: xmms/prefswin.c:850 xmms/prefswin.c:895 xmms/prefswin.c:945
+msgid "About"
+msgstr "Дар бораи"
+
+#: General/ir/about.c:35
+msgid "XMMS IRman Plugin:"
+msgstr "Даровардани XMMS IRman:"
+
+#: General/ir/about.c:41
+msgid ""
+"Created by Charles Sielski <stray@teklabs.net>\n"
+"Control XMMS with your TV / VCR / Stereo remote \n"
+"IRman page - http://www.evation.com/irman/"
+msgstr ""
+"Charles Sielski <stray@teklabs.net> офаридааст\n"
+"XMMS-ро бо дурдасти TV / VCR / Стереои худ идора кунед\n"
+"Саҳифаи IRman - http://www.evation.com/irman/"
+
+#: General/ir/configure.c:27 xmms/util.c:885
+msgid "Play"
+msgstr "Навозиш"
+
+#: General/ir/configure.c:27 General/joystick/configure.c:26
+msgid "Stop"
+msgstr "Ист"
+
+#: General/ir/configure.c:27
+msgid "Pause"
+msgstr "Таваққуф"
+
+#: General/ir/configure.c:28
+msgid "Prev"
+msgstr "Пешина"
+
+#: General/ir/configure.c:28
+msgid "Next"
+msgstr "Оянда"
+
+#: General/ir/configure.c:28
+msgid "Vol +"
+msgstr "Баландӣ +"
+
+#: General/ir/configure.c:29
+msgid "Seek -5s"
+msgstr "5с Қафо"
+
+#: General/ir/configure.c:29
+msgid "Seek +5s"
+msgstr "5с Пеш"
+
+#: General/ir/configure.c:29
+msgid "Vol -"
+msgstr "Баландӣ -"
+
+#: General/ir/configure.c:30 General/joystick/configure.c:28
+msgid "Shuffle"
+msgstr "Омехта"
+
+#: General/ir/configure.c:30 General/joystick/configure.c:29
+msgid "Repeat"
+msgstr "Такрор"
+
+#: General/ir/configure.c:30 xmms/prefswin.c:1070
+msgid "Playlist"
+msgstr "Рӯйхати суруд"
+
+#: General/ir/configure.c:31
+msgid "+100"
+msgstr "+100"
+
+#: General/ir/configure.c:35
+msgid "0"
+msgstr "0"
+
+#: General/ir/configure.c:35
+msgid "1"
+msgstr "1"
+
+#: General/ir/configure.c:35
+msgid "2"
+msgstr "2"
+
+#: General/ir/configure.c:35
+msgid "3"
+msgstr "3"
+
+#: General/ir/configure.c:35
+msgid "4"
+msgstr "4"
+
+#: General/ir/configure.c:36
+msgid "5"
+msgstr "5"
+
+#: General/ir/configure.c:36
+msgid "6"
+msgstr "6"
+
+#: General/ir/configure.c:36
+msgid "7"
+msgstr "7"
+
+#: General/ir/configure.c:36
+msgid "8"
+msgstr "8"
+
+#: General/ir/configure.c:36
+msgid "9"
+msgstr "9"
+
+#: General/ir/configure.c:146
+#, c-format
+msgid "`%s' Button Setup"
+msgstr "Омодасозии Дагмаи `%s'"
+
+#: General/ir/configure.c:156
+msgid "Enter code or use remote"
+msgstr "Рамз гузоред ё дурдаст истифода баред"
+
+#: General/ir/configure.c:255
+msgid "XMMS IRman Configuration"
+msgstr "Танзимдарории XMMS IRman"
+
+#: General/ir/configure.c:269 Input/cdaudio/configure.c:377
+#: Input/cdaudio/configure.c:385
+msgid "Device:"
+msgstr "Дастгоҳ:"
+
+#: General/ir/configure.c:278
+msgid "Device: "
+msgstr "Дастгоҳ: "
+
+#: General/ir/configure.c:288
+msgid "IR code length: "
+msgstr "Дарозии рамзи IR: "
+
+#: General/ir/configure.c:301
+msgid "Controls:"
+msgstr "Идораҳо:"
+
+#: General/ir/configure.c:339
+msgid "Playlists:"
+msgstr "Рӯйхати сурудҳо:"
+
+#: General/ir/configure.c:368
+msgid "General"
+msgstr "Умумӣ"
+
+#: General/ir/ir.c:50
+#, c-format
+msgid "IRman Control %s"
+msgstr "Идоракунии IRman %s"
+
+#: General/ir/ir.c:189
+#, c-format
+msgid "unable to open port `%s' (%s)\n"
+msgstr "Номумкин кушодани бандари `%s' (%s)\n"
+
+#: General/joystick/about.c:28
+msgid "About Joystick Driver"
+msgstr "Дар бораи Ҷойстик Гардон"
+
+#: General/joystick/about.c:29
+msgid ""
+"Joystick Control Plugin\n"
+"\n"
+"Created by Tim Ferguson <timf@dgs.monash.edu.au>.\n"
+"http://www.dgs.monash.edu.au/~timf/\n"
+"\n"
+"5+ button support by Justin Wake <justin@globalsoft.com.au>\n"
+"\n"
+"Control XMMS with one or two joysticks.\n"
+msgstr ""
+"Даровардани Идораи Ҷойстик\n"
+"\n"
+"Tim Ferguson <timf@dgs.monash.edu.au> офаридааст.\n"
+"http://www.dgs.monash.edu.au/~timf/\n"
+"\n"
+"5+ дагма бо дастгирии Justin Wake <justin@globalsoft.com.au>\n"
+"\n"
+"XMMS-ро бо як ё ду ҷойстик идора кунед.\n"
+
+#: General/joystick/configure.c:26
+msgid "Play/Pause"
+msgstr "Навозиш/Таваққуф"
+
+#: General/joystick/configure.c:26
+msgid "Next Track"
+msgstr "Суруди Оянда"
+
+#: General/joystick/configure.c:26
+msgid "Prev Track"
+msgstr "Суруди Пешина"
+
+#: General/joystick/configure.c:27
+msgid "Fwd 5 tracks"
+msgstr "5 Суруд пеш"
+
+#: General/joystick/configure.c:27
+msgid "Back 5 tracks"
+msgstr "5 Суруд пушт"
+
+#: General/joystick/configure.c:27
+msgid "Volume Up"
+msgstr "Баландтар"
+
+#: General/joystick/configure.c:28
+msgid "Volume Down"
+msgstr "Пасттар"
+
+#: General/joystick/configure.c:28
+msgid "Forward 5s"
+msgstr "5 сон пеш"
+
+#: General/joystick/configure.c:28
+msgid "Rewind 5s"
+msgstr "5 сон пушт"
+
+#: General/joystick/configure.c:29
+msgid "Alternate"
+msgstr "Алтернативӣ"
+
+#: General/joystick/configure.c:29
+msgid "Nothing"
+msgstr "Ҳеҷчиз"
+
+#: General/joystick/configure.c:94
+msgid "XMMS Joystick Configuration"
+msgstr "Танзимдарории Ҷойстики XMMS"
+
+#: General/joystick/configure.c:118
+msgid "Devices:"
+msgstr "Дастгоҳҳо:"
+
+#: General/joystick/configure.c:128
+msgid "Joystick 1:"
+msgstr "Ҷойстики 1:"
+
+#: General/joystick/configure.c:140
+msgid "Joystick 2:"
+msgstr "Ҷойстики 2:"
+
+#: General/joystick/configure.c:152
+msgid "Sensitivity (10-32767):"
+msgstr "Ҳассосият (10-32767):"
+
+#: General/joystick/configure.c:183
+msgid "Directionals:"
+msgstr "Равияҳо:"
+
+#: General/joystick/configure.c:208
+msgid "Directionals (alternate):"
+msgstr "Равияҳо (тағир):"
+
+#: General/joystick/configure.c:233
+msgid "Buttons:"
+msgstr "Дагмаҳо:"
+
+#: General/joystick/configure.c:244
+#, c-format
+msgid "Button %d:"
+msgstr "Дагмаи %d:"
+
+#: General/joystick/joy.c:60
+#, c-format
+msgid "Joystick Control %s"
+msgstr "Идораи Ҷойстики %s"
+
+#: General/joystick/joy.c:159
+msgid "Joystick Control"
+msgstr "Идораи Ҷойстик"
+
+#: General/joystick/joy.c:220 General/joystick/joy.c:270
+msgid ""
+"\n"
+"Joystick Control: error reading"
+msgstr ""
+"\n"
+"Идораи Ҷойстик: хатогии хондан"
+
+#: General/song_change/song_change.c:48
+#, c-format
+msgid "Song Change %s"
+msgstr "Ивази Суруди %s"
+
+#: General/song_change/song_change.c:134 xmms/prefswin.c:301
+msgid "Warning"
+msgstr "Огоҳӣ"
+
+#: General/song_change/song_change.c:145
+msgid ""
+"Filename and song title tags should be inside double quotes (\").  Not doing "
+"so might be a security risk.  Continue anyway?"
+msgstr ""
+
+#: General/song_change/song_change.c:158 Input/mpg123/fileinfo.c:283
+msgid "Yes"
+msgstr "Ҳа"
+
+#: General/song_change/song_change.c:168 Input/mpg123/fileinfo.c:282
+msgid "No"
+msgstr "Не"
+
+#: General/song_change/song_change.c:231
+msgid "Song Change Configuration"
+msgstr "Танзимдарории Ивази Суруд"
+
+#: General/song_change/song_change.c:238
+#, fuzzy
+msgid "Commands"
+msgstr "Фармон:"
+
+#: General/song_change/song_change.c:245
+#, fuzzy
+msgid "Shell-command to run when xmms starts a new song."
+msgstr "Ҷилд-фармони корандозӣ ҳангоми xmms то ба охири рӯхати суруд мерасад."
+
+#: General/song_change/song_change.c:254 General/song_change/song_change.c:277
+#: General/song_change/song_change.c:300
+msgid "Command:"
+msgstr "Фармон:"
+
+#: General/song_change/song_change.c:268
+#, fuzzy
+msgid "Shell-command to run toward the end of a song."
+msgstr "Ҷилд-фармони корандозӣ ҳангоми xmms то ба охири рӯхати суруд мерасад."
+
+#: General/song_change/song_change.c:290
+msgid "Shell-command to run when xmms reaches the end of the playlist."
+msgstr "Ҷилд-фармони корандозӣ ҳангоми xmms то ба охири рӯхати суруд мерасад."
+
+#: General/song_change/song_change.c:313
+#, c-format
+msgid ""
+"You can use the following format strings which will be substituted before "
+"calling the command (not all are useful for the end-of-playlist command).\n"
+"\n"
+"%%F: Frequency (in hertz)\n"
+"%%c: Number of channels\n"
+"%%f: filename (full path)\n"
+"%%l: length (in milliseconds)\n"
+"%%n or %%s: Song name\n"
+"%%r: Rate (in bits per second)\n"
+"%%t: Playlist position (%%02d)\n"
+"%%p: Currently playing (1 or 0)"
+msgstr ""
+
+#: Input/cdaudio/cdaudio.c:162
+#, c-format
+msgid "CD Audio Player %s"
+msgstr "Навозандаи Аудио CD %s"
+
+#: Input/cdaudio/cdaudio.c:567 Input/cdaudio/cdaudio.c:576
+#, c-format
+msgid "CD Audio Track %02u"
+msgstr "Суруди Аудио CD %02u"
+
+#: Input/cdaudio/cddb.c:722 Output/esd/configure.c:161
+msgid "Server"
+msgstr "Хидматгор"
+
+#: Input/cdaudio/cddb.c:723
+#, fuzzy
+msgid "Latitude"
+msgstr "Лотинӣ"
+
+#: Input/cdaudio/cddb.c:724
+msgid "Longitude"
+msgstr ""
+
+#: Input/cdaudio/cddb.c:725
+#, fuzzy
+msgid "Description"
+msgstr "Тавсиф:"
+
+#: Input/cdaudio/cddb.c:732 Input/cdaudio/cddb.c:738 Input/cdaudio/cddb.c:748
+#, fuzzy
+msgid "CDDB"
+msgstr "CDDB:"
+
+#: Input/cdaudio/cddb.c:733
+msgid "Unable to connect to CDDB-server"
+msgstr ""
+
+#: Input/cdaudio/cddb.c:739
+msgid ""
+"Can't get server list from the current CDDB-server\n"
+"Unsupported CDDB protocol level"
+msgstr ""
+
+#: Input/cdaudio/cddb.c:749
+#, fuzzy
+msgid "No site information available"
+msgstr "Стерео (агар бошад)"
+
+#: Input/cdaudio/cddb.c:757
+#, fuzzy
+msgid "CDDB servers"
+msgstr "CDDB хидматгор:"
+
+#: Input/cdaudio/cddb.c:877 xmms/about.c:348 xmms/equalizer.c:1504
+#: xmms/equalizer.c:1508 xmms/input.c:431 xmms/main.c:1963 xmms/main.c:2346
+#: xmms/skinwin.c:86 xmms/util.c:873
+msgid "Close"
+msgstr "Пӯшидан"
+
+#: Input/cdaudio/cdinfo.c:146 Input/cdaudio/cdinfo.c:147
+#: Input/cdaudio/cdinfo.c:148
+msgid "(unknown)"
+msgstr "(номаълум)"
+
+#: Input/cdaudio/configure.c:187 Input/cdaudio/configure.c:202
+#: Input/cdaudio/configure.c:536
+#, c-format
+msgid "Drive %d"
+msgstr "Гардони %d"
+
+#: Input/cdaudio/configure.c:249
+#, c-format
+msgid ""
+"Failed to open device %s\n"
+"Error: %s\n"
+"\n"
+msgstr ""
+"Ғалат дар кушодани дастгоҳи %s\n"
+"Хатогӣ: %s\n"
+"\n"
+
+#: Input/cdaudio/configure.c:257
+msgid ""
+"Failed to read \"Table of Contents\"\n"
+"Maybe no disc in the drive?\n"
+"\n"
+msgstr ""
+"Хондани \"Ҷадвали Таркибҳо\" нагузашт\n"
+"Мумкин дар гардон диск набошад?\n"
+"\n"
+
+#: Input/cdaudio/configure.c:262
+#, c-format
+msgid ""
+"Device %s OK.\n"
+"Disc has %d tracks"
+msgstr ""
+"Дастгоҳи %s OK.\n"
+"Диск суруди %d дорад"
+
+#: Input/cdaudio/configure.c:271
+#, c-format
+msgid " (%d data tracks)"
+msgstr " (сурудҳои маълумотдор %d)"
+
+#: Input/cdaudio/configure.c:273
+#, fuzzy, c-format
+msgid ""
+"\n"
+"Total length: %d:%.2d\n"
+msgstr ""
+"\n"
+"Ҳамагӣ дарозӣ: %d:%d\n"
+"\n"
+
+#: Input/cdaudio/configure.c:279
+msgid "Digital audio extraction not tested as the disc has no audio tracks\n"
+msgstr ""
+
+#: Input/cdaudio/configure.c:296
+msgid ""
+"Digital audio extraction test: OK\n"
+"\n"
+msgstr ""
+
+#: Input/cdaudio/configure.c:300
+#, c-format
+msgid ""
+"Digital audio extraction test failed: %s\n"
+"\n"
+msgstr ""
+
+#: Input/cdaudio/configure.c:313
+#, c-format
+msgid ""
+"Failed to check directory %s\n"
+"Error: %s"
+msgstr ""
+"Ғалат дар тафтиши феҳристи %s\n"
+"Хатогӣ: %s"
+
+#: Input/cdaudio/configure.c:321
+#, fuzzy, c-format
+msgid "Error: %s exists, but is not a directory"
+msgstr "Хатогӣ: %s вуҷудаст, лекин ин феҳрист не"
+
+#: Input/cdaudio/configure.c:326
+#, c-format
+msgid "Directory %s OK."
+msgstr "Феҳристи %s OK."
+
+#: Input/cdaudio/configure.c:330
+#, c-format
+msgid "Directory %s exists, but you do not have permission to access it."
+msgstr ""
+
+#: Input/cdaudio/configure.c:394
+msgid "Directory:"
+msgstr "Феҳрист:"
+
+#: Input/cdaudio/configure.c:403
+#, fuzzy
+msgid "Play mode:"
+msgstr "/Навозиши файлҳо"
+
+#: Input/cdaudio/configure.c:409
+msgid "Analog"
+msgstr ""
+
+#: Input/cdaudio/configure.c:412
+msgid "Digital audio extraction"
+msgstr ""
+
+#: Input/cdaudio/configure.c:422
+msgid "Volume control:"
+msgstr "Идораи Баландӣ:"
+
+#: Input/cdaudio/configure.c:428
+msgid "No mixer"
+msgstr "Омезанда нест"
+
+#: Input/cdaudio/configure.c:431
+#, fuzzy
+msgid "CD-ROM drive"
+msgstr "CDROM гардон"
+
+#: Input/cdaudio/configure.c:434
+msgid "OSS mixer"
+msgstr "OSS Омезанда"
+
+#: Input/cdaudio/configure.c:458
+msgid "Check drive..."
+msgstr "Тафтиши гардон..."
+
+#: Input/cdaudio/configure.c:464
+msgid "Remove drive"
+msgstr "Хориҷи гардон"
+
+#: Input/cdaudio/configure.c:512
+msgid "CD Audio Player Configuration"
+msgstr "Танзимдарории Аудио CD Навозанда"
+
+#: Input/cdaudio/configure.c:548
+msgid "Add drive"
+msgstr "Иловаи гардон"
+
+#: Input/cdaudio/configure.c:556
+msgid "Device"
+msgstr "Дастгоҳ"
+
+#: Input/cdaudio/configure.c:566
+msgid "CDDB:"
+msgstr "CDDB:"
+
+#: Input/cdaudio/configure.c:577
+msgid "Use CDDB"
+msgstr "CDDB истифода баред"
+
+#: Input/cdaudio/configure.c:581
+msgid "Get server list"
+msgstr "Рӯйхати хидматгор гиред"
+
+#: Input/cdaudio/configure.c:583
+msgid "Show network window"
+msgstr "Тирезаи шабака нишон диҳед"
+
+#: Input/cdaudio/configure.c:593
+msgid "CDDB server:"
+msgstr "CDDB хидматгор:"
+
+#: Input/cdaudio/configure.c:608
+msgid "CD Index:"
+msgstr "Номгӯйи CD:"
+
+#: Input/cdaudio/configure.c:615
+msgid "Use CD Index"
+msgstr "Номгӯйи CD истифода баред"
+
+#: Input/cdaudio/configure.c:622
+msgid "CD Index server:"
+msgstr "Хидматгори Номгӯйи CD:"
+
+#: Input/cdaudio/configure.c:637
+msgid "Track names:"
+msgstr "Номҳои суруд:"
+
+#: Input/cdaudio/configure.c:643 Input/mpg123/configure.c:560
+#: Input/vorbis/configure.c:371
+msgid "Override generic titles"
+msgstr "Умумӣ сарлавҳаҳро рад кунед"
+
+#: Input/cdaudio/configure.c:656
+msgid "Name format:"
+msgstr "Андозакунии ном:"
+
+#: Input/cdaudio/configure.c:666
+msgid "CD Info"
+msgstr "Ахбороти CD"
+
+#: Input/mikmod/plugin.c:91
+msgid "About mikmod plugin"
+msgstr "Дар бораи даровардани mikmod"
+
+#: Input/mikmod/plugin.c:115
+msgid ""
+"Mikmod Plugin\n"
+"http://www.multimania.com/miodrag/mikmod/\n"
+"Ported to xmms by J. Nick Koston"
+msgstr ""
+"Даровардани Mikmod\n"
+"http://www.multimania.com/miodrag/mikmod/\n"
+"J. Nick Koston ба xmms табдил кардааст"
+
+#: Input/mikmod/plugin.c:184
+#, c-format
+msgid "MikMod Player %s"
+msgstr "Навозандаи MikMod %s"
+
+#: Input/mikmod/plugin.c:373
+msgid "Couldn't load mod"
+msgstr "Модул пурбор карда нашуд"
+
+#: Input/mikmod/plugin.c:436
+msgid "MikMod Configuration"
+msgstr "Танзимдарории MikMod"
+
+#: Input/mikmod/plugin.c:460 Input/mpg123/configure.c:262
+msgid "Resolution:"
+msgstr "Ҳал:"
+
+#: Input/mikmod/plugin.c:471 Input/mpg123/configure.c:269
+msgid "16 bit"
+msgstr "16 бит"
+
+#: Input/mikmod/plugin.c:479 Input/mpg123/configure.c:274
+msgid "8 bit"
+msgstr "8 бит"
+
+#: Input/mikmod/plugin.c:487 Input/mpg123/configure.c:280
+msgid "Channels:"
+msgstr "Каналҳо:"
+
+#: Input/mikmod/plugin.c:498 Input/mpg123/fileinfo.c:213
+msgid "Stereo"
+msgstr "Стерео"
+
+#: Input/mikmod/plugin.c:506 Input/mpg123/configure.c:293
+msgid "Mono"
+msgstr "Моно"
+
+#: Input/mikmod/plugin.c:514
+#, fuzzy
+msgid "Downsample:"
+msgstr "Зудии намунагирӣ:"
+
+#: Input/mikmod/plugin.c:525 Input/mpg123/configure.c:306
+msgid "1:1 (44 kHz)"
+msgstr "1:1 (44 kHz)"
+
+#: Input/mikmod/plugin.c:534 Input/mpg123/configure.c:311
+msgid "1:2 (22 kHz)"
+msgstr "1:2 (22 kHz)"
+
+#: Input/mikmod/plugin.c:542 Input/mpg123/configure.c:316
+msgid "1:4 (11 kHz)"
+msgstr "1:4 (11 kHz)"
+
+#: Input/mikmod/plugin.c:554
+msgid "Look for hidden patterns in modules "
+msgstr "Дар модулҳо нусхаҳои пинҳонӣ ёбед "
+
+#: Input/mikmod/plugin.c:561
+msgid "Use surround mixing"
+msgstr "Омехтани атроф истифода баред"
+
+#: Input/mikmod/plugin.c:568
+msgid "Force volume fade at the end of the module"
+msgstr "Баландиро дар охири модул кам-кам паст кунед"
+
+#: Input/mikmod/plugin.c:575
+msgid "Use interpolation"
+msgstr "Интерполятсия"
+
+#: Input/mikmod/plugin.c:582
+msgid "Always use filename as title"
+msgstr ""
+
+#: Input/mikmod/plugin.c:589
+msgid "Default panning separation"
+msgstr "Тақсимоти пешфарз"
+
+#: Input/mikmod/plugin.c:601
+msgid "Quality"
+msgstr "Сифат"
+
+#: Input/mikmod/plugin.c:606 Input/mpg123/configure.c:367
+#: xmms/equalizer.c:1653 xmms/equalizer.c:1689 xmms/prefswin.c:960
+#: xmms/prefswin.c:1055 xmms/prefswin.c:1062
+msgid "Options"
+msgstr "Интихобҳо"
+
+#: Input/mpg123/configure.c:190
+msgid "Select the directory where you want to store the MPEG streams:"
+msgstr "Феҳрист интихоб кунед барои нигоҳ доштани ҷараёнҳои MPEG:"
+
+#: Input/mpg123/configure.c:245
+msgid "MPG123 Configuration"
+msgstr "Танзимдарории MPG123"
+
+#: Input/mpg123/configure.c:287
+msgid "Stereo (if available)"
+msgstr "Стерео (агар бошад)"
+
+#: Input/mpg123/configure.c:299
+msgid "Down sample:"
+msgstr "Зудии намунагирӣ:"
+
+#: Input/mpg123/configure.c:327
+msgid "Decoder:"
+msgstr "Рамзкушо:"
+
+#: Input/mpg123/configure.c:334
+msgid "Automatic detection"
+msgstr "Муқаррарии автоматикӣ"
+
+#: Input/mpg123/configure.c:338
+msgid "3DNow! optimized decoder"
+msgstr "3DNow! рамзкушои муносибшуда"
+
+#: Input/mpg123/configure.c:342
+msgid "MMX optimized decoder"
+msgstr "MMX рамзкушои муносибшуда"
+
+#: Input/mpg123/configure.c:346
+msgid "FPU decoder"
+msgstr "FPU рамзкушо"
+
+#: Input/mpg123/configure.c:375
+msgid "Content"
+msgstr "Таркиб"
+
+#: Input/mpg123/configure.c:379
+msgid "Extension"
+msgstr "Васегӣ"
+
+#: Input/mpg123/configure.c:383
+msgid "Extension and content"
+msgstr "Васегӣ ва таркиб"
+
+#: Input/mpg123/configure.c:403
+msgid "Decoder"
+msgstr "Рамзкушо"
+
+#: Input/mpg123/configure.c:407 Input/vorbis/configure.c:238
+#: Output/OSS/configure.c:264 Output/esd/configure.c:163
+#: Output/solaris/configure.c:231 Output/sun/configure.c:255
+msgid "Buffering:"
+msgstr "Миёнгирӣ:"
+
+#: Input/mpg123/configure.c:418 Input/vorbis/configure.c:248
+msgid "Buffer size (kb):"
+msgstr "Андозаи миёнгир (кб):"
+
+#: Input/mpg123/configure.c:428 Input/vorbis/configure.c:257
+#: Output/OSS/configure.c:285 Output/esd/configure.c:190
+#: Output/solaris/configure.c:252 Output/sun/configure.c:286
+msgid "Pre-buffer (percent):"
+msgstr "Пешмиёнгир (фоиз):"
+
+#: Input/mpg123/configure.c:438 Input/vorbis/configure.c:267
+msgid "Proxy:"
+msgstr "Ноиб:"
+
+#: Input/mpg123/configure.c:446 Input/vorbis/configure.c:275
+msgid "Use proxy"
+msgstr "Ноиб истифода баред"
+
+#: Input/mpg123/configure.c:455 Input/vorbis/configure.c:284
+#: Output/esd/configure.c:105 Output/esd/configure.c:136
+msgid "Host:"
+msgstr "Хидматгор:"
+
+#: Input/mpg123/configure.c:462 Input/vorbis/configure.c:291
+#: Output/esd/configure.c:145
+msgid "Port:"
+msgstr "Бандар:"
+
+#: Input/mpg123/configure.c:472 Input/vorbis/configure.c:301
+msgid "Use authentication"
+msgstr "Аслӣ истифода баред"
+
+#: Input/mpg123/configure.c:482 Input/vorbis/configure.c:311
+msgid "Username:"
+msgstr "Номи корванд:"
+
+#: Input/mpg123/configure.c:490 Input/vorbis/configure.c:319
+msgid "Password:"
+msgstr "Гузарвожа:"
+
+#: Input/mpg123/configure.c:503 Input/vorbis/configure.c:332
+msgid "Save stream to disk:"
+msgstr "Ҷараёнро ба диск нигоҳ доред:"
+
+#: Input/mpg123/configure.c:511 Input/vorbis/configure.c:340
+msgid "Save stream to disk"
+msgstr "Ҷараёнро ба диск нигоҳ доред"
+
+#: Input/mpg123/configure.c:520 Input/vorbis/configure.c:349
+#: Output/disk_writer/disk_writer.c:403
+msgid "Path:"
+msgstr "Роҳ:"
+
+#: Input/mpg123/configure.c:527 Input/vorbis/configure.c:356
+#: Output/disk_writer/disk_writer.c:414 xmms/prefswin.c:1080
+#: xmms/prefswin.c:1100
+msgid "Browse"
+msgstr "Назаркунӣ"
+
+#: Input/mpg123/configure.c:531
+msgid "SHOUT/Icecast:"
+msgstr "SHOUT/Icecast:"
+
+#: Input/mpg123/configure.c:538
+msgid "Enable SHOUT/Icecast title streaming"
+msgstr "Ҷараёнии сарлавҳаи SHOUT/Icecast даргиронед"
+
+#: Input/mpg123/configure.c:542
+msgid "Enable Icecast Metadata UDP Channel"
+msgstr "Канали Icecast Metadata UDP даргиронед"
+
+#: Input/mpg123/configure.c:546 Input/vorbis/configure.c:360
+msgid "Streaming"
+msgstr "Ҷараёнкунӣ"
+
+#: Input/mpg123/configure.c:548
+msgid "ID3 Tags:"
+msgstr "ID3 Тэгҳо:"
+
+#: Input/mpg123/configure.c:555
+msgid "Disable ID3V2 tags"
+msgstr "ID3V2 тэгҳоро кушед"
+
+#: Input/mpg123/configure.c:569
+msgid "ID3 format:"
+msgstr "Андозаи ID3:"
+
+#: Input/mpg123/configure.c:579 Input/vorbis/configure.c:391
+#: xmms/prefswin.c:1111 xmms/prefswin.c:1146
+msgid "Title"
+msgstr "Сарлавҳа"
+
+#: Input/mpg123/fileinfo.c:126
+#, c-format
+msgid ""
+"%s\n"
+"Unable to write to file: %s"
+msgstr ""
+"%s\n"
+"Навишта намешавад ба файли: %s"
+
+#: Input/mpg123/fileinfo.c:127 Input/mpg123/fileinfo.c:133
+msgid "Couldn't write tag!"
+msgstr "Тэг навишта нашуд!"
+
+#: Input/mpg123/fileinfo.c:132 Input/mpg123/fileinfo.c:187
+#, c-format
+msgid ""
+"%s\n"
+"Unable to open file: %s"
+msgstr ""
+"%s\n"
+"Кушодани файл номумкин: %s"
+
+#: Input/mpg123/fileinfo.c:137 Input/mpg123/fileinfo.c:192
+msgid "File Info"
+msgstr "Ахбороти файл"
+
+#: Input/mpg123/fileinfo.c:177
+#, c-format
+msgid ""
+"%s\n"
+"Unable to truncate file: %s"
+msgstr ""
+"%s\n"
+"Номумкин буридани файли: %s"
+
+#: Input/mpg123/fileinfo.c:179 Input/mpg123/fileinfo.c:188
+msgid "Couldn't remove tag!"
+msgstr "Тэг хориҷ нашуд"
+
+#: Input/mpg123/fileinfo.c:183
+msgid "No tag to remove!"
+msgstr "Тэг нест барои хориҷ!"
+
+#: Input/mpg123/fileinfo.c:213
+msgid "Joint stereo"
+msgstr "Пайваста стерео"
+
+#: Input/mpg123/fileinfo.c:214
+msgid "Dual channel"
+msgstr "Дутогӣ канал"
+
+#: Input/mpg123/fileinfo.c:214
+msgid "Single channel"
+msgstr "Яктогӣ канал"
+
+#: Input/mpg123/fileinfo.c:227 Input/mpg123/fileinfo.c:596
+#, c-format
+msgid "Bitrate: %d kb/s"
+msgstr "Зуддии Бит: %d kb/s"
+
+#: Input/mpg123/fileinfo.c:229 Input/mpg123/fileinfo.c:599
+#: Input/vorbis/fileinfo.c:853
+#, c-format
+msgid "Samplerate: %d Hz"
+msgstr "Зуддии намунагирӣ: %d Hz"
+
+#: Input/mpg123/fileinfo.c:278
+msgid "None"
+msgstr "Нест"
+
+#: Input/mpg123/fileinfo.c:279
+msgid "50/15 ms"
+msgstr "50/15 мс"
+
+#: Input/mpg123/fileinfo.c:281
+#, fuzzy
+msgid "CCITT J.17"
+msgstr "CCIT J.17"
+
+#: Input/mpg123/fileinfo.c:307 Input/vorbis/fileinfo.c:479 xmms/input.c:404
+msgid "Filename:"
+msgstr "Номи Файл:"
+
+#: Input/mpg123/fileinfo.c:321
+msgid "ID3 Tag:"
+msgstr "ID3 Тэг:"
+
+#: Input/mpg123/fileinfo.c:329 Input/vorbis/fileinfo.c:501
+msgid "Title:"
+msgstr "Сарлавҳа:"
+
+#: Input/mpg123/fileinfo.c:339 Input/vorbis/fileinfo.c:511
+msgid "Artist:"
+msgstr "Артист:"
+
+#: Input/mpg123/fileinfo.c:349 Input/vorbis/fileinfo.c:521
+msgid "Album:"
+msgstr "Албом:"
+
+#: Input/mpg123/fileinfo.c:359 Input/vorbis/fileinfo.c:531
+msgid "Comment:"
+msgstr "Тавзеҳ:"
+
+#: Input/mpg123/fileinfo.c:369
+msgid "Year:"
+msgstr "Сол:"
+
+#: Input/mpg123/fileinfo.c:380 Input/vorbis/fileinfo.c:552
+msgid "Track number:"
+msgstr "Рақами суруд:"
+
+#: Input/mpg123/fileinfo.c:391 Input/vorbis/fileinfo.c:563
+msgid "Genre:"
+msgstr "Жанр:"
+
+#: Input/mpg123/fileinfo.c:430 Input/vorbis/fileinfo.c:700
+msgid "Save"
+msgstr "Нигоҳ доштан"
+
+#: Input/mpg123/fileinfo.c:436
+msgid "Remove ID3"
+msgstr "Хориҷи ID3"
+
+#: Input/mpg123/fileinfo.c:448
+msgid "MPEG Info:"
+msgstr "Ахбороти MPEG:"
+
+#: Input/mpg123/fileinfo.c:493 Input/vorbis/fileinfo.c:937 xmms/input.c:393
+#, c-format
+msgid "File Info - %s"
+msgstr "Ахбороти Файл - %s"
+
+#: Input/mpg123/fileinfo.c:586
+#, c-format
+msgid ""
+"Bitrate: Variable,\n"
+"avg. bitrate: %d kb/s"
+msgstr ""
+"Зуддии Бит: Ивазшаванда,\n"
+"миёна зуддии бит: %d kb/s"
+
+#: Input/mpg123/fileinfo.c:601
+#, c-format
+msgid ""
+"%s\n"
+"Error protection: %s\n"
+"Copyright: %s\n"
+"Original: %s\n"
+"Emphasis: %s"
+msgstr ""
+"%s\n"
+"Муҳофизтаи хатогӣ: %s\n"
+"Ҳуқуқи муаллифӣ: %s\n"
+"Оригиналӣ: %s\n"
+"Зада: %s"
+
+#: Input/mpg123/fileinfo.c:608
+#, c-format
+msgid ""
+"%d frames\n"
+"Filesize: %lu B"
+msgstr ""
+"%d чорчӯбаҳо'\n"
+"Андозаи файл: %lu B"
+
+#: Input/mpg123/http.c:208 Input/vorbis/http.c:208
+#: Output/disk_writer/disk_writer.c:142
+msgid "Error"
+msgstr "Хато"
+
+#: Input/mpg123/http.c:374 Input/mpg123/http.c:428 Input/vorbis/http.c:329
+#: Input/vorbis/http.c:382
+#, c-format
+msgid "CONNECTING TO %s:%d"
+msgstr "ПАЙВАСТШАВӢ БА %s:%d"
+
+#: Input/mpg123/http.c:389 Input/vorbis/http.c:344
+#, fuzzy, c-format
+msgid "Couldn't connect to host %s:%d"
+msgstr "Ба хидматгори %s пайваст нашуд"
+
+#: Input/mpg123/http.c:395 Input/mpg123/http.c:413 Input/vorbis/http.c:351
+#: Input/vorbis/http.c:367
+#, c-format
+msgid "Couldn't look up host %s"
+msgstr "Хидматгори %s ёфта нашуд"
+
+#: Input/mpg123/http.c:407 Input/vorbis/http.c:361
+#, c-format
+msgid "LOOKING UP %s"
+msgstr "%s ЁФТА ИСТОДААСТ"
+
+#: Input/mpg123/http.c:435 Input/mpg123/http.c:456 Input/vorbis/http.c:389
+#: Input/vorbis/http.c:410
+#, c-format
+msgid "Couldn't connect to host %s"
+msgstr "Ба хидматгори %s пайваст нашуд"
+
+#: Input/mpg123/http.c:514 Input/vorbis/http.c:454
+msgid "CONNECTED: WAITING FOR REPLY"
+msgstr "ПАЙВАСТШУДА: ИНТИЗОРИ ҶАВОБ"
+
+#: Input/mpg123/http.c:555 Input/vorbis/http.c:495
+#, c-format
+msgid ""
+"Couldn't connect to host %s\n"
+"Server reported: %s"
+msgstr ""
+"Ба хидматгори %s пайваст нашуд\n"
+"Маърӯзаи хидматгор: %s"
+
+#: Input/mpg123/http.c:686 Input/vorbis/http.c:616
+#, c-format
+msgid "PRE-BUFFERING: %dKB/%dKB"
+msgstr "ПЕШМИЁНГИРӢ: %dKB/%dKB"
+
+#: Input/mpg123/mpg123.c:27 Input/vorbis/fileinfo.c:79
+msgid "Blues"
+msgstr "Блюз"
+
+#: Input/mpg123/mpg123.c:27 Input/vorbis/fileinfo.c:79
+msgid "Classic Rock"
+msgstr "Роки классикӣ"
+
+#: Input/mpg123/mpg123.c:27 Input/vorbis/fileinfo.c:79
+msgid "Country"
+msgstr "Кантри"
+
+#: Input/mpg123/mpg123.c:27 Input/vorbis/fileinfo.c:79
+msgid "Dance"
+msgstr "Дэнс"
+
+#: Input/mpg123/mpg123.c:28 Input/vorbis/fileinfo.c:80
+msgid "Disco"
+msgstr "Диско"
+
+#: Input/mpg123/mpg123.c:28 Input/vorbis/fileinfo.c:80
+msgid "Funk"
+msgstr "Фанк"
+
+#: Input/mpg123/mpg123.c:28 Input/vorbis/fileinfo.c:80
+msgid "Grunge"
+msgstr "Гранж"
+
+#: Input/mpg123/mpg123.c:28 Input/vorbis/fileinfo.c:80
+msgid "Hip-Hop"
+msgstr "Ҳип-Ҳоп"
+
+#: Input/mpg123/mpg123.c:29 Input/vorbis/fileinfo.c:81
+msgid "Jazz"
+msgstr "Ҷаз"
+
+#: Input/mpg123/mpg123.c:29 Input/vorbis/fileinfo.c:81
+msgid "Metal"
+msgstr "Метал"
+
+#: Input/mpg123/mpg123.c:29 Input/vorbis/fileinfo.c:81
+msgid "New Age"
+msgstr "Ню Эйҷ"
+
+#: Input/mpg123/mpg123.c:29 Input/vorbis/fileinfo.c:81
+msgid "Oldies"
+msgstr "Кӯҳнаҳо"
+
+#: Input/mpg123/mpg123.c:30 Input/vorbis/fileinfo.c:82
+msgid "Other"
+msgstr "Дигар"
+
+#: Input/mpg123/mpg123.c:30 Input/vorbis/fileinfo.c:82
+msgid "Pop"
+msgstr "Поп"
+
+#: Input/mpg123/mpg123.c:30 Input/vorbis/fileinfo.c:82
+msgid "R&B"
+msgstr "R&B"
+
+#: Input/mpg123/mpg123.c:30 Input/vorbis/fileinfo.c:82
+msgid "Rap"
+msgstr "Рэп"
+
+#: Input/mpg123/mpg123.c:30 Input/vorbis/fileinfo.c:82
+msgid "Reggae"
+msgstr "Реги"
+
+#: Input/mpg123/mpg123.c:31 Input/vorbis/fileinfo.c:83
+msgid "Rock"
+msgstr "Рок"
+
+#: Input/mpg123/mpg123.c:31 Input/vorbis/fileinfo.c:83
+msgid "Techno"
+msgstr "Техно"
+
+#: Input/mpg123/mpg123.c:31 Input/vorbis/fileinfo.c:83
+msgid "Industrial"
+msgstr "Индустриалӣ"
+
+#: Input/mpg123/mpg123.c:31 Input/vorbis/fileinfo.c:83
+msgid "Alternative"
+msgstr "Алтернативӣ"
+
+#: Input/mpg123/mpg123.c:32 Input/vorbis/fileinfo.c:84
+msgid "Ska"
+msgstr "Ska"
+
+#: Input/mpg123/mpg123.c:32 Input/vorbis/fileinfo.c:84
+msgid "Death Metal"
+msgstr "Метали Ашадӣ"
+
+#: Input/mpg123/mpg123.c:32 Input/vorbis/fileinfo.c:84
+msgid "Pranks"
+msgstr "Пэнкс"
+
+#: Input/mpg123/mpg123.c:32 Input/vorbis/fileinfo.c:84
+msgid "Soundtrack"
+msgstr "Филмсадо"
+
+#: Input/mpg123/mpg123.c:33 Input/vorbis/fileinfo.c:85
+msgid "Euro-Techno"
+msgstr "Евро-Техно"
+
+#: Input/mpg123/mpg123.c:33 Input/vorbis/fileinfo.c:85
+msgid "Ambient"
+msgstr "Атрофӣ"
+
+#: Input/mpg123/mpg123.c:33 Input/vorbis/fileinfo.c:85
+msgid "Trip-Hop"
+msgstr "Трип-Ҳоп"
+
+#: Input/mpg123/mpg123.c:33 Input/vorbis/fileinfo.c:85
+msgid "Vocal"
+msgstr "Овозӣ"
+
+#: Input/mpg123/mpg123.c:34 Input/vorbis/fileinfo.c:86
+msgid "Jazz+Funk"
+msgstr "Ҷаз+Фанк"
+
+#: Input/mpg123/mpg123.c:34 Input/vorbis/fileinfo.c:86
+msgid "Fusion"
+msgstr "Фюшэн"
+
+#: Input/mpg123/mpg123.c:34 Input/vorbis/fileinfo.c:86
+msgid "Trance"
+msgstr "Транс"
+
+#: Input/mpg123/mpg123.c:34 Input/vorbis/fileinfo.c:86
+msgid "Classical"
+msgstr "Классикӣ"
+
+#: Input/mpg123/mpg123.c:35 Input/vorbis/fileinfo.c:87
+msgid "Instrumental"
+msgstr "Асбобӣ"
+
+#: Input/mpg123/mpg123.c:35 Input/vorbis/fileinfo.c:87
+msgid "Acid"
+msgstr "Ҳомуз"
+
+#: Input/mpg123/mpg123.c:35 Input/vorbis/fileinfo.c:87
+msgid "House"
+msgstr "Хона"
+
+#: Input/mpg123/mpg123.c:35 Input/vorbis/fileinfo.c:87
+msgid "Game"
+msgstr "Бозӣ"
+
+#: Input/mpg123/mpg123.c:36 Input/vorbis/fileinfo.c:88
+msgid "Sound Clip"
+msgstr "Клипи Садоӣ"
+
+#: Input/mpg123/mpg123.c:36 Input/vorbis/fileinfo.c:88
+msgid "Gospel"
+msgstr "Инҷил"
+
+#: Input/mpg123/mpg123.c:36 Input/vorbis/fileinfo.c:88
+msgid "Noise"
+msgstr "Ғавғо"
+
+#: Input/mpg123/mpg123.c:36 Input/vorbis/fileinfo.c:88
+msgid "AlternRock"
+msgstr "Роки Алтернативӣ"
+
+#: Input/mpg123/mpg123.c:37 Input/vorbis/fileinfo.c:89
+msgid "Bass"
+msgstr "Бас"
+
+#: Input/mpg123/mpg123.c:37 Input/vorbis/fileinfo.c:89
+msgid "Soul"
+msgstr "Рӯҳ"
+
+#: Input/mpg123/mpg123.c:37 Input/vorbis/fileinfo.c:89
+msgid "Punk"
+msgstr "Панк"
+
+#: Input/mpg123/mpg123.c:37 Input/vorbis/fileinfo.c:89
+msgid "Space"
+msgstr "Кайҳон"
+
+#: Input/mpg123/mpg123.c:38 Input/vorbis/fileinfo.c:90
+msgid "Meditative"
+msgstr "Андешаманд"
+
+#: Input/mpg123/mpg123.c:38 Input/vorbis/fileinfo.c:90
+msgid "Instrumental Pop"
+msgstr "Попи Асбобӣ"
+
+#: Input/mpg123/mpg123.c:39 Input/vorbis/fileinfo.c:91
+msgid "Instrumental Rock"
+msgstr "Роки Асбобӣ"
+
+#: Input/mpg123/mpg123.c:39 Input/vorbis/fileinfo.c:91
+msgid "Ethnic"
+msgstr "Этникӣ"
+
+#: Input/mpg123/mpg123.c:39 Input/vorbis/fileinfo.c:91
+msgid "Gothic"
+msgstr "Готикӣ"
+
+#: Input/mpg123/mpg123.c:40 Input/vorbis/fileinfo.c:92
+msgid "Darkwave"
+msgstr "Мавҷи торик"
+
+#: Input/mpg123/mpg123.c:40 Input/vorbis/fileinfo.c:92
+msgid "Techno-Industrial"
+msgstr "Техно-Индустриалӣ"
+
+#: Input/mpg123/mpg123.c:40 Input/vorbis/fileinfo.c:92
+msgid "Electronic"
+msgstr "Электронӣ"
+
+#: Input/mpg123/mpg123.c:41 Input/vorbis/fileinfo.c:93
+msgid "Pop-Folk"
+msgstr "Поп-Халқӣ"
+
+#: Input/mpg123/mpg123.c:41 Input/vorbis/fileinfo.c:93
+msgid "Eurodance"
+msgstr "Евродэнс"
+
+#: Input/mpg123/mpg123.c:41 Input/vorbis/fileinfo.c:93
+msgid "Dream"
+msgstr "Хоб"
+
+#: Input/mpg123/mpg123.c:42 Input/vorbis/fileinfo.c:94
+msgid "Southern Rock"
+msgstr "Роки Ҷанубӣ"
+
+#: Input/mpg123/mpg123.c:42 Input/vorbis/fileinfo.c:94
+msgid "Comedy"
+msgstr "Масхара"
+
+#: Input/mpg123/mpg123.c:42 Input/vorbis/fileinfo.c:94
+msgid "Cult"
+msgstr "Парастиш(Маданӣ)"
+
+#: Input/mpg123/mpg123.c:43 Input/vorbis/fileinfo.c:95
+msgid "Gangsta Rap"
+msgstr "Рэпи Сиёҳ"
+
+#: Input/mpg123/mpg123.c:43 Input/vorbis/fileinfo.c:95
+msgid "Top 40"
+msgstr "Top 40"
+
+#: Input/mpg123/mpg123.c:43 Input/vorbis/fileinfo.c:95
+msgid "Christian Rap"
+msgstr "Рэпи Насронӣ"
+
+#: Input/mpg123/mpg123.c:44 Input/vorbis/fileinfo.c:96
+msgid "Pop/Funk"
+msgstr "Поп/Фанк"
+
+#: Input/mpg123/mpg123.c:44 Input/vorbis/fileinfo.c:96
+msgid "Jungle"
+msgstr "Ҷангал"
+
+#: Input/mpg123/mpg123.c:44 Input/vorbis/fileinfo.c:96
+msgid "Native American"
+msgstr "Миллӣ Америкоӣ"
+
+#: Input/mpg123/mpg123.c:45 Input/vorbis/fileinfo.c:97
+msgid "Cabaret"
+msgstr "Кабаре"
+
+#: Input/mpg123/mpg123.c:45 Input/vorbis/fileinfo.c:97
+msgid "New Wave"
+msgstr "Мавҷи Нав"
+
+#: Input/mpg123/mpg123.c:45 Input/vorbis/fileinfo.c:97
+msgid "Psychedelic"
+msgstr "Нофаҳмо"
+
+#: Input/mpg123/mpg123.c:45 Input/vorbis/fileinfo.c:97
+msgid "Rave"
+msgstr "Рэйв"
+
+#: Input/mpg123/mpg123.c:46 Input/vorbis/fileinfo.c:98
+msgid "Showtunes"
+msgstr "Шовтюнз"
+
+#: Input/mpg123/mpg123.c:46 Input/vorbis/fileinfo.c:98
+msgid "Trailer"
+msgstr "Трэйлэр"
+
+#: Input/mpg123/mpg123.c:46 Input/vorbis/fileinfo.c:98
+msgid "Lo-Fi"
+msgstr "Lo-Fi"
+
+#: Input/mpg123/mpg123.c:46 Input/vorbis/fileinfo.c:98
+msgid "Tribal"
+msgstr "Қабилагӣ"
+
+#: Input/mpg123/mpg123.c:47 Input/vorbis/fileinfo.c:99
+msgid "Acid Punk"
+msgstr "Панки Ҳомуз"
+
+#: Input/mpg123/mpg123.c:47 Input/vorbis/fileinfo.c:99
+msgid "Acid Jazz"
+msgstr "Ҷази Ҳомуз"
+
+#: Input/mpg123/mpg123.c:47 Input/vorbis/fileinfo.c:99
+msgid "Polka"
+msgstr "Полка"
+
+#: Input/mpg123/mpg123.c:47 Input/vorbis/fileinfo.c:99
+msgid "Retro"
+msgstr "Ретро"
+
+#: Input/mpg123/mpg123.c:48 Input/vorbis/fileinfo.c:100
+msgid "Musical"
+msgstr "Мусиқӣ"
+
+#: Input/mpg123/mpg123.c:48 Input/vorbis/fileinfo.c:100
+msgid "Rock & Roll"
+msgstr "Рок - н - Рол"
+
+#: Input/mpg123/mpg123.c:48 Input/vorbis/fileinfo.c:100
+msgid "Hard Rock"
+msgstr "Роки Сахт"
+
+#: Input/mpg123/mpg123.c:48 Input/vorbis/fileinfo.c:100
+msgid "Folk"
+msgstr "Халқӣ"
+
+#: Input/mpg123/mpg123.c:49 Input/vorbis/fileinfo.c:101
+msgid "Folk/Rock"
+msgstr "Халқӣ/Рок"
+
+#: Input/mpg123/mpg123.c:49 Input/vorbis/fileinfo.c:101
+msgid "National Folk"
+msgstr "Миллӣ Халқӣ"
+
+#: Input/mpg123/mpg123.c:49 Input/vorbis/fileinfo.c:101
+msgid "Swing"
+msgstr "Свинг"
+
+#: Input/mpg123/mpg123.c:50 Input/vorbis/fileinfo.c:102
+msgid "Fast-Fusion"
+msgstr "Тез-Фюшэн"
+
+#: Input/mpg123/mpg123.c:50 Input/vorbis/fileinfo.c:102
+msgid "Bebob"
+msgstr "Бибоб"
+
+#: Input/mpg123/mpg123.c:50 Input/vorbis/fileinfo.c:102
+msgid "Latin"
+msgstr "Лотинӣ"
+
+#: Input/mpg123/mpg123.c:50 Input/vorbis/fileinfo.c:102
+msgid "Revival"
+msgstr "Хушҳол"
+
+#: Input/mpg123/mpg123.c:51 Input/vorbis/fileinfo.c:103
+msgid "Celtic"
+msgstr "Келтӣ"
+
+#: Input/mpg123/mpg123.c:51 Input/vorbis/fileinfo.c:103
+msgid "Bluegrass"
+msgstr "Алафи кабуд"
+
+#: Input/mpg123/mpg123.c:51 Input/vorbis/fileinfo.c:103
+msgid "Avantgarde"
+msgstr "Пешоҳанг"
+
+#: Input/mpg123/mpg123.c:52 Input/vorbis/fileinfo.c:104
+msgid "Gothic Rock"
+msgstr "Роки Готикӣ"
+
+#: Input/mpg123/mpg123.c:52 Input/vorbis/fileinfo.c:104
+msgid "Progressive Rock"
+msgstr "Роки Прогрессивӣ"
+
+#: Input/mpg123/mpg123.c:53 Input/vorbis/fileinfo.c:105
+msgid "Psychedelic Rock"
+msgstr "Роки Нофаҳмо"
+
+#: Input/mpg123/mpg123.c:53 Input/vorbis/fileinfo.c:105
+msgid "Symphonic Rock"
+msgstr "Роки Симфонӣ"
+
+#: Input/mpg123/mpg123.c:53 Input/vorbis/fileinfo.c:105
+msgid "Slow Rock"
+msgstr "Роки Суст"
+
+#: Input/mpg123/mpg123.c:54 Input/vorbis/fileinfo.c:106
+msgid "Big Band"
+msgstr "Бэнди Калон"
+
+#: Input/mpg123/mpg123.c:54 Input/vorbis/fileinfo.c:106
+msgid "Chorus"
+msgstr "Хор"
+
+#: Input/mpg123/mpg123.c:54 Input/vorbis/fileinfo.c:106
+msgid "Easy Listening"
+msgstr "Сабук Гӯшкунӣ"
+
+#: Input/mpg123/mpg123.c:55 Input/vorbis/fileinfo.c:107
+msgid "Acoustic"
+msgstr "Акустика"
+
+#: Input/mpg123/mpg123.c:55 Input/vorbis/fileinfo.c:107
+msgid "Humour"
+msgstr "Зарофат"
+
+#: Input/mpg123/mpg123.c:55 Input/vorbis/fileinfo.c:107
+msgid "Speech"
+msgstr "Сухан"
+
+#: Input/mpg123/mpg123.c:55 Input/vorbis/fileinfo.c:107
+msgid "Chanson"
+msgstr "Шансон"
+
+#: Input/mpg123/mpg123.c:56 Input/vorbis/fileinfo.c:108
+msgid "Opera"
+msgstr "Опера"
+
+#: Input/mpg123/mpg123.c:56 Input/vorbis/fileinfo.c:108
+msgid "Chamber Music"
+msgstr "Мусиқаи Хона"
+
+#: Input/mpg123/mpg123.c:56 Input/vorbis/fileinfo.c:108
+msgid "Sonata"
+msgstr "Соната"
+
+#: Input/mpg123/mpg123.c:56 Input/vorbis/fileinfo.c:108
+msgid "Symphony"
+msgstr "Симфонӣ"
+
+#: Input/mpg123/mpg123.c:57 Input/vorbis/fileinfo.c:109
+msgid "Booty Bass"
+msgstr "Баси Ғанимат "
+
+#: Input/mpg123/mpg123.c:57 Input/vorbis/fileinfo.c:109
+msgid "Primus"
+msgstr "Примус"
+
+#: Input/mpg123/mpg123.c:57 Input/vorbis/fileinfo.c:109
+msgid "Porn Groove"
+msgstr "Порн Грув"
+
+#: Input/mpg123/mpg123.c:58 Input/vorbis/fileinfo.c:110
+msgid "Satire"
+msgstr "Сатира"
+
+#: Input/mpg123/mpg123.c:58 Input/vorbis/fileinfo.c:110
+msgid "Slow Jam"
+msgstr "Суст Ҷем"
+
+#: Input/mpg123/mpg123.c:58 Input/vorbis/fileinfo.c:110
+msgid "Club"
+msgstr "Клуб"
+
+#: Input/mpg123/mpg123.c:58 Input/vorbis/fileinfo.c:110
+msgid "Tango"
+msgstr "Танго"
+
+#: Input/mpg123/mpg123.c:59 Input/vorbis/fileinfo.c:111
+msgid "Samba"
+msgstr "Самба"
+
+#: Input/mpg123/mpg123.c:59 Input/vorbis/fileinfo.c:111
+msgid "Folklore"
+msgstr "Фолклор"
+
+#: Input/mpg123/mpg123.c:59 Input/vorbis/fileinfo.c:111
+msgid "Ballad"
+msgstr "Баллада"
+
+#: Input/mpg123/mpg123.c:59 Input/vorbis/fileinfo.c:111
+msgid "Power Ballad"
+msgstr "Балладаи Пурқувват"
+
+#: Input/mpg123/mpg123.c:60 Input/vorbis/fileinfo.c:112
+msgid "Rhythmic Soul"
+msgstr "Ритмикаи Рӯҳӣ"
+
+#: Input/mpg123/mpg123.c:60 Input/vorbis/fileinfo.c:112
+msgid "Freestyle"
+msgstr "Тарзи Озод"
+
+#: Input/mpg123/mpg123.c:60 Input/vorbis/fileinfo.c:112
+msgid "Duet"
+msgstr "Дуэт"
+
+#: Input/mpg123/mpg123.c:61 Input/vorbis/fileinfo.c:113
+msgid "Punk Rock"
+msgstr "Панк Рок"
+
+#: Input/mpg123/mpg123.c:61 Input/vorbis/fileinfo.c:113
+msgid "Drum Solo"
+msgstr "Нақора Соло"
+
+#: Input/mpg123/mpg123.c:61 Input/vorbis/fileinfo.c:113
+msgid "A Cappella"
+msgstr "Капелла"
+
+#: Input/mpg123/mpg123.c:62 Input/vorbis/fileinfo.c:114
+msgid "Euro-House"
+msgstr "Евро-Хауз"
+
+#: Input/mpg123/mpg123.c:62 Input/vorbis/fileinfo.c:114
+msgid "Dance Hall"
+msgstr "Толори Рақс"
+
+#: Input/mpg123/mpg123.c:62 Input/vorbis/fileinfo.c:114
+msgid "Goa"
+msgstr "Гоа"
+
+#: Input/mpg123/mpg123.c:63 Input/vorbis/fileinfo.c:115
+msgid "Drum & Bass"
+msgstr "Нақора ва Бас"
+
+#: Input/mpg123/mpg123.c:63 Input/vorbis/fileinfo.c:115
+msgid "Club-House"
+msgstr "Клуб-Хауз"
+
+#: Input/mpg123/mpg123.c:63 Input/vorbis/fileinfo.c:115
+msgid "Hardcore"
+msgstr "Хардкор"
+
+#: Input/mpg123/mpg123.c:64 Input/vorbis/fileinfo.c:116
+msgid "Terror"
+msgstr "Террор"
+
+#: Input/mpg123/mpg123.c:64 Input/vorbis/fileinfo.c:116
+msgid "Indie"
+msgstr "Ҳиндӣ"
+
+#: Input/mpg123/mpg123.c:64 Input/vorbis/fileinfo.c:116
+msgid "BritPop"
+msgstr "БритПоп"
+
+#: Input/mpg123/mpg123.c:64 Input/vorbis/fileinfo.c:116
+msgid "Negerpunk"
+msgstr "СиёҳПанк"
+
+#: Input/mpg123/mpg123.c:65 Input/vorbis/fileinfo.c:117
+msgid "Polsk Punk"
+msgstr "Панки Полша"
+
+#: Input/mpg123/mpg123.c:65 Input/vorbis/fileinfo.c:117
+msgid "Beat"
+msgstr "Бит"
+
+#: Input/mpg123/mpg123.c:65 Input/vorbis/fileinfo.c:117
+msgid "Christian Gangsta Rap"
+msgstr "Рэпи Сиёҳи Насронӣ"
+
+#: Input/mpg123/mpg123.c:66 Input/vorbis/fileinfo.c:118
+msgid "Heavy Metal"
+msgstr "Метали Вазнин"
+
+#: Input/mpg123/mpg123.c:66 Input/vorbis/fileinfo.c:118
+msgid "Black Metal"
+msgstr "Метали Сиёҳ"
+
+#: Input/mpg123/mpg123.c:66 Input/vorbis/fileinfo.c:118
+msgid "Crossover"
+msgstr "Гузаранда"
+
+#: Input/mpg123/mpg123.c:67 Input/vorbis/fileinfo.c:119
+msgid "Contemporary Christian"
+msgstr "Насронӣ Муосир"
+
+#: Input/mpg123/mpg123.c:67 Input/vorbis/fileinfo.c:119
+msgid "Christian Rock"
+msgstr "Роки Насронӣ"
+
+#: Input/mpg123/mpg123.c:68 Input/vorbis/fileinfo.c:120
+msgid "Merengue"
+msgstr "Миренга"
+
+#: Input/mpg123/mpg123.c:68 Input/vorbis/fileinfo.c:120
+msgid "Salsa"
+msgstr "Салса"
+
+#: Input/mpg123/mpg123.c:68 Input/vorbis/fileinfo.c:120
+msgid "Thrash Metal"
+msgstr "Трэш Метал"
+
+#: Input/mpg123/mpg123.c:69 Input/vorbis/fileinfo.c:121
+msgid "Anime"
+msgstr "Тасвирӣ"
+
+#: Input/mpg123/mpg123.c:69 Input/vorbis/fileinfo.c:121
+msgid "JPop"
+msgstr "ҶэйПоп"
+
+#: Input/mpg123/mpg123.c:69 Input/vorbis/fileinfo.c:121
+msgid "Synthpop"
+msgstr "Синтпоп"
+
+#: Input/mpg123/mpg123.c:1148
+msgid "About MPEG Layer 1/2/3 plugin"
+msgstr "Дар бораи даровардани MPEG Нишонгири 1/2/3"
+
+#: Input/mpg123/mpg123.c:1149
+msgid ""
+"mpg123 decoding engine by Michael Hipp <mh@mpg123.de>\n"
+"Plugin by The XMMS team"
+msgstr ""
+"Муаллифи муҳаррики рамзкушои mpg123 - Michael Hipp <mh@mpg123.de>\n"
+"Муаллифи даровардан - Гурӯҳи XMMS"
+
+#: Input/mpg123/mpg123.c:1183
+#, c-format
+msgid "MPEG Layer 1/2/3 Player %s"
+msgstr "%s Навозандаи 1/2/3 MPEG Нишонгир"
+
+#: Input/tonegen/tonegen.c:49
+msgid "About Tone Generator"
+msgstr "Дар бораи Чашмаи Оҳангӣ"
+
+#: Input/tonegen/tonegen.c:51
+msgid ""
+"Sinus tone generator by Haavard Kvaalen <havardk@xmms.org>\n"
+"Modified by Daniel J. Peng <danielpeng@bigfoot.com>\n"
+"\n"
+"To use it, add a URL: tone://frequency1;frequency2;frequency3;...\n"
+"e.g. tone://2000;2005 to play a 2000Hz tone and a 2005Hz tone"
+msgstr ""
+"Чашмаи ОЉангии Синус, бо Haavard Kvaalen <havardk@xmms.org>\n"
+"Бо Daniel J. Peng <danielpeng@bigfoot.com> тағир ёфтааст\n"
+"\n"
+"Барои истифода, URL илова кунед: оҳанг://зуддӣ1;зуддӣ2;зуддӣ3;...\n"
+"ҳамчун оҳанг://2000;2005 ба навохтан 2000Hz оҳанг ва 2005Hz оҳанг"
+
+#: Input/tonegen/tonegen.c:164
+msgid "Tone Generator: "
+msgstr "Чашмаи Оҳангӣ: "
+
+#: Input/tonegen/tonegen.c:264
+#, c-format
+msgid "Tone Generator %s"
+msgstr "Чашмаи Оҳангии %s"
+
+#: Input/vorbis/configure.c:158
+msgid "Select the directory where you want to store the Ogg Vorbis streams:"
+msgstr "Феҳрист интихоб кунед барои нигоҳ доштани ҷараёнҳои Ogg Vorbis:"
+
+#: Input/vorbis/configure.c:226
+msgid "Ogg Vorbis Configuration"
+msgstr "Танзимдарории Ogg Vorbis"
+
+#: Input/vorbis/configure.c:364
+msgid "Ogg Vorbis Tags:"
+msgstr "Тэгҳои Ogg Vorbis'"
+
+#: Input/vorbis/configure.c:380 xmms/prefswin.c:1120
+msgid "Title format:"
+msgstr "Андозаи сарлавҳа:"
+
+#: Input/vorbis/configure.c:395 Input/vorbis/fileinfo.c:645
+msgid "ReplayGain Settings:"
+msgstr "ReplayGain Гузоришҳо:"
+
+#: Input/vorbis/configure.c:402
+msgid "Enable Clipping Prevention"
+msgstr "Даргиронидани Пешгирии Бурриш"
+
+#: Input/vorbis/configure.c:406
+msgid "Enable ReplayGain"
+msgstr "Даргирондани ReplayGain"
+
+#: Input/vorbis/configure.c:410
+msgid "ReplayGain Type:"
+msgstr "Навъи ReplayGain:"
+
+#: Input/vorbis/configure.c:419
+msgid "use Track Gain/Peak"
+msgstr "истифодаи Шиддат/Қуллаи Суруд"
+
+#: Input/vorbis/configure.c:426
+msgid "use Album Gain/Peak"
+msgstr "истифодаи Шиддат/Қуллаи Албом"
+
+#: Input/vorbis/configure.c:436
+msgid "Enable 6dB Boost + Hard Limiting"
+msgstr "Даргиронидани 6dB Шиддат + Маҳдудкунии Қатъӣ"
+
+#: Input/vorbis/configure.c:440
+msgid "ReplayGain"
+msgstr "ReplayGain"
+
+#: Input/vorbis/fileinfo.c:208
+#, fuzzy, c-format
+msgid ""
+"An error occurred:\n"
+"%s"
+msgstr ""
+"Хатогӣ рух дод:\n"
+"%s"
+
+#: Input/vorbis/fileinfo.c:210
+msgid "Error!"
+msgstr "Хато!"
+
+#: Input/vorbis/fileinfo.c:238 Input/vorbis/fileinfo.c:293
+#: Input/vorbis/fileinfo.c:314 Input/vorbis/fileinfo.c:323
+msgid "Failed to modify tag"
+msgstr "Тағир додани тэг нагузашт"
+
+#: Input/vorbis/fileinfo.c:493
+msgid "Ogg Vorbis Tag:"
+msgstr "Тэги Ogg Vorbis:"
+
+#: Input/vorbis/fileinfo.c:541
+msgid "Date:"
+msgstr "Сана:"
+
+#: Input/vorbis/fileinfo.c:582
+msgid "Description:"
+msgstr "Тавсиф:"
+
+#: Input/vorbis/fileinfo.c:592
+msgid "Location:"
+msgstr "Ҷойгиршавӣ:"
+
+#: Input/vorbis/fileinfo.c:602
+msgid "Version:"
+msgstr "Нашр:"
+
+#: Input/vorbis/fileinfo.c:613
+msgid "ISRC number:"
+msgstr "Рақами ISRC:"
+
+#: Input/vorbis/fileinfo.c:624
+msgid "Organization:"
+msgstr "Ташкилот:"
+
+#: Input/vorbis/fileinfo.c:634
+msgid "Copyright:"
+msgstr "Ҳуқуқи муаллифӣ:"
+
+#: Input/vorbis/fileinfo.c:652
+msgid "Track gain:"
+msgstr "Шиддати суруд:"
+
+#: Input/vorbis/fileinfo.c:662
+msgid "Track peak:"
+msgstr "Қуллаи суруд:"
+
+#: Input/vorbis/fileinfo.c:673
+msgid "Album gain:"
+msgstr "Шиддати албом:"
+
+#: Input/vorbis/fileinfo.c:683
+msgid "Album peak:"
+msgstr "Куллаи албом:"
+
+#: Input/vorbis/fileinfo.c:707
+msgid "Remove Tag"
+msgstr "Хориҷи Тег"
+
+#: Input/vorbis/fileinfo.c:722
+msgid "Ogg Vorbis Info:"
+msgstr "Маълумоти Ogg Vorbis:"
+
+#: Input/vorbis/fileinfo.c:851
+#, c-format
+msgid "Nominal bitrate: %d kbps"
+msgstr "Зуддии бити номӣ: %d кб/с"
+
+#: Input/vorbis/fileinfo.c:852
+#, fuzzy, c-format
+msgid "Average bitrate: %.1f kbps"
+msgstr "Зуддии бити номӣ: %d кб/с"
+
+#: Input/vorbis/fileinfo.c:854
+#, c-format
+msgid "Channels: %d"
+msgstr "Каналҳо: %d"
+
+#: Input/vorbis/fileinfo.c:855
+#, c-format
+msgid "Length: %d:%.2d"
+msgstr "Дарозӣ: %d:%.2d"
+
+#: Input/vorbis/fileinfo.c:856
+#, c-format
+msgid "File size: %d B"
+msgstr "Ҳаҷми файл: %d B"
+
+#: Input/vorbis/fileinfo.c:857
+#, c-format
+msgid "Vendor: %s"
+msgstr ""
+
+#: Input/vorbis/vorbis.c:130
+#, c-format
+msgid "Ogg Vorbis Player %s"
+msgstr "Навозандаи Ogg Vorbis %s"
+
+#: Input/vorbis/vorbis.c:761
+msgid "About Ogg Vorbis Plugin"
+msgstr "Дар бораи Даровардани Ogg Vorbis"
+
+#: Input/vorbis/vorbis.c:766
+#, fuzzy
+msgid ""
+"Ogg Vorbis Plugin by the Xiph.org Foundation\n"
+"\n"
+"Original code by\n"
+"Tony Arcieri <bascule@inferno.tusculum.edu>\n"
+"Contributions from\n"
+"Chris Montgomery <monty@xiph.org>\n"
+"Peter Alm <peter@xmms.org>\n"
+"Michael Smith <msmith@labyrinth.edu.au>\n"
+"Jack Moffitt <jack@icecast.org>\n"
+"Jorn Baayen <jorn@nl.linux.org>\n"
+"Haavard Kvaalen <havardk@xmms.org>\n"
+"Gian-Carlo Pascutto <gcp@sjeng.org>\n"
+"\n"
+"Visit the Xiph.org Foundation at http://www.xiph.org/\n"
+msgstr ""
+"Даровардани Ogg Vorbis бо Xiphophorus\n"
+"\n"
+"Рамзи Асосӣ бо\n"
+"Tony Arcieri <bascule@inferno.tusculum.edu>\n"
+"Кӯмакҳо аз\n"
+"Chris Montgomery <monty@xiph.org>\n"
+"Peter Alm <peter@xmms.org>\n"
+"Michael Smith <msmith@labyrinth.edu.au>\n"
+"Jack Moffitt <jack@icecast.org>\n"
+"Jorn Baayen <jorn@nl.linux.org>\n"
+"Haavard Kvaalen <havardk@xmms.org>\n"
+"\n"
+"Xiphophorus дар http://www.xiph.org/ бинед\n"
+
+#: Input/wav/wav.c:82
+#, c-format
+msgid "Wave Player %s"
+msgstr "Навозандаи Мавҷии %s"
+
+#: Output/OSS/OSS.c:44
+#, c-format
+msgid "OSS Driver %s"
+msgstr "OSS Гардони %s"
+
+#: Output/OSS/about.c:30
+msgid "About OSS Driver"
+msgstr "Дар бораи OSS Гардон"
+
+#: Output/OSS/about.c:31
+msgid ""
+"XMMS OSS Driver\n"
+"\n"
+" This program is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program; if not, write to the Free Software\n"
+"Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,\n"
+"USA."
+msgstr ""
+"OSS Гардони XMMS\n"
+"\n"
+"Ин барнома нармафзори озод мебошад; шумо инро метавонед паҳн кунед\n"
+"ва/ё иваз намоед мувофиқи шартҳои Лисензияи Умумии Ҷамъиятии GNU,\n"
+"ки бо Фонди Озоди Нармафзор нашр шудааст (Free Software Foundation);\n"
+"ё ин, ки мувофиқи ривояти 2-ми Лисензия, ё (бо интихоби худ) ҳар\n"
+"кадом ривояти охирон.\n"
+"\n"
+"Ин барнома бо умеди фоиданок шудан паҳн карда мешавад, лекин\n"
+"БЕ ЯГОН КАФОЛАТ; то ҳатто бе кафолате, ки он БА ЯГОН МАҚСАДИ МУАЯАН\n"
+"КОРОЯМ МЕШАВАД. Барои муфассалии зиёд ба Лисензияи Умумии Ҷамъиятии\n"
+"GNU нигаред.\n"
+"\n"
+"Шумо бояд нусхаи Лисензияи Умумии Ҷамъиятии GNU-ро ҳамроҳи ин\n"
+"барнома гирифта бошед; Агар набошад, ба Фонди Озоди Нармафзор - Free\n"
+"Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA\n"
+"02111-1307, USA нависед."
+
+#: Output/OSS/configure.c:133
+#, c-format
+msgid "Default (%s)"
+msgstr "Пешфарз (%s)"
+
+#: Output/OSS/configure.c:151
+msgid "Default"
+msgstr "Пешфарз"
+
+#: Output/OSS/configure.c:180
+msgid "OSS Driver configuration"
+msgstr "Танзимдарории OSS Гардон"
+
+#: Output/OSS/configure.c:194 Output/sun/configure.c:179
+#: Output/alsa/configure.c:289
+msgid "Audio device:"
+msgstr "Аудио дастгоҳ:"
+
+#: Output/OSS/configure.c:212 Output/OSS/configure.c:246
+msgid "Use alternate device:"
+msgstr "Дастгоҳи алтернативӣ истифода баред:"
+
+#: Output/OSS/configure.c:228 Output/sun/configure.c:216
+#: Output/alsa/configure.c:334
+msgid "Mixer device:"
+msgstr "Дастгоҳи омезанда:"
+
+#: Output/OSS/configure.c:262 Output/solaris/configure.c:229
+#: Output/sun/configure.c:244
+msgid "Devices"
+msgstr "Дастгоҳҳо"
+
+#: Output/OSS/configure.c:276 Output/esd/configure.c:176
+#: Output/solaris/configure.c:243 Output/sun/configure.c:268
+msgid "Buffer size (ms):"
+msgstr "Андозаи миёнгир (мс):"
+
+#: Output/OSS/configure.c:292 Output/esd/configure.c:201
+#: Output/solaris/configure.c:259 Output/sun/configure.c:300
+msgid "Buffering"
+msgstr "Миёнгирӣ"
+
+#: Output/OSS/configure.c:293
+msgid "Mixer Settings:"
+msgstr "Гузоришҳои Омезанда:"
+
+#: Output/OSS/configure.c:298
+msgid "Volume controls Master not PCM"
+msgstr "Идораи Баландӣ бо Master на бо PCM"
+
+#: Output/OSS/configure.c:301 Output/sun/configure.c:390
+msgid "Mixer"
+msgstr "Омезанда"
+
+#: Output/disk_writer/disk_writer.c:112
+#, c-format
+msgid "Disk Writer Plugin %s"
+msgstr "Даровардани Диск Нависандаи %s"
+
+#: Output/disk_writer/disk_writer.c:143
+msgid ""
+"You cannot use the Disk Writer plugin\n"
+"when you're running in realtime mode."
+msgstr ""
+"Шумо Даровардани Диск Нависанда истифода бурда наметавонед\n"
+"ҳангоми коркунии xmms дар усули вақтивоқеӣ"
+
+#: Output/disk_writer/disk_writer.c:344
+msgid "Select the directory where you want to store the output files:"
+msgstr "Феҳрист интихоб кунед барои нигоҳ доштани файлҳои хуруҷӣ:"
+
+#: Output/disk_writer/disk_writer.c:392
+msgid "Disk Writer Configuration"
+msgstr "Танзимдарории Диск Нависанда"
+
+#: Output/disk_writer/disk_writer.c:421
+msgid "Don't strip file name extension"
+msgstr ""
+
+#: Output/esd/about.c:29
+msgid "About ESounD Plugin"
+msgstr "Дар бораи Даровардани ESounD"
+
+#: Output/esd/about.c:30
+msgid ""
+"XMMS ESounD Plugin\n"
+"\n"
+" This program is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program; if not, write to the Free Software\n"
+"Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,\n"
+"USA."
+msgstr ""
+"Даровардани XMMS ESounD\n"
+"\n"
+"Ин барнома нармафзори озод мебошад; шумо инро метавонед паҳн кунед\n"
+"ва/ё иваз намоед мувофиқи шартҳои Лисензияи Умумии Ҷамъиятии GNU,\n"
+"ки бо Фонди Озоди Нармафзор нашр шудааст (Free Software Foundation);\n"
+"ё ин, ки мувофиқи ривояти 2-ми Лисензия, ё (бо интихоби худ) ҳар\n"
+"кадом ривояти охирон.\n"
+"\n"
+"Ин барнома бо умеди фоиданок шудан паҳн карда мешавад, лекин\n"
+"БЕ ЯГОН КАФОЛАТ; то ҳатто бе кафолате, ки он БА ЯГОН МАҚСАДИ МУАЯАН\n"
+"КОРОЯМ МЕШАВАД. Барои муфассалии зиёд ба Лисензияи Умумии Ҷамъиятии\n"
+"GNU нигаред.\n"
+"\n"
+"Шумо бояд нусхаи Лисензияи Умумии Ҷамъиятии GNU-ро ҳамроҳи ин\n"
+"барнома гирифта бошед; Агар набошад, ба Фонди Озоди Нармафзор - Free\n"
+"Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA\n"
+"02111-1307, USA нависед."
+
+#: Output/esd/configure.c:95
+msgid "ESD Plugin configuration"
+msgstr "Танзимдарории Даровардани ESD"
+
+#: Output/esd/configure.c:117
+msgid "Use remote host"
+msgstr "Хидматгори дурдаст истифода баред"
+
+#: Output/esd/configure.c:124
+msgid "Volume controls OSS mixer"
+msgstr "Идораи баландӣ бо омезандаи OSS идора мекунад"
+
+#: Output/esd/esd.c:45
+#, c-format
+msgid "eSound Output Plugin %s"
+msgstr "Даровардани Хуруҷии eSound %s"
+
+#: Output/solaris/Sun.c:32
+#, c-format
+msgid "Solaris audio plugin %s"
+msgstr "Даровардани аудио Соларис %s"
+
+#: Output/solaris/about.c:20
+msgid "About Solaris Audio Driver"
+msgstr "Дар бораи Аудио Соларис Гардон"
+
+#: Output/solaris/about.c:21
+msgid ""
+"XMMS Solaris Audio Driver\n"
+"\n"
+"Written by John Riddoch (jr@scms.rgu.ac.uk)\n"
+"with help from many contributors."
+msgstr ""
+"Аудио Соларис Гардони XMMS\n"
+"\n"
+"Бо John Riddoch (jr@scms.rgu.ac.uk) навишташудааст\n"
+"бо кӯмак аз бисёр ҳамкорон."
+
+#: Output/solaris/configure.c:101
+#, c-format
+msgid "Default - %s"
+msgstr "Пешфарз - %s"
+
+#: Output/solaris/configure.c:121
+#, c-format
+msgid "Soundcard #%d - %s"
+msgstr "Картисадо #%d - %s"
+
+#: Output/solaris/configure.c:154
+msgid "Configure Solaris driver"
+msgstr "Танзимдарории Соларис гардон"
+
+#: Output/solaris/configure.c:190
+msgid "Always use AUDIODEV environment variable"
+msgstr "Ҳамеша муҳити AUDIODEV тағъирпазир истифода баред"
+
+#: Output/solaris/configure.c:196
+msgid "Output ports:"
+msgstr "Бандарҳои хуруҷӣ"
+
+#: Output/solaris/configure.c:206
+msgid "Line out"
+msgstr "Рахи баромад"
+
+#: Output/solaris/configure.c:207
+msgid "Headphones"
+msgstr "Гӯшмонак"
+
+#: Output/solaris/configure.c:208
+msgid "Internal speaker"
+msgstr "Карнайи дохила"
+
+#: Output/sun/about.c:32
+#, fuzzy
+msgid "About the Sun Driver"
+msgstr "Дар бораи OSS Гардон"
+
+#: Output/sun/about.c:33
+msgid ""
+"XMMS BSD Sun Driver\n"
+"\n"
+"Copyright (c) 2001 CubeSoft Communications, Inc.\n"
+"Maintainer: <vedge at csoft.org>.\n"
+msgstr ""
+
+#: Output/sun/configure.c:197
+#, fuzzy
+msgid "Audio control device:"
+msgstr "Аудио дастгоҳ:"
+
+#: Output/sun/configure.c:346
+#, fuzzy
+msgid "Volume controls device:"
+msgstr "Идораи Баландӣ:"
+
+#: Output/sun/configure.c:359
+msgid "XMMS uses mixer exclusively."
+msgstr ""
+
+#: Output/sun/configure.c:486
+msgid "Status"
+msgstr ""
+
+#: Output/sun/configure.c:536
+#, fuzzy
+msgid "Sun driver configuration"
+msgstr "Танзимдарории OSS Гардон"
+
+#: Output/sun/sun.c:52
+#, fuzzy, c-format
+msgid "BSD Sun Driver %s"
+msgstr "OSS Гардони %s"
+
+#: Output/alsa/about.c:30
+#, fuzzy
+msgid "About ALSA Driver"
+msgstr "Дар бораи OSS Гардон"
+
+#: Output/alsa/about.c:31
+#, fuzzy
+msgid ""
+"XMMS ALSA Driver\n"
+"\n"
+" This program is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program; if not, write to the Free Software\n"
+"Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,\n"
+"USA.\n"
+"Author: Matthieu Sozeau (mattam@altern.org)"
+msgstr ""
+"OSS Гардони XMMS\n"
+"\n"
+"Ин барнома нармафзори озод мебошад; шумо инро метавонед паҳн кунед\n"
+"ва/ё иваз намоед мувофиқи шартҳои Лисензияи Умумии Ҷамъиятии GNU,\n"
+"ки бо Фонди Озоди Нармафзор нашр шудааст (Free Software Foundation);\n"
+"ё ин, ки мувофиқи ривояти 2-ми Лисензия, ё (бо интихоби худ) ҳар\n"
+"кадом ривояти охирон.\n"
+"\n"
+"Ин барнома бо умеди фоиданок шудан паҳн карда мешавад, лекин\n"
+"БЕ ЯГОН КАФОЛАТ; то ҳатто бе кафолате, ки он БА ЯГОН МАҚСАДИ МУАЯАН\n"
+"КОРОЯМ МЕШАВАД. Барои муфассалии зиёд ба Лисензияи Умумии Ҷамъиятии\n"
+"GNU нигаред.\n"
+"\n"
+"Шумо бояд нусхаи Лисензияи Умумии Ҷамъиятии GNU-ро ҳамроҳи ин\n"
+"барнома гирифта бошед; Агар набошад, ба Фонди Озоди Нармафзор - Free\n"
+"Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA\n"
+"02111-1307, USA нависед."
+
+#: Output/alsa/alsa.c:44
+#, fuzzy, c-format
+msgid "ALSA %s output plugin"
+msgstr "Даровардани ҳосилкунӣ нест"
+
+#: Output/alsa/configure.c:153
+msgid "Unknown soundcard"
+msgstr ""
+
+#: Output/alsa/configure.c:208
+#, fuzzy, c-format
+msgid "Default PCM device (%s)"
+msgstr "Пешфарз (%s)"
+
+#: Output/alsa/configure.c:275
+#, fuzzy
+msgid "ALSA Driver configuration"
+msgstr "Танзимдарории OSS Гардон"
+
+#: Output/alsa/configure.c:303
+#, fuzzy
+msgid "Mixer:"
+msgstr "Омезанда"
+
+#: Output/alsa/configure.c:311
+#, fuzzy
+msgid "Use software volume control"
+msgstr "Идораи Баландӣ:"
+
+#: Output/alsa/configure.c:321
+#, fuzzy
+msgid "Mixer card:"
+msgstr "Дастгоҳи омезанда:"
+
+#: Output/alsa/configure.c:354
+#, fuzzy
+msgid "Device settings"
+msgstr "Гузоришҳои Омезанда:"
+
+#: Output/alsa/configure.c:360
+#, fuzzy
+msgid "Soundcard:"
+msgstr "Картисадо #%d - %s"
+
+#: Output/alsa/configure.c:373 Output/alsa/configure.c:415
+#, fuzzy
+msgid "Buffer time (ms):"
+msgstr "Андозаи миёнгир (мс):"
+
+#: Output/alsa/configure.c:387
+#, fuzzy
+msgid "Period time (ms):"
+msgstr "Андозаи миёнгир (мс):"
+
+#: Output/alsa/configure.c:402
+#, fuzzy
+msgid "XMMS:"
+msgstr "XMMS"
+
+#: Output/alsa/configure.c:430
+msgid "Advanced settings"
+msgstr ""
+
+#: Visualization/blur_scope/blur_scope.c:62
+#, c-format
+msgid "Blur Scope %s"
+msgstr "'òÁÚÍÙÔÙÊ ÏÓÃÉÌÏÓËÏÐ %s"
+
+#: Visualization/blur_scope/blur_scope.c:157
+msgid "Blur scope"
+msgstr "'òÁÚÍÙÔÙÊ ÏÓÃÉÌÏÓËÏÐ"
+
+#: Visualization/blur_scope/config.c:68
+msgid "Color Entry"
+msgstr "Дохили Ранг"
+
+#: Visualization/blur_scope/config.c:76
+#: Visualization/opengl_spectrum/configure.c:51
+msgid "Options:"
+msgstr "Интихобҳо:"
+
+#: Visualization/opengl_spectrum/configure.c:43
+msgid "OpenGL Spectrum configuration"
+msgstr "Танзимдарории Спектри OpenGL"
+
+#: Visualization/opengl_spectrum/configure.c:57
+msgid "3DFX Fullscreen mode"
+msgstr "Усули Пурэкрании 3DFX"
+
+#: Visualization/opengl_spectrum/opengl_spectrum.c:123
+#: Visualization/opengl_spectrum/opengl_spectrum.c:124
+msgid "OpenGL Spectrum analyzer"
+msgstr "Таҳлилгари Спектри OpenGL"
+
+#: Visualization/opengl_spectrum/opengl_spectrum.c:142
+#, c-format
+msgid "OpenGL Spectrum analyzer %s"
+msgstr "Таҳлилгари Спектри OpenGL %s"
+
+#: Visualization/sanalyzer/spectrum.c:66
+#, c-format
+msgid "Simple spectrum analyzer %s"
+msgstr "Таҳлилгари оддии спектри %s"
+
+#: Visualization/sanalyzer/spectrum.c:86
+msgid "Spectrum analyzer"
+msgstr "Таҳлилгари спектр"
+
+#: libxmms/titlestring.c:283
+msgid "Performer/Artist"
+msgstr "Иҷрокунанда/Артист"
+
+#: libxmms/titlestring.c:284
+msgid "Album"
+msgstr "Албом"
+
+#: libxmms/titlestring.c:285
+msgid "Genre"
+msgstr "Жанр"
+
+#: libxmms/titlestring.c:286
+msgid "File name"
+msgstr "Номи Файл"
+
+#: libxmms/titlestring.c:287
+msgid "File path"
+msgstr "Роҳи файл"
+
+#: libxmms/titlestring.c:288
+msgid "File extension"
+msgstr "Васегии файл"
+
+#: libxmms/titlestring.c:289
+msgid "Track name"
+msgstr "Номи суруд"
+
+#: libxmms/titlestring.c:290
+msgid "Track number"
+msgstr "Рақами суруд"
+
+#: libxmms/titlestring.c:291
+msgid "Date"
+msgstr "Сана"
+
+#: libxmms/titlestring.c:292
+msgid "Year"
+msgstr "Сол"
+
+#: libxmms/titlestring.c:293
+msgid "Comment"
+msgstr "Тавзеҳ"
+
+#: wmxmms/getopt.c:632 xmms/getopt.c:632
+#, c-format
+msgid "%s: option `%s' is ambiguous\n"
+msgstr "%s: интихоби `%s' норавшанаст\n"
+
+#: wmxmms/getopt.c:656 xmms/getopt.c:656
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument\n"
+msgstr "%s: интихоби `--%s' далелро иҷозат намедиҳад\n"
+
+#: wmxmms/getopt.c:661 xmms/getopt.c:661
+#, c-format
+msgid "%s: option `%c%s' doesn't allow an argument\n"
+msgstr "%s: интихоби `%c%s' далелро иҷозат намедиҳад\n"
+
+#: wmxmms/getopt.c:678 wmxmms/getopt.c:851 xmms/getopt.c:678 xmms/getopt.c:851
+#, c-format
+msgid "%s: option `%s' requires an argument\n"
+msgstr "%s: интихоби `%s' далел талаб мекунад\n"
+
+#: wmxmms/getopt.c:707 xmms/getopt.c:707
+#, c-format
+msgid "%s: unrecognized option `--%s'\n"
+msgstr "%s: интихоби нофаҳмои `--%s'\n"
+
+#: wmxmms/getopt.c:711 xmms/getopt.c:711
+#, c-format
+msgid "%s: unrecognized option `%c%s'\n"
+msgstr "%s: интихоби нофаҳмои `%c%s'\n"
+
+#: wmxmms/getopt.c:737 xmms/getopt.c:737
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr "%s: интихоби ғайриқонунӣ -- %c\n"
+
+#: wmxmms/getopt.c:740 xmms/getopt.c:740
+#, c-format
+msgid "%s: invalid option -- %c\n"
+msgstr "%s: интихоби ғалатӣ -- %c\n"
+
+#: wmxmms/getopt.c:770 wmxmms/getopt.c:900 xmms/getopt.c:770 xmms/getopt.c:900
+#, c-format
+msgid "%s: option requires an argument -- %c\n"
+msgstr "%s: интихоб далел талаб мекунад -- %c\n"
+
+#: wmxmms/getopt.c:817 xmms/getopt.c:817
+#, c-format
+msgid "%s: option `-W %s' is ambiguous\n"
+msgstr "%s: интихоби `-W %s' норавшанаст\n"
+
+#: wmxmms/getopt.c:835 xmms/getopt.c:835
+#, c-format
+msgid "%s: option `-W %s' doesn't allow an argument\n"
+msgstr "%s: интихоби `-W %s' далелро иҷозат намедиҳад\n"
+
+#: wmxmms/wmxmms.c:667
+#, c-format
+msgid "ERROR: Couldn't find %s\n"
+msgstr "ХАТОГӢ: %s ёфта нашуд\n"
+
+#: wmxmms/wmxmms.c:705
+#, c-format
+msgid ""
+"Usage: %s [options]\n"
+"\n"
+"Options:\n"
+"--------\n"
+"\n"
+"-h, --help\t\tDisplay this text and exit.\n"
+"-g, --geometry\t\tSet the geometry (for example +20+20)\n"
+"-s, --session\t\tSet the xmms session to use (Default: 0)\n"
+"-c, --command\t\tCommand to launch xmms (Default: xmms)\n"
+"-i, --icon\t\tSet the icon to use when xmms is not running\n"
+"-n, --single\t\tOnly a single click is needed to start xmms\n"
+"-t, --title\t\tDisplay song title when mouse is in window\n"
+"-v, --version\t\tDisplay version information and exit\n"
+"\n"
+msgstr ""
+"Истифода: %s [интихобҳо]\n"
+"\n"
+"Интихобҳо:\n"
+"--------\n"
+"\n"
+"-h, --help\t\tМатнро намоиш диҳед ва бароед.\n"
+"-g, --geometry\t\tГеометрия гузоред (масалан +20+20)\n"
+"-s, --session\t\tСессияи xmms гузоред барои истифода (Пешфарз: 0)\n"
+"-c, --command\t\tФармон барои сар додани xmms (Пешфарз: xmms)\n"
+"-i, --icon\t\tБарои истифода тасвир гузоред вақти корнакардани xmms\n"
+"-n, --single\t\tТанҳо як қарс лозим барои сар кардани xmms\n"
+"-t, --title\t\tСарлавҳаи суруд намоиш диҳед ҳангоми муш дар тирезааст\n"
+"-v, --version\t\tАхбороти ривоят намоиш диҳед ва бароед\n"
+"\n"
+
+#: xmms/about.c:28
+msgid "Main Programming:"
+msgstr "Барномасозии Асосӣ:"
+
+#: xmms/about.c:29
+msgid "Peter Alm"
+msgstr "Peter Alm"
+
+#: xmms/about.c:31
+msgid "Additional Programming:"
+msgstr "Барномасозии Иловагӣ:"
+
+#: xmms/about.c:33 xmms/about.c:181
+msgid "Haavard Kvaalen"
+msgstr "Haavard Kvaalen"
+
+#: xmms/about.c:34
+msgid "Derrik Pates"
+msgstr "Derik Pates"
+
+#: xmms/about.c:36
+msgid "With Additional Help:"
+msgstr "Бо Ёрии Иловагӣ:"
+
+#: xmms/about.c:37
+msgid "Tony Arcieri"
+msgstr ""
+
+#: xmms/about.c:38
+msgid "Sean Atkinson"
+msgstr "Sean Atkison"
+
+#: xmms/about.c:39 xmms/about.c:136
+msgid "Jorn Baayen"
+msgstr "Jorn Baayen"
+
+#: xmms/about.c:40
+msgid "James M. Cape"
+msgstr "James M. Cape"
+
+#: xmms/about.c:41
+msgid "Anders Carlsson (effect plugins)"
+msgstr "Anders Carlsson (дароварданҳои натиҷа)"
+
+#: xmms/about.c:42
+msgid "Chun-Chung Chen (xfont patch)"
+msgstr "Chun-Chung Chen (дарбеҳи xfont)"
+
+#: xmms/about.c:43
+msgid "Tim Ferguson (joystick plugin)"
+msgstr "Tim Ferguson (даровардани ҷойстик)"
+
+#: xmms/about.c:44
+msgid "Ben Gertzfield"
+msgstr "Ben Gertzfield"
+
+#: xmms/about.c:45
+msgid "Vesa Halttunen"
+msgstr "Vesa Halttunen"
+
+#: xmms/about.c:46
+msgid "Logan Hanks"
+msgstr "Logan Hanks"
+
+#: xmms/about.c:47
+msgid "Eric L. Hernes (FreeBSD patches)"
+msgstr "Erci L. Hernes (дарбеҳҳои FreeBSD)"
+
+#: xmms/about.c:48
+msgid "Ville Herva"
+msgstr "Ville Herva"
+
+#: xmms/about.c:49
+msgid "Ian 'Hixie' Hickson"
+msgstr ""
+
+#: xmms/about.c:50
+msgid "higway (MMX)"
+msgstr "higway (MMX)"
+
+#: xmms/about.c:51
+msgid "Michael Hipp and others (MPG123 engine)"
+msgstr "Michael Hipp ва дигарҳо (Муҳаррики MPG123)"
+
+#: xmms/about.c:53
+msgid "Olle Hallnas (compiling fixes)"
+msgstr "Olle Hallnas (ҷамъкунии масъалаҳо)"
+
+#: xmms/about.c:55
+msgid "Matti Hamalainen"
+msgstr ""
+
+#: xmms/about.c:56
+msgid "David Jacoby"
+msgstr "David Jacoby"
+
+#: xmms/about.c:57
+msgid "Osamu Kayasono (3DNow!/MMX)"
+msgstr "Osamu Kayasono (3DNow!/MMX)"
+
+#: xmms/about.c:58
+msgid "Lyle B Kempler"
+msgstr "Lyle B Kempler"
+
+#: xmms/about.c:59
+msgid "J. Nick Koston (MikMod plugin)"
+msgstr "J. Nick Koston (Даровардани MikMod)"
+
+#: xmms/about.c:60
+msgid "Aaron Lehmann"
+msgstr "Aaron Lehmann"
+
+#: xmms/about.c:61
+msgid "Johan Levin (echo + stereo plugin)"
+msgstr "Johan Levin (акси садо + даровардани стерео)"
+
+#: xmms/about.c:62
+msgid "Eric Lindvall"
+msgstr "Eric Lindvall"
+
+#: xmms/about.c:63 xmms/about.c:154
+msgid "Colin Marquardt"
+msgstr "Colin Marquardt"
+
+#: xmms/about.c:64
+msgid "Willem Monsuwe"
+msgstr "Willem Monsuwe"
+
+#: xmms/about.c:65
+msgid "Heikki Orsila"
+msgstr ""
+
+#: xmms/about.c:66
+msgid "Gian-Carlo Pascutto"
+msgstr ""
+
+#: xmms/about.c:67
+msgid "John Riddoch (Solaris plugin)"
+msgstr "John Riddoch (Даровардани Соларис)"
+
+#: xmms/about.c:68
+msgid "Josip Rodin"
+msgstr "Josip Rodin"
+
+#: xmms/about.c:69
+msgid "Pablo Saratxaga (i18n)"
+msgstr "Pablo Saratxaga (i18n)"
+
+#: xmms/about.c:70
+msgid "Carl van Schaik (pro logic plugin)"
+msgstr "Carl van Schaik (даровардани pro logic)"
+
+#: xmms/about.c:72
+msgid "Joerg Schuler"
+msgstr "Joerg Schuler"
+
+#: xmms/about.c:73
+msgid "Charles Sielski (irman plugin)"
+msgstr "Charles Sielski (даровардани irman)"
+
+#: xmms/about.c:74 xmms/about.c:182
+msgid "Espen Skoglund"
+msgstr "Espen Skoglund"
+
+#: xmms/about.c:75
+msgid "Matthieu Sozeau (ALSA plugin)"
+msgstr ""
+
+#: xmms/about.c:76
+msgid "Kimura Takuhiro (3DNow!)"
+msgstr "Kimura Takuhiro (3DNow!)"
+
+#: xmms/about.c:77
+msgid "Zinx Verituse"
+msgstr "Zinx Verituse"
+
+#: xmms/about.c:78
+msgid "Ryan Weaver (RPMs among other things)"
+msgstr "Ryan Weaver (RPM-ҳо ва дигар чизҳо)"
+
+#: xmms/about.c:79
+msgid "Chris Wilson"
+msgstr "Chris Wilson"
+
+#: xmms/about.c:80
+msgid "Dave Yearke"
+msgstr "Dave Yearke"
+
+#: xmms/about.c:81
+msgid "Stephan K. Zitz"
+msgstr "Stephan K. Zitz"
+
+#: xmms/about.c:83
+msgid "Default skin:"
+msgstr "Пӯсти пешфарз:"
+
+#: xmms/about.c:84
+msgid "Leonard \"Blayde\" Tan"
+msgstr "Leonard \"Blayde\" Tan"
+
+#: xmms/about.c:85
+msgid "Robin Sylvestre (Equalizer and Playlist)"
+msgstr "Robin Sylvestre (Баробарсоз ва Рӯйхати суруд)"
+
+#: xmms/about.c:86
+#, fuzzy
+msgid "Thomas Nilsson (New titles and cleanups)"
+msgstr "Thomas Nilsson (Сарлавҳаҳои нав ва тозакуниҳо)"
+
+#: xmms/about.c:88
+msgid "Homepage and Graphics:"
+msgstr "Саҳифаи хонагӣ ва Графикҳо:"
+
+#: xmms/about.c:89 xmms/about.c:206
+msgid "Thomas Nilsson"
+msgstr "Thomas Nilsson"
+
+#: xmms/about.c:91
+msgid "Support and Docs:"
+msgstr "Дастгирӣ ва Ҳуҷҷатҳо:"
+
+#: xmms/about.c:93 xmms/about.c:205
+msgid "Olle Hallnas"
+msgstr "Olle Hallnas"
+
+#: xmms/about.c:98
+msgid "Afrikaans:"
+msgstr "Африкаанс:"
+
+#: xmms/about.c:100
+msgid "Schalk W. Cronje"
+msgstr "Schalk W. Cronje"
+
+#: xmms/about.c:101
+#, fuzzy
+msgid "Albanian:"
+msgstr "Шиддати албом:"
+
+#: xmms/about.c:102
+#, fuzzy
+msgid "Naim Daka"
+msgstr "Nazmi Savga"
+
+#: xmms/about.c:103
+msgid "Azerbaijani:"
+msgstr "Озарбойҷонӣ:"
+
+#: xmms/about.c:105
+msgid "Metin Amiroff"
+msgstr ""
+
+#: xmms/about.c:107
+msgid "Vasif Ismailoglu"
+msgstr "Vasif Ismailoglu"
+
+#: xmms/about.c:108
+msgid "Basque:"
+msgstr "Баскӣ:"
+
+#: xmms/about.c:110
+msgid "Inigo Salvador Azurmendi"
+msgstr ""
+
+#: xmms/about.c:111
+#, fuzzy
+msgid "Belarusian:"
+msgstr "Миёнгирӣ:"
+
+#: xmms/about.c:112
+msgid "Smaliakou Zmicer"
+msgstr ""
+
+#: xmms/about.c:113
+#, fuzzy
+msgid "Bosnian:"
+msgstr "Румынӣ:"
+
+#: xmms/about.c:115
+msgid "Amila Akagic"
+msgstr ""
+
+#: xmms/about.c:116
+msgid "Grabovica Eldin"
+msgstr ""
+
+#: xmms/about.c:116
+msgid "Vedran Ljubovic"
+msgstr ""
+
+#: xmms/about.c:117
+msgid "Brazilian Portuguese:"
+msgstr "Португалии Бразилиягӣ"
+
+#: xmms/about.c:118
+msgid "Juan Carlos Castro y Castro"
+msgstr "Juan Carlos Castro y Castro"
+
+#: xmms/about.c:119
+msgid "Bulgarian:"
+msgstr "Булғорӣ:"
+
+#: xmms/about.c:120
+msgid "Boyan Ivanov"
+msgstr ""
+
+#: xmms/about.c:120
+msgid "Yovko D. Lambrev"
+msgstr "Yovko D. Lambrev"
+
+#: xmms/about.c:121
+msgid "Catalan:"
+msgstr "Каталанӣ:"
+
+#: xmms/about.c:122
+msgid "Albert Astals Cid"
+msgstr ""
+
+#: xmms/about.c:122
+msgid "Quico Llach"
+msgstr "Quico Llach"
+
+#: xmms/about.c:122 xmms/about.c:201
+msgid "Jordi Mallach"
+msgstr "Jordi Mallach"
+
+#: xmms/about.c:123
+msgid "Chinese:"
+msgstr "Хитоӣ:"
+
+#: xmms/about.c:124
+msgid "Chun-Chung Chen"
+msgstr "Chun-Chung Chen"
+
+#: xmms/about.c:124
+msgid "Jouston Huang"
+msgstr "Jouston Huang"
+
+#: xmms/about.c:124
+msgid "Andrew Lee"
+msgstr "Andrew Lee"
+
+#: xmms/about.c:125
+msgid "Chih-Wei Huang"
+msgstr "Chih-Wei Huang"
+
+#: xmms/about.c:125
+msgid "Shiyu Tang"
+msgstr ""
+
+#: xmms/about.c:125
+msgid "Danny Zeng"
+msgstr "Danny Zeng"
+
+#: xmms/about.c:126
+msgid "Croatian:"
+msgstr "Хорватӣ:"
+
+#: xmms/about.c:127
+msgid "Vlatko Kosturjak"
+msgstr "Vlatko Kosturjak"
+
+#: xmms/about.c:127
+msgid "Vladimir Vuksan"
+msgstr "Vladimir Vuksan"
+
+#: xmms/about.c:128
+msgid "Czech:"
+msgstr "Чехӣ:"
+
+#: xmms/about.c:130
+msgid "Vladimir Marek"
+msgstr ""
+
+#: xmms/about.c:131
+msgid "Radek Vybiral"
+msgstr "Radek Vybiral"
+
+#: xmms/about.c:132
+msgid "Danish:"
+msgstr "Даниягӣ:"
+
+#: xmms/about.c:133
+msgid "Nikolaj Berg Amondsen"
+msgstr "Nikolaj Berg Amondsen"
+
+#: xmms/about.c:133
+msgid "Troels Liebe Bentsen"
+msgstr "Troels Liebe Bentsen"
+
+#: xmms/about.c:134
+msgid "Kenneth Christiansen"
+msgstr "Kenneth Christiansen"
+
+#: xmms/about.c:134
+msgid "Keld Simonsen"
+msgstr "Keld Simonsen"
+
+#: xmms/about.c:135
+msgid "Dutch:"
+msgstr "Голландӣ"
+
+#: xmms/about.c:136
+msgid "Bart Coppens"
+msgstr ""
+
+#: xmms/about.c:136
+msgid "Wilmer van der Gaast"
+msgstr "Wilmer van der Gaast"
+
+#: xmms/about.c:137
+msgid "Tom Laermans"
+msgstr "Tom Laermans"
+
+#: xmms/about.c:138
+msgid "Esperanto:"
+msgstr "Эсперанто:"
+
+#: xmms/about.c:139
+msgid "D. Dale Gulledge"
+msgstr "D. Dale Gulledge"
+
+#: xmms/about.c:140
+#, fuzzy
+msgid "Estonian:"
+msgstr "Румынӣ:"
+
+#: xmms/about.c:141
+msgid "Marek Laane"
+msgstr ""
+
+#: xmms/about.c:142
+#, fuzzy
+msgid "Finnish:"
+msgstr "Даниягӣ:"
+
+#: xmms/about.c:143
+#, fuzzy
+msgid "Thomas Backlund"
+msgstr "Thomas Nilsson"
+
+#: xmms/about.c:143
+msgid "Matias Griese"
+msgstr ""
+
+#: xmms/about.c:144
+msgid "French:"
+msgstr "Фаронсавӣ:"
+
+#: xmms/about.c:145
+msgid "Arnaud Boissinot"
+msgstr "Arnaud Boissinot"
+
+#: xmms/about.c:145
+msgid "Eric Fernandez-Bellot"
+msgstr "Eric Fernandez-Bellot"
+
+#: xmms/about.c:146
+msgid "Galician:"
+msgstr "Галисӣ"
+
+#: xmms/about.c:148
+msgid "Alberto Garcia"
+msgstr ""
+
+#: xmms/about.c:150
+msgid "David Fernandez Vaamonde"
+msgstr ""
+
+#: xmms/about.c:151
+#, fuzzy
+msgid "Georgian:"
+msgstr "Немисӣ:"
+
+#: xmms/about.c:152
+msgid "Aiet Kolkhi"
+msgstr ""
+
+#: xmms/about.c:153
+msgid "German:"
+msgstr "Немисӣ:"
+
+#: xmms/about.c:154
+msgid "Stefan Siegel"
+msgstr "Stefan Siegel"
+
+#: xmms/about.c:155
+msgid "Greek:"
+msgstr "Юнонӣ:"
+
+#: xmms/about.c:156
+msgid "Kyritsis Athanasios"
+msgstr "Kyritsis Athanasios"
+
+#: xmms/about.c:157
+msgid "Hungarian:"
+msgstr "Венгерӣ:"
+
+#: xmms/about.c:158
+msgid "Arpad Biro"
+msgstr "Arpad Biro"
+
+#: xmms/about.c:159
+msgid "Indonesian:"
+msgstr "Индонезӣ:"
+
+#: xmms/about.c:160
+msgid "Budi Rachmanto"
+msgstr "Budi Rachmanto"
+
+#: xmms/about.c:161
+msgid "Irish:"
+msgstr "Ирландӣ:"
+
+#: xmms/about.c:162
+msgid "Alastair McKinstry"
+msgstr "Alastair McKinstry"
+
+#: xmms/about.c:163
+msgid "Italian:"
+msgstr "Итолиёӣ:"
+
+#: xmms/about.c:164
+msgid "Paolo Lorenzin"
+msgstr "Paolo Lorenzin"
+
+#: xmms/about.c:164
+msgid "Daniele Pighin"
+msgstr ""
+
+#: xmms/about.c:165
+msgid "Japanese:"
+msgstr "Ҷопонӣ:"
+
+#: xmms/about.c:166
+msgid "Hiroshi Takekawa"
+msgstr "Hiroshi Takekawa"
+
+#: xmms/about.c:167
+msgid "Korean:"
+msgstr "Кореягӣ:"
+
+#: xmms/about.c:168
+msgid "Jaegeum Choe"
+msgstr "Jaegeum Choe"
+
+#: xmms/about.c:168
+msgid "Sang-Jin Hwang"
+msgstr "Sang-Jin Hwang"
+
+#: xmms/about.c:168
+msgid "Byeong-Chan Kim"
+msgstr "Byeong-Chan Kim"
+
+#: xmms/about.c:169
+msgid "Man-Yong Lee"
+msgstr "Man-Yong Lee"
+
+#: xmms/about.c:170
+msgid "Lithuanian:"
+msgstr "Литвонӣ:"
+
+#: xmms/about.c:171
+msgid "Gediminas Paulauskas"
+msgstr "Gediminas Paulauskas"
+
+#: xmms/about.c:172
+msgid "Latvian:"
+msgstr "Латвиягӣ:"
+
+#: xmms/about.c:174
+msgid "Juris Kudins"
+msgstr "Juris Kudins"
+
+#: xmms/about.c:175
+msgid "Vitauts Stochka"
+msgstr "Vitauts Stochka"
+
+#: xmms/about.c:176
+#, fuzzy
+msgid "Malay:"
+msgstr "навозиш"
+
+#: xmms/about.c:177
+msgid "Muhammad Najmi Ahmad Zabidi"
+msgstr ""
+
+#: xmms/about.c:178
+msgid "Norwegian:"
+msgstr "Норвегиягӣ:"
+
+#: xmms/about.c:180
+msgid "Andreas Bergstrom"
+msgstr ""
+
+#: xmms/about.c:181
+msgid "Terje Bjerkelia"
+msgstr "Terje Bjerkelia"
+
+#: xmms/about.c:181
+msgid "Roy-Magne Mo"
+msgstr "Roy-Magne Mo"
+
+#: xmms/about.c:183
+msgid "Polish:"
+msgstr "Полякӣ:"
+
+#: xmms/about.c:184
+msgid "Grzegorz Kowal"
+msgstr "Grzegorz Kowal"
+
+#: xmms/about.c:185
+msgid "Portuguese:"
+msgstr "Португалӣ:"
+
+#: xmms/about.c:186
+msgid "Jorge Costa"
+msgstr "Jorge Costa"
+
+#: xmms/about.c:187
+msgid "Romanian:"
+msgstr "Румынӣ:"
+
+#: xmms/about.c:188
+msgid "Florin Grad"
+msgstr "Florin Grad"
+
+#: xmms/about.c:190
+msgid "Misu Moldovan"
+msgstr ""
+
+#: xmms/about.c:191
+msgid "Russian:"
+msgstr "Русӣ:"
+
+#: xmms/about.c:192
+msgid "Valek Filippov"
+msgstr "Валек Филипов"
+
+#: xmms/about.c:192
+msgid "Alexandr P. Kovalenko"
+msgstr "Александр П. Коваленко"
+
+#: xmms/about.c:193
+msgid "Maxim Koshelev"
+msgstr "Максим Кошелев"
+
+#: xmms/about.c:193
+msgid "Aleksey Smirnov"
+msgstr "Алексей Смирнов"
+
+#: xmms/about.c:194
+msgid "Serbian:"
+msgstr "Сербӣ:"
+
+#: xmms/about.c:195
+msgid "Tomislav Jankovic"
+msgstr "Tomislav Jankovic"
+
+#: xmms/about.c:196
+msgid "Slovak:"
+msgstr "Словакӣ:"
+
+#: xmms/about.c:197
+msgid "Pavol Cvengros"
+msgstr "Pavol Cvengros"
+
+#: xmms/about.c:198
+msgid "Slovenian:"
+msgstr ""
+
+#: xmms/about.c:199
+msgid "Tadej Panjtar"
+msgstr ""
+
+#: xmms/about.c:199
+msgid "Tomas Hornocek"
+msgstr "Tomas Hornocek"
+
+#: xmms/about.c:199
+msgid "Jan Matis"
+msgstr "Jan Matis"
+
+#: xmms/about.c:200
+msgid "Spanish:"
+msgstr "Испанӣ:"
+
+#: xmms/about.c:201
+msgid "Fabian Mandelbaum"
+msgstr "Fabian Mandelbaum"
+
+#: xmms/about.c:203
+msgid "Juan Manuel Garcia Molina"
+msgstr ""
+
+#: xmms/about.c:204
+msgid "Swedish:"
+msgstr "Шведӣ:"
+
+#: xmms/about.c:205
+msgid "David Hedbor"
+msgstr "David Hedbor"
+
+#: xmms/about.c:206
+msgid "Christian Rose"
+msgstr "Садбарги Насронӣ"
+
+#: xmms/about.c:206
+msgid "Fuad Sabanovic"
+msgstr "Fuad Sabanovic"
+
+#: xmms/about.c:207
+msgid "Tajik:"
+msgstr "Тоҷикӣ:"
+
+#: xmms/about.c:208
+msgid "Roger Kovacs"
+msgstr "Роҷер Ковакс"
+
+#: xmms/about.c:208
+msgid "Dilshod Marupov"
+msgstr "Дилшод Марупов"
+
+#: xmms/about.c:209
+msgid "Thai:"
+msgstr "Таиландӣ:"
+
+#: xmms/about.c:210
+msgid "Pramote Khuwijitjaru"
+msgstr ""
+
+#: xmms/about.c:210
+msgid "Supphachoke Suntiwichaya"
+msgstr "Supphachoke Suntiwichaya"
+
+#: xmms/about.c:211
+msgid "Turkish:"
+msgstr "Туркӣ:"
+
+#: xmms/about.c:212
+msgid "Nazmi Savga"
+msgstr "Nazmi Savga"
+
+#: xmms/about.c:214
+msgid "Omer Fadil Usta"
+msgstr ""
+
+#: xmms/about.c:215
+msgid "Ukrainian:"
+msgstr "Украинӣ:"
+
+#: xmms/about.c:216
+msgid "Dmytro Koval'ov"
+msgstr "Дмитро Ковальов"
+
+#: xmms/about.c:217
+msgid "Uzbek:"
+msgstr ""
+
+#: xmms/about.c:218
+msgid "Mashrab Kuvatov"
+msgstr ""
+
+#: xmms/about.c:219
+msgid "Vietnamese:"
+msgstr "Ветнамӣ:"
+
+#: xmms/about.c:220
+msgid "Trinh Minh Thanh"
+msgstr "Trinh Minh Thanh"
+
+#: xmms/about.c:221
+msgid "Walloon:"
+msgstr "Валунӣ:"
+
+#: xmms/about.c:222
+msgid "Lucyin Mahin"
+msgstr "Lucyin Mahin"
+
+#: xmms/about.c:222
+msgid "Pablo Saratxaga"
+msgstr "Pablo Saratxaga"
+
+#: xmms/about.c:223
+msgid "Welsh:"
+msgstr ""
+
+#: xmms/about.c:224
+msgid "Rhoslyn Prys"
+msgstr ""
+
+#: xmms/about.c:288
+msgid "About XMMS"
+msgstr "Дар бораи XMMS"
+
+#: xmms/about.c:320
+#, c-format
+msgid "XMMS %s - Cross platform multimedia player"
+msgstr "XMMS %s - Навозандаи бисёрмуҳити платформаи гузаранда"
+
+#: xmms/about.c:327
+#, fuzzy
+msgid "Copyright (C) 1997-2004 4Front Technologies and The XMMS Team"
+msgstr "Ҳуқуқи муаллифӣ (C) 1997-2004 4Front Technologies"
+
+#: xmms/about.c:337
+msgid "Credits"
+msgstr "Инкишоф додагон"
+
+#: xmms/about.c:342
+msgid "Translators"
+msgstr "Тарҷумонҳо"
+
+#: xmms/eq_slider.c:61
+msgid "PREAMP"
+msgstr "PREAMP"
+
+#: xmms/eq_slider.c:61
+msgid "60HZ"
+msgstr "60HZ"
+
+#: xmms/eq_slider.c:61
+msgid "170HZ"
+msgstr "170HZ"
+
+#: xmms/eq_slider.c:62
+msgid "310HZ"
+msgstr "310HZ"
+
+#: xmms/eq_slider.c:62
+msgid "600HZ"
+msgstr "600HZ"
+
+#: xmms/eq_slider.c:62
+msgid "1KHZ"
+msgstr "1KHZ"
+
+#: xmms/eq_slider.c:63
+msgid "3KHZ"
+msgstr "3KHZ"
+
+#: xmms/eq_slider.c:63
+msgid "6KHZ"
+msgstr "6KHZ"
+
+#: xmms/eq_slider.c:63
+msgid "12KHZ"
+msgstr "12KHZ"
+
+#: xmms/eq_slider.c:64
+msgid "14KHZ"
+msgstr "14KHZ"
+
+#: xmms/eq_slider.c:64
+msgid "16KHZ"
+msgstr "16KHZ"
+
+#: xmms/equalizer.c:80
+msgid "/Load"
+msgstr "/Пурборкунӣ"
+
+#: xmms/equalizer.c:81
+msgid "/Load/Preset"
+msgstr "/Пурборкунӣ/Додашуда"
+
+#: xmms/equalizer.c:82
+msgid "/Load/Auto-load preset"
+msgstr "/Пурборкунӣ/Худпурборкуни додашуда"
+
+#: xmms/equalizer.c:83
+msgid "/Load/Default"
+msgstr "/Пурборкунӣ/Пешфарз"
+
+#: xmms/equalizer.c:84 xmms/equalizer.c:86
+msgid "/Load/-"
+msgstr "/Пурборкунӣ/-"
+
+#: xmms/equalizer.c:85
+msgid "/Load/Zero"
+msgstr "/Пурборкунӣ/Нул"
+
+#: xmms/equalizer.c:87
+msgid "/Load/From file"
+msgstr "/Пурборкунӣ/Аз файл"
+
+#: xmms/equalizer.c:88
+msgid "/Load/From WinAMP EQF file"
+msgstr "/Пурборкунӣ/Аз файли WinAMP EQF"
+
+#: xmms/equalizer.c:89
+msgid "/Import"
+msgstr "/Воридот"
+
+#: xmms/equalizer.c:90
+msgid "/Import/WinAMP Presets"
+msgstr "/Воридот/WinAMP Додашудаҳо"
+
+#: xmms/equalizer.c:91
+msgid "/Save"
+msgstr "/Нигоҳ доштан"
+
+#: xmms/equalizer.c:92
+msgid "/Save/Preset"
+msgstr "/Нигоҳ доштани/Додашуда"
+
+#: xmms/equalizer.c:93
+msgid "/Save/Auto-load preset"
+msgstr "/Нигоҳ доштани/Худпурборкуни додашуда"
+
+#: xmms/equalizer.c:94
+msgid "/Save/Default"
+msgstr "/Нигоҳ доштан/Пешфарз"
+
+#: xmms/equalizer.c:95
+msgid "/Save/-"
+msgstr "/Нигоҳ доштан/-"
+
+#: xmms/equalizer.c:96
+msgid "/Save/To file"
+msgstr "/Нигоҳ доштан/Ба файл"
+
+#: xmms/equalizer.c:97
+msgid "/Save/To WinAMP EQF file"
+msgstr "/Нигоҳ доштан/Ба файли WinAMP EQF"
+
+#: xmms/equalizer.c:98
+msgid "/Delete"
+msgstr "/Нобуд кардан"
+
+#: xmms/equalizer.c:99
+msgid "/Delete/Preset"
+msgstr "/Нобуд/Додашуда"
+
+#: xmms/equalizer.c:100
+msgid "/Delete/Auto-load preset"
+msgstr "/Нобуд/Худпурборкуни додашуда"
+
+#: xmms/equalizer.c:101
+msgid "/Configure Equalizer"
+msgstr "/Танзимдарории Баробарсоз"
+
+#: xmms/equalizer.c:747
+msgid "XMMS Equalizer"
+msgstr "Баробарсози XMMS"
+
+#: xmms/equalizer.c:1304
+msgid "Presets"
+msgstr "Додашудаҳо"
+
+#: xmms/equalizer.c:1371
+msgid "Load preset"
+msgstr "Пурборкунии додашуда"
+
+#: xmms/equalizer.c:1377
+msgid "Load auto-preset"
+msgstr "Пурборкунии худдодашуда"
+
+#: xmms/equalizer.c:1400 xmms/equalizer.c:1415
+msgid "Load equalizer preset"
+msgstr "Пурборкунии баробарсози додашуда"
+
+#: xmms/equalizer.c:1430
+msgid "Import equalizer presets"
+msgstr "Воридоти додашудаҳои баробарсоз"
+
+#: xmms/equalizer.c:1441
+msgid "Save preset"
+msgstr "Нигоҳ доштани додашуда"
+
+#: xmms/equalizer.c:1450
+msgid "Save auto-preset"
+msgstr "Нигоҳ доштани худдодашуда"
+
+#: xmms/equalizer.c:1471 xmms/equalizer.c:1494
+msgid "Save equalizer preset"
+msgstr "Нигоҳ доштани баробарсози додашуда"
+
+#: xmms/equalizer.c:1504
+msgid "Delete preset"
+msgstr "Нобуд кардани додашуда"
+
+#: xmms/equalizer.c:1504 xmms/equalizer.c:1508
+msgid "Delete"
+msgstr "Нобуд кардан"
+
+#: xmms/equalizer.c:1508
+msgid "Delete auto-preset"
+msgstr "Нобуд кардани худдодашуда"
+
+#: xmms/equalizer.c:1641
+msgid "Configure Equalizer"
+msgstr "Танзимдарории Баробарсоз"
+
+#: xmms/equalizer.c:1662
+msgid "Directory preset file:"
+msgstr "Феҳристи файли додашуда:"
+
+#: xmms/equalizer.c:1670
+msgid "File preset extension:"
+msgstr "Васегии файли додашуда:"
+
+#: xmms/equalizer.c:1677
+msgid ""
+"If \"Auto\" is enabled on the equalizer, xmms will try to load equalizer "
+"presets like this:\n"
+"1: Look for a preset file in the directory of the file we are about to "
+"play.\n"
+"2: Look for a directory preset file in the same directory.\n"
+"3: Look for a preset saved with the \"auto-load\" feature\n"
+"4: Finally, try to load the \"default\" preset"
+msgstr ""
+"Агар \"Авто\" дар баробарсоз даргиронда бошад, xmms додашудаҳои баробарсозро "
+"чунин пурбор мекунад:\n"
+"1: Ҷустуҷӯи файли додашуда дар феҳристи файле, ки мо менавозем.\n"
+"2: Ҷустуҷӯи файли феҳристи додашуда дар ҳамон феҳрист.\n"
+"3: Ҷустуҷӯи додашудаи нигоҳ дошта бо хислати \"авто-пурборкунӣ\"\n"
+"4: Оқибат, ҳаракати пуоборкунии додашудаи \"пешфарз\" кардан"
+
+#: xmms/input.c:252
+msgid "No output plugin"
+msgstr "Даровардани ҳосилкунӣ нест"
+
+#: xmms/input.c:253
+msgid "No output plugin has been selected"
+msgstr "Ягон даровардани хуруҷ интихоб нашудааст"
+
+#: xmms/input.c:417
+msgid "No input plugin recognized this file"
+msgstr "Ягон даровардани дохилкунӣ ин файлро эътироф накард"
+
+#: xmms/input.c:419
+#, c-format
+msgid "Input plugin: %s"
+msgstr "Даровардани дохила: %s"
+
+#: xmms/main.c:128
+msgid "/Preferences"
+msgstr "/Афзалиятҳо"
+
+#: xmms/main.c:129
+msgid "/Skin Browser"
+msgstr "/Браузери Пӯст"
+
+#: xmms/main.c:130
+msgid "/Reload skin"
+msgstr "/Азнав пурборкунии пӯст"
+
+#: xmms/main.c:131 xmms/main.c:135 xmms/main.c:139 xmms/main.c:273
+#: xmms/main.c:278 xmms/main.c:282 xmms/main.c:302 xmms/playlistwin.c:161
+msgid "/-"
+msgstr "/-"
+
+#: xmms/main.c:132
+msgid "/Repeat"
+msgstr "/Такрор"
+
+#: xmms/main.c:133
+msgid "/Shuffle"
+msgstr "/Омехта"
+
+#: xmms/main.c:134
+msgid "/No Playlist Advance"
+msgstr "/Рӯйхати Суруди Нотараққӣ"
+
+#: xmms/main.c:136
+msgid "/Time Elapsed"
+msgstr "/Вақти Гузашта"
+
+#: xmms/main.c:137
+msgid "/Time Remaining"
+msgstr "/Вақти Монда"
+
+#: xmms/main.c:138
+msgid "/Time Display (MMM:SS)"
+msgstr ""
+
+#: xmms/main.c:140
+msgid "/Always On Top"
+msgstr "/Ҳамавақт Дар Боло"
+
+#: xmms/main.c:141
+msgid "/Show on all desktops"
+msgstr ""
+
+#: xmms/main.c:142
+msgid "/WindowShade Mode"
+msgstr "/Усули WindowShade"
+
+#: xmms/main.c:143
+msgid "/Playlist WindowShade Mode"
+msgstr "/Усули WindowShade Рӯхати суруд"
+
+#: xmms/main.c:144
+msgid "/Equalizer WindowShade Mode"
+msgstr "/Усули WindowShade Баробарсоз"
+
+#: xmms/main.c:145
+msgid "/DoubleSize"
+msgstr "/ДуАндоза"
+
+#: xmms/main.c:146
+msgid "/Easy Move"
+msgstr "/Сабук Ҷунбондан"
+
+#: xmms/main.c:162
+msgid "/File Info"
+msgstr "/Ахбороти Файл"
+
+#: xmms/main.c:163
+msgid "/Jump To File"
+msgstr "/Бар Файл Паридан"
+
+#: xmms/main.c:164
+msgid "/Jump To Time"
+msgstr "/Бар Вақт Паридан"
+
+#: xmms/main.c:165
+#, fuzzy
+msgid "/Autoscroll Song Name"
+msgstr "/Аутоскрол Номи суруд"
+
+#: xmms/main.c:189
+msgid "/Visualization Mode"
+msgstr "/Усули Таҷассумкорӣ"
+
+#: xmms/main.c:190
+msgid "/Visualization Mode/Analyzer"
+msgstr "/Усули Таҷассумкорӣ/Таҳлилгар"
+
+#: xmms/main.c:191
+msgid "/Visualization Mode/Scope"
+msgstr "/Усули Таҷассумкорӣ/Имконият"
+
+#: xmms/main.c:192
+msgid "/Visualization Mode/Off"
+msgstr "/Усули Таҷассумкорӣ/Куштан"
+
+#: xmms/main.c:193
+msgid "/Analyzer Mode"
+msgstr "/Усули Таҳлилгар"
+
+#: xmms/main.c:194
+msgid "/Analyzer Mode/Normal"
+msgstr "/Усули Таҳлилгар/Мӯътадил"
+
+#: xmms/main.c:195
+msgid "/Analyzer Mode/Fire"
+msgstr "/Усули Таҳлилгар/Оташ"
+
+#: xmms/main.c:196
+msgid "/Analyzer Mode/Vertical Lines"
+msgstr "/Усули Таҳлилгар/Сатрҳои Амудӣ"
+
+#: xmms/main.c:197 xmms/main.c:200
+msgid "/Analyzer Mode/-"
+msgstr "/Усули Таҳлилгар/-"
+
+#: xmms/main.c:198
+msgid "/Analyzer Mode/Lines"
+msgstr "/Усули Таҳлилгар/Сатрҳо"
+
+#: xmms/main.c:199
+msgid "/Analyzer Mode/Bars"
+msgstr "/Усули Таҳлилгар/Хатҳо"
+
+#: xmms/main.c:201
+msgid "/Analyzer Mode/Peaks"
+msgstr "/Усули Таҳлилгар/Қуллаҳо"
+
+#: xmms/main.c:202
+msgid "/Scope Mode"
+msgstr "/Усули Имконият"
+
+#: xmms/main.c:203
+msgid "/Scope Mode/Dot Scope"
+msgstr "/Усули Имконият/Имконият Нуқта"
+
+#: xmms/main.c:204
+msgid "/Scope Mode/Line Scope"
+msgstr "/Усули Имконият/Сатри Имконият"
+
+#: xmms/main.c:205
+msgid "/Scope Mode/Solid Scope"
+msgstr "/Усули Имконият/Имконият Асосдор"
+
+#: xmms/main.c:206
+msgid "/WindowShade VU Mode"
+msgstr "/Усули WindowShade VU"
+
+#: xmms/main.c:207
+msgid "/WindowShade VU Mode/Normal"
+msgstr "/Усули WindowShade VU/Мӯътадил"
+
+#: xmms/main.c:208
+msgid "/WindowShade VU Mode/Smooth"
+msgstr "/Усули WindowShade VU/Ҳамвор"
+
+#: xmms/main.c:209
+msgid "/Refresh Rate"
+msgstr "/Навсозии Зуддӣ"
+
+#: xmms/main.c:210
+msgid "/Refresh Rate/Full (~50 fps)"
+msgstr "/Навсозии Зуддӣ/Пурра (~50 fps)"
+
+#: xmms/main.c:211
+msgid "/Refresh Rate/Half (~25 fps)"
+msgstr "/Навсозии Зуддӣ/Нима (~25 fps)"
+
+#: xmms/main.c:212
+msgid "/Refresh Rate/Quarter (~13 fps)"
+msgstr "/Навсозии Зуддӣ/Чоряк (~13 fps)"
+
+#: xmms/main.c:213
+msgid "/Refresh Rate/Eighth (~6 fps)"
+msgstr "/Навсозии Зуддӣ/Ҳаштяк (~6 fps)"
+
+#: xmms/main.c:214
+msgid "/Analyzer Falloff"
+msgstr "/Ғалтиши Таҳлилгар"
+
+#: xmms/main.c:215
+msgid "/Analyzer Falloff/Slowest"
+msgstr "/Ғалтиши Таҳлилгар/Сусттарин"
+
+#: xmms/main.c:216
+msgid "/Analyzer Falloff/Slow"
+msgstr "/Ғалтиши Таҳлилгар/Суст"
+
+#: xmms/main.c:217
+msgid "/Analyzer Falloff/Medium"
+msgstr "/Ғалтиши Таҳлилгар/Миёна"
+
+#: xmms/main.c:218
+msgid "/Analyzer Falloff/Fast"
+msgstr "/Ғалтиши Таҳлилгар/Тез"
+
+#: xmms/main.c:219
+msgid "/Analyzer Falloff/Fastest"
+msgstr "/Ғалтиши Таҳлилгар/Тезтарин"
+
+#: xmms/main.c:220
+msgid "/Peaks Falloff"
+msgstr "/Ғалтиши Қуллаҳо"
+
+#: xmms/main.c:221
+msgid "/Peaks Falloff/Slowest"
+msgstr "/Ғалтиши Қуллаҳо/Сусттарин"
+
+#: xmms/main.c:222
+msgid "/Peaks Falloff/Slow"
+msgstr "/Ғалтиши Қуллаҳо/Суст"
+
+#: xmms/main.c:223
+msgid "/Peaks Falloff/Medium"
+msgstr "/Ғалтиши Қуллаҳо/Миёна"
+
+#: xmms/main.c:224
+msgid "/Peaks Falloff/Fast"
+msgstr "/Ғалтиши Қуллаҳо/Тез"
+
+#: xmms/main.c:225
+msgid "/Peaks Falloff/Fastest"
+msgstr "/Ғалтиши Қуллаҳо/Тезтарин"
+
+#: xmms/main.c:226
+msgid "/Visualization plugins"
+msgstr "/Дароварданҳои Таҷассумкорӣ"
+
+#: xmms/main.c:272
+msgid "/About XMMS"
+msgstr "/Дар бораи XMMS"
+
+#: xmms/main.c:274
+msgid "/Play File"
+msgstr "/Навозиши Файл"
+
+#: xmms/main.c:275
+msgid "/Play Directory"
+msgstr "/Навозиши Феҳрист"
+
+#: xmms/main.c:276
+msgid "/Play Location"
+msgstr "/Навозиши Маҳаллӣ"
+
+#: xmms/main.c:277 xmms/playlistwin.c:158
+msgid "/View File Info"
+msgstr "/Назари Ахбори Файл"
+
+#: xmms/main.c:279
+msgid "/Main Window"
+msgstr "/Тирезаи Асосӣ"
+
+#: xmms/main.c:280
+msgid "/Playlist Editor"
+msgstr "/Таҳрири Рӯйхати Суруд"
+
+#: xmms/main.c:281
+msgid "/Graphical EQ"
+msgstr "/EQ Графикӣ"
+
+#: xmms/main.c:283
+msgid "/Options"
+msgstr "/Интихобҳо"
+
+#: xmms/main.c:284
+msgid "/Playback"
+msgstr "/Азнав Навозиш"
+
+#: xmms/main.c:285
+msgid "/Playback/Previous"
+msgstr "/Азнав Навозиш/Пешина"
+
+#: xmms/main.c:286
+msgid "/Playback/Play"
+msgstr "/Азнав Навозиш/Навозиш"
+
+#: xmms/main.c:287
+msgid "/Playback/Pause"
+msgstr "/Азнав Навозиш/Таваққуф"
+
+#: xmms/main.c:288
+msgid "/Playback/Stop"
+msgstr "/Азнав Навозиш/Ист"
+
+#: xmms/main.c:289
+msgid "/Playback/Next"
+msgstr "/Азнав Навозиш/Оянда"
+
+#: xmms/main.c:290 xmms/main.c:297
+msgid "/Playback/-"
+msgstr "/Азнав Навозиш/-"
+
+#: xmms/main.c:292
+msgid "/Playback/Back 5 Seconds"
+msgstr "/Азнав Навозиш/5 сония ба пушт"
+
+#: xmms/main.c:293
+msgid "/Playback/Fwd 5 Seconds"
+msgstr "/Азнав Навозиш/5 сония ба пеш"
+
+#: xmms/main.c:294
+msgid "/Playback/Start of List"
+msgstr "/Азнав Навозиш/Сари Рӯйхат"
+
+#: xmms/main.c:295
+msgid "/Playback/10 Tracks Back"
+msgstr "/Азнав Навозиш/10 Суруд ба Пушт"
+
+#: xmms/main.c:296
+msgid "/Playback/10 Tracks Fwd"
+msgstr "/Азнав Навозиш/10 Суруд ба Пеш"
+
+#: xmms/main.c:298
+msgid "/Playback/Jump to Time"
+msgstr "/Азнав Навозиш/Бар вақт Паридан"
+
+#: xmms/main.c:299
+msgid "/Playback/Jump to File"
+msgstr "/Азнав Навозиш/Бар Файл Паридан"
+
+#: xmms/main.c:300
+#, fuzzy
+msgid "/Playback/Clear Queue"
+msgstr "/Азнав Навозиш/Таваққуф"
+
+#: xmms/main.c:301
+msgid "/Visualization"
+msgstr "/Таҷассумкорӣ"
+
+#: xmms/main.c:303
+msgid "/Exit"
+msgstr "/Хуруҷ"
+
+#: xmms/main.c:1466
+msgid "Jump to time"
+msgstr "Бар вақт паридан"
+
+#: xmms/main.c:1477
+msgid "Jump to:"
+msgstr "Паридан бар:"
+
+#: xmms/main.c:1493
+msgid "minutes:seconds"
+msgstr "дақиқа:сония"
+
+#: xmms/main.c:1500
+msgid "Track length:"
+msgstr "Дарозии Суруд:"
+
+#: xmms/main.c:1514 xmms/main.c:1949
+msgid "Jump"
+msgstr "Паридан"
+
+#: xmms/main.c:1553 xmms/main.c:1892 xmms/main.c:2226
+#, fuzzy
+msgid "Queue"
+msgstr "Дар навбат"
+
+#: xmms/main.c:1562
+#, fuzzy
+msgid "Unqueue"
+msgstr "Дар навбат"
+
+#: xmms/main.c:1880 xmms/main.c:2202
+msgid "Jump to file"
+msgstr "Бар файл паридан"
+
+#: xmms/main.c:1894 xmms/main.c:2228
+msgid "Q"
+msgstr ""
+
+#: xmms/main.c:1895 xmms/main.c:2229
+msgid "Files"
+msgstr "Файлҳо"
+
+#: xmms/main.c:1911 xmms/main.c:2297
+msgid "Search: "
+msgstr "Ҷустуҷӯ: "
+
+#: xmms/main.c:2232
+msgid "Queued files: "
+msgstr ""
+
+#: xmms/main.c:2260
+msgid "Move up"
+msgstr ""
+
+#: xmms/main.c:2267
+#, fuzzy
+msgid "Move down"
+msgstr "Пасттар"
+
+#: xmms/main.c:2274
+#, fuzzy
+msgid "Remove"
+msgstr "/Хориҷ"
+
+#: xmms/main.c:2445 xmms/playlistwin.c:640
+msgid "Select directory to add:"
+msgstr "Феҳрист интихоб кунед барои илова:"
+
+#: xmms/main.c:2494
+msgid "Enter location to play:"
+msgstr "Маҳал дохил кунед барои навозиш:"
+
+#: xmms/main.c:2622
+#, c-format
+msgid "SEEK TO: %d:%-2.2d/%d:%-2.2d (%d%%)"
+msgstr "ҶУСТАН БАР: %d:%-2.2d/%d:%-2.2d (%d%%)"
+
+#: xmms/main.c:2647 xmms/main.c:3207
+#, c-format
+msgid "VOLUME: %d%%"
+msgstr "БАЛАНДӢ: %d%%"
+
+#: xmms/main.c:2676 xmms/main.c:3212
+#, c-format
+msgid "BALANCE: %d%% LEFT"
+msgstr "БАЛАНС: %d%% ЧАП"
+
+#: xmms/main.c:2681 xmms/main.c:3215
+msgid "BALANCE: CENTER"
+msgstr "БАЛАНС: МАРКАЗ"
+
+#: xmms/main.c:2686 xmms/main.c:3218
+#, c-format
+msgid "BALANCE: %d%% RIGHT"
+msgstr "БАЛАНС: %d%% РОСТ"
+
+#: xmms/main.c:3079
+msgid "OPTIONS MENU"
+msgstr "МЕНЮИ ИНТИХОБҲО"
+
+#: xmms/main.c:3085
+msgid "DISABLE ALWAYS ON TOP (N/A)"
+msgstr "КУШТАН ҲАМАВАҚТ ДАР БОЛО (Ҳ/Н)"
+
+#: xmms/main.c:3087
+msgid "ENABLE ALWAYS ON TOP (N/A)"
+msgstr "ДАРГИРОНДАН ҲАМАВАҚТ ДАР БОЛО (Ҳ/Н)"
+
+#: xmms/main.c:3090
+msgid "DISABLE ALWAYS ON TOP"
+msgstr "КУШТАН ҲАМАВАҚТ ДАР БОЛО"
+
+#: xmms/main.c:3092
+msgid "ENABLE ALWAYS ON TOP"
+msgstr "ДАРГИРОНДАН ҲАМАВАҚТ ДАР БОЛО"
+
+#: xmms/main.c:3095
+msgid "FILE INFO BOX"
+msgstr "ТИРЕЗАИ АХБОРИ ФАЙЛ"
+
+#: xmms/main.c:3099
+msgid "DISABLE DOUBLESIZE"
+msgstr "КУШТАНИ ДУАНДОЗА"
+
+#: xmms/main.c:3101
+msgid "ENABLE DOUBLESIZE"
+msgstr "ДАРГИРОНДАНИ ДУАНДОЗА"
+
+#: xmms/main.c:3104
+msgid "VISUALIZATION MENU"
+msgstr "МЕНЮИ ТАҶАССУМКОРӢ"
+
+#: xmms/main.c:3524
+msgid "Couldn't open audio"
+msgstr "Аудио кушода нашуд"
+
+#: xmms/main.c:3525
+#, fuzzy
+msgid ""
+"Please check that:\n"
+"\n"
+"Your soundcard is configured properly\n"
+"You have the correct output plugin selected\n"
+"No other program is blocking the soundcard"
+msgstr ""
+"Илтимос тафтиш кунед, ки:\n"
+"\n"
+"1.Шумо даровардани хуруҷии дуруст интихоб кардед\n"
+"2.Ягон дигар барномаҳо картисадоро банд накардаанд\n"
+"3.Картисадои шумо мувофиқан танзимдарорӣ шудааст"
+
+#: xmms/main.c:3760
+#, c-format
+msgid ""
+"Usage: xmms [options] [files] ...\n"
+"\n"
+"Options:\n"
+"--------\n"
+msgstr ""
+"Истифода: xmms [хосиятҳо] [файлҳо] ...\n"
+"\n"
+"Хосиятҳо:\n"
+"--------\n"
+
+#: xmms/main.c:3765
+#, c-format
+msgid "Display this text and exit."
+msgstr "Ин матнро нишон дода ва хуруҷ шавед."
+
+#: xmms/main.c:3768
+#, c-format
+msgid "Select XMMS session (Default: 0)"
+msgstr "Интихоби сессияи XMMS (Пешфарз: 0)"
+
+#: xmms/main.c:3771
+#, c-format
+msgid "Skip backwards in playlist"
+msgstr "Ба қафо паридан дар рӯйхати суруд"
+
+#: xmms/main.c:3774
+#, c-format
+msgid "Start playing current playlist"
+msgstr "Оғози навозиши рӯйхати суруди равона"
+
+#: xmms/main.c:3777
+#, c-format
+msgid "Pause current song"
+msgstr "Таваққуфи суруди равона"
+
+#: xmms/main.c:3780
+#, c-format
+msgid "Stop current song"
+msgstr "Қарори суруди равона"
+
+#: xmms/main.c:3783
+#, c-format
+msgid "Pause if playing, play otherwise"
+msgstr "Таваққуф ҳангоми навозиш, навозиш дар дигар ҳол"
+
+#: xmms/main.c:3786
+#, c-format
+msgid "Skip forward in playlist"
+msgstr "Ба пеш паридан дар рӯйхати суруд"
+
+#: xmms/main.c:3789
+#, c-format
+msgid "Don't clear the playlist"
+msgstr "Рӯйхати сурудро тоза накунед"
+
+#: xmms/main.c:3792
+#, c-format
+msgid "Add file(s) to playlist and queue"
+msgstr ""
+
+#: xmms/main.c:3793 xmms/main.c:3797 xmms/main.c:3801
+msgid "[=SWITCH]"
+msgstr ""
+
+#: xmms/main.c:3795
+#, c-format
+msgid "Toggle the 'shuffle' flag."
+msgstr ""
+
+#: xmms/main.c:3799
+#, c-format
+msgid "Toggle the 'repeat' flag."
+msgstr ""
+
+#: xmms/main.c:3803
+#, c-format
+msgid "Toggle the 'no playlist advance' flag."
+msgstr ""
+
+#: xmms/main.c:3806
+#, c-format
+msgid "SWITCH may be either 'on' or 'off'\n"
+msgstr ""
+
+#: xmms/main.c:3809
+#, c-format
+msgid "Show the main window."
+msgstr "Тирезаи асосиро нишон диҳед."
+
+#: xmms/main.c:3812
+#, c-format
+msgid "Previous session ID"
+msgstr ""
+
+#: xmms/main.c:3815
+#, c-format
+msgid "Print version number and exit."
+msgstr "Чопи рақами нашр ва хуруҷ."
+
+#: xmms/main.c:3818
+#, fuzzy, c-format
+msgid "Close remote session."
+msgstr "Хидматгори дурдаст истифода баред"
+
+#: xmms/main.c:3994 xmms/main.c:4018 xmms/main.c:4042
+#, c-format
+msgid "Value '%s' not understood, must be either 'on' or 'off'.\n"
+msgstr ""
+
+#: xmms/main.c:4057
+#, c-format
+msgid ""
+"\n"
+"Segmentation fault\n"
+"\n"
+"You've probably found a bug in XMMS, please visit\n"
+"http://bugs.xmms.org and fill out a bug report.\n"
+"\n"
+msgstr ""
+"\n"
+"Кисматбандии вайрона\n"
+"\n"
+"Шумо шояд ки дар XMMS ғалат ёфтед, лутфан ба\n"
+"http://bugs.xmms.org зиёрат оред ва маърӯзаи ғалат пур кунед.\n"
+"\n"
+
+#: xmms/main.c:4198
+msgid "GLib does not support threads."
+msgstr ""
+
+#: xmms/main.c:4255
+#, c-format
+msgid ""
+"Sorry, your GTK+ version (%d.%d.%d) doesn't work with XMMS.\n"
+"Please use GTK+ %s or newer.\n"
+msgstr ""
+"Мебахшед, ривояти GTK+ (%d.%d.%d) бо XMMS кор намекунад.\n"
+"Илтимос GTK+ %s истифода баред ё навтар.\n"
+
+#: xmms/main.c:4325
+msgid "X Multimedia System"
+msgstr "X Сиситеми Бисёрмуҳит"
+
+#: xmms/playlistwin.c:95
+msgid "/Sort List"
+msgstr "/Мураттаби Рӯйхат"
+
+#: xmms/playlistwin.c:96
+msgid "/Sort List/By Title"
+msgstr "/Мураттаби Рӯйхат/Бо Сарлавҳа"
+
+#: xmms/playlistwin.c:98
+msgid "/Sort List/By Filename"
+msgstr "/Мураттаби Рӯйхат/Бо Номифайл"
+
+#: xmms/playlistwin.c:100
+msgid "/Sort List/By Path + Filename"
+msgstr "/Мураттаби Рӯйхат/Бо Роҳ + Номифайл"
+
+#: xmms/playlistwin.c:102
+msgid "/Sort List/By Date"
+msgstr "/Мураттаби Рӯйхат/Бо Сана"
+
+#: xmms/playlistwin.c:104 xmms/playlistwin.c:173
+msgid "/Selection"
+msgstr "/Интихобот"
+
+#: xmms/playlistwin.c:105
+#, fuzzy
+msgid "/Selection/Sort By Title"
+msgstr "/Мураттаби Интихобот/Бо Сарлавҳа"
+
+#: xmms/playlistwin.c:107
+#, fuzzy
+msgid "/Selection/Sort By Filename"
+msgstr "/Мураттаби Интихобот/Бо Номифайл"
+
+#: xmms/playlistwin.c:109
+#, fuzzy
+msgid "/Selection/Sort By Path + Filename"
+msgstr "/Мураттаби Интихобот/Бо Роҳ + Номифайл"
+
+#: xmms/playlistwin.c:111
+#, fuzzy
+msgid "/Selection/Sort By Date"
+msgstr "/Мураттаби Интихобот/Бо Сана"
+
+#: xmms/playlistwin.c:113
+#, fuzzy
+msgid "/Selection/Randomize"
+msgstr "/Интихобот/-"
+
+#: xmms/playlistwin.c:116
+msgid "/Randomize List"
+msgstr "/Рӯйхати Тасодуфӣ"
+
+#: xmms/playlistwin.c:118
+msgid "/Reverse List"
+msgstr "/Чаппа кардани Рӯйхат"
+
+#: xmms/playlistwin.c:131
+msgid "/By extension"
+msgstr "/Бо Васегӣ"
+
+#: xmms/playlistwin.c:148
+msgid "/Remove Dead Files"
+msgstr "/Хориҷи Файлҳои Мурда"
+
+#: xmms/playlistwin.c:149
+msgid "/Physically Delete Files"
+msgstr "/Файлҳоро Ҷисман Нобуд кардан"
+
+#: xmms/playlistwin.c:159
+#, fuzzy
+msgid "/Queue - Unqueue"
+msgstr "/Азнав Навозиш/-"
+
+#: xmms/playlistwin.c:160
+msgid "/Queue manager"
+msgstr ""
+
+#: xmms/playlistwin.c:162
+msgid "/Add"
+msgstr "/Илова"
+
+#: xmms/playlistwin.c:163
+msgid "/Add/File"
+msgstr "/Илова/Файл"
+
+#: xmms/playlistwin.c:164
+msgid "/Add/Directory"
+msgstr "/Илова/Феҳрист"
+
+#: xmms/playlistwin.c:165
+msgid "/Add/Url"
+msgstr "/Илова/Url"
+
+#: xmms/playlistwin.c:167
+msgid "/Remove"
+msgstr "/Хориҷ"
+
+#: xmms/playlistwin.c:168
+msgid "/Remove/Selected"
+msgstr "/Хориҷ/Интихобшуда"
+
+#: xmms/playlistwin.c:169
+msgid "/Remove/Crop"
+msgstr "/Хориҷ/Буридан"
+
+#: xmms/playlistwin.c:170
+msgid "/Remove/All"
+msgstr "/Хориҷ/Ҳамаш"
+
+#: xmms/playlistwin.c:171
+msgid "/Remove/Misc"
+msgstr "/Хориҷи/Мусиқа"
+
+#: xmms/playlistwin.c:174
+msgid "/Selection/Select All"
+msgstr "/Интихобот/Интихоби Ҳамаш"
+
+#: xmms/playlistwin.c:175
+msgid "/Selection/Select None"
+msgstr "/Интихобот/Интихоби Ҳеҷ"
+
+#: xmms/playlistwin.c:176
+msgid "/Selection/Invert Selection"
+msgstr "/Интихобот/Ивази Интихобот"
+
+#: xmms/playlistwin.c:177
+msgid "/Selection/-"
+msgstr "/Интихобот/-"
+
+#: xmms/playlistwin.c:178
+msgid "/Selection/Read Extended Info"
+msgstr "/Интихобот/Хондани Маълумоти Васеъ"
+
+#: xmms/playlistwin.c:180
+msgid "/Sort"
+msgstr "/Мураттаби"
+
+#: xmms/playlistwin.c:182
+msgid "/Playlist"
+msgstr "/Рӯйхати суруд"
+
+#: xmms/playlistwin.c:183
+msgid "/Playlist/Load List"
+msgstr "/Рӯйхати Суруд/Пурборкунӣ Рӯйхат"
+
+#: xmms/playlistwin.c:184
+msgid "/Playlist/Save List"
+msgstr "/Рӯйхати Суруд/Нигоҳ доштани Рӯйхат"
+
+#: xmms/playlistwin.c:185
+msgid "/Playlist/New List"
+msgstr "/Рӯйхати Суруд/Рӯйхати Нав"
+
+#: xmms/playlistwin.c:618
+msgid "Enter URL to add:"
+msgstr "URL гузоред барои иловаи:"
+
+#: xmms/playlistwin.c:718
+msgid "Unable to write playlist!"
+msgstr "Навиштани рӯйхати суруд номумкин!"
+
+#: xmms/playlistwin.c:721
+#, c-format
+msgid "Error writing playlist \"%s\": %s"
+msgstr "Хатогии навиштани рӯйхати суруд \"%s\": %s"
+
+#: xmms/playlistwin.c:768
+msgid "File exists!"
+msgstr "Файл вуҷудаст!"
+
+#: xmms/playlistwin.c:771
+#, fuzzy, c-format
+msgid "%s already exists."
+msgstr "%s аллакай вуҷудаст."
+
+#: xmms/playlistwin.c:782
+msgid "Overwrite"
+msgstr "Бознавиштан"
+
+#: xmms/playlistwin.c:839
+#, c-format
+msgid ""
+"Unknown file type for %s.\n"
+"The filename of the playlist should end in either \".m3u\" or \".pls\"."
+msgstr ""
+
+#: xmms/playlistwin.c:843
+msgid "Unable to save playlist"
+msgstr "Нигоҳ доштани рӯйхати суруд номумкин"
+
+#: xmms/playlistwin.c:916
+msgid "Load playlist"
+msgstr "Пурборкунии рӯйхати суруд"
+
+#: xmms/playlistwin.c:953
+msgid "Save playlist"
+msgstr "Нигоҳ доштани рӯйхати суруд"
+
+#: xmms/playlistwin.c:971
+msgid "Save options"
+msgstr "Нигоҳ доштани хосиятҳо"
+
+#: xmms/playlistwin.c:975
+msgid "Determine file type:"
+msgstr "Муқаррари навъи файл:"
+
+#: xmms/playlistwin.c:1408
+#, c-format
+msgid "Failed to delete \"%s\": %s."
+msgstr "Ғалат дар нобудкунии \"%s\": %s."
+
+#: xmms/playlistwin.c:1424
+#, c-format
+msgid "%d of %d files successfully deleted."
+msgstr "Файлҳои %d аз %d хуб нобуд шуданд"
+
+#: xmms/playlistwin.c:1428
+msgid "XMMS: Files deleted"
+msgstr "XMMS: Файлҳо нобуд шуданд"
+
+#: xmms/playlistwin.c:1459
+msgid "XMMS: Delete files?"
+msgstr "XMMS: Файлҳоро нобуд кунад?"
+
+#: xmms/playlistwin.c:1468
+#, c-format
+msgid "Really delete %d files?"
+msgstr "Ҳақиқатан файли %d -ро нобуд кунад?"
+
+#: xmms/playlistwin.c:1470
+#, c-format
+msgid "Really delete: \"%s\"?"
+msgstr "Ҳақиқатан \"%s\"-ро нобуд кунад?"
+
+#: xmms/playlistwin.c:1930
+msgid "XMMS Playlist"
+msgstr "Рӯйхати суруди XMMS"
+
+#: xmms/prefswin.c:302
+#, fuzzy
+msgid ""
+"Realtime priority is a way for XMMS to get a higher\n"
+"priority  for CPU time.  This might give less \"skips\".\n"
+"\n"
+"This requires that XMMS is run with root privileges and\n"
+"may, although it's very unusual, lock up your computer.\n"
+"Running XMMS with root privileges might also have other\n"
+"security implications.\n"
+"\n"
+"Using this feature is not recommended.\n"
+"To activate this you need to restart XMMS."
+msgstr ""
+"Афзалияти вақтивоқеӣ ин роҳи XMMS барои гирифтани афзалияти\n"
+"баландтар барои вақти ВПМ.  Ин аз \"мавқуфҳо\" нигоҳ медорад\n"
+"\n"
+"Ин XMMS-ро бо имтиёзҳои root кор карданашро талаб мекунад ва\n"
+"ҳарчанд ғайриоддӣ бошадҳам баъзан компютерро муҳосира мекунад.\n"
+"Коркунии XMMS бо имтиёзҳои root ҳамчунин метавонад дигар\n"
+"вайронкуниҳои бехатари дошта бошад. \n"
+"Истифодаи ин хислат тавсия намешавад.\n"
+"Барои фаъолкунии ин XMMS-ро бозоғоз кунед."
+
+#: xmms/prefswin.c:439
+msgid "Select playlist font:"
+msgstr "Ҳуруфи рӯйхати суруд интихоб кунед:"
+
+#: xmms/prefswin.c:466
+msgid "Select main window font:"
+msgstr "Ҳуруфи тирезаи асосиро интихоб кунед:"
+
+#: xmms/prefswin.c:719
+msgid "Preferences"
+msgstr "Афзалиятҳо"
+
+#: xmms/prefswin.c:742
+msgid "Input Plugins"
+msgstr "Дароварданҳои Дохила"
+
+#: xmms/prefswin.c:750
+msgid "Input plugins"
+msgstr "Дароварданҳои дохила"
+
+#: xmms/prefswin.c:772 xmms/prefswin.c:804 xmms/prefswin.c:846
+#: xmms/prefswin.c:891 xmms/prefswin.c:941
+msgid "Configure"
+msgstr "Танзимдарорӣ"
+
+#: xmms/prefswin.c:779 xmms/prefswin.c:854 xmms/prefswin.c:899
+#: xmms/prefswin.c:949
+msgid "Enable plugin"
+msgstr "Даргирондани даровардан"
+
+#: xmms/prefswin.c:787
+msgid "Output Plugin"
+msgstr "Даровардани Беруна"
+
+#: xmms/prefswin.c:812
+msgid "Audio I/O Plugins"
+msgstr "Дароварданҳои Аудио Б/Д"
+
+#: xmms/prefswin.c:818 xmms/prefswin.c:858
+msgid "Effects Plugins"
+msgstr "Дароварданҳои Натиҷа"
+
+#: xmms/prefswin.c:825
+msgid "Effects plugins"
+msgstr "Дароварданҳои натиҷа"
+
+#: xmms/prefswin.c:864 xmms/prefswin.c:903
+msgid "General Plugins"
+msgstr "Дароварданҳои Умумӣ"
+
+#: xmms/prefswin.c:870
+msgid "General plugins"
+msgstr "Дароварданҳои умумӣ"
+
+#: xmms/prefswin.c:911 xmms/prefswin.c:953
+msgid "Visualization Plugins"
+msgstr "Дароварданҳои Таҷассумкорӣ"
+
+#: xmms/prefswin.c:919
+msgid "Visualization plugins"
+msgstr "Дароварданҳои таҷассумкорӣ"
+
+#: xmms/prefswin.c:968
+msgid "Read info on"
+msgstr "Ахборотро хонед"
+
+#: xmms/prefswin.c:970
+msgid "play"
+msgstr "навозиш"
+
+#: xmms/prefswin.c:971
+msgid "Read song title and length only when starting to play"
+msgstr "Хондани сарлавҳа ва дарозии суруд танҳо ҳангоми навозиш"
+
+#: xmms/prefswin.c:973
+msgid "demand"
+msgstr "талабкунӣ"
+
+#: xmms/prefswin.c:974
+msgid "Read song title and length when the song is visible in the playlist"
+msgstr ""
+
+#: xmms/prefswin.c:976
+msgid "load"
+msgstr "Пурборкунӣ"
+
+#: xmms/prefswin.c:977
+msgid ""
+"Read song title and length as soon as the song is loaded to the playlist"
+msgstr "Хондани сарлавҳа ва дарозӣ ҳангоме ки суруд ба рӯйхат пурбор карда шуд"
+
+#: xmms/prefswin.c:980
+msgid "Allow multiple instances"
+msgstr "Иҷозати мисолҳои бисёр"
+
+#: xmms/prefswin.c:982
+msgid "Convert %20 to space"
+msgstr "Ба фосила %20 нигаронед"
+
+#: xmms/prefswin.c:983
+msgid "Always show clutterbar"
+msgstr "Ҳамавақт clutterbar нишон диҳед"
+
+#: xmms/prefswin.c:984
+msgid ""
+"The \"clutterbar\" is the row of buttons at the left side of the main window"
+msgstr "\"clutterbar\" ин қатори дагмаҳо дар тарафи чапи оинаи асосӣ"
+
+#: xmms/prefswin.c:986
+msgid "Convert underscore to space"
+msgstr "Дар фосила зерхат нигаронед"
+
+#: xmms/prefswin.c:987
+msgid "Save window positions"
+msgstr "Нигоҳ доштани мавқеъи тиреза"
+
+#: xmms/prefswin.c:989
+msgid "Dim titlebar when inactive"
+msgstr "Хира кардани сарлавҳа ҳангоми беғайратӣ"
+
+#: xmms/prefswin.c:990
+msgid "Show numbers in playlist"
+msgstr "Нишон додани рақам дар рӯйхати суруд"
+
+#: xmms/prefswin.c:992
+#, fuzzy
+msgid "Sort \"Jump to file\" alphabetically"
+msgstr "Мураттаби \"Ба файл паридан\" алифбоӣ"
+
+#: xmms/prefswin.c:993
+msgid "Equalizer doublesize linked"
+msgstr "Баробарсози дуандоза қӯш шуд"
+
+#: xmms/prefswin.c:995
+msgid "Use realtime priority when available"
+msgstr "Истифодаи афзалияти вақтивоқеӣ агар дастрас бошад"
+
+#: xmms/prefswin.c:996
+#, fuzzy
+msgid "Run XMMS with higher priority (not recommended)"
+msgstr "Корандозии XMMS бо афзалияти баланд (тавсия намешавад)"
+
+#: xmms/prefswin.c:998
+msgid "Smooth title scroll"
+msgstr "Ҳамвор тобдиҳии сарлавҳа"
+
+#: xmms/prefswin.c:1002
+msgid "Pause between songs for"
+msgstr "Таваққуф байни сурудҳо ба"
+
+#: xmms/prefswin.c:1007
+msgid "seconds"
+msgstr "сония"
+
+#: xmms/prefswin.c:1013
+msgid ""
+"When moving windows around, snap them together, and towards screen edges at "
+"this distance"
+msgstr ""
+
+#: xmms/prefswin.c:1017
+msgid "Snap windows at"
+msgstr "Тирезаҳоро ҷумбонед ба"
+
+#: xmms/prefswin.c:1022
+msgid "pixels"
+msgstr "воҳидҳои тасвир"
+
+#: xmms/prefswin.c:1028
+#, fuzzy
+msgid "Show window manager decorations"
+msgstr "Ороишҳои windowmanager нишон диҳед"
+
+#: xmms/prefswin.c:1032
+msgid "Use '\\' as a directory delimiter"
+msgstr "'\\' ҳамчун тақсимкунандаи феҳрист истифода баред"
+
+#: xmms/prefswin.c:1035
+msgid ""
+"Recommended if you want to load playlists that were created in MS Windows"
+msgstr ""
+
+#: xmms/prefswin.c:1039
+msgid "Mouse Wheel adjusts Volume by (%)"
+msgstr "Ғилдираки муш Баландиро иваз мекунад бо (%)"
+
+#: xmms/prefswin.c:1048
+#, fuzzy
+msgid "Use meta-data in playlists"
+msgstr "Истифодаи фавқдода дар рӯйхати сурудҳо"
+
+#: xmms/prefswin.c:1051
+msgid "Store information such as song title and length to playlists"
+msgstr ""
+
+#: xmms/prefswin.c:1067
+msgid "Use fontsets (Enable for multi-byte charset support)"
+msgstr "Истифодаи ҳуруфҳо (Даргиронидани дастгирии ҳарфгузории бисёр-байт)"
+
+#: xmms/prefswin.c:1086
+msgid "Main Window"
+msgstr "Тирезаи Асосӣ"
+
+#: xmms/prefswin.c:1093
+msgid "Use X font"
+msgstr "Ҳуруфи X истифода баред"
+
+#: xmms/prefswin.c:1105
+msgid "Fonts"
+msgstr "Ҳуруфҳо"
+
+#: xmms/prefswin.c:1129
+#, fuzzy
+msgid "Advanced Title Options"
+msgstr "Гузоришҳои Омезанда:"
+
+#: xmms/prefswin.c:1137
+#, c-format
+msgid ""
+"%0.2n - Display a 0 padded 2 char long tracknumber\n"
+"\n"
+"For more details, please read the included README or http://www.xmms.org/"
+"docs/readme.php"
+msgstr ""
+
+#: xmms/prefswin.c:1269 xmms/prefswin.c:1299 xmms/prefswin.c:1329
+msgid " (enabled)"
+msgstr " (даргиронда)"
+
+#: xmms/prefswin.c:1358
+msgid " (disabled)"
+msgstr " (хомӯш)"
+
+#: xmms/skinwin.c:50
+msgid "Skin selector"
+msgstr "Интихоби пӯст"
+
+#: xmms/skinwin.c:58
+msgid "Skins"
+msgstr "Пӯстҳо"
+
+#: xmms/skinwin.c:77
+msgid "Select random skin on play"
+msgstr "Пӯст интихоб кардан дар вақти навозиш"
+
+#: xmms/skinwin.c:195
+msgid "(none)"
+msgstr "(нест)"
+
+#: xmms/util.c:594
+msgid "Enqueue"
+msgstr "Дар навбат"
+
+#: xmms/util.c:830
+msgid "Play files"
+msgstr "/Навозиши файлҳо"
+
+#: xmms/util.c:832
+msgid "Load files"
+msgstr "Пурбокунии файлҳо"
+
+#: xmms/util.c:859
+msgid "Add selected files"
+msgstr "Иловаи файлҳои интихобшуда"
+
+#: xmms/util.c:863
+msgid "Add all files in directory"
+msgstr "Иловаи ҳамаи файлҳо аз феҳрист"
+
+#: xmms/util.c:887 xmms/util.c:905
+msgid "Add"
+msgstr "Илова"
+
+#~ msgid "Ok"
+#~ msgstr "Ok"
+
+#~ msgid "Song change"
+#~ msgstr "Ивази Суруд"
+
+#~ msgid "Playlist end"
+#~ msgstr "Охири Рӯйхати суруд"
+
+#~ msgid ""
+#~ "Shell-command to run when xmms changes song.  It can optionally include "
+#~ "the string %%s which will be replaced by the new song title."
+#~ msgstr ""
+#~ "Ҷилд-фармони корандозӣ ҳангоми ивази суруди xmms. Ин метавонад интихобан "
+#~ "сатри %%s дарбар гирад, кадоме, ки бо номи суруди нав иваз мешад."
+
+#~ msgid "Samplerate: %ld Hz"
+#~ msgstr "Зуддии намунагирӣ: %ld Hz"
+
+#, fuzzy
+#~ msgid "User defined:"
+#~ msgstr "Номи корванд:"
+
+#, fuzzy
+#~ msgid "Mixer device"
+#~ msgstr "Дастгоҳи омезанда:"
+
+#~ msgid "xmms applet"
+#~ msgstr "апплет xmms"
+
+#~ msgid "Copyright (C) Anders Carlsson 1999), Hiroshi Takekawa 2001"
+#~ msgstr "Ҳуқуқи муаллифӣ (C) Anders Carlsson 1999), Hiroshi Takekawa 2001"
+
+#~ msgid ""
+#~ "A simple xmms gnome panel applet by Anders Carlsson.\n"
+#~ "Some code is from wmxmms by Mikael Alm.\n"
+#~ "Tooltip support by Hiroshi Takekawa."
+#~ msgstr ""
+#~ "Панели оддии апплети xmms gnome бо Anders Carlsson.\n"
+#~ "Баъзе рамзҳо аз wmxmms бо Mikael Alm.Дастгирии Tooltip бо Hiroshi "
+#~ "Takekawa."
+
+#~ msgid "About..."
+#~ msgstr "Дар бораи..."
+
+#~ msgid ""
+#~ "Sorry, threads isn't supported on your platform.\n"
+#~ "\n"
+#~ "If you're on a libc5 based linux system and installed GLIB & GTK+ before "
+#~ "you\n"
+#~ "installed LinuxThreads you need to recompile GLIB & GTK+\n"
+#~ msgstr ""
+#~ "Узр, дар платформаи шумо бандҳо дастгир нашудаанд\n"
+#~ "\n"
+#~ "Агар шумо дар системи линукси бо libc5 асос гирифта бошед ва GLIB & GTK+ "
+#~ "пеш аз\n"
+#~ "LinuxThreads коргузошта бошад шумо бояд GLIB & GTK+ ро ҳамгардон кунед\n"
+
+#~ msgid "/Sort Selection"
+#~ msgstr "/Мураттаби Интихобот"
+
+#~ msgid "Unknown filetype for %s"
+#~ msgstr "Навъи номаълуми файл %s"
+
+#~ msgid "Transparent playlist window"
+#~ msgstr "Шаффофи тирезаи рӯйхати суруд"
+
+#~ msgid ""
+#~ "The SHA-1 hash function failed to properly\n"
+#~ "generate a test key.  As such, Xmms will\n"
+#~ "not be able to contact a CD Index server.\n"
+#~ msgstr ""
+#~ "Хэш SHA-1 ӯҳдадорӣ ҳангоми мувофиқан иҷроиши\n"
+#~ "калиди санҷиш вайрон шуд. Барои ҷамин, Xmms\n"
+#~ "бо хидматгори Номгӯйи CD пайваст намешавад.\n"
+
+#~ msgid "Copyright (C) 1997-2002 The XMMS Team"
+#~ msgstr "Ҳуқуқи муаллифӣ (C) 1997-2002 Гурӯҳи XMMS"
+
+#~ msgid "/Sticky"
+#~ msgstr "/Часпидан"
+
+#~ msgid "Read song title andl length when the song is visible in the playlist"
+#~ msgstr "Хондани сарлавҳа ва дарозӣ ҳангоми намоёни суруд дар рӯйхати суруд"
+
+#~ msgid "Detect files by content (instead of file extention)"
+#~ msgstr "Муқаррари файлҳо бо таркиб (ба ҷои васеъкунӣ) "
+
+#~ msgid " (Remix)"
+#~ msgstr " (Ремикс)"
+
+#~ msgid " (Cover)"
+#~ msgstr " (Муқова)"
+
+#, fuzzy
+#~ msgid "/pls"
+#~ msgstr "воҳидҳои тасвир"
+
+#~ msgid "Effect/General Plugins"
+#~ msgstr "Натиҷа/Дароварданҳои Умумӣ"
+
+#~ msgid "Volume setting:"
+#~ msgstr "Гузориши баландӣ:"
+
+#~ msgid "Huffman decode error.\n"
+#~ msgstr "Хатогии рамзкушои Хафман.\n"
+
+#~ msgid "Id Software .cin player %s"
+#~ msgstr "Id Software .cin навозандаи %s"
+
+#~ msgid "Error opening audio for idcin.\n"
+#~ msgstr "Хатогии кушодани аудио барои idcin.\n"
+
+#~ msgid "IDCin Play"
+#~ msgstr "IDCin Навозиш"
+
+#~ msgid "Alt"
+#~ msgstr "Алт"
+
+#, fuzzy
+#~ msgid "Audiophile:"
+#~ msgstr "Аудио дастгоҳ:"
+
+#, fuzzy
+#~ msgid "Peak:"
+#~ msgstr "Сол:"
+
+#~ msgid "UNTRANSLATED"
+#~ msgstr "TRANSLAED"
+
+#~ msgid "Use plugins"
+#~ msgstr "Истифодаи дароварданҳо"
+
+#~ msgid "Save playlist position"
+#~ msgstr "Нигоҳ доштани мавқеъи рӯйхати суруд"
+
+#~ msgid "s"
+#~ msgstr "сон"
+
+#~ msgid " Close "
+#~ msgstr " Пӯшидан "
+
+#~ msgid "(Remix)"
+#~ msgstr "(Ремикс)"
+
+#~ msgid "(Cover)"
+#~ msgstr "(Муқова)"
+
+#~ msgid ""
+#~ "\n"
+#~ "Usage: xmms [options] [files] ...\n"
+#~ "\n"
+#~ "Options:\n"
+#~ "--------\n"
+#~ "\n"
+#~ "-h, --help              Display this text and exit.\n"
+#~ "-n, --session\t\tSelect XMMS session (Default: 0)\n"
+#~ "-r, --rew               Skip backwards in playlist\n"
+#~ "-p, --play\t\tStart playing current playlist\n"
+#~ "-u, --pause\t\tPause current song\n"
+#~ "-s, --stop\t\tStop current song\n"
+#~ "-f, --fwd               Skip forward in playlist\n"
+#~ "-e, --enqueue\t\tDon't clear the playlist\n"
+#~ "-m, --show-main-window\tShow the main window.\n"
+#~ "-v, --version           Print version number and exit.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Истифода: xmms [интихобҳо] [файлҳо] ...\n"
+#~ "\n"
+#~ "Интихобҳо:\n"
+#~ "--------\n"
+#~ "\n"
+#~ "-h, --help              Ин матнро намоиш диҳед ва хуруҷ шавед.\n"
+#~ "-n, --session\t\tСессияи XMMS интихоб кунед (Пешфарз: 0)\n"
+#~ "-r, --rew               Ба қафо ба рӯйхати суруд\n"
+#~ "-p, --play\t\tНавозиши суруди равонаро сар кунед\n"
+#~ "-u, --pause\t\tСуруди равонаро таваққуф кунед\n"
+#~ "-s, --stop\t\tСуруди равонаро исторонед\n"
+#~ "-f, --fwd               Ба пеш ба рӯйхати суруд\n"
+#~ "-e, --enqueue\t\tРӯйхати сурудро тоза накунед\n"
+#~ "-m, --show-main-window\tТирезаи асосиро нишон диҳед.\n"
+#~ "-v, --version           Рақами ривоятӣ чоп кунед ва хуруҷ шавед.\n"
+#~ "\n"
+
+#~ msgid "Message"
+#~ msgstr "Пайғом"
+
+#, fuzzy
+#~ msgid "Save extended playlist info"
+#~ msgstr "Ҳуруфи рӯйхати суруд интихоб кунед:"
+
+#~ msgid ""
+#~ "= Performer/Artist\n"
+#~ "= Album\n"
+#~ "= File name\n"
+#~ "= File path\n"
+#~ "= File extension"
+#~ msgstr ""
+#~ "= Иҷрогар/Артист\n"
+#~ "= Албом\n"
+#~ "= Номи файл\n"
+#~ "= Роҳи файл\n"
+#~ "= Васегии файл"
+
+#~ msgid ""
+#~ "= Track name\n"
+#~ "= Track number\n"
+#~ "= Year\n"
+#~ "= Genre\n"
+#~ "= Comment"
+#~ msgstr ""
+#~ "= Номи суруд\n"
+#~ "= Рақами суруд\n"
+#~ "= Сол\n"
+#~ "= Жанр\n"
+#~ "= Тавзеҳ"
+
+#~ msgid ""
+#~ "= Track name\n"
+#~ "= Track number"
+#~ msgstr ""
+#~ "= Номи суруд\n"
+#~ "= Рақами суруд"
+
+#~ msgid ""
+#~ "= Track name\n"
+#~ "= Track number\n"
+#~ "= Date\n"
+#~ "\n"
+#~ msgstr ""
+#~ "= Номи суруд\n"
+#~ "= Рақами суруд\n"
+#~ "= Сана\n"
+#~ "\n"
+
+#~ msgid "Audio"
+#~ msgstr "Аудио"
+
+#~ msgid "Buffer size (msec):"
+#~ msgstr "Андозаи миёнгир (милисон):"
+
+#~ msgid "Please use GTK+ 1.2.2 or newer (NOTE not 1.3.x)\n"
+#~ msgstr "Илтимос GTK+ 1.2.2 истифода баред ё навтар (ЛЕКИН НА 1.3.x)\n"
+
+#~ msgid ""
+#~ "= Performer/Artist\n"
+#~ "= Album\n"
+#~ "= Genre\n"
+#~ "= File name\n"
+#~ "= File path\n"
+#~ "= File extension"
+#~ msgstr ""
+#~ "= Иҷрогар/Артист\n"
+#~ "= Албом\n"
+#~ "= Жанр\n"
+#~ "= Номи файл\n"
+#~ "= Роҳи файл\n"
+#~ "= Васегии файл"
+
+#~ msgid ""
+#~ "= Track name\n"
+#~ "= Track number\n"
+#~ "= Date\n"
+#~ "= Year\n"
+#~ "= Comment\n"
+#~ msgstr ""
+#~ "= Номи суруд\n"
+#~ "= Рақами суруд\n"
+#~ "= Сана\n"
+#~ "= Сол\n"
+#~ "= Тавзеҳ\n"
+
+#~ msgid "Olle Haellnaes (compiling fixes)"
+#~ msgstr "Olle Haellnaes (ҷамъкунии масъалаҳо)"
+
+#~ msgid "Olle Haellnaes"
+#~ msgstr "Olle Haellnaes"
