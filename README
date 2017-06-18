@@ -2,15 +2,16 @@ Dina (or Deprecated) MultiMedia System
 
 A 2014-2017 XMMS (X MultiMedia System) fork; revamped it's code so it can run with newer versions of Linux; new features planned like new random/shuffle algorithm, new equalizer (18 or 24 band EQ), etc...
 
-We'll provide a Debian and Ubuntu repository until the end of the times.
+We'll provide a Debian repository until the end of the times.
 
-If you use Debian 8 (Jessie), add to your /etc/apt/sources.list:
+For Debian 8 (Jessie) and Debian 9 (Stretch), add to your /etc/apt/sources.list:
 
-_deb http://www.telemidia.puc-rio.br/~rafaeldiniz/public_files/xmms/debian amd64/_
+deb http://www.telemidia.puc-rio.br/~rafaeldiniz/public_files/xmms/debian amd64/
 
 In order to install XMMS:
 
-apt-get update apt-get install xmms
+apt-get update
+apt-get install xmms
 
 Keep on rockin in a free world!!! ;-P
 
