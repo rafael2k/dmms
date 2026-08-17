@@ -1,6 +1,17 @@
+xmms (1.2.11-2) unstable; urgency=low
+
+  * OSS plugin: software balance/pan (OSSv4 vmix has no stereo mixer
+    balance), 10-band equalizer (biquad peaking filter bank + preamp)
+    implemented in the output plugin, set_eq added to the OutputPlugin
+    API with input_set_eq fallback to the output plugin.
+  * Build fixes for modern toolchain: gcc-14 flags (-fgnu89-inline,
+    -Wno-implicit-*), -Wl,--allow-shlib-undefined, debhelper compat 7,
+    drop obsolete libesd0-dev/libmikmod2-dev build-deps.
+
+ -- Rafael Diniz <rafael@riseup.net>  Tue, 18 Aug 2026 00:50:00 +0100
+
 xmms (1.2.11-1) unstable; urgency=low
 
   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
 
  -- Knut Auvor Grythe <xmms@auvor.no>  Mon, 02 Jun 2008 23:13:24 +0200
-
