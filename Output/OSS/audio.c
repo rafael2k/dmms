@@ -282,6 +282,8 @@ static void oss_write_audio(gpointer data, int length)
 					 input.format.xmms,
 					 input.frequency,
 					 input.channels);
+	oss_apply_equalizer(data, length, effect.format.xmms,
+			    effect.channels, effect.frequency);
 	if (realtime && !ioctl(fd, SNDCTL_DSP_GETOSPACE, &abuf_info))
 	{
 		while (abuf_info.bytes < length)
@@ -298,6 +300,10 @@ static void oss_write_audio(gpointer data, int length)
 	if (oss_stereo_convert_func != NULL)
 		length = oss_stereo_convert_func(&data, length,
 						 output.format.oss);
+
+	if (oss_pan_l != oss_pan_r)
+		oss_apply_pan(data, length, output.format.oss,
+			      output.channels);
 
 	if (effect.frequency == output.frequency)
 		output_bytes += write_all(fd, data, length);

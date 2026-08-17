@@ -32,5 +32,6 @@ void output_about(int i);
 void output_configure(int i);
 void output_get_volume(int *l, int *r);
 void output_set_volume(int l, int r);
+void output_set_eq(int on, float preamp, float *bands);
 
 #endif

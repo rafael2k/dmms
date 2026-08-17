@@ -67,3 +67,9 @@ void output_set_volume(int l, int r)
 	if (op_data->current_output_plugin && op_data->current_output_plugin->set_volume)
 		op_data->current_output_plugin->set_volume(l, r);
 }
+
+void output_set_eq(int on, float preamp, float *bands)
+{
+	if (op_data->current_output_plugin && op_data->current_output_plugin->set_eq)
+		op_data->current_output_plugin->set_eq(on, preamp, bands);
+}

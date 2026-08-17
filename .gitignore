@@ -20,3 +20,12 @@ xmms/xmms
 wmxmms/wmxmms
 xmms.1
 wmxmms.1
+config.h
+config.guess
+config.sub
+config.status
+config.log
+debian/xmms/
+debian/files
+debian/*.debhelper.log
+debian/*.substvars

@@ -335,9 +335,11 @@ gint input_get_time(void)
 
 void input_set_eq(int on, float preamp, float *bands)
 {
-	if (ip_data->playing)
-		if (get_current_input_plugin() && get_current_input_plugin()->set_eq)
-			get_current_input_plugin()->set_eq(on, preamp, bands);
+	if (ip_data->playing && get_current_input_plugin() &&
+	    get_current_input_plugin()->set_eq)
+		get_current_input_plugin()->set_eq(on, preamp, bands);
+	else
+		output_set_eq(on, preamp, bands);
 }
 
 void input_get_song_info(gchar * filename, gchar ** title, gint * length)

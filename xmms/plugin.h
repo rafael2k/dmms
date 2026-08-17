@@ -58,6 +58,7 @@ typedef struct
 	int (*output_time) (void);	/* Return the current playing time */
 	int (*written_time) (void);	/* Return the length of all the data that has been written to
 					   the buffer */
+	void (*set_eq) (int on, float preamp, float *bands);	/* Set the equalizer, most plugins won't be able to do this */
 }
 OutputPlugin;
 

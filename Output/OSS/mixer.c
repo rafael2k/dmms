@@ -18,6 +18,8 @@
 #include "OSS.h"
 #include <errno.h>
 
+gint oss_pan_l = -1, oss_pan_r = -1;
+
 static char* get_mixer_device(void)
 {
 	char *name;
@@ -36,6 +38,13 @@ void oss_get_volume(int *l, int *r)
 {
 	int fd, v, cmd, devs;
 	gchar *devname;
+
+	if (oss_pan_l >= 0)
+	{
+		*l = oss_pan_l;
+		*r = oss_pan_r;
+		return;
+	}
 
 	devname = get_mixer_device();
 	fd = open(devname, O_RDONLY);
@@ -60,6 +69,8 @@ void oss_get_volume(int *l, int *r)
 		ioctl(fd, cmd, &v);
 		*r = (v & 0xFF00) >> 8;
 		*l = (v & 0x00FF);
+		oss_pan_l = *l;
+		oss_pan_r = *r;
 		close(fd);
 	}
 }
@@ -68,6 +79,23 @@ void oss_set_volume(int l, int r)
 {
 	int fd, v, cmd, devs;
 	gchar *devname;
+
+	oss_pan_l = l;
+	oss_pan_r = r;
+	if (l != r)
+	{
+		/*
+		 * Some mixers (OSSv4/vmix) only honor one byte of the
+		 * legacy two-channel value and apply it to both channels,
+		 * so a balance setting would mute the audio.  The actual
+		 * balance is applied in software (see oss_apply_pan), the
+		 * mixer just gets the louder of the two.
+		 */
+		if (r > l)
+			l = r;
+		else
+			r = l;
+	}
 
 	devname = get_mixer_device();
 	fd = open(devname, O_RDONLY);

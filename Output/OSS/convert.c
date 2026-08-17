@@ -18,6 +18,8 @@
 
 #include "OSS.h"
 
+#include <math.h>
+
 struct buffer {
 	void *buffer;
 	int size;
@@ -439,4 +441,151 @@ int (*oss_get_stereo_convert_func(int output, int input))(void **, int, int)
 	g_warning("Input has %d channels, soundcard uses %d channels\n"
 		  "No conversion is available", input, output);
 	return NULL;
+}
+
+#define EQ_BANDS 10
+
+typedef struct {
+	gfloat b0, b1, b2, a1, a2;
+	gfloat x1, x2, y1, y2;
+} EqBiquad;
+
+static gfloat eq_band_freqs[EQ_BANDS] =
+{60, 170, 310, 600, 1000, 3000, 6000, 12000, 14000, 16000};
+static EqBiquad eq_filters[EQ_BANDS][2];
+static gint eq_active = FALSE;
+static gint eq_rate = 0;
+static gfloat eq_gains[EQ_BANDS];
+
+void oss_set_eq(int on, float preamp, float *bands)
+{
+	int i;
+
+	eq_active = on;
+	for (i = 0; i < EQ_BANDS; i++)
+		eq_gains[i] = bands[i] + preamp;
+	eq_rate = 0;
+}
+
+static void eq_recompute(gint rate)
+{
+	int i, ch;
+
+	for (i = 0; i < EQ_BANDS; i++)
+	{
+		gfloat w0 = 2.0 * M_PI * eq_band_freqs[i] / rate;
+		gfloat alpha = sin(w0) / 2.0;
+		gfloat A = pow(10.0, eq_gains[i] / 40.0);
+		gfloat a0 = 1.0 + alpha / A;
+
+		for (ch = 0; ch < 2; ch++)
+		{
+			EqBiquad *q = &eq_filters[i][ch];
+			q->b0 = (1.0 + alpha * A) / a0;
+			q->b1 = (-2.0 * cos(w0)) / a0;
+			q->b2 = (1.0 - alpha * A) / a0;
+			q->a1 = (-2.0 * cos(w0)) / a0;
+			q->a2 = (1.0 - alpha / A) / a0;
+			q->x1 = q->x2 = q->y1 = q->y2 = 0.0;
+		}
+	}
+	eq_rate = rate;
+}
+
+void oss_apply_equalizer(void *data, int length, int fmt, int nch, int rate)
+{
+	int i, b, ch;
+	gint16 *d = data;
+	int nsamples;
+	gint32 off;
+
+	if (!eq_active || nch < 1 || nch > 2)
+		return;
+
+	switch (fmt)
+	{
+		case FMT_S16_NE:
+#ifdef WORDS_BIGENDIAN
+		case FMT_S16_BE:
+#else
+		case FMT_S16_LE:
+#endif
+			off = 0;
+			break;
+		case FMT_U16_NE:
+#ifdef WORDS_BIGENDIAN
+		case FMT_U16_BE:
+#else
+		case FMT_U16_LE:
+#endif
+			off = 1 << 15;
+			break;
+		default:
+			return;
+	}
+
+	if (eq_rate != rate)
+		eq_recompute(rate);
+
+	nsamples = length / sizeof(gint16);
+	for (i = 0; i < nsamples; i++)
+	{
+		gfloat x;
+		ch = (nch == 2) ? (i & 1) : 0;
+		x = d[i] - off;
+		for (b = 0; b < EQ_BANDS; b++)
+		{
+			EqBiquad *q = &eq_filters[b][ch];
+			gfloat y = q->b0 * x + q->b1 * q->x1 + q->b2 * q->x2
+				- q->a1 * q->y1 - q->a2 * q->y2;
+			q->x2 = q->x1;
+			q->x1 = x;
+			q->y2 = q->y1;
+			q->y1 = y;
+			x = y;
+		}
+		x += off;
+		if (x > 32767.0)
+			x = 32767.0;
+		else if (x < -32768.0)
+			x = -32768.0;
+		d[i] = (gint16) x;
+	}
+}
+
+void oss_apply_pan(void *data, int length, int fmt, int nch)
+{
+	int i;
+
+	if (nch != 2)
+		return;
+
+	switch (fmt)
+	{
+		case AFMT_S16_LE:
+		case AFMT_S16_BE:
+		case AFMT_U16_LE:
+		case AFMT_U16_BE:
+		{
+			gint16 *d = data;
+			for (i = 0; i < length / 2; i += 2)
+			{
+				gint16 l = d[i], r = d[i + 1];
+				d[i] = (gint16) ((l * oss_pan_l) / 100);
+				d[i + 1] = (gint16) ((r * oss_pan_r) / 100);
+			}
+		}
+		break;
+		case AFMT_S8:
+		case AFMT_U8:
+		{
+			gint8 *d = data;
+			for (i = 0; i < length; i += 2)
+			{
+				d[i] = (gint8) ((d[i] * oss_pan_l) / 100);
+				d[i + 1] = (gint8) ((d[i + 1] * oss_pan_r) / 100);
+			}
+		}
+		break;
+	}
 }

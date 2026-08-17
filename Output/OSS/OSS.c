@@ -37,6 +37,7 @@ OutputPlugin oss_op =
 	oss_playing,
 	oss_get_output_time,
 	oss_get_written_time,
+	oss_set_eq,
 };
 
 OutputPlugin *get_oplugin_info(void)

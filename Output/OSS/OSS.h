@@ -70,6 +70,9 @@ void oss_configure(void);
 
 void oss_get_volume(int *l, int *r);
 void oss_set_volume(int l, int r);
+void oss_set_eq(int on, float preamp, float *bands);
+
+extern gint oss_pan_l, oss_pan_r;
 
 int oss_playing(void);
 int oss_free(void);
@@ -85,5 +88,7 @@ void oss_set_audio_params(void);
 void oss_free_convert_buffer(void);
 int (*oss_get_convert_func(int output, int input))(void **, int);
 int (*oss_get_stereo_convert_func(int output, int input))(void **, int, int);
+void oss_apply_equalizer(void *data, int length, int fmt, int nch, int rate);
+void oss_apply_pan(void *data, int length, int fmt, int nch);
 
 #endif

@@ -20,6 +20,9 @@ else
 CROSS= --build $(DEB_BUILD_GNU_TYPE)
 endif
 
+CFLAGS = -g -O1 -fgnu89-inline -Wno-implicit-function-declaration -Wno-int-conversion -Wno-incompatible-pointer-types -Wno-implicit-int
+LDFLAGS = -Wl,--allow-shlib-undefined
+
 
 
 config.status: configure
@@ -31,7 +34,7 @@ endif
 ifneq "$(wildcard /usr/share/misc/config.guess)" ""
 	cp -f /usr/share/misc/config.guess config.guess
 endif
-	./configure $(CROSS) --prefix=/usr --mandir=\$${prefix}/share/man --infodir=\$${prefix}/share/info CFLAGS="$(CFLAGS)"
+	./configure $(CROSS) --prefix=/usr --mandir=\$${prefix}/share/man --infodir=\$${prefix}/share/info CFLAGS="$(CFLAGS)" LDFLAGS="$(LDFLAGS)"
 
 
 build: build-stamp
@@ -63,7 +66,7 @@ install: build
 	dh_installdirs
 
 	# Add here commands to install the package into debian/xmms.
-	$(MAKE) DESTDIR=$(CURDIR)/debian/xmms install
+	$(MAKE) DESTDIR=$(CURDIR)/debian/xmms MKDIR_P="/usr/bin/mkdir -p" install
 
 
 # Build architecture-independent files here.
