@@ -4,9 +4,10 @@ A 2014-2017 XMMS (X MultiMedia System) fork; revamped it's code so it can run wi
 
 We'll provide a Debian repository until the end of the times.
 
-For Debian 13 (trixie) amd64, add to your /etc/apt/sources.list:
+For Debian 13 (trixie) amd64, add to your /etc/apt/sources.list
+(replace the URL with the actual repository location):
 
-deb [trusted=yes] http://www.telemidia.puc-rio.br/~rafaeldiniz/public_files/xmms/debian amd64/
+deb [trusted=yes] http://<server>/<path>/xmms/debian amd64/
 
 In order to install XMMS:
 
