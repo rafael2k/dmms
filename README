@@ -4,18 +4,34 @@ A 2014-2017 XMMS (X MultiMedia System) fork; revamped it's code so it can run wi
 
 We'll provide a Debian repository until the end of the times.
 
-For Debian 8 (Jessie) and Debian 9 (Stretch), add to your /etc/apt/sources.list:
+For Debian 13 (trixie) amd64, add to your /etc/apt/sources.list:
 
-deb http://www.telemidia.puc-rio.br/~rafaeldiniz/public_files/xmms/debian amd64/
+deb [trusted=yes] http://www.telemidia.puc-rio.br/~rafaeldiniz/public_files/xmms/debian amd64/
 
 In order to install XMMS:
 
 apt-get update
 apt-get install xmms
 
+The repo carries xmms 1.2.11-2 (with working balance and a 10-band
+equalizer in the OSS output plugin) plus the libglib1.2/libgtk1.2
+1.2.10 runtime and -dev packages it needs, all rebuilt for the modern
+toolchain (gcc 14, binutils 2.34+, debhelper 13).
+
+Building from source: you need libglib1.2-dev and libgtk1.2-dev
+(available from the repo above), then:
+
+	CFLAGS="-g -O1 -fgnu89-inline -Wno-implicit-function-declaration \
+-Wno-int-conversion -Wno-incompatible-pointer-types -Wno-implicit-int" \
+LDFLAGS="-Wl,--allow-shlib-undefined" ./configure && make
+
+(-O1 avoids a gcc-14 ICE in audio.c with the -O2/-ffast-math combo;
+--allow-shlib-undefined is needed because the 2006-era libgdk has no
+DT_NEEDED entries for X11 libs.)
+
 Keep on rockin in a free world!!! ;-P
 
-Thanks to Bodão.
+Thanks to Bodï¿½o.
 
 ------ OLD XMMS README FOLLOWS -----
 
@@ -23,7 +39,7 @@ XMMS - X Multimedia System (C) 1997-2004
 
 A Cross platform Multimedia Player
 
-Peter Alm, Thomas Nilsson, Olle Hallnas, Håvard Kvålen
+Peter Alm, Thomas Nilsson, Olle Hallnas, Hï¿½vard Kvï¿½len
 
 
 TABLE OF CONTENTS
@@ -1280,6 +1296,6 @@ http://bugs.xmms.org and let us know.
 ------------------
 
 Peter Alm      (developer)     peter at xmms.org
-Håvard Kvålen  (developer)     havardk at xmms.org
+Hï¿½vard Kvï¿½len  (developer)     havardk at xmms.org
 Thomas Nilsson (docs, support) thomas at xmms.org
-Olle Hällnäs   (docs, support) olle at xmms.org
+Olle Hï¿½llnï¿½s   (docs, support) olle at xmms.org
