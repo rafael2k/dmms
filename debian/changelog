@@ -1,4 +1,7 @@
-xmms (1.2.11-4) unstable; urgency=low
+xmms (1.2.11-5) unstable; urgency=low
+
+  * New MP4/AAC input plugin (libmp4 from faad2 2.10.1 + mp4ff from
+    faad2 2.8.8, linked against system libfaad).
 
   * Fix flac plugin About box crash: use the fork's libxmms/*.h
     headers so xmms_show_message() is properly declared (implicit

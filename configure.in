@@ -273,6 +273,28 @@ AC_SUBST([FLAC_LIBS])
 
 
 dnl ***
+dnl *** MP4/AAC (faad2)
+dnl ***
+AC_ARG_ENABLE([mp4],
+[  --disable-mp4            Disable MP4/AAC input plugin [default=enabled]],,
+	[enable_mp4="yes"])
+
+MP4_CFLAGS=""
+MP4_LIBS=""
+if test "x$enable_mp4" = "xyes"; then
+	AC_CHECK_LIB([faad], [NeAACDecOpen],
+		     [have_mp4=yes MP4_LIBS="-lfaad"],
+		     [have_mp4=no MP4_LIBS=""])
+else
+	AC_MSG_RESULT([*** mp4 plugin disabled per user request ***])
+	have_mp4=no
+fi
+AM_CONDITIONAL([HAVE_MP4], [test "x$have_mp4" = "xyes"])
+AC_SUBST([MP4_CFLAGS])
+AC_SUBST([MP4_LIBS])
+
+
+dnl ***
 dnl *** Thread-safe xlib check
 dnl ***
 CFLAGS_save=$CFLAGS
@@ -647,6 +669,7 @@ Input/cdaudio/Makefile
  Input/tonegen/Makefile
  Input/vorbis/Makefile
  Input/flac/Makefile
+ Input/mp4/Makefile
  Effect/Makefile
 Effect/voice/Makefile
 Effect/echo_plugin/Makefile
@@ -679,6 +702,7 @@ echo "  Build ALSA plugin:          $have_alsa"
 echo "  Build mikmod plugin:        $have_mikmod"
 echo "  Build Ogg Vorbis plugin:    $have_oggvorbis"
 echo "  Build flac plugin:          $have_flac"
+echo "  Build mp4 plugin:           $have_mp4"
 echo "  Build OpenGL plugins:       $have_opengl"
 echo "  Pthread flag:               $PTHREAD_LIBS"
 echo "  Use one plugin dir:         $enable_one_plugin_dir"

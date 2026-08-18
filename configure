@@ -749,6 +749,10 @@ FLAC_LIBS
 FLAC_CFLAGS
 HAVE_FLAC_FALSE
 HAVE_FLAC_TRUE
+MP4_CFLAGS
+MP4_LIBS
+HAVE_MP4_FALSE
+HAVE_MP4_TRUE
 HAVE_OGGVORBIS_FALSE
 HAVE_OGGVORBIS_TRUE
 VORBISENC_LIBS
@@ -17764,6 +17768,71 @@ else
   HAVE_FLAC_FALSE=
 fi
 
+MP4_CFLAGS=""
+MP4_LIBS=""
+# Check whether --enable-mp4 was given.
+if test "${enable_mp4+set}" = set; then :
+  enableval=$enable_mp4;
+else
+  enable_mp4="yes"
+fi
+
+
+if test "x$enable_mp4" = "xyes"; then
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for NeAACDecOpen in -lfaad" >&5
+$as_echo_n "checking for NeAACDecOpen in -lfaad... " >&6; }
+if ${ac_cv_lib_faad_NeAACDecOpen+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  ac_check_lib_save_LIBS=$LIBS
+LIBS="-lfaad  $LIBS"
+cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+/* end confdefs.h.  */
+
+/* Override any GCC internal prototype to avoid an error.
+   Use char because int might match the return type of a GCC
+   builtin and then its argument prototype would still apply.  */
+#ifdef __cplusplus
+extern "C"
+#endif
+char NeAACDecOpen ();
+int
+main ()
+{
+return NeAACDecOpen ();
+  ;
+  return 0;
+}
+_ACEOF
+if ac_fn_c_try_link "$LINENO"; then :
+  ac_cv_lib_faad_NeAACDecOpen=yes
+else
+  ac_cv_lib_faad_NeAACDecOpen=no
+fi
+rm -f core conftest.err conftest.$ac_objext \
+    conftest$ac_exeext conftest.$ac_ext
+LIBS=$ac_check_lib_save_LIBS
+fi
+{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_lib_faad_NeAACDecOpen" >&5
+$as_echo "$ac_cv_lib_faad_NeAACDecOpen" >&6; }
+if test "x$ac_cv_lib_faad_NeAACDecOpen" = xyes; then :
+  have_mp4=yes MP4_LIBS="-lfaad"
+else
+  have_mp4=no MP4_LIBS=""
+fi
+else
+	{ $as_echo "$as_me:${as_lineno-$LINENO}: result: *** mp4 plugin disabled per user request ***" >&5
+$as_echo "*** mp4 plugin disabled per user request ***" >&6; }
+	have_mp4=no
+fi
+ if test "x$have_mp4" = "xyes"; then
+  HAVE_MP4_TRUE=
+  HAVE_MP4_FALSE='#'
+else
+  HAVE_MP4_TRUE='#'
+  HAVE_MP4_FALSE=
+fi
+
 
 
 
@@ -23388,7 +23457,7 @@ subdirs="$subdirs libxmms"
 
 
 
-ac_config_files="$ac_config_files Makefile xmms.1 wmxmms.1 xmms.spec xmms-config xmms/Makefile xmms/defskin/Makefile Output/Makefile Output/OSS/Makefile Output/esd/Makefile Output/disk_writer/Makefile Output/solaris/Makefile Output/sun/Makefile Output/alsa/Makefile Input/Makefile Input/wav/Makefile Input/mpg123/Makefile Input/mikmod/Makefile Input/cdaudio/Makefile Input/tonegen/Makefile Input/vorbis/Makefile Input/flac/Makefile Effect/Makefile Effect/voice/Makefile Effect/echo_plugin/Makefile Effect/stereo_plugin/Makefile General/Makefile General/ir/Makefile General/joystick/Makefile General/song_change/Makefile Visualization/Makefile Visualization/blur_scope/Makefile Visualization/sanalyzer/Makefile Visualization/opengl_spectrum/Makefile wmxmms/Makefile po/Makefile.in intl/Makefile"
+ac_config_files="$ac_config_files Makefile xmms.1 wmxmms.1 xmms.spec xmms-config xmms/Makefile xmms/defskin/Makefile Output/Makefile Output/OSS/Makefile Output/esd/Makefile Output/disk_writer/Makefile Output/solaris/Makefile Output/sun/Makefile Output/alsa/Makefile Input/Makefile Input/wav/Makefile Input/mpg123/Makefile Input/mikmod/Makefile Input/cdaudio/Makefile Input/tonegen/Makefile Input/vorbis/Makefile Input/flac/Makefile Input/mp4/Makefile Effect/Makefile Effect/voice/Makefile Effect/echo_plugin/Makefile Effect/stereo_plugin/Makefile General/Makefile General/ir/Makefile General/joystick/Makefile General/song_change/Makefile Visualization/Makefile Visualization/blur_scope/Makefile Visualization/sanalyzer/Makefile Visualization/opengl_spectrum/Makefile wmxmms/Makefile po/Makefile.in intl/Makefile"
 
 ac_config_commands="$ac_config_commands default"
 
@@ -24492,6 +24561,7 @@ do
     "Input/tonegen/Makefile") CONFIG_FILES="$CONFIG_FILES Input/tonegen/Makefile" ;;
     "Input/vorbis/Makefile") CONFIG_FILES="$CONFIG_FILES Input/vorbis/Makefile" ;;
     "Input/flac/Makefile") CONFIG_FILES="$CONFIG_FILES Input/flac/Makefile" ;;
+    "Input/mp4/Makefile") CONFIG_FILES="$CONFIG_FILES Input/mp4/Makefile" ;;
     "Effect/Makefile") CONFIG_FILES="$CONFIG_FILES Effect/Makefile" ;;
     "Effect/voice/Makefile") CONFIG_FILES="$CONFIG_FILES Effect/voice/Makefile" ;;
     "Effect/echo_plugin/Makefile") CONFIG_FILES="$CONFIG_FILES Effect/echo_plugin/Makefile" ;;
@@ -26051,6 +26121,7 @@ echo "  Build ALSA plugin:          $have_alsa"
 echo "  Build mikmod plugin:        $have_mikmod"
 echo "  Build Ogg Vorbis plugin:    $have_oggvorbis"
 echo "  Build flac plugin:          $have_flac"
+echo "  Build mp4 plugin:           $have_mp4"
 echo "  Build OpenGL plugins:       $have_opengl"
 echo "  Pthread flag:               $PTHREAD_LIBS"
 echo "  Use one plugin dir:         $enable_one_plugin_dir"

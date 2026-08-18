@@ -2,7 +2,7 @@ Source: xmms
 Section: sound
 Priority: extra
 Maintainer: Knut Auvor Grythe <xmms@auvor.no>
-Build-Depends: debhelper (>= 7), autotools-dev, automake, libtool, gettext, libasound2-dev, libaudiofile-dev, libflac-dev, libgl1-mesa-dev, libglib1.2-dev, libgtk1.2-dev, libice-dev, libogg-dev, libsm-dev, libvorbis-dev, libxxf86vm-dev, libssl-dev, build-essential, make
+Build-Depends: debhelper (>= 7), autotools-dev, automake, libtool, gettext, libasound2-dev, libaudiofile-dev, libflac-dev, libfaad-dev, libgl1-mesa-dev, libglib1.2-dev, libgtk1.2-dev, libice-dev, libogg-dev, libsm-dev, libvorbis-dev, libxxf86vm-dev, libssl-dev, build-essential, make
 Standards-Version: 3.7.3
 Homepage: http://xmms.org/
 
