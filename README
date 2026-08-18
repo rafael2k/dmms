@@ -22,7 +22,7 @@ apt-get install xmms
 
 The repo carries xmms 1.2.11-2 (with working balance and a 10-band
 equalizer in the OSS output plugin) plus the libglib1.2/libgtk1.2
-1.2.10 runtime and -dev packages it needs, all rebuilt for the modern
+runtime and -dev packages it needs, OSSv4, all rebuilt for the modern
 toolchain (gcc 14, binutils 2.34+, debhelper 13).
 
 Building from source: you need libglib1.2-dev and libgtk1.2-dev
