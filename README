@@ -1,6 +1,11 @@
 Dina (or Deprecated) MultiMedia System
 
-A 2014-2017 XMMS (X MultiMedia System) fork; revamped it's code so it can run with newer versions of Linux; new features planned like new random/shuffle algorithm, new equalizer (18 or 24 band EQ), etc...
+A 2014-2026 XMMS (X MultiMedia System) fork; revamped its code so it
+can run with newer versions of Linux; still maintained in 2026, with
+new features like a working balance and a 10-band equalizer (biquad
+filter bank) in the OSS output plugin; more to come, like a new
+random/shuffle algorithm and a new equalizer (18 or 24 band EQ),
+etc...
 
 We'll provide a Debian repository until the end of the times.
 
@@ -31,9 +36,9 @@ LDFLAGS="-Wl,--allow-shlib-undefined" ./configure && make
 --allow-shlib-undefined is needed because the 2006-era libgdk has no
 DT_NEEDED entries for X11 libs.)
 
-Keep on rockin in a free world!!! ;-P
+Keep on rock'in in a free world!!! ;-P
 
-Thanks to Bod�o.
+Cheers to Bodão.
 
 ------ OLD XMMS README FOLLOWS -----
 
@@ -41,7 +46,7 @@ XMMS - X Multimedia System (C) 1997-2004
 
 A Cross platform Multimedia Player
 
-Peter Alm, Thomas Nilsson, Olle Hallnas, H�vard Kv�len
+Peter Alm, Thomas Nilsson, Olle Hallnas, Håvard Kvaalen
 
 
 TABLE OF CONTENTS
@@ -1298,6 +1303,6 @@ http://bugs.xmms.org and let us know.
 ------------------
 
 Peter Alm      (developer)     peter at xmms.org
-H�vard Kv�len  (developer)     havardk at xmms.org
-Thomas Nilsson (docs, support) thomas at xmms.org
-Olle H�lln�s   (docs, support) olle at xmms.org
+ Håvard Kvaalen  (developer)     havardk at xmms.org
+ Thomas Nilsson (docs, support) thomas at xmms.org
+ Olle Hällnäs   (docs, support) olle at xmms.org
