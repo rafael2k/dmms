@@ -29,3 +29,4 @@ debian/xmms/
 debian/files
 debian/*.debhelper.log
 debian/*.substvars
+libxmms/config.h
