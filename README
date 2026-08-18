@@ -8,6 +8,8 @@ For Debian 13 (trixie) amd64, add to your /etc/apt/sources.list:
 
 deb [trusted=yes] https://sdrtelecom.com.br/xmms/debian amd64/
 
+The repository is live at https://sdrtelecom.com.br/xmms/
+
 In order to install XMMS:
 
 apt-get update
