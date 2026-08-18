@@ -41,7 +41,7 @@
 
 #include <pthread.h>
 
-#include <xmms/util.h>
+#include "libxmms/util.h"
 #include <xmms/plugin.h>
 
 #include "FLAC/format.h"

@@ -35,9 +35,9 @@
 #include <unistd.h>
 
 #include <xmms/plugin.h>
-#include <xmms/util.h>
-#include <xmms/configfile.h>
-#include <xmms/titlestring.h>
+#include "libxmms/util.h"
+#include "libxmms/configfile.h"
+#include "libxmms/titlestring.h"
 
 #ifdef HAVE_LANGINFO_CODESET
 #include <langinfo.h>

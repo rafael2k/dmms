@@ -34,10 +34,10 @@
 #include <pthread.h>
 #include <math.h>
 
-#include <xmms/configfile.h>
-#include <xmms/dirbrowser.h>
-#include <xmms/titlestring.h>
-#include <xmms/util.h>
+#include "libxmms/configfile.h"
+#include "libxmms/dirbrowser.h"
+#include "libxmms/titlestring.h"
+#include "libxmms/util.h"
 #include <xmms/plugin.h>
 
 #include "share/replaygain_synthesis.h" /* for NOISE_SHAPING_LOW */
@@ -800,6 +800,7 @@ void FLAC_XMMS__aboutbox(void)
 		  "......\n"
 		  "and\n"
 		  "Daisuke Shimamura\n"
+		  "Maintained for DMMS by Rafael Diniz\n"
 		  "Visit http://xiph.org/flac/"),
 		_("Ok"), FALSE, NULL, NULL);
 	gtk_signal_connect(GTK_OBJECT(about_window), "destroy",

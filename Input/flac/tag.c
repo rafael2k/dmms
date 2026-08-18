@@ -32,9 +32,9 @@
 #include <stdio.h>
 #include <glib.h>
 #include <xmms/plugin.h>
-#include <xmms/util.h>
-#include <xmms/configfile.h>
-#include <xmms/titlestring.h>
+#include "libxmms/util.h"
+#include "libxmms/configfile.h"
+#include "libxmms/titlestring.h"
 
 #include "FLAC/metadata.h"
 #include "plugin_common/tags.h"
