@@ -393,7 +393,7 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 xmmsdir = @xmmsdir@
-ALL_PLUGINS = wav mpg123 mikmod cdaudio tonegen vorbis
+ALL_PLUGINS = wav mpg123 mikmod cdaudio tonegen vorbis flac
 SUBDIRS = @INPUT_PLUGINS@
 all: all-recursive
 

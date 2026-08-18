@@ -251,6 +251,28 @@ AM_CONDITIONAL([HAVE_OGGVORBIS], [test "x$have_oggvorbis" = "xyes"])
 
 
 dnl ***
+dnl *** FLAC
+dnl ***
+AC_ARG_ENABLE([flac],
+[  --disable-flac           Disable FLAC input plugin [default=enabled]],,
+	[enable_flac="yes"])
+
+FLAC_CFLAGS=""
+FLAC_LIBS=""
+if test "x$enable_flac" = "xyes"; then
+	AC_CHECK_LIB([FLAC], [FLAC__stream_decoder_new],
+		     [have_flac=yes FLAC_LIBS="-lFLAC"],
+		     [have_flac=no FLAC_LIBS=""])
+else
+	AC_MSG_RESULT([*** flac plugin disabled per user request ***])
+	have_flac=no
+fi
+AM_CONDITIONAL([HAVE_FLAC], [test "x$have_flac" = "xyes"])
+AC_SUBST([FLAC_CFLAGS])
+AC_SUBST([FLAC_LIBS])
+
+
+dnl ***
 dnl *** Thread-safe xlib check
 dnl ***
 CFLAGS_save=$CFLAGS
@@ -622,9 +644,10 @@ Input/wav/Makefile
 Input/mpg123/Makefile
 Input/mikmod/Makefile
 Input/cdaudio/Makefile
-Input/tonegen/Makefile
-Input/vorbis/Makefile
-Effect/Makefile
+ Input/tonegen/Makefile
+ Input/vorbis/Makefile
+ Input/flac/Makefile
+ Effect/Makefile
 Effect/voice/Makefile
 Effect/echo_plugin/Makefile
 Effect/stereo_plugin/Makefile
@@ -655,6 +678,7 @@ echo "  Build BSD Sun plugin:       $have_sun"
 echo "  Build ALSA plugin:          $have_alsa"
 echo "  Build mikmod plugin:        $have_mikmod"
 echo "  Build Ogg Vorbis plugin:    $have_oggvorbis"
+echo "  Build flac plugin:          $have_flac"
 echo "  Build OpenGL plugins:       $have_opengl"
 echo "  Pthread flag:               $PTHREAD_LIBS"
 echo "  Use one plugin dir:         $enable_one_plugin_dir"
