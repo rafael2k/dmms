@@ -3,9 +3,9 @@ Dina (or Deprecated) MultiMedia System
 A 2014-2026 XMMS (X MultiMedia System) fork; revamped its code so it
 can run with newer versions of Linux; still maintained in 2026, with
 new features like a working balance and a 10-band equalizer (biquad
-filter bank) in the OSS output plugin; more to come, like a new
-random/shuffle algorithm and a new equalizer (18 or 24 band EQ),
-etc...
+filter bank) in the OSS output plugin; MP4/AAC and FLAC plugins installed
+added to the DMMS by default, and more to come, like a new random/shuffle
+algorithm and a new equalizer (18 or 24 band EQ), DSF support, etc...
 
 We'll provide a Debian repository until the end of the times.
 
