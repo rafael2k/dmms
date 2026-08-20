@@ -753,6 +753,10 @@ MP4_CFLAGS
 MP4_LIBS
 HAVE_MP4_FALSE
 HAVE_MP4_TRUE
+PNG_CFLAGS
+PNG_LIBS
+HAVE_PNG_FALSE
+HAVE_PNG_TRUE
 HAVE_OGGVORBIS_FALSE
 HAVE_OGGVORBIS_TRUE
 VORBISENC_LIBS
@@ -17834,6 +17838,70 @@ else
 fi
 
 
+PNG_CFLAGS=""
+PNG_LIBS=""
+# Check whether --enable-vumeter was given.
+if test "${enable_vumeter+set}" = set; then :
+  enableval=$enable_vumeter;
+else
+  enable_vumeter="yes"
+fi
+
+
+if test "x$enable_vumeter" = "xyes"; then
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for png_create_read_struct in -lpng" >&5
+$as_echo_n "checking for png_create_read_struct in -lpng... " >&6; }
+if ${ac_cv_lib_png_png_create_read_struct+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  ac_check_lib_save_LIBS=$LIBS
+LIBS="-lpng  $LIBS"
+cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+/* end confdefs.h.  */
+
+/* Override any GCC internal prototype to avoid an error.
+   Use char because int might match the return type of a GCC
+   builtin and then its argument prototype would still apply.  */
+#ifdef __cplusplus
+extern "C"
+#endif
+char png_create_read_struct ();
+int
+main ()
+{
+return png_create_read_struct ();
+  ;
+  return 0;
+}
+_ACEOF
+if ac_fn_c_try_link "$LINENO"; then :
+  ac_cv_lib_png_png_create_read_struct=yes
+else
+  ac_cv_lib_png_png_create_read_struct=no
+fi
+rm -f core conftest.err conftest.$ac_objext \
+    conftest$ac_exeext conftest.$ac_ext
+LIBS=$ac_check_lib_save_LIBS
+fi
+{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_lib_png_png_create_read_struct" >&5
+$as_echo "$ac_cv_lib_png_png_create_read_struct" >&6; }
+if test "x$ac_cv_lib_png_png_create_read_struct" = xyes; then :
+  have_png=yes PNG_LIBS="-lpng"
+else
+  have_png=no PNG_LIBS=""
+fi
+else
+	{ $as_echo "$as_me:${as_lineno-$LINENO}: result: *** vumeter plugin disabled per user request ***" >&5
+$as_echo "*** vumeter plugin disabled per user request ***" >&6; }
+	have_png=no
+fi
+ if test "x$have_png" = "xyes"; then
+  HAVE_PNG_TRUE=
+  HAVE_PNG_FALSE='#'
+else
+  HAVE_PNG_TRUE='#'
+  HAVE_PNG_FALSE=
+fi
 
 
 
@@ -23457,7 +23525,7 @@ subdirs="$subdirs libxmms"
 
 
 
-ac_config_files="$ac_config_files Makefile xmms.1 wmxmms.1 xmms.spec xmms-config xmms/Makefile xmms/defskin/Makefile Output/Makefile Output/OSS/Makefile Output/esd/Makefile Output/disk_writer/Makefile Output/solaris/Makefile Output/sun/Makefile Output/alsa/Makefile Input/Makefile Input/wav/Makefile Input/mpg123/Makefile Input/mikmod/Makefile Input/cdaudio/Makefile Input/tonegen/Makefile Input/vorbis/Makefile Input/flac/Makefile Input/mp4/Makefile Effect/Makefile Effect/voice/Makefile Effect/echo_plugin/Makefile Effect/stereo_plugin/Makefile General/Makefile General/ir/Makefile General/joystick/Makefile General/song_change/Makefile Visualization/Makefile Visualization/blur_scope/Makefile Visualization/sanalyzer/Makefile Visualization/opengl_spectrum/Makefile wmxmms/Makefile po/Makefile.in intl/Makefile"
+ac_config_files="$ac_config_files Makefile xmms.1 wmxmms.1 xmms.spec xmms-config xmms/Makefile xmms/defskin/Makefile Output/Makefile Output/OSS/Makefile Output/esd/Makefile Output/disk_writer/Makefile Output/solaris/Makefile Output/sun/Makefile Output/alsa/Makefile Input/Makefile Input/wav/Makefile Input/mpg123/Makefile Input/mikmod/Makefile Input/cdaudio/Makefile Input/tonegen/Makefile Input/vorbis/Makefile Input/flac/Makefile Input/mp4/Makefile Effect/Makefile Effect/voice/Makefile Effect/echo_plugin/Makefile Effect/stereo_plugin/Makefile General/Makefile General/ir/Makefile General/joystick/Makefile General/song_change/Makefile Visualization/Makefile Visualization/blur_scope/Makefile Visualization/sanalyzer/Makefile Visualization/opengl_spectrum/Makefile Visualization/vumeter/Makefile wmxmms/Makefile po/Makefile.in intl/Makefile"
 
 ac_config_commands="$ac_config_commands default"
 
@@ -24574,6 +24642,7 @@ do
     "Visualization/blur_scope/Makefile") CONFIG_FILES="$CONFIG_FILES Visualization/blur_scope/Makefile" ;;
     "Visualization/sanalyzer/Makefile") CONFIG_FILES="$CONFIG_FILES Visualization/sanalyzer/Makefile" ;;
     "Visualization/opengl_spectrum/Makefile") CONFIG_FILES="$CONFIG_FILES Visualization/opengl_spectrum/Makefile" ;;
+    "Visualization/vumeter/Makefile") CONFIG_FILES="$CONFIG_FILES Visualization/vumeter/Makefile" ;;
     "wmxmms/Makefile") CONFIG_FILES="$CONFIG_FILES wmxmms/Makefile" ;;
     "po/Makefile.in") CONFIG_FILES="$CONFIG_FILES po/Makefile.in" ;;
     "intl/Makefile") CONFIG_FILES="$CONFIG_FILES intl/Makefile" ;;
@@ -26122,6 +26191,7 @@ echo "  Build mikmod plugin:        $have_mikmod"
 echo "  Build Ogg Vorbis plugin:    $have_oggvorbis"
 echo "  Build flac plugin:          $have_flac"
 echo "  Build mp4 plugin:           $have_mp4"
+echo "  Build vumeter plugin:       $have_png"
 echo "  Build OpenGL plugins:       $have_opengl"
 echo "  Pthread flag:               $PTHREAD_LIBS"
 echo "  Use one plugin dir:         $enable_one_plugin_dir"
